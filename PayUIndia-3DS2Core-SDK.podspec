@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.description         = "3DS iOS SDK provides 3D Secure payment flow."
 
   s.source              = { :git => "https://github.com/payu-intrepos/PayU3DS2SDK-iOS.git",
-                            :tag => "#{s.version}"
+                            :tag => "#{s.name}#{s.version}"
                           }
   s.documentation_url   = "https://devguide.payu.in/mobile-sdk-ios/introduction-to-payu-mobile-sdk/"
   s.platform            = :ios , "11.0"
