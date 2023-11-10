@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PayUIndia-CrashReporter",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
+        "state": {
+          "branch": null,
+          "revision": "3bfc702a711b2f60adb3c99e65134032e92f3e16",
+          "version": "2.1.0"
+        }
+      },
+      {
+        "package": "PayUIndia-NetworkReachability",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUNetworkReachability-iOS",
+        "state": {
+          "branch": null,
+          "revision": "c477d6c84e609c24193e4fb76cadc40935d1838b",
+          "version": "2.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

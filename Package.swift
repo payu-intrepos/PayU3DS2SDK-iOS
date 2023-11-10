@@ -30,7 +30,7 @@ let package = Package(
             path: "PayUIndia-3DS2-SDKWrapper"
         ),
         
-            .binaryTarget(name: "PayU3DS2CoreKit", path: "./PayU3DS2CoreKit.xcframework")
-	    .binaryTarget(name: "PayU3DS2Kit", path: "./PayU3DS2Kit.xcframework")
+            .binaryTarget(name: "PayU3DS2CoreKit", path: "./PayU3DS2CoreKit.xcframework"),
+            .binaryTarget(name: "PayU3DS2Kit", path: "./PayU3DS2.xcframework")
     ]
 )
