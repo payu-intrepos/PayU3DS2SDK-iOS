@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F815B1DFDACE271C6BF4B04 /* Pods_PayU3DS2SwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946DAE20B596D45FDEE4219F /* Pods_PayU3DS2SwiftSample.framework */; };
 		A74F3EAD2AC1992F0044D53A /* DancingScript-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A74F3EA12AC1992F0044D53A /* DancingScript-Bold.ttf */; };
 		A74F3EAE2AC1992F0044D53A /* DancingScript-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A74F3EA22AC1992F0044D53A /* DancingScript-Medium.ttf */; };
 		A74F3EAF2AC1992F0044D53A /* DancingScript-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A74F3EA32AC1992F0044D53A /* DancingScript-Regular.ttf */; };
@@ -28,12 +27,15 @@
 		A7E0222D2689CFA400E79D70 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E022222689CFA400E79D70 /* Date.swift */; };
 		A7E0222E2689CFA400E79D70 /* SavedCardsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E022232689CFA400E79D70 /* SavedCardsAPI.swift */; };
 		A7E0222F2689CFA400E79D70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E022242689CFA400E79D70 /* AppDelegate.swift */; };
+		C9B90383244086D617899DFC /* Pods_PayU3DS2SwiftSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51ED949343826F08840A6438 /* Pods_PayU3DS2SwiftSample.framework */; };
 		E82F2584270451770000D8DC /* PayU3DS2SDKHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82F2583270451770000D8DC /* PayU3DS2SDKHelper.swift */; };
 		E882F9742A9F8685009BECB7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E882F9732A9F8685009BECB7 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		946DAE20B596D45FDEE4219F /* Pods_PayU3DS2SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayU3DS2SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		228EB4AAA98D1A18B2045617 /* Pods-PayU3DS2SwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayU3DS2SwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
+		32CE200EA285B2736831C8B7 /* Pods-PayU3DS2SwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayU3DS2SwiftSample.release.xcconfig"; path = "Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample.release.xcconfig"; sourceTree = "<group>"; };
+		51ED949343826F08840A6438 /* Pods_PayU3DS2SwiftSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayU3DS2SwiftSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74F3EA12AC1992F0044D53A /* DancingScript-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Bold.ttf"; sourceTree = "<group>"; };
 		A74F3EA22AC1992F0044D53A /* DancingScript-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Medium.ttf"; sourceTree = "<group>"; };
 		A74F3EA32AC1992F0044D53A /* DancingScript-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.ttf"; sourceTree = "<group>"; };
@@ -55,7 +57,6 @@
 		A7E022222689CFA400E79D70 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		A7E022232689CFA400E79D70 /* SavedCardsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedCardsAPI.swift; sourceTree = "<group>"; };
 		A7E022242689CFA400E79D70 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E6A5E194CBB9D1FC30AB5C77 /* Pods-PayU3DS2SwiftSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayU3DS2SwiftSample.release.xcconfig"; path = "Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample.release.xcconfig"; sourceTree = "<group>"; };
 		E82F2583270451770000D8DC /* PayU3DS2SDKHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayU3DS2SDKHelper.swift; sourceTree = "<group>"; };
 		E882F9732A9F8685009BECB7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		E882F97E2A9F95C4009BECB7 /* PayUCommonUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PayUCommonUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +65,6 @@
 		E8EAABDD2AFE6C7200B909F7 /* PayU3DS2CoreKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PayU3DS2CoreKit.xcframework; path = "/Users/shubham.garg/Documents/payu/payu-3ds2-sdk-ios/PayU3DS2/../Frameworks/PayU3DS2CoreKit.xcframework"; sourceTree = "<absolute>"; };
 		E8F68179267725BE00CBF305 /* PayU3DS2SwiftSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayU3DS2SwiftSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8F6818A267725BF00CBF305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8BC085649A8D9D67AB5E4E7 /* Pods-PayU3DS2SwiftSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayU3DS2SwiftSample.debug.xcconfig"; path = "Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,23 +72,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F815B1DFDACE271C6BF4B04 /* Pods_PayU3DS2SwiftSample.framework in Frameworks */,
+				C9B90383244086D617899DFC /* Pods_PayU3DS2SwiftSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1507D19DE6DD5A208E1B79B9 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F8BC085649A8D9D67AB5E4E7 /* Pods-PayU3DS2SwiftSample.debug.xcconfig */,
-				E6A5E194CBB9D1FC30AB5C77 /* Pods-PayU3DS2SwiftSample.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		A74F3E9F2AC1992F0044D53A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,13 +180,23 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		E2A9CCEE01A19B3FE29ADC19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				228EB4AAA98D1A18B2045617 /* Pods-PayU3DS2SwiftSample.debug.xcconfig */,
+				32CE200EA285B2736831C8B7 /* Pods-PayU3DS2SwiftSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E8F68170267725BE00CBF305 = {
 			isa = PBXGroup;
 			children = (
 				E8F6817B267725BE00CBF305 /* PayU3DS2SwiftSample */,
 				E8F6817A267725BE00CBF305 /* Products */,
 				E8F681942677264000CBF305 /* Frameworks */,
-				1507D19DE6DD5A208E1B79B9 /* Pods */,
+				E2A9CCEE01A19B3FE29ADC19 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -226,7 +226,7 @@
 				E882F97E2A9F95C4009BECB7 /* PayUCommonUI.framework */,
 				E8C31B2C2A9BBF950086FE9E /* PayU3DS2.framework */,
 				E8C31B2D2A9BBF950086FE9E /* PayUParamsKit.framework */,
-				946DAE20B596D45FDEE4219F /* Pods_PayU3DS2SwiftSample.framework */,
+				51ED949343826F08840A6438 /* Pods_PayU3DS2SwiftSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -238,11 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8F6818D267725BF00CBF305 /* Build configuration list for PBXNativeTarget "PayU3DS2SwiftSample" */;
 			buildPhases = (
-				4F728086ABD6D951C58BE0A0 /* [CP] Check Pods Manifest.lock */,
+				3A14315A1C5AB2B30B040A41 /* [CP] Check Pods Manifest.lock */,
 				E8F68175267725BE00CBF305 /* Sources */,
 				E8F68176267725BE00CBF305 /* Frameworks */,
 				E8F68177267725BE00CBF305 /* Resources */,
-				29258404EFD259B68B39BD38 /* [CP] Embed Pods Frameworks */,
+				4F31633BA28D87DBEAF35E6D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -307,24 +307,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		29258404EFD259B68B39BD38 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4F728086ABD6D951C58BE0A0 /* [CP] Check Pods Manifest.lock */ = {
+		3A14315A1C5AB2B30B040A41 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -344,6 +327,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F31633BA28D87DBEAF35E6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayU3DS2SwiftSample/Pods-PayU3DS2SwiftSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -507,7 +507,7 @@
 		};
 		E8F6818E267725BF00CBF305 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F8BC085649A8D9D67AB5E4E7 /* Pods-PayU3DS2SwiftSample.debug.xcconfig */;
+			baseConfigurationReference = 228EB4AAA98D1A18B2045617 /* Pods-PayU3DS2SwiftSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -532,7 +532,7 @@
 		};
 		E8F6818F267725BF00CBF305 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6A5E194CBB9D1FC30AB5C77 /* Pods-PayU3DS2SwiftSample.release.xcconfig */;
+			baseConfigurationReference = 32CE200EA285B2736831C8B7 /* Pods-PayU3DS2SwiftSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

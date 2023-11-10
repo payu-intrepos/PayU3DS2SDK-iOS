@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
                           }
   s.documentation_url   = "https://devguide.payu.in/mobile-sdk-ios/introduction-to-payu-mobile-sdk/"
   s.platform            = :ios , "11.0"
-  s.vendored_frameworks = 'PayU3DS2.xcframework'
+  s.vendored_frameworks = 'PayU3DS2Kit.xcframework'
 
   s.dependency            'PayUIndia-3DS2Core-SDK', '~> 1.0.0-alpha'
   s.dependency            'PayUIndia-NetworkReachability', '~> 1.0'
