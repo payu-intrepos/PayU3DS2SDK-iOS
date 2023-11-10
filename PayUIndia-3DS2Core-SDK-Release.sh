@@ -53,7 +53,7 @@ podName="PayUIndia-3DS2Core-SDK"
 podVersion="1.0.0-alpha"
 
 podSpec="${podName}.podspec"
-tag="${podVersion}"
+tag="${podName}${podVersion}"
 
 podLibLint ${podSpec} &&
 createLocalTag ${tag} &&
