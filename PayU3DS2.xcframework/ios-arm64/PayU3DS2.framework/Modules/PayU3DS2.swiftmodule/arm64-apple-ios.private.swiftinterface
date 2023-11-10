@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayU3DS2
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -23,7 +23,7 @@ import _StringProcessing
   @objc public var threeDSServerTransactionID: Swift.String
   @objc public init(acsSignedContent: Swift.String, acsRefNumber: Swift.String, acsTransactionID: Swift.String, threeDSServerTransactionID: Swift.String)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class PayU3DS2BaseConfig : ObjectiveC.NSObject {
   @objc public var isProduction: Swift.Bool
@@ -88,9 +88,9 @@ import _StringProcessing
   @objc public var isSiSupported: Swift.Int
   @objc public var isOtpOnTheFly: Swift.Int
   @objc public var messageVersion: Swift.String?
-  required public init(from decoder: any Swift.Decoder) throws
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
 }
 @objc public class PayU3DS2BaseCustomisation : ObjectiveC.NSObject {
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, textFontFamilyName: Swift.String?)
@@ -159,10 +159,10 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
 }
 @_inheritsConvenienceInitializers @objc public class PayU3DS2 : ObjectiveC.NSObject {
   @objc public static func initialise(key: Swift.String, requestId: Swift.String, config: PayU3DS2.PayU3DS2Config, completion: @escaping PayU3DS2.PayU3DS2Completion)
-  @objc public static func cardBinInfo(cardBinInfoRequest: PayU3DS2.PayU3DS2CardBinInfoRequest, delegate: any PayU3DS2.PayU3DS2HashDelegate, completion: @escaping PayU3DS2.PayU3DS2Completion)
+  @objc public static func cardBinInfo(cardBinInfoRequest: PayU3DS2.PayU3DS2CardBinInfoRequest, delegate: PayU3DS2.PayU3DS2HashDelegate, completion: @escaping PayU3DS2.PayU3DS2Completion)
   @objc public static func extractDeviceDetails(cardData: PayU3DS2.PayU3DS2CardData) -> PayU3DS2.PayU3DS2Response
   @objc public static func initiateChallenge(challengeParameter: PayU3DS2.PayU3DS2ChallengeParameter, completion: @escaping PayU3DS2.PayU3DS2Completion)
-  @objc public static func initiatePayment(vc: UIKit.UIViewController, config: PayU3DS2.PayU3DS2Config, paymentParams: PayU3DS2.PayU3DS2PaymentParam, delegate: any PayU3DS2.PayU3DS2Delegate)
+  @objc public static func initiatePayment(vc: UIKit.UIViewController, config: PayU3DS2.PayU3DS2Config, paymentParams: PayU3DS2.PayU3DS2PaymentParam, delegate: PayU3DS2.PayU3DS2Delegate)
   @objc public static func clean()
   @objc public static func start()
   @objc override dynamic public init()
@@ -217,8 +217,8 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public var deviceChannel: Swift.String, threeDSVersion: Swift.String
   @objc public init(sdkInfo: PayU3DS2.PayU3DS2SDKInfo, deviceChannel: Swift.String, threeDSVersion: Swift.String)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc public class PayU3DS2SDKInfo : ObjectiveC.NSObject, Swift.Codable {
   @objc public var sdkEncData: Swift.String, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, sdkTransID: Swift.String
@@ -227,23 +227,23 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public var sdkEphemPubKey: PayU3DS2.PayU3DS2SDKEphemPubKey
   @objc public init(sdkEncData: Swift.String, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, sdkTransID: Swift.String, sdkMaxTimeout: Swift.String, deviceRenderOptions: PayU3DS2.PayU3DS2DeviceRenderOptions, sdkEphemPubKey: PayU3DS2.PayU3DS2SDKEphemPubKey)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc public class PayU3DS2DeviceRenderOptions : ObjectiveC.NSObject, Swift.Codable {
   @objc public var sdkInterface: Swift.String
   @objc public var sdkUIType: [Swift.String]
   @objc public init(sdkInterface: Swift.String, sdkUIType: [Swift.String])
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc public class PayU3DS2SDKEphemPubKey : ObjectiveC.NSObject, Swift.Codable {
   @objc public var crv: Swift.String, kty: Swift.String, x: Swift.String, y: Swift.String
   @objc public init(crv: Swift.String, kty: Swift.String, x: Swift.String, y: Swift.String)
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 extension PayU3DS2.PayU3DS2ButtonTextCaseType : Swift.Equatable {}
 extension PayU3DS2.PayU3DS2ButtonTextCaseType : Swift.Hashable {}

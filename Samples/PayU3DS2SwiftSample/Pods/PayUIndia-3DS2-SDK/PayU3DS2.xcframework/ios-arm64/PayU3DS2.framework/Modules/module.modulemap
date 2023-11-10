@@ -1,0 +1,11 @@
+framework module PayU3DS2 {
+  umbrella header "PayU3DS2.h"
+
+  export *
+  module * { export * }
+}
+
+module PayU3DS2.Swift {
+  header "PayU3DS2-Swift.h"
+  requires objc
+}
