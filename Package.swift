@@ -31,6 +31,6 @@ let package = Package(
         ),
         
             .binaryTarget(name: "PayU3DS2CoreKit", path: "./PayU3DS2CoreKit.xcframework"),
-            .binaryTarget(name: "PayU3DS2Kit", path: "./PayU3DS2.xcframework")
+            .binaryTarget(name: "PayU3DS2Kit", path: "./PayU3DS2Kit.xcframework")
     ]
 )
