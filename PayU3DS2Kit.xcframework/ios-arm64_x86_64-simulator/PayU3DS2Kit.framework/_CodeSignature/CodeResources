@@ -8,42 +8,6 @@
 		<data>
 		5LsEVDJK1m3mv+7jLBTqdjbmF74=
 		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Assets.car</key>
-		<data>
-		67fmboEiGUKKC8UQGKkaPKkQVtc=
-		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Info.plist</key>
-		<data>
-		qUzqIDw34j3OKESNFhL/eR9sOX0=
-		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/PayU3DS2CoreKit</key>
-		<data>
-		F6G2hhEFTHmmD10+KDcFrR61q2Y=
-		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/PayULoaderView.nib</key>
-		<data>
-		gWf/hUambsAZl+2uM4k1CVYYzQE=
-		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Wibmo3ds.storyboardc/CResChallengeNavigationViewControllerStId.nib</key>
-		<data>
-		a95j0ZC/RnIgoLMx4QnYi9T9QKo=
-		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Wibmo3ds.storyboardc/CResChallengeTextViewControllerStId.nib</key>
-		<data>
-		uyvtRQBaQG5YpN/WEu36E9cpfv8=
-		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Wibmo3ds.storyboardc/Info.plist</key>
-		<data>
-		JbkjLLDK0j869/04HASolrh6xBc=
-		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Wibmo3ds.storyboardc/OKI-zx-C6y-view-D4k-Lz-Ta4.nib</key>
-		<data>
-		vKKhfoBHqFYk062KkHXEXO+W9Dk=
-		</data>
-		<key>Frameworks/PayU3DS2CoreKit.framework/_CodeSignature/CodeResources</key>
-		<data>
-		NWzoojp2Hl+aFxgRuojIUxBrXhM=
-		</data>
 		<key>Headers/PayU3DS2Kit-Swift.h</key>
 		<data>
 		HLUSQtYLmwXy+WiMS3gTL62PGlI=
@@ -108,69 +72,6 @@
 			<key>hash2</key>
 			<data>
 			e+WvMyFyEw8dw+s9A0VMCOCcCgPq+jCXYoxP1UIKFBA=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Z5fISwHWwCztX3zsJREbEihQwIZnuHmazmq/7Q+2z1A=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			29TuFhYvSb+wzi34AXqeQ/9ueqzjZMt3sN2j4rw/mvM=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/PayU3DS2CoreKit</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PrrLZ3MepS8LLVU5ewtoQ5F4kLbN7el+VIofbHef4jg=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/PayULoaderView.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xzBEFcpwyG+unYlz0ZLrtjjMjiwU6sJb9MLqFO6IvbY=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Wibmo3ds.storyboardc/CResChallengeNavigationViewControllerStId.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BPh6Telfd/2Mc4PEycsSlbFhKMvZi6wuSohgmlXaUBE=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Wibmo3ds.storyboardc/CResChallengeTextViewControllerStId.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			PoXKACgzuUhIpOg8BOmDcBEYV/zLSX/Ii0B+524AFdg=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Wibmo3ds.storyboardc/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ovKTVxdtKmyNM4RFaxg6ewSfqXEox5YdH94YtyaYUdE=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/Wibmo3ds.storyboardc/OKI-zx-C6y-view-D4k-Lz-Ta4.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/ZMlrjejYZBjkJqKFLGb/EftMHNGx4EOjx552hC6oFc=
-			</data>
-		</dict>
-		<key>Frameworks/PayU3DS2CoreKit.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			5svSaFKinPwLKQlagq84Gw3QR9UH44zISVmFUDhL5cQ=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2Kit-Swift.h</key>

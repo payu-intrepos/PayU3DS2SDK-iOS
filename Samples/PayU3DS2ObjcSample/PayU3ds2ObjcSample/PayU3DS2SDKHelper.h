@@ -7,7 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@import PayU3DS2;
+@import PayU3DS2Kit;
 
 @interface PayU3DS2SDKHelper: NSObject
 

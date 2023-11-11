@@ -5,7 +5,7 @@
 //  Created by Amit Salaria on 25/08/23.
 //
 
-import PayU3DS2
+import PayU3DS2Kit
 import UIKit
 // import PayUBizCoreKit
 // import PayUCustomBrowser

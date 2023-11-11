@@ -18,8 +18,8 @@ SPEC REPOS:
     - PayUIndia-NetworkReachability
 
 SPEC CHECKSUMS:
-  PayUIndia-3DS2-SDK: a3872bddbbd338efa4e05be67300e7e5cf22bf1e
-  PayUIndia-3DS2Core-SDK: 4454c2e93389d5dfe362530cc8039c93ad0678c2
+  PayUIndia-3DS2-SDK: e046fb302d6902359a7b1436411307a3bb49f02c
+  PayUIndia-3DS2Core-SDK: c96e79c833149006073301226c265a0aa6de0bb2
   PayUIndia-CrashReporter: 597caf134e85f9b3bde7d2045cae2def1b86c544
   PayUIndia-NetworkReachability: 99e69781b3be99d7b713075ab7b73e6d73a153e4
 

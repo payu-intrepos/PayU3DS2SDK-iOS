@@ -1,10 +1,11 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'PayU3DS2SwiftSample' do
+target 'PayU3DS2ObjcSample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for PayU3DS2SwiftSample
-    pod 'PayUIndia-3DS2-SDK', '1.0.0-alpha'
+  # Pods for PayU3DS2ObjcSample
+pod 'PayUIndia-3DS2-SDK', '1.0.0-alpha'
+
 end
