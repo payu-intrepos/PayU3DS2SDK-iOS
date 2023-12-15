@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayU3DS2Kit
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name PayU3DS2Kit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import PayU3DS2CoreKit
@@ -34,6 +34,19 @@ import _StringProcessing
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayU3DS2ValidatorHelper : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
+}
+@objc public class PayU3DS2PArqResponse : ObjectiveC.NSObject, Swift.Encodable {
+  @objc public var sdkAppID: Swift.String
+  @objc public var sdkEncData: Swift.String
+  @objc public var crv: Swift.String
+  @objc public var kty: Swift.String
+  @objc public var x: Swift.String
+  @objc public var y: Swift.String
+  @objc public var sdkTransID: Swift.String
+  @objc public var sdkReferenceNumber: Swift.String
+  @objc public init(sdkAppID: Swift.String, sdkEncData: Swift.String, crv: Swift.String, kty: Swift.String, x: Swift.String, y: Swift.String, sdkTransID: Swift.String, sdkReferenceNumber: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class PayU3DS2HashConstants : ObjectiveC.NSObject {
   @objc public static let hashString: Swift.String
@@ -106,9 +119,18 @@ import _StringProcessing
   @objc deinit
 }
 @objc public enum PayU3DS2CardScheme : Swift.Int {
+  case masterCard
   case visa
-  case mastercard
-  case none
+  case jcb
+  case amex
+  case maestro
+  case rupay
+  case discover
+  case dinersClub
+  case laser
+  case stateBankMaestro
+  case unknown
+  case sodexo
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -140,6 +162,14 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
 }
 @objc public class PayU3DS2ToolBarCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, textFontFamilyName: Swift.String?, backgroundColor: Swift.String?, buttonText: Swift.String?, headerText: Swift.String?)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class PayU3DS2Error : ObjectiveC.NSObject, Foundation.LocalizedError {
+  @objc public var message: Swift.String
+  @objc public var errorCode: Swift.Int
+  @objc public var errorDescription: Swift.String? {
+    @objc get
+  }
   @objc deinit
 }
 @objc public class PayU3DS2Response : ObjectiveC.NSObject {
@@ -198,7 +228,10 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
 @_inheritsConvenienceInitializers @objc public class PayU3DS2CardInfo : ObjectiveC.NSObject {
   @objc public var cardName: Swift.String?
   @objc public var cardAlias: Swift.String?
-  @objc public var cardNumber: Swift.String?
+  @objc public var cardNumber: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc public var expiryMonth: Swift.String?
   @objc public var expiryYear: Swift.String?
   @objc public var cvv: Swift.String?

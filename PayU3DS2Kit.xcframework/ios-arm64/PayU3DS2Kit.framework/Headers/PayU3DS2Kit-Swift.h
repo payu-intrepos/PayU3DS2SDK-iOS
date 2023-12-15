@@ -366,9 +366,18 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit16PayU3DS2CardInfo")
 @end
 
 typedef SWIFT_ENUM(NSInteger, PayU3DS2CardScheme, open) {
-  PayU3DS2CardSchemeVisa = 0,
-  PayU3DS2CardSchemeMastercard = 1,
-  PayU3DS2CardSchemeNone = 2,
+  PayU3DS2CardSchemeMasterCard = 0,
+  PayU3DS2CardSchemeVisa = 1,
+  PayU3DS2CardSchemeJcb = 2,
+  PayU3DS2CardSchemeAmex = 3,
+  PayU3DS2CardSchemeMaestro = 4,
+  PayU3DS2CardSchemeRupay = 5,
+  PayU3DS2CardSchemeDiscover = 6,
+  PayU3DS2CardSchemeDinersClub = 7,
+  PayU3DS2CardSchemeLaser = 8,
+  PayU3DS2CardSchemeStateBankMaestro = 9,
+  PayU3DS2CardSchemeUnknown = 10,
+  PayU3DS2CardSchemeSodexo = 11,
 };
 
 
@@ -438,6 +447,16 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit21PayU3DS2DeviceWarning")
 @end
 
 
+SWIFT_CLASS("_TtC11PayU3DS2Kit13PayU3DS2Error")
+@interface PayU3DS2Error : NSObject
+@property (nonatomic, copy) NSString * _Nonnull message;
+@property (nonatomic) NSInteger errorCode;
+@property (nonatomic, readonly, copy) NSString * _Nullable errorDescription;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11PayU3DS2Kit21PayU3DS2HashConstants")
 @interface PayU3DS2HashConstants : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashString;)
@@ -457,6 +476,22 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2LabelCustomisation")
 @interface PayU3DS2LabelCustomisation : PayU3DS2BaseCustomisation
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontFamilyName:(NSString * _Nullable)headingTextFontFamilyName headingTextFontSize:(NSInteger)headingTextFontSize OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+@end
+
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit20PayU3DS2PArqResponse")
+@interface PayU3DS2PArqResponse : NSObject
+@property (nonatomic, copy) NSString * _Nonnull sdkAppID;
+@property (nonatomic, copy) NSString * _Nonnull sdkEncData;
+@property (nonatomic, copy) NSString * _Nonnull crv;
+@property (nonatomic, copy) NSString * _Nonnull kty;
+@property (nonatomic, copy) NSString * _Nonnull x;
+@property (nonatomic, copy) NSString * _Nonnull y;
+@property (nonatomic, copy) NSString * _Nonnull sdkTransID;
+@property (nonatomic, copy) NSString * _Nonnull sdkReferenceNumber;
+- (nonnull instancetype)initWithSdkAppID:(NSString * _Nonnull)sdkAppID sdkEncData:(NSString * _Nonnull)sdkEncData crv:(NSString * _Nonnull)crv kty:(NSString * _Nonnull)kty x:(NSString * _Nonnull)x y:(NSString * _Nonnull)y sdkTransID:(NSString * _Nonnull)sdkTransID sdkReferenceNumber:(NSString * _Nonnull)sdkReferenceNumber OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class PayU3DS2SDKInfo;
