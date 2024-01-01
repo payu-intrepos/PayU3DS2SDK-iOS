@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -module-name PayU3DS2Kit
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayU3DS2Kit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import PayU3DS2CoreKit
@@ -13,7 +13,7 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 @objc public class PayU3DS2TextBoxCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
-  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, textFontFamilyName: Swift.String?, borderColor: Swift.String?, borderWidth: Swift.Int, cornerRadius: Swift.Int)
+  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, borderColor: Swift.String?, borderWidth: Swift.Int, cornerRadius: Swift.Int)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class PayU3DS2ChallengeParameter : ObjectiveC.NSObject, Swift.Encodable {
@@ -48,6 +48,10 @@ import _StringProcessing
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
+@objc public class PayU3DS2FontFamilyCustomisation : ObjectiveC.NSObject {
+  @objc public init(headerFontFamily: Swift.String?, subTextFontFamily: Swift.String?)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class PayU3DS2HashConstants : ObjectiveC.NSObject {
   @objc public static let hashString: Swift.String
   @objc public static let hashType: Swift.String
@@ -57,7 +61,7 @@ import _StringProcessing
   @objc deinit
 }
 @objc public class PayU3DS2LabelCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
-  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, textFontFamilyName: Swift.String?, headingTextColor: Swift.String?, headingTextFontFamilyName: Swift.String?, headingTextFontSize: Swift.Int)
+  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, headingTextColor: Swift.String?, headingTextFontSize: Swift.Int)
   @objc deinit
 }
 @objc public enum PayU3DS2ButtonTextCaseType : Swift.Int {
@@ -71,7 +75,7 @@ import _StringProcessing
   }
 }
 @objc public class PayU3DS2ButtonCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
-  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, textFontFamilyName: Swift.String?, backgroundColor: Swift.String?, cornerRadius: Swift.Int, resendButtonTextFontColor: Swift.String?, textCaseType: PayU3DS2Kit.PayU3DS2ButtonTextCaseType = .default)
+  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, backgroundColor: Swift.String?, cornerRadius: Swift.Int, resendButtonTextFontColor: Swift.String?, textCaseType: PayU3DS2Kit.PayU3DS2ButtonTextCaseType = .default)
   @objc deinit
 }
 @objc public enum PayU3DS2DeviceSeverity : Swift.Int {
@@ -106,7 +110,7 @@ import _StringProcessing
   public func encode(to encoder: Swift.Encoder) throws
 }
 @objc public class PayU3DS2BaseCustomisation : ObjectiveC.NSObject {
-  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, textFontFamilyName: Swift.String?)
+  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayU3DS2Config : PayU3DS2Kit.PayU3DS2BaseConfig {
@@ -161,7 +165,7 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc deinit
 }
 @objc public class PayU3DS2ToolBarCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
-  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, textFontFamilyName: Swift.String?, backgroundColor: Swift.String?, buttonText: Swift.String?, headerText: Swift.String?)
+  @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, backgroundColor: Swift.String?, buttonText: Swift.String?, headerText: Swift.String?)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class PayU3DS2Error : ObjectiveC.NSObject, Foundation.LocalizedError {
@@ -242,7 +246,7 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc deinit
 }
 @objc public class PayU3DS2UICustomisation : ObjectiveC.NSObject {
-  @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation?, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation?, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation?, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation?)
+  @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil)
   @objc deinit
 }
 @objc public class PayU3DS2Params : ObjectiveC.NSObject, Swift.Codable {

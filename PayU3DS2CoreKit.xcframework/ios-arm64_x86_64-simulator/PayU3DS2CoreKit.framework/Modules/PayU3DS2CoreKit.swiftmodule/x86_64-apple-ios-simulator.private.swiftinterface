@@ -402,6 +402,16 @@ public enum SDKLoadingType {
   case progress
   case logo(logoImageName: Swift.String)
 }
+@_inheritsConvenienceInitializers @objc public class FontFamilyCustomization : ObjectiveC.NSObject {
+  @objc public var headerFontFamilyName: Swift.String
+  @objc public var textFontFamilyName: Swift.String
+  @objc public func setHeaderFontFamily(_ fontName: Swift.String)
+  @objc public func getHeadingTextFontName() -> Swift.String
+  @objc public func setTextFontFamily(_ fontName: Swift.String)
+  @objc public func getTextFontFamily() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public protocol Transaction {
   @objc func getAuthenticationRequestParameters() -> PayU3DS2CoreKit.AuthenticationRequestParameters
   @objc func doChallenge(_ challengeParameters: PayU3DS2CoreKit.ChallengeParameters, challengeStatusReceiver: PayU3DS2CoreKit.ChallengeStatusReceiver, timeOut: Swift.Int) throws
@@ -2859,19 +2869,22 @@ public struct WFCBC : PayU3DS2CoreKit.WFBlockMode {
   public func worker(blockSize: Swift.Int, cipherOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock, encryptionOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock) throws -> PayU3DS2CoreKit.WFCipherModeWorker
 }
 @objc public class UiCustomization : ObjectiveC.NSObject {
-  @objc public var btnCustomizations: Swift.Dictionary<Swift.String, PayU3DS2CoreKit.ButtonCustomization> {
+  @objc public var btnCustomizations: Swift.Dictionary<Swift.String, PayU3DS2CoreKit.ButtonCustomization>? {
     get
   }
-  @objc public var tbrCustomization: PayU3DS2CoreKit.ToolbarCustomization {
+  @objc public var tbrCustomization: PayU3DS2CoreKit.ToolbarCustomization? {
     get
   }
-  @objc public var lblCustomization: PayU3DS2CoreKit.LabelCustomization {
+  @objc public var lblCustomization: PayU3DS2CoreKit.LabelCustomization? {
     get
   }
-  @objc public var txtBxCustomization: PayU3DS2CoreKit.TextBoxCustomization {
+  @objc public var txtBxCustomization: PayU3DS2CoreKit.TextBoxCustomization? {
     get
   }
-  @objc public init(btnCustomizations: Swift.Dictionary<Swift.String, PayU3DS2CoreKit.ButtonCustomization>, tbrCustomization: PayU3DS2CoreKit.ToolbarCustomization, lblCustomization: PayU3DS2CoreKit.LabelCustomization, txtBxCustomization: PayU3DS2CoreKit.TextBoxCustomization)
+  @objc public var fontFamilyCustomization: PayU3DS2CoreKit.FontFamilyCustomization? {
+    get
+  }
+  @objc public init(btnCustomizations: Swift.Dictionary<Swift.String, PayU3DS2CoreKit.ButtonCustomization>?, tbrCustomization: PayU3DS2CoreKit.ToolbarCustomization?, lblCustomization: PayU3DS2CoreKit.LabelCustomization?, txtBxCustomization: PayU3DS2CoreKit.TextBoxCustomization?, fontFamilyCustomization: PayU3DS2CoreKit.FontFamilyCustomization?)
   @objc open class func customizeUI() -> PayU3DS2CoreKit.UiCustomization
   @objc public enum ButtonTypeInt : Swift.Int {
     case VERIFY = 0
@@ -2904,10 +2917,12 @@ public struct WFCBC : PayU3DS2CoreKit.WFBlockMode {
   @objc public func setToolbarCustomization(_ toolbarCustomization: PayU3DS2CoreKit.ToolbarCustomization) throws
   @objc public func setLabelCustomization(_ labelCustomization: PayU3DS2CoreKit.LabelCustomization) throws
   @objc public func setTextBoxCustomization(_ textBoxCustomization: PayU3DS2CoreKit.TextBoxCustomization) throws
-  @objc public func getButtonCustomization(_ buttonType: PayU3DS2CoreKit.UiCustomization.ButtonTypeInt) throws -> PayU3DS2CoreKit.ButtonCustomization
-  @objc public func getToolbarCustomization() -> PayU3DS2CoreKit.ToolbarCustomization
-  @objc public func getLabelCustomization() -> PayU3DS2CoreKit.LabelCustomization
-  @objc public func getTextBoxCustomization() -> PayU3DS2CoreKit.TextBoxCustomization
+  @objc public func setFontFamilyCustomization(_ fontFamilyCustomization: PayU3DS2CoreKit.FontFamilyCustomization) throws
+  @objc public func getButtonCustomization(_ buttonType: PayU3DS2CoreKit.UiCustomization.ButtonTypeInt) -> PayU3DS2CoreKit.ButtonCustomization?
+  @objc public func getToolbarCustomization() -> PayU3DS2CoreKit.ToolbarCustomization?
+  @objc public func getLabelCustomization() -> PayU3DS2CoreKit.LabelCustomization?
+  @objc public func getTextBoxCustomization() -> PayU3DS2CoreKit.TextBoxCustomization?
+  @objc public func getFontFamilyCustomization() -> PayU3DS2CoreKit.FontFamilyCustomization?
   @objc deinit
 }
 @objc public protocol ChallengeStatusReceiver {

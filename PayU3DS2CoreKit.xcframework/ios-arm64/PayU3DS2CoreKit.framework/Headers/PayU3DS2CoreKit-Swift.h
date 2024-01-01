@@ -413,6 +413,18 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit17ExceptionReceiver_")
 - (void)didReceiveInvalidAcsUITypeException:(NSString * _Nonnull)acsUIType;
 @end
 
+
+SWIFT_CLASS("_TtC15PayU3DS2CoreKit23FontFamilyCustomization")
+@interface FontFamilyCustomization : NSObject
+@property (nonatomic, copy) NSString * _Nonnull headerFontFamilyName;
+@property (nonatomic, copy) NSString * _Nonnull textFontFamilyName;
+- (void)setHeaderFontFamily:(NSString * _Nonnull)fontName;
+- (NSString * _Nonnull)getHeadingTextFontName SWIFT_WARN_UNUSED_RESULT;
+- (void)setTextFontFamily:(NSString * _Nonnull)fontName;
+- (NSString * _Nonnull)getTextFontFamily SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @protocol SDKChallengeProtocol;
 
 SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit24GenericChallengeProtocol_")
@@ -715,6 +727,7 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit11Transaction_")
 
 
 
+
 @class UIColor;
 
 @interface UIView (SWIFT_EXTENSION(PayU3DS2CoreKit))
@@ -732,11 +745,12 @@ enum ButtonTypeInt : NSInteger;
 /// to customize the 3DS SDK UI elements. An object of this class holds various UI-related parameters
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit15UiCustomization")
 @interface UiCustomization : NSObject
-@property (nonatomic, readonly, copy) NSDictionary<NSString *, ButtonCustomization *> * _Nonnull btnCustomizations;
-@property (nonatomic, readonly, strong) ToolbarCustomization * _Nonnull tbrCustomization;
-@property (nonatomic, readonly, strong) LabelCustomization * _Nonnull lblCustomization;
-@property (nonatomic, readonly, strong) TextBoxCustomization * _Nonnull txtBxCustomization;
-- (nonnull instancetype)initWithBtnCustomizations:(NSDictionary<NSString *, ButtonCustomization *> * _Nonnull)btnCustomizations tbrCustomization:(ToolbarCustomization * _Nonnull)tbrCustomization lblCustomization:(LabelCustomization * _Nonnull)lblCustomization txtBxCustomization:(TextBoxCustomization * _Nonnull)txtBxCustomization OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, ButtonCustomization *> * _Nullable btnCustomizations;
+@property (nonatomic, readonly, strong) ToolbarCustomization * _Nullable tbrCustomization;
+@property (nonatomic, readonly, strong) LabelCustomization * _Nullable lblCustomization;
+@property (nonatomic, readonly, strong) TextBoxCustomization * _Nullable txtBxCustomization;
+@property (nonatomic, readonly, strong) FontFamilyCustomization * _Nullable fontFamilyCustomization;
+- (nonnull instancetype)initWithBtnCustomizations:(NSDictionary<NSString *, ButtonCustomization *> * _Nullable)btnCustomizations tbrCustomization:(ToolbarCustomization * _Nullable)tbrCustomization lblCustomization:(LabelCustomization * _Nullable)lblCustomization txtBxCustomization:(TextBoxCustomization * _Nullable)txtBxCustomization fontFamilyCustomization:(FontFamilyCustomization * _Nullable)fontFamilyCustomization OBJC_DESIGNATED_INITIALIZER;
 + (UiCustomization * _Nonnull)customizeUI SWIFT_WARN_UNUSED_RESULT;
 /// Sets the attributes of a ButtonCustomization object for an implementer-specific button type.
 - (BOOL)setButtonCustomization:(ButtonCustomization * _Nonnull)buttonCustomization :(enum ButtonTypeInt)buttonType error:(NSError * _Nullable * _Nullable)error;
@@ -746,14 +760,18 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit15UiCustomization")
 - (BOOL)setLabelCustomization:(LabelCustomization * _Nonnull)labelCustomization error:(NSError * _Nullable * _Nullable)error;
 /// Sets the attributes of a TextBoxCustomization object.
 - (BOOL)setTextBoxCustomization:(TextBoxCustomization * _Nonnull)textBoxCustomization error:(NSError * _Nullable * _Nullable)error;
+/// Sets the attributes of a FontFamilyCustomization object.
+- (BOOL)setFontFamilyCustomization:(FontFamilyCustomization * _Nonnull)fontFamilyCustomization error:(NSError * _Nullable * _Nullable)error;
 /// Returns a ButtonCustomization object.
-- (ButtonCustomization * _Nullable)getButtonCustomization:(enum ButtonTypeInt)buttonType error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (ButtonCustomization * _Nullable)getButtonCustomization:(enum ButtonTypeInt)buttonType SWIFT_WARN_UNUSED_RESULT;
 /// Returns a ToolbarCustomization object.
-- (ToolbarCustomization * _Nonnull)getToolbarCustomization SWIFT_WARN_UNUSED_RESULT;
+- (ToolbarCustomization * _Nullable)getToolbarCustomization SWIFT_WARN_UNUSED_RESULT;
 /// Returns a LabelCustomization object.
-- (LabelCustomization * _Nonnull)getLabelCustomization SWIFT_WARN_UNUSED_RESULT;
+- (LabelCustomization * _Nullable)getLabelCustomization SWIFT_WARN_UNUSED_RESULT;
 /// Returns a TextBoxCustomization object.
-- (TextBoxCustomization * _Nonnull)getTextBoxCustomization SWIFT_WARN_UNUSED_RESULT;
+- (TextBoxCustomization * _Nullable)getTextBoxCustomization SWIFT_WARN_UNUSED_RESULT;
+/// Returns a TextBoxCustomization object.
+- (FontFamilyCustomization * _Nullable)getFontFamilyCustomization SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

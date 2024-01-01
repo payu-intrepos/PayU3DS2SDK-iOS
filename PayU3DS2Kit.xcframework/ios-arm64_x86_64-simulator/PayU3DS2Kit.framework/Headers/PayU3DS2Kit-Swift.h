@@ -288,7 +288,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit18PayU3DS2BaseConfig")
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit25PayU3DS2BaseCustomisation")
 @interface PayU3DS2BaseCustomisation : NSObject
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -319,8 +319,8 @@ enum PayU3DS2ButtonTextCaseType : NSInteger;
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit27PayU3DS2ButtonCustomisation")
 @interface PayU3DS2ButtonCustomisation : PayU3DS2BaseCustomisation
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName backgroundColor:(NSString * _Nullable)backgroundColor cornerRadius:(NSInteger)cornerRadius resendButtonTextFontColor:(NSString * _Nullable)resendButtonTextFontColor textCaseType:(enum PayU3DS2ButtonTextCaseType)textCaseType OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize backgroundColor:(NSString * _Nullable)backgroundColor cornerRadius:(NSInteger)cornerRadius resendButtonTextFontColor:(NSString * _Nullable)resendButtonTextFontColor textCaseType:(enum PayU3DS2ButtonTextCaseType)textCaseType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PayU3DS2ButtonTextCaseType, open) {
@@ -457,6 +457,14 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit13PayU3DS2Error")
 @end
 
 
+SWIFT_CLASS("_TtC11PayU3DS2Kit31PayU3DS2FontFamilyCustomisation")
+@interface PayU3DS2FontFamilyCustomisation : NSObject
+- (nonnull instancetype)initWithHeaderFontFamily:(NSString * _Nullable)headerFontFamily subTextFontFamily:(NSString * _Nullable)subTextFontFamily OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11PayU3DS2Kit21PayU3DS2HashConstants")
 @interface PayU3DS2HashConstants : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashString;)
@@ -474,8 +482,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2LabelCustomisation")
 @interface PayU3DS2LabelCustomisation : PayU3DS2BaseCustomisation
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontFamilyName:(NSString * _Nullable)headingTextFontFamilyName headingTextFontSize:(NSInteger)headingTextFontSize OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontSize:(NSInteger)headingTextFontSize OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
 
@@ -571,21 +579,21 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit15PayU3DS2SDKInfo")
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2TextBoxCustomisation")
 @interface PayU3DS2TextBoxCustomisation : PayU3DS2BaseCustomisation
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName borderColor:(NSString * _Nullable)borderColor borderWidth:(NSInteger)borderWidth cornerRadius:(NSInteger)cornerRadius OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize borderColor:(NSString * _Nullable)borderColor borderWidth:(NSInteger)borderWidth cornerRadius:(NSInteger)cornerRadius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2ToolBarCustomisation")
 @interface PayU3DS2ToolBarCustomisation : PayU3DS2BaseCustomisation
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName backgroundColor:(NSString * _Nullable)backgroundColor buttonText:(NSString * _Nullable)buttonText headerText:(NSString * _Nullable)headerText OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize backgroundColor:(NSString * _Nullable)backgroundColor buttonText:(NSString * _Nullable)buttonText headerText:(NSString * _Nullable)headerText OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit23PayU3DS2UICustomisation")
 @interface PayU3DS2UICustomisation : NSObject
-- (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation fontFamilyCustomisation:(PayU3DS2FontFamilyCustomisation * _Nullable)fontFamilyCustomisation OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -913,7 +921,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit18PayU3DS2BaseConfig")
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit25PayU3DS2BaseCustomisation")
 @interface PayU3DS2BaseCustomisation : NSObject
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -944,8 +952,8 @@ enum PayU3DS2ButtonTextCaseType : NSInteger;
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit27PayU3DS2ButtonCustomisation")
 @interface PayU3DS2ButtonCustomisation : PayU3DS2BaseCustomisation
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName backgroundColor:(NSString * _Nullable)backgroundColor cornerRadius:(NSInteger)cornerRadius resendButtonTextFontColor:(NSString * _Nullable)resendButtonTextFontColor textCaseType:(enum PayU3DS2ButtonTextCaseType)textCaseType OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize backgroundColor:(NSString * _Nullable)backgroundColor cornerRadius:(NSInteger)cornerRadius resendButtonTextFontColor:(NSString * _Nullable)resendButtonTextFontColor textCaseType:(enum PayU3DS2ButtonTextCaseType)textCaseType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
 typedef SWIFT_ENUM(NSInteger, PayU3DS2ButtonTextCaseType, open) {
@@ -1082,6 +1090,14 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit13PayU3DS2Error")
 @end
 
 
+SWIFT_CLASS("_TtC11PayU3DS2Kit31PayU3DS2FontFamilyCustomisation")
+@interface PayU3DS2FontFamilyCustomisation : NSObject
+- (nonnull instancetype)initWithHeaderFontFamily:(NSString * _Nullable)headerFontFamily subTextFontFamily:(NSString * _Nullable)subTextFontFamily OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC11PayU3DS2Kit21PayU3DS2HashConstants")
 @interface PayU3DS2HashConstants : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashString;)
@@ -1099,8 +1115,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2LabelCustomisation")
 @interface PayU3DS2LabelCustomisation : PayU3DS2BaseCustomisation
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontFamilyName:(NSString * _Nullable)headingTextFontFamilyName headingTextFontSize:(NSInteger)headingTextFontSize OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontSize:(NSInteger)headingTextFontSize OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
 
@@ -1196,21 +1212,21 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit15PayU3DS2SDKInfo")
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2TextBoxCustomisation")
 @interface PayU3DS2TextBoxCustomisation : PayU3DS2BaseCustomisation
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName borderColor:(NSString * _Nullable)borderColor borderWidth:(NSInteger)borderWidth cornerRadius:(NSInteger)cornerRadius OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize borderColor:(NSString * _Nullable)borderColor borderWidth:(NSInteger)borderWidth cornerRadius:(NSInteger)cornerRadius OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2ToolBarCustomisation")
 @interface PayU3DS2ToolBarCustomisation : PayU3DS2BaseCustomisation
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName backgroundColor:(NSString * _Nullable)backgroundColor buttonText:(NSString * _Nullable)buttonText headerText:(NSString * _Nullable)headerText OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize textFontFamilyName:(NSString * _Nullable)textFontFamilyName SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize backgroundColor:(NSString * _Nullable)backgroundColor buttonText:(NSString * _Nullable)buttonText headerText:(NSString * _Nullable)headerText OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit23PayU3DS2UICustomisation")
 @interface PayU3DS2UICustomisation : NSObject
-- (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation fontFamilyCustomisation:(PayU3DS2FontFamilyCustomisation * _Nullable)fontFamilyCustomisation OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
