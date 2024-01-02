@@ -10,6 +10,7 @@ import Foundation
 @objc class SampleAppConstants: NSObject {
     @objc static let key = "key"
     @objc static let salt = "salt"
+    @objc static let transactionId = "transactionId"
     @objc static let amount = "amount"
     @objc static let email = "email"
     @objc static let cardNumber = "cardNumber"

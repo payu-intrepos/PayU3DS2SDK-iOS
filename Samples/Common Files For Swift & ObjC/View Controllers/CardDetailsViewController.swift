@@ -18,6 +18,7 @@ class CardDetailsViewController: BaseViewController {
     var amount: String = ""
     var email: String = ""
     var userCredential: String = ""
+    var transactionId: String = ""
 
     var cardNumber: String = ""
     var cardExpiryMonth: String = ""
@@ -200,6 +201,7 @@ class CardDetailsViewController: BaseViewController {
         dict[SampleAppConstants.networkToken] = networkToken
         dict[SampleAppConstants.userCredential] = userCredential
         dict[SampleAppConstants.saveCard] = savedSwitch.isOn
+        dict[SampleAppConstants.transactionId] = transactionId
         return dict
     }
 

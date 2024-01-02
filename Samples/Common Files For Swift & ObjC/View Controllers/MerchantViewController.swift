@@ -11,17 +11,7 @@ import UIKit
 class MerchantViewController: BaseViewController {
     // MARK: - Variables -
 
-    let keySalt = [["2qWimx", "WbuCTeAMwq0siCKqRHHm5BHBrQwmhgOT"],
-                   ["V2yqBC", "dEzD8BBD"],
-                   ["0MQaQP", "7tVMWdl6"],
-                   ["smsplus", "1b1b0"],
-                   ["ol4Spy", "J0ZXw2z9"],
-                   ["obScKz", "Ml7XBCdR"],
-                   ["gtKFFx", "eCwWELxi"],
-                   ["Rl8Pdr", "wsl9kqyy"],
-                   ["smsplus", "350"],
-                   ["IUIaFM", "67njRYSI"],
-                   ["F53fW7", "PPIzLXEo"]]
+    let keySalt = [["2qWimx", "WbuCTeAMwq0siCKqRHHm5BHBrQwmhgOT"]]
 
     let indexKeySalt = 0
     var amount: String = "1"
@@ -32,6 +22,7 @@ class MerchantViewController: BaseViewController {
 
     @IBOutlet var keyTextField: UITextField!
     @IBOutlet var saltTextField: UITextField!
+    @IBOutlet var transactionIdTextField: UITextField!
     @IBOutlet var amountTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var userCredentialTextField: UITextField!
@@ -65,6 +56,10 @@ class MerchantViewController: BaseViewController {
     @IBOutlet var toolbarFontColorTextField: UITextField!
     @IBOutlet var toolbarFontSizeTextField: UITextField!
     @IBOutlet var toolbarFontNameTextField: UITextField!
+    // Font Family
+    @IBOutlet var headerFontNameTextField: UITextField!
+    @IBOutlet var subtextFontNameTextField: UITextField!
+
     // Config
     @IBOutlet var isProductionSwitch: UISwitch!
     @IBOutlet var fallback3DS1Switch: UISwitch!
@@ -83,6 +78,10 @@ class MerchantViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setUpValuesInTextFields()
     }
 
@@ -94,15 +93,16 @@ class MerchantViewController: BaseViewController {
         vc.amount = amountTextField.text ?? ""
         vc.email = emailTextField.text ?? ""
         vc.userCredential = userCredentialTextField.text ?? ""
+        vc.transactionId = transactionIdTextField.text ?? ""
         vc.config = getSDKConfig()
     }
 
     // MARK: - IBActions -
 
-    @IBAction func customiseUISwitchAction(_ sender: Any) {
+    @IBAction func customiseUISwitchAction(_: Any) {
         customizeUIStackView.isHidden = !customizeUISwitch.isOn
     }
-    
+
     @IBAction func nextButtonAction(_: Any) {
         view.endEditing(true)
         performSegue(withIdentifier: kCardDetailsViewController, sender: nil)
@@ -118,6 +118,7 @@ extension MerchantViewController {
         amountTextField.text = amount
         emailTextField.text = email
         userCredentialTextField.text = userCredential
+        transactionIdTextField.text = "iOS\(Int64(Date().timeIntervalSince1970))"
     }
 
     private func updateNextButtonVisibility() {
@@ -131,7 +132,8 @@ extension MerchantViewController {
             buttonCustomisation: getButtonCustomisation(),
             labelCustomisation: getLabelCustomisation(),
             textBoxCustomisation: getTextboxCustomisation(),
-            toolbarCustomisation: getToolbarCustomisation()
+            toolbarCustomisation: getToolbarCustomisation(),
+            fontFamilyCustomisation: getFontFamilyCustomisation()
         )
     }
 
@@ -139,7 +141,6 @@ extension MerchantViewController {
         PayU3DS2ButtonCustomisation(
             textFontColor: buttonFontColorTextFields[2].text,
             textFontSize: Int(buttonFontSizeTextFields[2].text ?? "0") ?? 0,
-            textFontFamilyName: buttonFontNameTextFields[2].text,
             backgroundColor: buttonBackgroundColorTextFields[2].text,
             cornerRadius: Int(buttonCornerRadiusTextFields[2].text ?? "0") ?? 0,
             resendButtonTextFontColor: resendFontColorTextField.text,
@@ -159,9 +160,7 @@ extension MerchantViewController {
         PayU3DS2LabelCustomisation(
             textFontColor: labelFontColorTextField.text,
             textFontSize: Int(labelFontSizeTextField.text ?? "0") ?? 0,
-            textFontFamilyName: labelFontNameTextField.text,
             headingTextColor: labelHeaderFontColorTextField.text,
-            headingTextFontFamilyName: labelHeaderFontNameTextField.text,
             headingTextFontSize: Int(labelHeaderFontSizeTextField.text ?? "0") ?? 0
         )
     }
@@ -170,7 +169,6 @@ extension MerchantViewController {
         PayU3DS2TextBoxCustomisation(
             textFontColor: textboxFontColorTextField.text,
             textFontSize: Int(textboxFontSizeTextField.text ?? "0") ?? 0,
-            textFontFamilyName: textboxFontNameTextField.text,
             borderColor: textboxBorderColorTextField.text,
             borderWidth: Int(textboxBorderWidthTextField.text ?? "0") ?? 0,
             cornerRadius: Int(textboxCornerRadiusTextField.text ?? "0") ?? 0
@@ -181,10 +179,16 @@ extension MerchantViewController {
         PayU3DS2ToolBarCustomisation(
             textFontColor: toolbarFontColorTextField.text,
             textFontSize: Int(toolbarFontSizeTextField.text ?? "0") ?? 0,
-            textFontFamilyName: toolbarFontNameTextField.text,
             backgroundColor: toolbarBackgroundColorTextField.text,
             buttonText: toolbarButtonTextTextField.text,
             headerText: toolbarHeaderTextTextField.text
+        )
+    }
+
+    private func getFontFamilyCustomisation() -> PayU3DS2FontFamilyCustomisation {
+        PayU3DS2FontFamilyCustomisation(
+            headerFontFamily: headerFontNameTextField.text,
+            subTextFontFamily: subtextFontNameTextField.text
         )
     }
 

@@ -6,5 +6,5 @@ target 'PayU3DS2SwiftSample' do
   use_frameworks!
 
   # Pods for PayU3DS2SwiftSample
-    pod 'PayUIndia-3DS2-SDK', '1.0.0-alpha.1'
+   pod 'PayUIndia-3DS2-SDK', '1.0.0-alpha.3'
 end

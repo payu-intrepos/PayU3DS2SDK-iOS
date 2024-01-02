@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -119,6 +119,7 @@
 		38C82EA907180AFDBEE1592B6A08484B /* PayUIndia-NetworkReachability.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PayUIndia-NetworkReachability.release.xcconfig"; sourceTree = "<group>"; };
 		3BB9B95ADCAC76BA55E161A1D263F7C5 /* PayUIndia-CrashReporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PayUIndia-CrashReporter.debug.xcconfig"; sourceTree = "<group>"; };
 		3FA1218B9AC6EE816AD068D10DB1001E /* Pods-PayU3DS2SwiftSample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PayU3DS2SwiftSample-frameworks.sh"; sourceTree = "<group>"; };
+		55C921712840724999C25D308C33952C /* PayU3DS2Kit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = PayU3DS2Kit.xcframework; sourceTree = "<group>"; };
 		5DE62C81C33B0BBC9EBB4F0AEB346BBC /* Pods-PayU3DS2SwiftSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PayU3DS2SwiftSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		6F6B2946152FB9C5D7CCAA74A4EB31C0 /* PayUIndia-NetworkReachability.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PayUIndia-NetworkReachability.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -138,7 +139,6 @@
 		E0382E583D9DBF39BA5318DB7A279FFD /* PayUIndia-3DS2-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PayUIndia-3DS2-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		F0C6F3D91198015949055BCBE420D559 /* PayUIndia-3DS2Core-SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PayUIndia-3DS2Core-SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		F30BEF16D285FC77BEB2CCDE3EFDE6EC /* PayU3DS2CoreKit.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = PayU3DS2CoreKit.xcframework; sourceTree = "<group>"; };
-		FF2D200293E033827CE39831E40E2887 /* PayU3DS2.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = PayU3DS2.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +162,14 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/PayUIndia-NetworkReachability";
+			sourceTree = "<group>";
+		};
+		3E0F85C3183EE99E37CA98ACC5DBA189 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55C921712840724999C25D308C33952C /* PayU3DS2Kit.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		40991BDB9331F5ACEE0C1A6D940116AB /* PayUIndia-CrashReporter */ = {
@@ -189,14 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				8091A70E89E2C3BFCD0933774A8D306B /* PayUNetworkReachability.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		472E32AF507A401F1588B73B2ED59642 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				FF2D200293E033827CE39831E40E2887 /* PayU3DS2.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -333,7 +333,7 @@
 		F8D53A4992FC7E5206C67BA8C7C19BC8 /* PayUIndia-3DS2-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				472E32AF507A401F1588B73B2ED59642 /* Frameworks */,
+				3E0F85C3183EE99E37CA98ACC5DBA189 /* Frameworks */,
 				DCC4776888B7DAD94937859F4E1B18FE /* Support Files */,
 			);
 			name = "PayUIndia-3DS2-SDK";
@@ -382,11 +382,11 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 10.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
