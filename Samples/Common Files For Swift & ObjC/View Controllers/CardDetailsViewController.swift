@@ -205,45 +205,7 @@ class CardDetailsViewController: BaseViewController {
         return dict
     }
 
-//    private func getPaymentParamToFetchSavedCards() -> PayUModelPaymentParams {
-//        let paymentParam = PayUModelPaymentParams()
-//        paymentParam.key = key
-//        paymentParam.hashes.paymentRelatedDetailsHash = getPaymentRelatedDetailsHash()
-//        paymentParam.userCredentials = userCredential
-//        return paymentParam
-//    }
 
-//    private func getPaymentParamToSaveNewCard(_ dict: [String: Any]) -> PayUModelPaymentParams {
-//        let paymentParam = PayUModelPaymentParams()
-//        paymentParam.key = key
-//        paymentParam.userCredentials = userCredential
-//        paymentParam.cardName = cardName
-//        paymentParam.cardMode = "DC"
-//        paymentParam.cardType = dict[SampleAppConstants.bankcode] as? String ?? ""
-//        paymentParam.nameOnCard = cardName
-//        paymentParam.cardNo = cardNumber
-//        paymentParam.expiryMonth = cardExpiryMonth
-//        paymentParam.expiryYear = cardExpiryYear
-//        paymentParam.duplicateCheck = "1"
-//        let hashString = "\(key)|save_user_card|\(userCredential)|\(salt)"
-//        paymentParam.hashes.saveUserCardHash = PayUDontUseThisClass().getHash(hashString)
-//
-//        return paymentParam
-//    }
-
-    private func saveUserCardIfNeeded(_: String?) {
-//        if !savedSwitch.isOn {
-//            return
-//        }
-//        guard let data = response?.data(using: .utf8) else { return }
-//        guard let json = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) as?  [String: Any] else { return }
-//        SavedCardsAPI.saveCard(paymentParam: getPaymentParamToSaveNewCard(json))
-    }
-
-//    private func getPaymentRelatedDetailsHash() -> String {
-//        let hashString = (key + "|" + COMMAND_PAYMENT_RELATED_DETAILS_FOR_MOBILE_SDK + "|" + PayUUtils.passEmptyStringFornilValues(userCredential) + "|" + salt)
-//        return PayUDontUseThisClass().getHash(hashString)
-//    }
 }
 
 extension CardDetailsViewController: PayU3DS2Delegate {
@@ -253,8 +215,8 @@ extension CardDetailsViewController: PayU3DS2Delegate {
         let postSalt = param[PayU3DS2HashConstants.postSalt] ?? ""
         // get hash for "commandName" from server
         // get hash for "hashStringWithoutSalt" from server
-        // After fetching hash set its value in below variable "hashValue"
-        var hashValue = Utils.sha512Hex(string: hashStringWithoutSalt + salt + postSalt)
+        // After fetching hash from server and set its value in below variable "hashValue"
+        var hashValue = "<Provide your calculative hash here>"
         onCompletion([commandName: hashValue])
     }
 

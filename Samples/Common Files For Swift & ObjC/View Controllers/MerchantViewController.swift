@@ -11,9 +11,6 @@ import UIKit
 class MerchantViewController: BaseViewController {
     // MARK: - Variables -
 
-    let keySalt = [["2qWimx", "WbuCTeAMwq0siCKqRHHm5BHBrQwmhgOT"]]
-
-    let indexKeySalt = 0
     var amount: String = "1"
     var email: String = "amit@salaria.com"
     var userCredential: String = "amit:salaria"
@@ -113,8 +110,7 @@ class MerchantViewController: BaseViewController {
 
 extension MerchantViewController {
     private func setUpValuesInTextFields() {
-        keyTextField.text = keySalt[indexKeySalt][0]
-        saltTextField.text = keySalt[indexKeySalt][1]
+        keyTextField.text = "<Use your key here>"
         amountTextField.text = amount
         emailTextField.text = email
         userCredentialTextField.text = userCredential

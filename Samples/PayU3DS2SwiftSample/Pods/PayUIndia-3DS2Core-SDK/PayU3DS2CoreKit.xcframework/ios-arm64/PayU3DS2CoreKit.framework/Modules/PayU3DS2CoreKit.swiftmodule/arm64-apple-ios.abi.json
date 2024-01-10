@@ -66380,7 +66380,7 @@
           {
             "kind": "Function",
             "name": "logEventFor",
-            "printedName": "logEventFor(types:key:value:className:txnId:)",
+            "printedName": "logEventFor(types:key:value:className:txnId:sdkTime:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -66436,11 +66436,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PayU3DS2CoreKit9LogHelperC11logEventFor5types3key5value9className5txnIdySayAA0I4TypeOG_S4SSgtF",
-            "mangledName": "$s15PayU3DS2CoreKit9LogHelperC11logEventFor5types3key5value9className5txnIdySayAA0I4TypeOG_S4SSgtF",
+            "usr": "s:15PayU3DS2CoreKit9LogHelperC11logEventFor5types3key5value9className5txnId7sdkTimeySayAA0I4TypeOG_S4SSgSiSgtF",
+            "mangledName": "$s15PayU3DS2CoreKit9LogHelperC11logEventFor5types3key5value9className5txnId7sdkTimeySayAA0I4TypeOG_S4SSgSiSgtF",
             "moduleName": "PayU3DS2CoreKit",
             "declAttributes": [
               "AccessControl"
@@ -78115,43 +78130,50 @@
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 24,
+      "value": "\"threeds_ch_render_time\""
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "IntegerLiteral",
-      "offset": 844,
+      "offset": 904,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "IntegerLiteral",
-      "offset": 890,
+      "offset": 950,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1380,
+      "offset": 1440,
       "length": 31,
       "value": "\"3DS_LOA_SDK_WIBM_020200_00750\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "BooleanLiteral",
-      "offset": 1904,
+      "offset": 1964,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1980,
+      "offset": 2040,
       "length": 30,
       "value": "\"SDK Maximum Time Out Reached\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "BooleanLiteral",
-      "offset": 28194,
+      "offset": 27294,
       "length": 5,
       "value": "false"
     },
@@ -80286,14 +80308,14 @@
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Wibmo3ds.swift",
       "kind": "StringLiteral",
-      "offset": 13197,
+      "offset": 13231,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Wibmo3ds.swift",
       "kind": "StringLiteral",
-      "offset": 13221,
+      "offset": 13255,
       "length": 2,
       "value": "\"\""
     },
@@ -85149,6 +85171,13 @@
       "value": "\"PayU3DS2CoreKit.TextBoxCustomization\""
     },
     {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransactionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1447,
+      "length": 9,
+      "value": "\"acs_url\""
+    },
+    {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Customization.swift",
       "kind": "StringLiteral",
       "offset": 139,
@@ -87146,28 +87175,28 @@
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1032,
+      "offset": 1099,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1056,
+      "offset": 1123,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1343,
+      "offset": 1448,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1367,
+      "offset": 1472,
       "length": 2,
       "value": "\"\""
     },

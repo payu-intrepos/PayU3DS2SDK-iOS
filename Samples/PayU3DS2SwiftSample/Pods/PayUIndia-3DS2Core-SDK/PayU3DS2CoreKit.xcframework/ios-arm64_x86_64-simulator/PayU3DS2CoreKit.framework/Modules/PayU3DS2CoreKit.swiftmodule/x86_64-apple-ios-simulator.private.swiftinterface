@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayU3DS2CoreKit
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayU3DS2CoreKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AdSupport
 import CoreLocation
@@ -2824,7 +2824,7 @@ public enum EventType {
 }
 @_hasMissingDesignatedInitializers public class LogHelper {
   public static var shared: PayU3DS2CoreKit.LogHelper
-  public func logEventFor(types: [PayU3DS2CoreKit.EventType] = [.Clevertap, .Kibana], key: Swift.String, value: Swift.String = "", className: Swift.String = "", txnId: Swift.String? = nil)
+  public func logEventFor(types: [PayU3DS2CoreKit.EventType] = [.Clevertap, .Kibana], key: Swift.String, value: Swift.String = "", className: Swift.String = "", txnId: Swift.String? = nil, sdkTime: Swift.Int? = nil)
   @objc deinit
 }
 @objc public class AuthenticationRequestParameters : ObjectiveC.NSObject {

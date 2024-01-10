@@ -9,6 +9,7 @@ import CommonCrypto
 import Foundation
 
 class Utils {
+    // For testing purpose only
     class func sha512Hex(string: String) -> String {
         var digest = [UInt8](repeating: 0, count: Int(CC_SHA512_DIGEST_LENGTH))
         if let data = string.data(using: String.Encoding.utf8) {

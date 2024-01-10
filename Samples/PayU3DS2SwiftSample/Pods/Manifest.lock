@@ -1,14 +1,14 @@
 PODS:
-  - PayUIndia-3DS2-SDK (1.0.0-alpha.3):
-    - PayUIndia-3DS2Core-SDK (~> 1.0.0-alpha.2)
-    - PayUIndia-CrashReporter (= 3.0.0-alpha)
+  - PayUIndia-3DS2-SDK (1.0.0):
+    - PayUIndia-3DS2Core-SDK (~> 1.0.0)
+    - PayUIndia-CrashReporter (= 3.0.0)
     - PayUIndia-NetworkReachability (~> 1.0)
-  - PayUIndia-3DS2Core-SDK (1.0.0-alpha.2)
-  - PayUIndia-CrashReporter (3.0.0-alpha)
+  - PayUIndia-3DS2Core-SDK (1.0.0)
+  - PayUIndia-CrashReporter (3.0.0)
   - PayUIndia-NetworkReachability (1.0.1)
 
 DEPENDENCIES:
-  - PayUIndia-3DS2-SDK (= 1.0.0-alpha.3)
+  - PayUIndia-3DS2-SDK
 
 SPEC REPOS:
   trunk:
@@ -18,11 +18,11 @@ SPEC REPOS:
     - PayUIndia-NetworkReachability
 
 SPEC CHECKSUMS:
-  PayUIndia-3DS2-SDK: a9d3b1f45f73a33848c7d13ee8a375d9439c533a
-  PayUIndia-3DS2Core-SDK: 905f0dadb6c8d22f63f27ce686f432acde9f40c0
-  PayUIndia-CrashReporter: bd33844a6f5c3e240c60998b486d8cd64d634cfb
+  PayUIndia-3DS2-SDK: 31e74cd06294c364125a70d4405f2a2eea5d2f2b
+  PayUIndia-3DS2Core-SDK: 06aec8f6861bfbd3538ab17b80f5d2d66b670c15
+  PayUIndia-CrashReporter: 5e3d459c0ec8c88573bd4510f42f47e10d52f319
   PayUIndia-NetworkReachability: 99e69781b3be99d7b713075ab7b73e6d73a153e4
 
-PODFILE CHECKSUM: 1dc2fd12d72e3d791af54059d2d14fe8a4113e1e
+PODFILE CHECKSUM: c927893f73bf4335f2955931354e97d3a7d2c66e
 
 COCOAPODS: 1.12.1
