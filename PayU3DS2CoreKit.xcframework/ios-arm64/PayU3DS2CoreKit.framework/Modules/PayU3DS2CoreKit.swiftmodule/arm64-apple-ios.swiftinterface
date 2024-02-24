@@ -362,6 +362,9 @@ extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setCustomDialogLoader(_ useCustomLoader: Swift.Bool, _ color: Swift.String)
   @objc dynamic public func setResendOTPAllowCount(_ count: Swift.Int)
 }
+extension PayU3DS2CoreKit.ConfigParameters {
+  @objc dynamic public func setSupportedUITypes(_ supportedUITypes: [Swift.String])
+}
 public struct DefaultConstants {
   public static let fontName: Swift.String
 }
@@ -402,6 +405,30 @@ public enum SDKLoadingType {
   case progress
   case logo(logoImageName: Swift.String)
 }
+@_inheritsConvenienceInitializers @objc open class UIData : ObjectiveC.NSObject, Swift.Codable {
+  @objc open var threeDSServerTransID: Swift.String?
+  @objc open var acsTransID: Swift.String?
+  @objc open var challengeAddInfo: Swift.String?
+  @objc open var challengeInfoHeader: Swift.String?
+  @objc open var challengeInfoLabel: Swift.String?
+  @objc open var challengeInfoText: Swift.String?
+  @objc open var challengeInfoTextIndicator: Swift.String?
+  @objc open var challengeSelectInfo: [[Swift.String : Swift.String]]?
+  @objc open var expandInfoLabel: Swift.String?
+  @objc open var expandInfoText: Swift.String?
+  @objc open var issuerImage: PayU3DS2CoreKit.ImageInfo?
+  @objc open var psImage: PayU3DS2CoreKit.ImageInfo?
+  @objc open var resendInformationLabel: Swift.String?
+  @objc open var submitAuthenticationLabel: Swift.String?
+  @objc open var whyInfoLabel: Swift.String?
+  @objc open var whyInfoText: Swift.String?
+  @objc open var whitelistingInfoText: Swift.String?
+  @objc open var acsUiType: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  open func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
 @_inheritsConvenienceInitializers @objc public class FontFamilyCustomization : ObjectiveC.NSObject {
   @objc public var headerFontFamilyName: Swift.String
   @objc public var textFontFamilyName: Swift.String
@@ -415,6 +442,7 @@ public enum SDKLoadingType {
 @objc public protocol Transaction {
   @objc func getAuthenticationRequestParameters() -> PayU3DS2CoreKit.AuthenticationRequestParameters
   @objc func doChallenge(_ challengeParameters: PayU3DS2CoreKit.ChallengeParameters, challengeStatusReceiver: PayU3DS2CoreKit.ChallengeStatusReceiver, timeOut: Swift.Int) throws
+  @objc func submitAction(actionType: PayU3DS2CoreKit.ActionType, challengeInputParams: PayU3DS2CoreKit.ChallengeInputParameters, statusCallback: PayU3DS2CoreKit.StatusCallBack)
   @objc func getProgressView() throws -> PayU3DS2CoreKit.ProgressDialog
   @objc func close()
 }
@@ -627,6 +655,16 @@ public enum DeviceChannel : Swift.String, Swift.Codable {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public enum ActionType : Swift.Int {
+  case submit = 0
+  case cancel = 1
+  case resend = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
@@ -1087,6 +1125,13 @@ extension Foundation.Data {
 extension Swift.String {
   public func dataFromHexadecimalString() -> Foundation.Data?
 }
+@objc public class ChallengeInputParameters : ObjectiveC.NSObject {
+  @objc public var challengeData: Swift.String?
+  @objc public var acsTransID: Swift.String?
+  @objc public var acsRenderingType: Swift.String?
+  @objc public init(challengeData: Swift.String? = nil, acsTransID: Swift.String?, acsRenderingType: Swift.String?)
+  @objc deinit
+}
 public enum DeviceRenderInterface : Swift.String, Swift.Codable {
   case native
   case html
@@ -1545,6 +1590,10 @@ extension PayU3DS2CoreKit.WFDevice {
     get
   }
 }
+@objc public protocol StatusCallBack {
+  @objc func didReceiveSuccess(message: Swift.String, actionType: PayU3DS2CoreKit.ActionType, uiData: PayU3DS2CoreKit.UIData)
+  @objc func didReceiveError(errorCode: Swift.String, errorMessage: Swift.String, uiData: PayU3DS2CoreKit.UIData?)
+}
 @_hasMissingDesignatedInitializers public class LoadingOverlay {
   public enum LoadingType {
     case progress
@@ -1557,6 +1606,14 @@ extension PayU3DS2CoreKit.WFDevice {
 }
 extension PayU3DS2CoreKit.WFBlowfish {
   convenience public init(key: Swift.String, iv: Swift.String, padding: PayU3DS2CoreKit.WFPadding = .pkcs7) throws
+}
+@_hasMissingDesignatedInitializers @objc open class ImageInfo : ObjectiveC.NSObject, Swift.Codable {
+  @objc open var medium: Swift.String?
+  @objc open var high: Swift.String?
+  @objc open var extraHigh: Swift.String?
+  @objc deinit
+  open func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public struct WFCTR {
   public enum WFError : Swift.Error {
@@ -2931,6 +2988,7 @@ public struct WFCBC : PayU3DS2CoreKit.WFBlockMode {
   @objc func timedout()
   @objc func protocolError(_ e: PayU3DS2CoreKit.ProtocolErrorEvent!)
   @objc func runtimeError(_ e: PayU3DS2CoreKit.RuntimeErrorEvent!)
+  @objc func uiResponseData(_ data: PayU3DS2CoreKit.UIData)
 }
 public class WFCMAC : PayU3DS2CoreKit.WFAuthenticator {
   public enum WFError : Swift.Error {
@@ -3100,6 +3158,9 @@ extension PayU3DS2CoreKit.TransactionType : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.DeviceChannel : Swift.Equatable {}
 extension PayU3DS2CoreKit.DeviceChannel : Swift.Hashable {}
 extension PayU3DS2CoreKit.DeviceChannel : Swift.RawRepresentable {}
+extension PayU3DS2CoreKit.ActionType : Swift.Equatable {}
+extension PayU3DS2CoreKit.ActionType : Swift.Hashable {}
+extension PayU3DS2CoreKit.ActionType : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.WFSwKeyStore.SecError : Swift.Equatable {}
 extension PayU3DS2CoreKit.WFSwKeyStore.SecError : Swift.Hashable {}
 extension PayU3DS2CoreKit.WFSwKeyStore.SecError : Swift.RawRepresentable {}

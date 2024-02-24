@@ -276,6 +276,12 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit16AcsRenderingType")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+typedef SWIFT_ENUM(NSInteger, ActionType, open) {
+  ActionTypeSubmit = 0,
+  ActionTypeCancel = 1,
+  ActionTypeResend = 2,
+};
+
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit31AuthenticationRequestParameters")
 @interface AuthenticationRequestParameters : NSObject
@@ -315,6 +321,17 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ButtonCustomization")
 
 
 
+SWIFT_CLASS("_TtC15PayU3DS2CoreKit24ChallengeInputParameters")
+@interface ChallengeInputParameters : NSObject
+@property (nonatomic, copy) NSString * _Nullable challengeData;
+@property (nonatomic, copy) NSString * _Nullable acsTransID;
+@property (nonatomic, copy) NSString * _Nullable acsRenderingType;
+- (nonnull instancetype)initWithChallengeData:(NSString * _Nullable)challengeData acsTransID:(NSString * _Nullable)acsTransID acsRenderingType:(NSString * _Nullable)acsRenderingType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 /// The ChallengeParameters class shall hold the parameters that are required to conduct the challenge process.
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @interface ChallengeParameters : NSObject
@@ -341,6 +358,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @class CompletionEvent;
 @class ProtocolErrorEvent;
 @class RuntimeErrorEvent;
+@class UIData;
 
 SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit23ChallengeStatusReceiver_")
 @protocol ChallengeStatusReceiver
@@ -349,6 +367,7 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit23ChallengeStatusReceiver_")
 - (void)timedout;
 - (void)protocolError:(ProtocolErrorEvent * _Null_unspecified)e;
 - (void)runtimeError:(RuntimeErrorEvent * _Null_unspecified)e;
+- (void)uiResponseData:(UIData * _Nonnull)data;
 @end
 
 
@@ -371,6 +390,11 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit16ConfigParameters")
 - (BOOL)addParam:(NSString * _Nullable)group paramName:(NSString * _Nullable)paramName paramValue:(NSString * _Nullable)paramValue error:(NSError * _Nullable * _Nullable)error;
 - (NSString * _Nullable)getParamValue:(NSString * _Nullable)group :(NSString * _Nullable)paramName error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)removeParam:(NSString * _Nullable)group :(NSString * _Nullable)paramName error:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
+- (void)setSupportedUITypes:(NSArray<NSString *> * _Nonnull)supportedUITypes;
 @end
 
 
@@ -446,6 +470,16 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit24GenericChallengeProtocol_")
 /// paramenter true when the test case should be executed in landscape
 /// *
 - (void)setLandscapeOrientationWithLandscapeOrientation:(BOOL)landscapeOrientation;
+@end
+
+
+SWIFT_CLASS("_TtC15PayU3DS2CoreKit9ImageInfo")
+@interface ImageInfo : NSObject
+@property (nonatomic, copy) NSString * _Nullable medium;
+@property (nonatomic, copy) NSString * _Nullable high;
+@property (nonatomic, copy) NSString * _Nullable extraHigh;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -655,6 +689,13 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit31SingleSelectorChallengeProtocol_")
 @end
 
 
+SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit14StatusCallBack_")
+@protocol StatusCallBack
+- (void)didReceiveSuccessWithMessage:(NSString * _Nonnull)message actionType:(enum ActionType)actionType uiData:(UIData * _Nonnull)uiData;
+- (void)didReceiveErrorWithErrorCode:(NSString * _Nonnull)errorCode errorMessage:(NSString * _Nonnull)errorMessage uiData:(UIData * _Nullable)uiData;
+@end
+
+
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit20TextBoxCustomization")
 @interface TextBoxCustomization : Customization
 - (nonnull instancetype)initWithBorderWidth:(NSInteger)borderWidth cornerRadius:(NSInteger)cornerRadius borderColor:(NSString * _Nullable)borderColor OBJC_DESIGNATED_INITIALIZER;
@@ -714,6 +755,8 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit11Transaction_")
 - (AuthenticationRequestParameters * _Nonnull)getAuthenticationRequestParameters SWIFT_WARN_UNUSED_RESULT;
 /// Initiates the challenge process.
 - (BOOL)doChallenge:(ChallengeParameters * _Nonnull)challengeParameters challengeStatusReceiver:(id <ChallengeStatusReceiver> _Nonnull)challengeStatusReceiver timeOut:(NSInteger)timeOut error:(NSError * _Nullable * _Nullable)error;
+/// Initiates the button action flow for headless
+- (void)submitActionWithActionType:(enum ActionType)actionType challengeInputParams:(ChallengeInputParameters * _Nonnull)challengeInputParams statusCallback:(id <StatusCallBack> _Nonnull)statusCallback;
 /// Returns an instance of Progress View (processing screen) that the 3DS Requestor App uses.
 - (ProgressDialog * _Nullable)getProgressViewAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 /// Cleans up resources that are held by the Transaction object.
@@ -721,6 +764,30 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit11Transaction_")
 @end
 
 
+
+
+SWIFT_CLASS("_TtC15PayU3DS2CoreKit6UIData")
+@interface UIData : NSObject
+@property (nonatomic, copy) NSString * _Nullable threeDSServerTransID;
+@property (nonatomic, copy) NSString * _Nullable acsTransID;
+@property (nonatomic, copy) NSString * _Nullable challengeAddInfo;
+@property (nonatomic, copy) NSString * _Nullable challengeInfoHeader;
+@property (nonatomic, copy) NSString * _Nullable challengeInfoLabel;
+@property (nonatomic, copy) NSString * _Nullable challengeInfoText;
+@property (nonatomic, copy) NSString * _Nullable challengeInfoTextIndicator;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable challengeSelectInfo;
+@property (nonatomic, copy) NSString * _Nullable expandInfoLabel;
+@property (nonatomic, copy) NSString * _Nullable expandInfoText;
+@property (nonatomic, strong) ImageInfo * _Nullable issuerImage;
+@property (nonatomic, strong) ImageInfo * _Nullable psImage;
+@property (nonatomic, copy) NSString * _Nullable resendInformationLabel;
+@property (nonatomic, copy) NSString * _Nullable submitAuthenticationLabel;
+@property (nonatomic, copy) NSString * _Nullable whyInfoLabel;
+@property (nonatomic, copy) NSString * _Nullable whyInfoText;
+@property (nonatomic, copy) NSString * _Nullable whitelistingInfoText;
+@property (nonatomic, copy) NSString * _Nullable acsUiType;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
