@@ -14,6 +14,17 @@ import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+extension PayU3DS2CoreKit.ConfigParameters {
+  @objc dynamic public func enableCustomizedOtpUIFlow(_ isCustomizedOtpFlow: Swift.Bool)
+  @objc dynamic public func setMerchantName(_ mechantName: Swift.String)
+  @objc dynamic public func setAmount(_ amount: Swift.String)
+  @objc dynamic public func enableTxnTimeoutTimer(_ isEnabled: Swift.Bool)
+  @objc dynamic public func setSubmitButtonTitle(_ title: Swift.String)
+  @objc dynamic public func setResendButtonTitle(_ title: Swift.String)
+  @objc dynamic public func setOtpInfoString(_ infoString: Swift.String)
+  @objc dynamic public func setMerchantCustomization(_ labelCustomization: PayU3DS2CoreKit.LabelCustomization)
+  @objc dynamic public func setAmountCustomization(_ customization: PayU3DS2CoreKit.Customization)
+}
 extension PayU3DS2CoreKit.WFChaCha20 {
   convenience public init(key: Swift.String, iv: Swift.String) throws
 }
@@ -440,7 +451,7 @@ public enum SDKLoadingType {
   @objc deinit
 }
 @objc public protocol Transaction {
-  @objc func getAuthenticationRequestParameters() -> PayU3DS2CoreKit.AuthenticationRequestParameters
+  @objc func getAuthenticationRequestParameters() -> PayU3DS2CoreKit.AuthenticationRequestParameters?
   @objc func doChallenge(_ challengeParameters: PayU3DS2CoreKit.ChallengeParameters, challengeStatusReceiver: PayU3DS2CoreKit.ChallengeStatusReceiver, timeOut: Swift.Int) throws
   @objc func submitAction(actionType: PayU3DS2CoreKit.ActionType, challengeInputParams: PayU3DS2CoreKit.ChallengeInputParameters, statusCallback: PayU3DS2CoreKit.StatusCallBack)
   @objc func getProgressView() throws -> PayU3DS2CoreKit.ProgressDialog

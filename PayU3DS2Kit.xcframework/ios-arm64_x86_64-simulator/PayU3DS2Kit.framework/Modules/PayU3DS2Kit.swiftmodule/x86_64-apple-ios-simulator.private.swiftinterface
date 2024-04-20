@@ -122,6 +122,14 @@ import _SwiftConcurrencyShims
   @objc public var authenticateOnly: Swift.Bool
   @objc public var autoSubmit: Swift.Bool
   @objc public var supportedUIMode: [Swift.String]
+  @objc public var merchantName: Swift.String?
+  @objc public var enableCustomizedOtpUIFlow: Swift.Bool
+  @objc public var enableTxnTimeoutTimer: Swift.Bool
+  @objc public var amount: Swift.String?
+  @objc public var currency: PayU3DS2Kit.PayUCurrency
+  @objc public var submitButtonTitle: Swift.String?
+  @objc public var resendButtonTitle: Swift.String?
+  @objc public var otpContent: Swift.String?
   @objc public func setDefaultProgressLoader(showDefaultLoader: Swift.Bool, defaultProgressLoaderColor: Swift.String)
   @objc override dynamic public init()
   @objc deinit
@@ -257,7 +265,7 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public static func cardBinInfo(cardBinInfoRequest: PayU3DS2Kit.PayU3DS2CardBinInfoRequest, delegate: any PayU3DS2Kit.PayU3DS2HashDelegate, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func extractDeviceDetails(cardData: PayU3DS2Kit.PayU3DS2CardData) -> PayU3DS2Kit.PayU3DS2Response
   @objc public static func initiateChallenge(challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
-  @objc public static func callPaymentAPI(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate, completion: @escaping (_ error: Swift.String?, _ flowType: Swift.String?, _ challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter?) -> ())
+  @objc public static func callPaymentAPI(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate, completion: @escaping (_ error: Swift.String?, _ flowType: Swift.String?, _ challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter?) -> Swift.Void)
   @objc public static func action(acsActionType: PayU3DS2Kit.PayU3DS2ACSActionType, challengeInputParams: PayU3DS2Kit.PayU3DS2ACSActionParams, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func initiatePayment(vc: UIKit.UIViewController, config: PayU3DS2Kit.PayU3DS2Config, paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate)
   @objc public static func clean()
@@ -349,6 +357,14 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc public enum PayUCurrency : Swift.Int {
+  case inr
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension PayU3DS2Kit.PayU3DS2ButtonTextCaseType : Swift.Equatable {}
 extension PayU3DS2Kit.PayU3DS2ButtonTextCaseType : Swift.Hashable {}
 extension PayU3DS2Kit.PayU3DS2ButtonTextCaseType : Swift.RawRepresentable {}
@@ -361,3 +377,6 @@ extension PayU3DS2Kit.PayU3DS2CardScheme : Swift.RawRepresentable {}
 extension PayU3DS2Kit.PayU3DS2ACSActionType : Swift.Equatable {}
 extension PayU3DS2Kit.PayU3DS2ACSActionType : Swift.Hashable {}
 extension PayU3DS2Kit.PayU3DS2ACSActionType : Swift.RawRepresentable {}
+extension PayU3DS2Kit.PayUCurrency : Swift.Equatable {}
+extension PayU3DS2Kit.PayUCurrency : Swift.Hashable {}
+extension PayU3DS2Kit.PayUCurrency : Swift.RawRepresentable {}

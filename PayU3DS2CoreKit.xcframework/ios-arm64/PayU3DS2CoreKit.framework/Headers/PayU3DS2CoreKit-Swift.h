@@ -407,6 +407,20 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit16ConfigParameters")
 - (void)setResendOTPAllowCount:(NSInteger)count;
 @end
 
+@class LabelCustomization;
+
+@interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
+- (void)enableCustomizedOtpUIFlow:(BOOL)isCustomizedOtpFlow;
+- (void)setMerchantName:(NSString * _Nonnull)mechantName;
+- (void)setAmount:(NSString * _Nonnull)amount;
+- (void)enableTxnTimeoutTimer:(BOOL)isEnabled;
+- (void)setSubmitButtonTitle:(NSString * _Nonnull)title;
+- (void)setResendButtonTitle:(NSString * _Nonnull)title;
+- (void)setOtpInfoString:(NSString * _Nonnull)infoString;
+- (void)setMerchantCustomization:(LabelCustomization * _Nonnull)labelCustomization;
+- (void)setAmountCustomization:(Customization * _Nonnull)customization;
+@end
+
 
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit12ErrorMessage")
@@ -752,7 +766,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit20ToolbarCustomization")
 SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit11Transaction_")
 @protocol Transaction
 /// Returns device and 3DS SDK information to the 3DS Requestor App
-- (AuthenticationRequestParameters * _Nonnull)getAuthenticationRequestParameters SWIFT_WARN_UNUSED_RESULT;
+- (AuthenticationRequestParameters * _Nullable)getAuthenticationRequestParameters SWIFT_WARN_UNUSED_RESULT;
 /// Initiates the challenge process.
 - (BOOL)doChallenge:(ChallengeParameters * _Nonnull)challengeParameters challengeStatusReceiver:(id <ChallengeStatusReceiver> _Nonnull)challengeStatusReceiver timeOut:(NSInteger)timeOut error:(NSError * _Nullable * _Nullable)error;
 /// Initiates the button action flow for headless
@@ -788,6 +802,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit6UIData")
 @property (nonatomic, copy) NSString * _Nullable acsUiType;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

@@ -475,6 +475,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2ChallengeParameter")
 @end
 
 @class PayU3DS2UICustomisation;
+enum PayUCurrency : NSInteger;
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @interface PayU3DS2Config : PayU3DS2BaseConfig
@@ -483,6 +484,14 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @property (nonatomic) BOOL authenticateOnly;
 @property (nonatomic) BOOL autoSubmit;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull supportedUIMode;
+@property (nonatomic, copy) NSString * _Nullable merchantName;
+@property (nonatomic) BOOL enableCustomizedOtpUIFlow;
+@property (nonatomic) BOOL enableTxnTimeoutTimer;
+@property (nonatomic, copy) NSString * _Nullable amount;
+@property (nonatomic) enum PayUCurrency currency;
+@property (nonatomic, copy) NSString * _Nullable submitButtonTitle;
+@property (nonatomic, copy) NSString * _Nullable resendButtonTitle;
+@property (nonatomic, copy) NSString * _Nullable otpContent;
 /// Setup Loader UI
 - (void)setDefaultProgressLoaderWithShowDefaultLoader:(BOOL)showDefaultLoader defaultProgressLoaderColor:(NSString * _Nonnull)defaultProgressLoaderColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -747,6 +756,10 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit23PayU3DS2ValidatorHelper")
 @interface PayU3DS2ValidatorHelper : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+typedef SWIFT_ENUM(NSInteger, PayUCurrency, open) {
+  PayUCurrencyInr = 0,
+};
 
 
 
