@@ -6507,27 +6507,27 @@
           },
           {
             "kind": "Var",
-            "name": "submitButtonTitle",
-            "printedName": "submitButtonTitle",
+            "name": "acsContentConfig",
+            "printedName": "acsContentConfig",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "PayU3DS2Kit.PayU3DS2ACSContentConfig?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "PayU3DS2ACSContentConfig",
+                    "printedName": "PayU3DS2Kit.PayU3DS2ACSContentConfig",
+                    "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(py)submitButtonTitle",
-            "mangledName": "$s11PayU3DS2Kit0abC6ConfigC17submitButtonTitleSSSgvp",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(py)acsContentConfig",
+            "mangledName": "$s11PayU3DS2Kit0abC6ConfigC010acsContentE0AA0abc10ACSContentE0CSgvp",
             "moduleName": "PayU3DS2Kit",
             "declAttributes": [
               "HasInitialValue",
@@ -6545,21 +6545,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "PayU3DS2Kit.PayU3DS2ACSContentConfig?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "PayU3DS2ACSContentConfig",
+                        "printedName": "PayU3DS2Kit.PayU3DS2ACSContentConfig",
+                        "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)submitButtonTitle",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC17submitButtonTitleSSSgvg",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)acsContentConfig",
+                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC010acsContentE0AA0abc10ACSContentE0CSgvg",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "declAttributes": [
@@ -6580,21 +6580,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "PayU3DS2Kit.PayU3DS2ACSContentConfig?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "PayU3DS2ACSContentConfig",
+                        "printedName": "PayU3DS2Kit.PayU3DS2ACSContentConfig",
+                        "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)setSubmitButtonTitle:",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC17submitButtonTitleSSSgvs",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)setAcsContentConfig:",
+                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC010acsContentE0AA0abc10ACSContentE0CSgvs",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "declAttributes": [
@@ -6614,242 +6614,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11PayU3DS2Kit0abC6ConfigC17submitButtonTitleSSSgvM",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC17submitButtonTitleSSSgvM",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "resendButtonTitle",
-            "printedName": "resendButtonTitle",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(py)resendButtonTitle",
-            "mangledName": "$s11PayU3DS2Kit0abC6ConfigC17resendButtonTitleSSSgvp",
-            "moduleName": "PayU3DS2Kit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)resendButtonTitle",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC17resendButtonTitleSSSgvg",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)setResendButtonTitle:",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC17resendButtonTitleSSSgvs",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11PayU3DS2Kit0abC6ConfigC17resendButtonTitleSSSgvM",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC17resendButtonTitleSSSgvM",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "otpContent",
-            "printedName": "otpContent",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(py)otpContent",
-            "mangledName": "$s11PayU3DS2Kit0abC6ConfigC10otpContentSSSgvp",
-            "moduleName": "PayU3DS2Kit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)otpContent",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC10otpContentSSSgvg",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)setOtpContent:",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC10otpContentSSSgvs",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11PayU3DS2Kit0abC6ConfigC10otpContentSSSgvM",
-                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC10otpContentSSSgvM",
+                "usr": "s:11PayU3DS2Kit0abC6ConfigC010acsContentE0AA0abc10ACSContentE0CSgvM",
+                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC010acsContentE0AA0abc10ACSContentE0CSgvM",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -6930,6 +6696,688 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "PayU3DS2Kit.PayU3DS2BaseConfig",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayU3DS2ACSContentConfig",
+        "printedName": "PayU3DS2ACSContentConfig",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "submitButtonTitle",
+            "printedName": "submitButtonTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(py)submitButtonTitle",
+            "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17submitButtonTitleSSSgvp",
+            "moduleName": "PayU3DS2Kit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)submitButtonTitle",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17submitButtonTitleSSSgvg",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)setSubmitButtonTitle:",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17submitButtonTitleSSSgvs",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PayU3DS2Kit0abC16ACSContentConfigC17submitButtonTitleSSSgvM",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17submitButtonTitleSSSgvM",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resendButtonTitle",
+            "printedName": "resendButtonTitle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(py)resendButtonTitle",
+            "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17resendButtonTitleSSSgvp",
+            "moduleName": "PayU3DS2Kit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)resendButtonTitle",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17resendButtonTitleSSSgvg",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)setResendButtonTitle:",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17resendButtonTitleSSSgvs",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PayU3DS2Kit0abC16ACSContentConfigC17resendButtonTitleSSSgvM",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17resendButtonTitleSSSgvM",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "otpContent",
+            "printedName": "otpContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(py)otpContent",
+            "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC10otpContentSSSgvp",
+            "moduleName": "PayU3DS2Kit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)otpContent",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC10otpContentSSSgvg",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)setOtpContent:",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC10otpContentSSSgvs",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PayU3DS2Kit0abC16ACSContentConfigC10otpContentSSSgvM",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC10otpContentSSSgvM",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "resendInfoContent",
+            "printedName": "resendInfoContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(py)resendInfoContent",
+            "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17resendInfoContentSSSgvp",
+            "moduleName": "PayU3DS2Kit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)resendInfoContent",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17resendInfoContentSSSgvg",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)setResendInfoContent:",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17resendInfoContentSSSgvs",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PayU3DS2Kit0abC16ACSContentConfigC17resendInfoContentSSSgvM",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC17resendInfoContentSSSgvM",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxResendInfoContent",
+            "printedName": "maxResendInfoContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(py)maxResendInfoContent",
+            "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC20maxResendInfoContentSSSgvp",
+            "moduleName": "PayU3DS2Kit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)maxResendInfoContent",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC20maxResendInfoContentSSSgvg",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)setMaxResendInfoContent:",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC20maxResendInfoContentSSSgvs",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PayU3DS2Kit0abC16ACSContentConfigC20maxResendInfoContentSSSgvM",
+                "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC20maxResendInfoContentSSSgvM",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayU3DS2ACSContentConfig",
+                "printedName": "PayU3DS2Kit.PayU3DS2ACSContentConfig",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig(im)init",
+            "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigCACycfc",
+            "moduleName": "PayU3DS2Kit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ACSContentConfig",
+        "mangledName": "$s11PayU3DS2Kit0abC16ACSContentConfigC",
+        "moduleName": "PayU3DS2Kit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
           "ObjectiveC.NSObject"
         ],
         "conformances": [
@@ -21377,77 +21825,77 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "BooleanLiteral",
-      "offset": 4393,
+      "offset": 4823,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "BooleanLiteral",
-      "offset": 4645,
+      "offset": 5075,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "IntegerLiteral",
-      "offset": 5303,
+      "offset": 5733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "IntegerLiteral",
-      "offset": 5466,
+      "offset": 5896,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "IntegerLiteral",
-      "offset": 6163,
+      "offset": 6593,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "IntegerLiteral",
-      "offset": 6326,
+      "offset": 6756,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "StringLiteral",
-      "offset": 7696,
+      "offset": 8126,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "StringLiteral",
-      "offset": 7733,
+      "offset": 8163,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "StringLiteral",
-      "offset": 7892,
+      "offset": 8322,
       "length": 36,
       "value": "\"didReceiveInvalidInputException:: \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "StringLiteral",
-      "offset": 8170,
+      "offset": 8600,
       "length": 40,
       "value": "\"didReceiveInvalidAcsUITypeException:: \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "Array",
-      "offset": 9317,
+      "offset": 9747,
       "length": 2,
       "value": "[]"
     },
@@ -23148,23 +23596,23 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2Config.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
-      "length": 56,
-      "value": "\"Successfully sent OTP to your registered mobile number\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2Config.swift",
-      "kind": "StringLiteral",
-      "offset": 1303,
+      "offset": 1160,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 1353,
+      "offset": 1210,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2Config.swift",
+      "kind": "StringLiteral",
+      "offset": 1727,
+      "length": 56,
+      "value": "\"Successfully sent OTP to your registered mobile number\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2HeadlessData.swift",
@@ -24854,21 +25302,21 @@
       "value": "\"PayU3DS2Kit.PayU3DS2ACSActionParams\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PayU3DS2.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2.swift",
       "kind": "StringLiteral",
       "offset": 4752,
       "length": 17,
       "value": "\"PayU3DS2CoreKit\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PayU3DS2.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2.swift",
       "kind": "StringLiteral",
       "offset": 4822,
       "length": 13,
       "value": "\"PayU3DS2Kit\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PayU3DS2.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2.swift",
       "kind": "StringLiteral",
       "offset": 4888,
       "length": 28,
@@ -26573,7 +27021,7 @@
       "kind": "StringLiteral",
       "offset": 16822,
       "length": 398,
-      "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAst+HGfPPsX3p6HHEQ9YzourlQj16Nscmm13Cp7cZe4dZB2oWnJqZ7oh\/pEoEoOAxBw1x4NFgXKTKdHAeu3VBNVw8SwMTdIC+X16VV+3VIyPbUvJXFp3QoR8WUwPB3F1Lb9SMFNS95boYDZKIOdPW0cP1dRi7pFugsBUZDCP\/H3nFfBFHMCBoga+P3AHGj5y8RVpv0hS9jaIsYjX+i58B61OGCB7D0AiADNZJuFzw2+xpNkt6NJJF66FPO8qIh8xR2xGVDf7TtCbss\/CugLRgSqKab9YRB8\/TBTcy5bxj6O8HD6aL2zGLcMY9dCobXxCodLEtMjJdVL8N+iZrsI2gtwIDAQAB.RSA\""
+      "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkgASyOWgJ3\/AsqZ\/7ChExPlN3t2K7mM1JKjaRDB9LDzKQgFtVd98YpJZuUdEt2RThM85Zi9trUco12gev1iVGuumo0c9g4mPPu8eQnDCTVZcKkujhk5Zr1xjsT1yFc+ocQrAG+5iku3J6RqZI1Q\/znuLvGZnlK3D1inXh\/nuQX3lqdiHpYfPaVOLaSfOD5T05S42d0y2tjrrRS7DARMXK+IqVpxHG6ZM7wDwUQAQVWW5FkwPYlTPb+TFyCRs1w7EFSRDoMZv5MkF3jtybTcrWDmkOrEIvs\/YBd9qZT94bK1ENoydxwp2Zjsqx5fLUFsYQCDGf1h6IKbxBrn4teHsgQIDAQAB.RSA\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",

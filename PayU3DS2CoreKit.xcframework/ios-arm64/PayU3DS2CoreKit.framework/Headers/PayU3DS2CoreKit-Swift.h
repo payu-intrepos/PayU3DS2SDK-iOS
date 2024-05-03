@@ -397,6 +397,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit16ConfigParameters")
 - (void)setSupportedUITypes:(NSArray<NSString *> * _Nonnull)supportedUITypes;
 @end
 
+enum PayUCardType : NSInteger;
 
 @interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
 - (void)setAutoSubmitEnable:(BOOL)isAutoSubmitEnabled;
@@ -405,6 +406,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit16ConfigParameters")
 - (void)setKeyboardType:(UIKeyboardType)keyboardType;
 - (void)setCustomDialogLoader:(BOOL)useCustomLoader :(NSString * _Nonnull)color;
 - (void)setResendOTPAllowCount:(NSInteger)count;
+- (void)setIssuerTyper:(enum PayUCardType)issuerType;
 @end
 
 @class LabelCustomization;
@@ -417,6 +419,8 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit16ConfigParameters")
 - (void)setSubmitButtonTitle:(NSString * _Nonnull)title;
 - (void)setResendButtonTitle:(NSString * _Nonnull)title;
 - (void)setOtpInfoString:(NSString * _Nonnull)infoString;
+- (void)setResendInfoString:(NSString * _Nonnull)infoString;
+- (void)setMaxResendInfoString:(NSString * _Nonnull)infoString;
 - (void)setMerchantCustomization:(LabelCustomization * _Nonnull)labelCustomization;
 - (void)setAmountCustomization:(Customization * _Nonnull)customization;
 @end
@@ -591,6 +595,11 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit12PayUBaseView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 @end
+
+typedef SWIFT_ENUM(NSInteger, PayUCardType, open) {
+  PayUCardTypeMastercard = 0,
+  PayUCardTypeVisa = 1,
+};
 
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit14PayULoaderView")

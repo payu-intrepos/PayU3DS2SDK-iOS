@@ -22,6 +22,8 @@ extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setSubmitButtonTitle(_ title: Swift.String)
   @objc dynamic public func setResendButtonTitle(_ title: Swift.String)
   @objc dynamic public func setOtpInfoString(_ infoString: Swift.String)
+  @objc dynamic public func setResendInfoString(_ infoString: Swift.String)
+  @objc dynamic public func setMaxResendInfoString(_ infoString: Swift.String)
   @objc dynamic public func setMerchantCustomization(_ labelCustomization: PayU3DS2CoreKit.LabelCustomization)
   @objc dynamic public func setAmountCustomization(_ customization: PayU3DS2CoreKit.Customization)
 }
@@ -357,6 +359,15 @@ public enum AcsUiTemplate : Swift.String, Swift.Codable {
 @objc public protocol WebChallengeProtocol : PayU3DS2CoreKit.GenericChallengeProtocol {
   @objc func getWebView() -> WebKit.WKWebView
 }
+@objc public enum PayUCardType : Swift.Int {
+  case mastercard
+  case visa
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class ConfigParameters : ObjectiveC.NSObject {
   @objc public var params: [Swift.String : [Swift.String : Swift.String]]
   @objc override dynamic public init()
@@ -372,6 +383,7 @@ extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setKeyboardType(_ keyboardType: UIKit.UIKeyboardType)
   @objc dynamic public func setCustomDialogLoader(_ useCustomLoader: Swift.Bool, _ color: Swift.String)
   @objc dynamic public func setResendOTPAllowCount(_ count: Swift.Int)
+  @objc dynamic public func setIssuerTyper(_ issuerType: PayU3DS2CoreKit.PayUCardType)
 }
 extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setSupportedUITypes(_ supportedUITypes: [Swift.String])
@@ -3142,6 +3154,9 @@ extension PayU3DS2CoreKit.AcsInterface : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.AcsUiTemplate : Swift.Equatable {}
 extension PayU3DS2CoreKit.AcsUiTemplate : Swift.Hashable {}
 extension PayU3DS2CoreKit.AcsUiTemplate : Swift.RawRepresentable {}
+extension PayU3DS2CoreKit.PayUCardType : Swift.Equatable {}
+extension PayU3DS2CoreKit.PayUCardType : Swift.Hashable {}
+extension PayU3DS2CoreKit.PayUCardType : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.PayULoadingType : Swift.Equatable {}
 extension PayU3DS2CoreKit.PayULoadingType : Swift.Hashable {}
 extension PayU3DS2CoreKit.IndicatorType : Swift.Equatable {}

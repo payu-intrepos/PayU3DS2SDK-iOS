@@ -127,10 +127,17 @@ import _SwiftConcurrencyShims
   @objc public var enableTxnTimeoutTimer: Swift.Bool
   @objc public var amount: Swift.String?
   @objc public var currency: PayU3DS2Kit.PayUCurrency
+  @objc public var acsContentConfig: PayU3DS2Kit.PayU3DS2ACSContentConfig?
+  @objc public func setDefaultProgressLoader(showDefaultLoader: Swift.Bool, defaultProgressLoaderColor: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class PayU3DS2ACSContentConfig : ObjectiveC.NSObject {
   @objc public var submitButtonTitle: Swift.String?
   @objc public var resendButtonTitle: Swift.String?
   @objc public var otpContent: Swift.String?
-  @objc public func setDefaultProgressLoader(showDefaultLoader: Swift.Bool, defaultProgressLoaderColor: Swift.String)
+  @objc public var resendInfoContent: Swift.String?
+  @objc public var maxResendInfoContent: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }

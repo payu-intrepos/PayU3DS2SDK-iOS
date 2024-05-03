@@ -347,6 +347,17 @@ typedef SWIFT_ENUM(NSInteger, PayU3DS2ACSActionType, open) {
   PayU3DS2ACSActionTypeResend = 2,
 };
 
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit24PayU3DS2ACSContentConfig")
+@interface PayU3DS2ACSContentConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable submitButtonTitle;
+@property (nonatomic, copy) NSString * _Nullable resendButtonTitle;
+@property (nonatomic, copy) NSString * _Nullable otpContent;
+@property (nonatomic, copy) NSString * _Nullable resendInfoContent;
+@property (nonatomic, copy) NSString * _Nullable maxResendInfoContent;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class PayU3DS2HeadlessData;
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit19PayU3DS2ACSResponse")
@@ -489,9 +500,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @property (nonatomic) BOOL enableTxnTimeoutTimer;
 @property (nonatomic, copy) NSString * _Nullable amount;
 @property (nonatomic) enum PayUCurrency currency;
-@property (nonatomic, copy) NSString * _Nullable submitButtonTitle;
-@property (nonatomic, copy) NSString * _Nullable resendButtonTitle;
-@property (nonatomic, copy) NSString * _Nullable otpContent;
+@property (nonatomic, strong) PayU3DS2ACSContentConfig * _Nullable acsContentConfig;
 /// Setup Loader UI
 - (void)setDefaultProgressLoaderWithShowDefaultLoader:(BOOL)showDefaultLoader defaultProgressLoaderColor:(NSString * _Nonnull)defaultProgressLoaderColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1121,6 +1130,17 @@ typedef SWIFT_ENUM(NSInteger, PayU3DS2ACSActionType, open) {
   PayU3DS2ACSActionTypeResend = 2,
 };
 
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit24PayU3DS2ACSContentConfig")
+@interface PayU3DS2ACSContentConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable submitButtonTitle;
+@property (nonatomic, copy) NSString * _Nullable resendButtonTitle;
+@property (nonatomic, copy) NSString * _Nullable otpContent;
+@property (nonatomic, copy) NSString * _Nullable resendInfoContent;
+@property (nonatomic, copy) NSString * _Nullable maxResendInfoContent;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class PayU3DS2HeadlessData;
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit19PayU3DS2ACSResponse")
@@ -1263,9 +1283,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @property (nonatomic) BOOL enableTxnTimeoutTimer;
 @property (nonatomic, copy) NSString * _Nullable amount;
 @property (nonatomic) enum PayUCurrency currency;
-@property (nonatomic, copy) NSString * _Nullable submitButtonTitle;
-@property (nonatomic, copy) NSString * _Nullable resendButtonTitle;
-@property (nonatomic, copy) NSString * _Nullable otpContent;
+@property (nonatomic, strong) PayU3DS2ACSContentConfig * _Nullable acsContentConfig;
 /// Setup Loader UI
 - (void)setDefaultProgressLoaderWithShowDefaultLoader:(BOOL)showDefaultLoader defaultProgressLoaderColor:(NSString * _Nonnull)defaultProgressLoaderColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
