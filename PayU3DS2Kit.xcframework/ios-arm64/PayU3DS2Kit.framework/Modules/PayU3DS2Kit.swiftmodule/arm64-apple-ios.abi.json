@@ -6623,6 +6623,99 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "shouldPresent",
+            "printedName": "shouldPresent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(py)shouldPresent",
+            "mangledName": "$s11PayU3DS2Kit0abC6ConfigC13shouldPresentSbvp",
+            "moduleName": "PayU3DS2Kit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)shouldPresent",
+                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC13shouldPresentSbvg",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2Config(im)setShouldPresent:",
+                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC13shouldPresentSbvs",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PayU3DS2Kit0abC6ConfigC13shouldPresentSbvM",
+                "mangledName": "$s11PayU3DS2Kit0abC6ConfigC13shouldPresentSbvM",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "setDefaultProgressLoader",
             "printedName": "setDefaultProgressLoader(showDefaultLoader:defaultProgressLoaderColor:)",
@@ -14732,104 +14825,6 @@
           },
           {
             "kind": "Function",
-            "name": "callPaymentAPI",
-            "printedName": "callPaymentAPI(paymentParams:delegate:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PayU3DS2PaymentParam",
-                "printedName": "PayU3DS2Kit.PayU3DS2PaymentParam",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2PaymentParam"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PayU3DS2Delegate",
-                "printedName": "PayU3DS2Kit.PayU3DS2Delegate",
-                "usr": "c:@M@PayU3DS2Kit@objc(pl)PayU3DS2Delegate"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String?, Swift.String?, PayU3DS2Kit.PayU3DS2ChallengeParameter?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.String?, Swift.String?, PayU3DS2Kit.PayU3DS2ChallengeParameter?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "PayU3DS2Kit.PayU3DS2ChallengeParameter?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PayU3DS2ChallengeParameter",
-                            "printedName": "PayU3DS2Kit.PayU3DS2ChallengeParameter",
-                            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2ChallengeParameter"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2(cm)callPaymentAPIWithPaymentParams:delegate:completion:",
-            "mangledName": "$s11PayU3DS2Kit0abC0C14callPaymentAPI13paymentParams8delegate10completionyAA0abcF5ParamC_AA0abC8Delegate_pySSSg_AkA0abC18ChallengeParameterCSgtctFZ",
-            "moduleName": "PayU3DS2Kit",
-            "static": true,
-            "objc_name": "callPaymentAPIWithPaymentParams:delegate:completion:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "action",
             "printedName": "action(acsActionType:challengeInputParams:completion:)",
             "children": [
@@ -14973,37 +14968,6 @@
               "Final",
               "AccessControl",
               "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setPlatformParams",
-            "printedName": "setPlatformParams(paymentParams:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "PayU3DS2PaymentParam",
-                "printedName": "PayU3DS2Kit.PayU3DS2PaymentParam",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2PaymentParam"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2(cm)setPlatformParamsWithPaymentParams:",
-            "mangledName": "$s11PayU3DS2Kit0abC0C17setPlatformParams07paymentG0yAA0abC12PaymentParamC_tFZ",
-            "moduleName": "PayU3DS2Kit",
-            "static": true,
-            "objc_name": "setPlatformParamsWithPaymentParams:",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC",
-              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -21867,35 +21831,35 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "StringLiteral",
-      "offset": 8126,
+      "offset": 8194,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "StringLiteral",
-      "offset": 8163,
+      "offset": 8231,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "StringLiteral",
-      "offset": 8322,
+      "offset": 8390,
       "length": 36,
       "value": "\"didReceiveInvalidInputException:: \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "StringLiteral",
-      "offset": 8600,
+      "offset": 8668,
       "length": 40,
       "value": "\"didReceiveInvalidAcsUITypeException:: \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/ThreeDSHelper\/PayU3DS2WibmoSDKInitialiser.swift",
       "kind": "Array",
-      "offset": 9747,
+      "offset": 9815,
       "length": 2,
       "value": "[]"
     },
@@ -23595,22 +23559,29 @@
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2Config.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1109,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2Config.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2Config.swift",
       "kind": "BooleanLiteral",
-      "offset": 1210,
+      "offset": 1258,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2Config.swift",
       "kind": "StringLiteral",
-      "offset": 1727,
+      "offset": 1775,
       "length": 56,
       "value": "\"Successfully sent OTP to your registered mobile number\""
     },
@@ -25304,21 +25275,21 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2.swift",
       "kind": "StringLiteral",
-      "offset": 4752,
+      "offset": 4745,
       "length": 17,
       "value": "\"PayU3DS2CoreKit\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2.swift",
       "kind": "StringLiteral",
-      "offset": 4822,
+      "offset": 4815,
       "length": 13,
       "value": "\"PayU3DS2Kit\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/PayU3DS2.swift",
       "kind": "StringLiteral",
-      "offset": 4888,
+      "offset": 4881,
       "length": 28,
       "value": "\"PayUNetworkingReachability\""
     },

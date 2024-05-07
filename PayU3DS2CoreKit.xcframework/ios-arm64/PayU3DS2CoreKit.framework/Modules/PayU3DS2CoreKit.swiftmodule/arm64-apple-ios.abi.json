@@ -17054,6 +17054,35 @@
           },
           {
             "kind": "Function",
+            "name": "setShouldPresent",
+            "printedName": "setShouldPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayU3DS2CoreKit@objc(cs)ConfigParameters(im)setShouldPresent:",
+            "mangledName": "$s15PayU3DS2CoreKit16ConfigParametersC16setShouldPresentyySbF",
+            "moduleName": "PayU3DS2CoreKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setSupportedUITypes",
             "printedName": "setSupportedUITypes(_:)",
             "children": [
@@ -83834,6 +83863,13 @@
       "offset": 770,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/ConfigParameters.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1107,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/AccountAndMessageInfo.swift",

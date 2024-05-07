@@ -128,6 +128,7 @@ import _SwiftConcurrencyShims
   @objc public var amount: Swift.String?
   @objc public var currency: PayU3DS2Kit.PayUCurrency
   @objc public var acsContentConfig: PayU3DS2Kit.PayU3DS2ACSContentConfig?
+  @objc public var shouldPresent: Swift.Bool
   @objc public func setDefaultProgressLoader(showDefaultLoader: Swift.Bool, defaultProgressLoaderColor: Swift.String)
   @objc override dynamic public init()
   @objc deinit
@@ -272,12 +273,10 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public static func cardBinInfo(cardBinInfoRequest: PayU3DS2Kit.PayU3DS2CardBinInfoRequest, delegate: any PayU3DS2Kit.PayU3DS2HashDelegate, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func extractDeviceDetails(cardData: PayU3DS2Kit.PayU3DS2CardData) -> PayU3DS2Kit.PayU3DS2Response
   @objc public static func initiateChallenge(challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
-  @objc public static func callPaymentAPI(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate, completion: @escaping (_ error: Swift.String?, _ flowType: Swift.String?, _ challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter?) -> Swift.Void)
   @objc public static func action(acsActionType: PayU3DS2Kit.PayU3DS2ACSActionType, challengeInputParams: PayU3DS2Kit.PayU3DS2ACSActionParams, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func initiatePayment(vc: UIKit.UIViewController, config: PayU3DS2Kit.PayU3DS2Config, paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate)
   @objc public static func clean()
   @objc public static func start()
-  @objc public static func setPlatformParams(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam)
   @objc override dynamic public init()
   @objc deinit
 }

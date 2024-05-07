@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-3DS2-SDK"
-  s.version             = "1.3.1"
+  s.version             = "1.3.2"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/PayU3DS2SDK-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
 
   s.dependency            'PayUIndia-3DS2Core-SDK', '~> 1.3'
   s.dependency            'PayUIndia-NetworkReachability', '~> 1.0'
-  s.dependency            'PayUIndia-CrashReporter', '3.0.0'
+  s.dependency            'PayUIndia-CrashReporter', '~> 3.0'
 
 end

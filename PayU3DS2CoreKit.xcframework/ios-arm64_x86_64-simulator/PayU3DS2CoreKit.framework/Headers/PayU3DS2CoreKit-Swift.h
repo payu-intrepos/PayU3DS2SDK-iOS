@@ -407,6 +407,7 @@ enum PayUCardType : NSInteger;
 - (void)setCustomDialogLoader:(BOOL)useCustomLoader :(NSString * _Nonnull)color;
 - (void)setResendOTPAllowCount:(NSInteger)count;
 - (void)setIssuerTyper:(enum PayUCardType)issuerType;
+- (void)setShouldPresent:(BOOL)shouldPresent;
 @end
 
 @class LabelCustomization;
@@ -1348,6 +1349,7 @@ enum PayUCardType : NSInteger;
 - (void)setCustomDialogLoader:(BOOL)useCustomLoader :(NSString * _Nonnull)color;
 - (void)setResendOTPAllowCount:(NSInteger)count;
 - (void)setIssuerTyper:(enum PayUCardType)issuerType;
+- (void)setShouldPresent:(BOOL)shouldPresent;
 @end
 
 @class LabelCustomization;

@@ -384,6 +384,7 @@ extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setCustomDialogLoader(_ useCustomLoader: Swift.Bool, _ color: Swift.String)
   @objc dynamic public func setResendOTPAllowCount(_ count: Swift.Int)
   @objc dynamic public func setIssuerTyper(_ issuerType: PayU3DS2CoreKit.PayUCardType)
+  @objc dynamic public func setShouldPresent(_ shouldPresent: Swift.Bool)
 }
 extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setSupportedUITypes(_ supportedUITypes: [Swift.String])
