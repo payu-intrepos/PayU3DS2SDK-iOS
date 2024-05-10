@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
         "state": {
           "branch": null,
-          "revision": "a03a0dbc83acf807beeb7ec995317a55fc31064d",
-          "version": "3.0.0"
+          "revision": "9fdb4a40df43a71f4da41b1e0212b14011c5b768",
+          "version": "3.0.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUNetworkReachability-iOS",
         "state": {
           "branch": null,
-          "revision": "c477d6c84e609c24193e4fb76cadc40935d1838b",
-          "version": "2.0.1"
+          "revision": "319245c7126aa52350a75ca226db8500fbd7708c",
+          "version": "2.0.2"
         }
       }
     ]
