@@ -144,6 +144,7 @@ public protocol WFBlockMode {
   @objc deinit
 }
 @objc extension UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public static var loaderView: PayU3DS2CoreKit.PayULoaderView?
   @objc @_Concurrency.MainActor(unsafe) dynamic public func addPayULogo()
   @objc @_Concurrency.MainActor(unsafe) dynamic public func removePayULogo()
   @objc @_Concurrency.MainActor(unsafe) dynamic public func showPayULoader(message: Swift.String = "", backgroundColor: UIKit.UIColor = .white, alpha: CoreFoundation.CGFloat = 1.0)

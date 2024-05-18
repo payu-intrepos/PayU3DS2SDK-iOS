@@ -76937,6 +76937,137 @@
         "printedName": "UIView",
         "children": [
           {
+            "kind": "Var",
+            "name": "loaderView",
+            "printedName": "loaderView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayU3DS2CoreKit.PayULoaderView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayULoaderView",
+                    "printedName": "PayU3DS2CoreKit.PayULoaderView",
+                    "usr": "c:@M@PayU3DS2CoreKit@objc(cs)PayULoaderView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PayU3DS2CoreKit@@objc(cs)UIView(cpy)loaderView",
+            "mangledName": "$sSo6UIViewC15PayU3DS2CoreKitE10loaderViewAC0b7ULoaderH0CSgvpZ",
+            "moduleName": "PayU3DS2CoreKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "Custom",
+              "HasStorage",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayU3DS2CoreKit.PayULoaderView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayULoaderView",
+                        "printedName": "PayU3DS2CoreKit.PayULoaderView",
+                        "usr": "c:@M@PayU3DS2CoreKit@objc(cs)PayULoaderView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PayU3DS2CoreKit@@objc(cs)UIView(cm)loaderView",
+                "mangledName": "$sSo6UIViewC15PayU3DS2CoreKitE10loaderViewAC0b7ULoaderH0CSgvgZ",
+                "moduleName": "PayU3DS2CoreKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayU3DS2CoreKit.PayULoaderView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayULoaderView",
+                        "printedName": "PayU3DS2CoreKit.PayULoaderView",
+                        "usr": "c:@M@PayU3DS2CoreKit@objc(cs)PayULoaderView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PayU3DS2CoreKit@@objc(cs)UIView(cm)setLoaderView:",
+                "mangledName": "$sSo6UIViewC15PayU3DS2CoreKitE10loaderViewAC0b7ULoaderH0CSgvsZ",
+                "moduleName": "PayU3DS2CoreKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC",
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So6UIViewC15PayU3DS2CoreKitE10loaderViewAC0b7ULoaderH0CSgvMZ",
+                "mangledName": "$sSo6UIViewC15PayU3DS2CoreKitE10loaderViewAC0b7ULoaderH0CSgvMZ",
+                "moduleName": "PayU3DS2CoreKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "addPayULogo",
             "printedName": "addPayULogo()",
@@ -82726,49 +82857,56 @@
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "BooleanLiteral",
-      "offset": 1068,
+      "offset": 1058,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "IntegerLiteral",
-      "offset": 1111,
+      "offset": 1097,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "IntegerLiteral",
-      "offset": 1157,
+      "offset": 1143,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 1710,
+      "offset": 1676,
       "length": 31,
       "value": "\"3DS_LOA_SDK_WIBM_020200_00750\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "BooleanLiteral",
-      "offset": 2234,
+      "offset": 2192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "StringLiteral",
-      "offset": 2310,
+      "offset": 2264,
       "length": 30,
       "value": "\"SDK Maximum Time Out Reached\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
       "kind": "BooleanLiteral",
-      "offset": 36931,
+      "offset": 6819,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransaction.swift",
+      "kind": "BooleanLiteral",
+      "offset": 36347,
       "length": 5,
       "value": "false"
     },
@@ -83293,35 +83431,35 @@
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Extensions\/PayULoaderViewExtension.swift",
       "kind": "StringLiteral",
-      "offset": 576,
+      "offset": 618,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Extensions\/PayULoaderViewExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 648,
+      "offset": 690,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Extensions\/PayULoaderViewExtension.swift",
       "kind": "StringLiteral",
-      "offset": 827,
+      "offset": 869,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Extensions\/PayULoaderViewExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1179,
+      "offset": 1238,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Extensions\/PayULoaderViewExtension.swift",
       "kind": "FloatLiteral",
-      "offset": 1251,
+      "offset": 1310,
       "length": 3,
       "value": "1.0"
     },
@@ -83866,8 +84004,22 @@
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/ConfigParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 813,
+      "length": 8,
+      "value": "\"SUBMIT\""
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/ConfigParameters.swift",
+      "kind": "StringLiteral",
+      "offset": 859,
+      "length": 8,
+      "value": "\"RESEND\""
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/ConfigParameters.swift",
       "kind": "BooleanLiteral",
-      "offset": 1107,
+      "offset": 1129,
       "length": 4,
       "value": "true"
     },
@@ -84129,6 +84281,20 @@
       "offset": 2469,
       "length": 93,
       "value": "\"Limit has been exceeded to send OTP. Please retry with latest OTP or initiate a new payment\""
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/DefaultConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2597,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/DefaultConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2642,
+      "length": 58,
+      "value": "\"OTP could not be verified. Please retry with latest OTP.\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/SDKTextField.swift",
@@ -84449,15 +84615,15 @@
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/UIViewController+Extension.swift",
       "kind": "StringLiteral",
       "offset": 1255,
-      "length": 11,
-      "value": "\"Helvetica\""
+      "length": 19,
+      "value": "\"AvenirNext-Medium\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/UIViewController+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1274,
+      "offset": 1282,
       "length": 2,
-      "value": "15"
+      "value": "14"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Wibmo3ds.swift",
@@ -88284,7 +88450,7 @@
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/HelperFunctions.swift",
       "kind": "IntegerLiteral",
-      "offset": 318,
+      "offset": 266,
       "length": 1,
       "value": "0"
     },
@@ -89943,14 +90109,14 @@
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/TextBoxCustomization.swift",
       "kind": "IntegerLiteral",
-      "offset": 419,
+      "offset": 524,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/TextBoxCustomization.swift",
       "kind": "IntegerLiteral",
-      "offset": 442,
+      "offset": 547,
       "length": 1,
       "value": "5"
     },
@@ -89967,6 +90133,13 @@
       "offset": 1506,
       "length": 9,
       "value": "\"acs_url\""
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/WibmoTransactionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16489,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Customization.swift",
@@ -91570,6 +91743,13 @@
       "offset": 2745,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2832,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CReq.swift",

@@ -820,9 +820,13 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit6UIData")
 
 
 
+
 @class UIColor;
 
 @interface UIView (SWIFT_EXTENSION(PayU3DS2CoreKit))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) PayULoaderView * _Nullable loaderView;)
++ (PayULoaderView * _Nullable)loaderView SWIFT_WARN_UNUSED_RESULT;
++ (void)setLoaderView:(PayULoaderView * _Nullable)value;
 - (void)addPayULogo;
 - (void)removePayULogo;
 - (void)showPayULoaderWithMessage:(NSString * _Nonnull)message backgroundColor:(UIColor * _Nonnull)backgroundColor alpha:(CGFloat)alpha;
@@ -1762,9 +1766,13 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit6UIData")
 
 
 
+
 @class UIColor;
 
 @interface UIView (SWIFT_EXTENSION(PayU3DS2CoreKit))
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) PayULoaderView * _Nullable loaderView;)
++ (PayULoaderView * _Nullable)loaderView SWIFT_WARN_UNUSED_RESULT;
++ (void)setLoaderView:(PayULoaderView * _Nullable)value;
 - (void)addPayULogo;
 - (void)removePayULogo;
 - (void)showPayULoaderWithMessage:(NSString * _Nonnull)message backgroundColor:(UIColor * _Nonnull)backgroundColor alpha:(CGFloat)alpha;

@@ -195,6 +195,21 @@ extension MerchantViewController {
             config.uiCustomisation = getUICustomisation()
         }
         config.setDefaultProgressLoader(showDefaultLoader: showDefaultLoaderSwitch.isOn, defaultProgressLoaderColor: defaultLoaderColorTextField.text ?? "")
+        config.enableCustomizedOtpUIFlow = true
+        config.supportedUIMode = []
+        config.merchantName = "Swiggy"
+        config.amount = "1.00"
+        config.enableTxnTimeoutTimer = true
+
+//        config.acsContentConfig = PayU3DS2ACSContentConfig()
+        config.acsContentConfig?.submitButtonTitle = "Submit"
+        config.acsContentConfig?.resendButtonTitle = "Resend"
+        config.acsContentConfig?.otpContent =  "OTP has been sent to your registered mobile number"  //you can set this value to as per your need
+
+        config.acsContentConfig?.resendInfoContent =  "OTP has been resent to your registered mobile number" //you can set this value to as per your need
+
+        config.acsContentConfig?.maxResendInfoContent =  "Limit has been exceeded to send OTP. Please retry with latest OTP or initiate a new payment" //you can set this value to as per your need
+
         return config
     }
 }
