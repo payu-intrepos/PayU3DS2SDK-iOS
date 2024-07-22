@@ -30,7 +30,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 /**
  *  This is an Objective-C wrapper for easy-ecc by Kenneth MacKay, slightly re-written
  *  to support choosing a curve at runtime.

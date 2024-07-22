@@ -70834,11 +70834,11 @@
                 "kind": "TypeNominal",
                 "name": "LogHelper",
                 "printedName": "PayU3DS2CoreKit.LogHelper",
-                "usr": "s:15PayU3DS2CoreKit9LogHelperC"
+                "usr": "c:@M@PayU3DS2CoreKit@objc(cs)LogHelper"
               }
             ],
             "declKind": "Var",
-            "usr": "s:15PayU3DS2CoreKit9LogHelperC6sharedACvpZ",
+            "usr": "c:@M@PayU3DS2CoreKit@objc(cs)LogHelper(cpy)shared",
             "mangledName": "$s15PayU3DS2CoreKit9LogHelperC6sharedACvpZ",
             "moduleName": "PayU3DS2CoreKit",
             "static": true,
@@ -70846,7 +70846,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "hasStorage": true,
             "accessors": [
@@ -70859,17 +70860,18 @@
                     "kind": "TypeNominal",
                     "name": "LogHelper",
                     "printedName": "PayU3DS2CoreKit.LogHelper",
-                    "usr": "s:15PayU3DS2CoreKit9LogHelperC"
+                    "usr": "c:@M@PayU3DS2CoreKit@objc(cs)LogHelper"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PayU3DS2CoreKit9LogHelperC6sharedACvgZ",
+                "usr": "c:@M@PayU3DS2CoreKit@objc(cs)LogHelper(cm)shared",
                 "mangledName": "$s15PayU3DS2CoreKit9LogHelperC6sharedACvgZ",
                 "moduleName": "PayU3DS2CoreKit",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "get"
               },
@@ -70887,17 +70889,18 @@
                     "kind": "TypeNominal",
                     "name": "LogHelper",
                     "printedName": "PayU3DS2CoreKit.LogHelper",
-                    "usr": "s:15PayU3DS2CoreKit9LogHelperC"
+                    "usr": "c:@M@PayU3DS2CoreKit@objc(cs)LogHelper"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:15PayU3DS2CoreKit9LogHelperC6sharedACvsZ",
+                "usr": "c:@M@PayU3DS2CoreKit@objc(cs)LogHelper(cm)setShared:",
                 "mangledName": "$s15PayU3DS2CoreKit9LogHelperC6sharedACvsZ",
                 "moduleName": "PayU3DS2CoreKit",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final"
+                  "Final",
+                  "ObjC"
                 ],
                 "accessorKind": "set"
               },
@@ -70987,38 +70990,151 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Int?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
+                "name": "Int",
+                "printedName": "Swift.Int",
                 "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "usr": "s:Si"
               }
             ],
             "declKind": "Func",
-            "usr": "s:15PayU3DS2CoreKit9LogHelperC11logEventFor5types3key5value9className5txnId7sdkTimeySayAA0I4TypeOG_S4SSgSiSgtF",
-            "mangledName": "$s15PayU3DS2CoreKit9LogHelperC11logEventFor5types3key5value9className5txnId7sdkTimeySayAA0I4TypeOG_S4SSgSiSgtF",
+            "usr": "s:15PayU3DS2CoreKit9LogHelperC11logEventFor5types3key5value9className5txnId7sdkTimeySayAA0I4TypeOG_S4SSgSitF",
+            "mangledName": "$s15PayU3DS2CoreKit9LogHelperC11logEventFor5types3key5value9className5txnId7sdkTimeySayAA0I4TypeOG_S4SSgSitF",
             "moduleName": "PayU3DS2CoreKit",
             "declAttributes": [
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logKibanaEvent",
+            "printedName": "logKibanaEvent(key:value:className:txnId:sdkTime:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayU3DS2CoreKit@objc(cs)LogHelper(im)logKibanaEventWithKey:value:className:txnId:sdkTime:",
+            "mangledName": "$s15PayU3DS2CoreKit9LogHelperC14logKibanaEvent3key5value9className5txnId7sdkTimeySS_S3SSgSitF",
+            "moduleName": "PayU3DS2CoreKit",
+            "objc_name": "logKibanaEventWithKey:value:className:txnId:sdkTime:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "s:15PayU3DS2CoreKit9LogHelperC",
+        "usr": "c:@M@PayU3DS2CoreKit@objc(cs)LogHelper",
         "mangledName": "$s15PayU3DS2CoreKit9LogHelperC",
         "moduleName": "PayU3DS2CoreKit",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "ObjC"
         ],
-        "hasMissingDesignatedInitializers": true
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -92132,44 +92248,65 @@
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 558,
+      "offset": 589,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 610,
+      "offset": 641,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 738,
+      "length": 4,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1135,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1099,
+      "offset": 1159,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1200,
+      "length": 4,
+      "value": "999"
+    },
+    {
+      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1484,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1508,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 1448,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/LogHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 1472,
-      "length": 2,
-      "value": "\"\""
+      "kind": "IntegerLiteral",
+      "offset": 1549,
+      "length": 4,
+      "value": "999"
     },
     {
       "filePath": "\/Users\/ManasBajpai\/Wibmo Repositories\/3dss-Github\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/AuthenticationRequestParameters.swift",

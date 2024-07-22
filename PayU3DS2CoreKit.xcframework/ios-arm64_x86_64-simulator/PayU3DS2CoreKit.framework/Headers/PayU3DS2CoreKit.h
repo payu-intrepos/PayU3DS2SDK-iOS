@@ -17,7 +17,6 @@
 #endif
 #endif
 
-#import "CMethodsFile.h"
 #import "WFGMEllipticCurveCrypto+hash.h"
 #import "WFGMEllipticCurveCrypto.h"
 //! Project version number for Wibmo3dsSDK.

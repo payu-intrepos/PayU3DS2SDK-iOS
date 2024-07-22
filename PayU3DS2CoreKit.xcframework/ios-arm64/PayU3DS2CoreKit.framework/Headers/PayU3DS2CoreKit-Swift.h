@@ -539,6 +539,17 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit10LogHandler_")
 @end
 
 
+SWIFT_CLASS("_TtC15PayU3DS2CoreKit9LogHelper")
+@interface LogHelper : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) LogHelper * _Nonnull shared;)
++ (LogHelper * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
++ (void)setShared:(LogHelper * _Nonnull)value;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)logKibanaEventWithKey:(NSString * _Nonnull)key value:(NSString * _Nonnull)value className:(NSString * _Nonnull)className txnId:(NSString * _Nullable)txnId sdkTime:(NSInteger)sdkTime;
+@end
+
+
 SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit28MultiSelectChallengeProtocol_")
 @protocol MultiSelectChallengeProtocol <GenericChallengeProtocol>
 - (void)selectIndex:(NSInteger)index;

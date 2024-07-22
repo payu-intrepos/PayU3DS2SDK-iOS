@@ -2903,9 +2903,10 @@ public enum EventType {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class LogHelper {
-  public static var shared: PayU3DS2CoreKit.LogHelper
-  public func logEventFor(types: [PayU3DS2CoreKit.EventType] = [.Clevertap, .Kibana], key: Swift.String, value: Swift.String = "", className: Swift.String = "", txnId: Swift.String? = nil, sdkTime: Swift.Int? = nil)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class LogHelper : ObjectiveC.NSObject {
+  @objc public static var shared: PayU3DS2CoreKit.LogHelper
+  public func logEventFor(types: [PayU3DS2CoreKit.EventType] = [.Clevertap, .Kibana], key: Swift.String, value: Swift.String = "", className: Swift.String = "", txnId: Swift.String? = nil, sdkTime: Swift.Int = -999)
+  @objc public func logKibanaEvent(key: Swift.String, value: Swift.String = "", className: Swift.String = "", txnId: Swift.String? = nil, sdkTime: Swift.Int = -999)
   @objc deinit
 }
 @objc public class AuthenticationRequestParameters : ObjectiveC.NSObject {
