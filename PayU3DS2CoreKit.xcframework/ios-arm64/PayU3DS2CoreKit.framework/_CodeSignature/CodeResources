@@ -6,63 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		TAINBFYGM2Yu/j9x8btvah49WGw=
-		</data>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<data>
-		M8T2xCwYJoMo555TEiWJQbSlmHY=
-		</data>
-		<key>Frameworks/libswiftCoreFoundation.dylib</key>
-		<data>
-		hsnsxeNLNzY4UYMVi9iSuTeIWk4=
-		</data>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<data>
-		/wxToZcoGXeuZCNXayTfzCW4qPc=
-		</data>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<data>
-		CafvTw2Xded5VkSihwGLhWW8m5E=
-		</data>
-		<key>Frameworks/libswiftCoreLocation.dylib</key>
-		<data>
-		+2nJ34gafYYMAcBsEdqP/4xZzWs=
-		</data>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<data>
-		Dj3TmzhNbQZU+9tUjB+75IGXUK8=
-		</data>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<data>
-		vd0PvlhHKqA38Shb1TPm4e+QPeo=
-		</data>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<data>
-		ZV+5LCTTqjUD8xMFfQ2uK4WByP4=
-		</data>
-		<key>Frameworks/libswiftMetal.dylib</key>
-		<data>
-		irOJCqrWOBkhhX7ygST12Hp99Go=
-		</data>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<data>
-		fR0jZjo4e4quXPhKy2W3s7Uud0s=
-		</data>
-		<key>Frameworks/libswiftQuartzCore.dylib</key>
-		<data>
-		N/+ZJsmluzSKVzv/r9GdzITkkpQ=
-		</data>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<data>
-		C8IxkbeAIaoC/JOzpqIxtxq8AYE=
-		</data>
-		<key>Frameworks/libswiftos.dylib</key>
-		<data>
-		/IgsvGr2af08RlGpM+kzHnT5LK0=
+		k5eAn2vkcy8a5SCbCZYF/V4GDjE=
 		</data>
 		<key>Headers/PayU3DS2CoreKit-Swift.h</key>
 		<data>
-		45pRCQ2FVbip0LVAPYjzB+zTJjo=
+		uEcdDFjan9JwtJDev+nSeRkr/I8=
 		</data>
 		<key>Headers/PayU3DS2CoreKit.h</key>
 		<data>
@@ -78,35 +26,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uoePSpNQmAyKLOmkeUvy41Vcmd4=
+		jmOLC00p+3vnnASccoPYZjVpWEY=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		6o3ViHymR0qk9g/O8yeG8070v80=
+		RVY06UiOncGLAyNfZlf4Hxpp8go=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		LmJQ5wR0wYURyubl703kikuLywo=
+		AMsmJ5blXc/+VXEj619iG1Tp4j0=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		HdP0RzKq34S5gbrg6ZEuDti8Wzs=
+		Fe4Rfs58zo1jTjAlwoAU53SsOBM=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		LmJQ5wR0wYURyubl703kikuLywo=
+		AMsmJ5blXc/+VXEj619iG1Tp4j0=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		7AVWPkk/Xo6I2b21S7RDa11tEd8=
+		AJDboLQHTYBC4cz1BaRluwfc18c=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		K1TceIYsAuQpqCXo4glVpj94GQ0=
+		cUBvY9H3JKNk5C5Ed89rq0rKQYo=
 		</data>
 		<key>PayULoaderView.nib</key>
 		<data>
-		gWf/hUambsAZl+2uM4k1CVYYzQE=
+		9175Xl0xxvMParyVbZPLtHaneZ0=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -118,7 +66,7 @@
 		</data>
 		<key>Wibmo3ds.storyboardc/CResChallengeNavigationViewControllerStId.nib</key>
 		<data>
-		a95j0ZC/RnIgoLMx4QnYi9T9QKo=
+		0ckLfHOyC+lGghktPVMPT57c/fc=
 		</data>
 		<key>Wibmo3ds.storyboardc/CResChallengeTextViewControllerStId.nib</key>
 		<data>
@@ -130,11 +78,11 @@
 		</data>
 		<key>Wibmo3ds.storyboardc/OKI-zx-C6y-view-D4k-Lz-Ta4.nib</key>
 		<data>
-		1jjqTRo4xVCkF67LAJrT6D3ThLg=
+		GqgIzKKrwHklpJTXJ6JTpPqHHwc=
 		</data>
 		<key>Wibmo3ds.storyboardc/w9A-uJ-2f0-view-Y3y-Nw-Mnd.nib</key>
 		<data>
-		ZW1Hxz+AsrbNaZ3fUWTTN6d/b48=
+		uqVFKdjk0vnc4kcfliXJepT9SHA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -143,105 +91,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			baxRCMvScekyHJZRxkRzfBetwx0F5m14DCLKw/yJR4Q=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCore.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MneExiTsmpDZ3tf7hWkI52nbZ4hVOWpCU6Wbb8yaeF4=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreFoundation.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KPndlLz0RblhxmAnRowJZC538UQJDx6mp77ijD8gb3U=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			S51sSUAYWH/ix3IyuwsvFlnW75NsM1brc+38Q2tu93E=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tCvOTsqWz8ol+EfkHCgFpCOYj1AnNiLOCvEZL4yLD8k=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftCoreLocation.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			SxEAlfUspGXtSObKQROk5v3m1EcY8vHC0QQAzooIldE=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDarwin.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			82h7SxRKIYFiCgCAn7Siv0KX5yZi5Jw98v5/jU/0/Og=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftDispatch.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dsRI2k6kiuA0wfSdNBo28kAaIukY3ZVmuAyzdFtZaho=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftFoundation.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Z2Ytni4N0q52hANqPF4Cr41Ke5+dQKjNV9V+DIHdpcc=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftMetal.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			LoPxJFi7RSDblryJqWlXLlkJWtwca5BwOEmI44YMEHw=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Ppf/wwOXfcjFCsk8Dwa5VKJS+DjTAD8YPgHRrDeyrYk=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftQuartzCore.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Z/cTHLeF3Yqb468iHukXFqmXUipfv0dasv2YHx3usdQ=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftUIKit.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yYwCsf6wOPyW5ou3lFvKibaWJCX8dVFkZGCp5rSc8+8=
-			</data>
-		</dict>
-		<key>Frameworks/libswiftos.dylib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			L5jfcQscHkMefzhhW/vloveZ917WTlU3Xq60Zo7+Wgs=
+			onOcbG6s7zdmfkrBNpMht7DBFRUIzQ1D9fB3n2EBFUY=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2CoreKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R03lFAKWjqLdAATb2+Vw6iQJ+y/UgQUfAIMccWniBZ8=
+			pm9ACnM546zIbqlCmaIAjTi9aPwawtDdSBTP+gQnhg4=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2CoreKit.h</key>
@@ -269,49 +126,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ppJcxK/wfVHdFzbVRWRdE2JRfOBmtxZP5YeuFavsJ0A=
+			iRiHXoA0xaKMpSMUTD9PHDQcedR0eOYTZu8NSvBcOm4=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LneTL13tm06+BGQ4sfCuYu257HpG+YK6KchcyZBCPao=
+			HwNH8A4HZvkxePc4ynqWrSXrmQSXydLi5J/nf0lXNA4=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KyuOIPKNxmSd1QEdLMI858d9hoPAW+egm1iyKpOygjQ=
+			LghXQvW5YNg9k3uMoz64bEElImFEe0/kXEZAQNooqhE=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LneTL13tm06+BGQ4sfCuYu257HpG+YK6KchcyZBCPao=
+			HwNH8A4HZvkxePc4ynqWrSXrmQSXydLi5J/nf0lXNA4=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V8WIvKV41ag3bT9qESVwx1T+Az3knPgkpdYQH74c1UE=
+			Eb+yhmiO4QcwotodwZ4eOkdnn+SjPY+6XblaG3C3+ts=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sxf49u4O42sFwmzCUmqn6wZkPBNVSjpHmOfr29OeN70=
+			PHez5wnDmxfLZRiuCTD6U3zZuAm6+4aZQQNn2ylrNQE=
 			</data>
 		</dict>
 		<key>PayULoaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xzBEFcpwyG+unYlz0ZLrtjjMjiwU6sJb9MLqFO6IvbY=
+			/1hDiKJtU/msVbhCMZWop/vCZ5fAzvFNp7290ejjrBo=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -332,7 +189,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BPh6Telfd/2Mc4PEycsSlbFhKMvZi6wuSohgmlXaUBE=
+			QIC4rM+jeDeyyuPoMCp6fkLauRKPAn07Y+E/N36b0us=
 			</data>
 		</dict>
 		<key>Wibmo3ds.storyboardc/CResChallengeTextViewControllerStId.nib</key>
@@ -353,14 +210,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2UEhk2YB+FxcVSHSZ9Op+XuhzH+fiFb4iGTSUy2A8Po=
+			dHM/kJtYPdCyQT1vBPELMLxnHgyA4GhyffvR3vK7HwM=
 			</data>
 		</dict>
 		<key>Wibmo3ds.storyboardc/w9A-uJ-2f0-view-Y3y-Nw-Mnd.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wVYq7raD6hdt4QX/SuJZ9k3Y+8lpRGXtYtOZPufXK+c=
+			9eRmNZKhEooAZlj0NynhsgBh9/3zOcdz24aoUL1nVUQ=
 			</data>
 		</dict>
 	</dict>
