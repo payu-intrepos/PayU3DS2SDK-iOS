@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-3DS2-SDK"
-  s.version             = "1.4.2"
+  s.version             = "2.0.0-alpha.1"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/PayU3DS2SDK-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -15,7 +15,8 @@ Pod::Spec.new do |s|
   s.platform            = :ios , "12.0"
   s.vendored_frameworks = 'PayU3DS2Kit.xcframework'
 
-  s.dependency            'PayUIndia-3DS2Core-SDK', '~> 1.4'
+  s.dependency            'PayUIndia-3DS2Core-SDK', '2.0.0-alpha.1'
+  s.dependency            'PayUIndia-TridentityMFA-SDK', '1.0.0-alpha.1'
   s.dependency            'PayUIndia-NetworkReachability', '~> 1.1'
   s.dependency            'PayUIndia-CrashReporter', '~> 3.0'
 

@@ -280,7 +280,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
-@import QuartzCore;
 @import UIKit;
 #endif
 
@@ -345,6 +344,11 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit31AuthenticationRequestParameters")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+typedef SWIFT_ENUM(NSInteger, BiometricType, open) {
+  BiometricTypeTouchId = 0,
+  BiometricTypeFaceId = 1,
+};
+
 
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit13Customization")
@@ -388,6 +392,8 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @property (nonatomic, copy) NSString * _Nullable acsSignedContent;
 @property (nonatomic, copy) NSString * _Nullable threeDSServerTransactionID;
 @property (nonatomic, copy) NSString * _Nullable threeDSRequestorAppURL;
+@property (nonatomic, copy) NSString * _Nullable tdyCardId;
+@property (nonatomic, copy) NSString * _Nullable clientId;
 /// Initializing ChallengeParameters with all the required parameters
 /// \param a3DSServerTransactionID Transaction identifier assigned by the 3DS Server to uniquely identify a single transaction
 ///
@@ -397,7 +403,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 ///
 /// \param acsSignedContent ACS signed content. This data includes the ACS URL, ACS ephemeral public key, and SDK ephemeral public key
 ///
-- (nonnull instancetype)initWithA3DSServerTransactionID:(NSString * _Nullable)a3DSServerTransactionID acsTransactionID:(NSString * _Nullable)acsTransactionID acsRefNumber:(NSString * _Nullable)acsRefNumber acsSignedContent:(NSString * _Nullable)acsSignedContent threeDSServerTransactionID:(NSString * _Nullable)threeDSServerTransactionID threeDSRequestorAppURL:(NSString * _Nullable)threeDSRequestorAppURL acsRenderingType:(enum ACSUITypeInt)acsRenderingType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithA3DSServerTransactionID:(NSString * _Nullable)a3DSServerTransactionID acsTransactionID:(NSString * _Nullable)acsTransactionID acsRefNumber:(NSString * _Nullable)acsRefNumber acsSignedContent:(NSString * _Nullable)acsSignedContent threeDSServerTransactionID:(NSString * _Nullable)threeDSServerTransactionID threeDSRequestorAppURL:(NSString * _Nullable)threeDSRequestorAppURL tdyCardId:(NSString * _Nullable)tdyCardId clientId:(NSString * _Nullable)clientId acsRenderingType:(enum ACSUITypeInt)acsRenderingType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -415,6 +421,7 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit23ChallengeStatusReceiver_")
 - (void)protocolError:(ProtocolErrorEvent * _Null_unspecified)e;
 - (void)runtimeError:(RuntimeErrorEvent * _Null_unspecified)e;
 - (void)uiResponseData:(UIData * _Nonnull)data;
+- (void)oobInitiated;
 @end
 
 
@@ -422,7 +429,8 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit15CompletionEvent")
 @interface CompletionEvent : NSObject
 @property (nonatomic, copy) NSString * _Nonnull sdkTransactionID;
 @property (nonatomic, copy) NSString * _Nonnull transactionStatus;
-- (nonnull instancetype)initWithSdkTransactionID:(NSString * _Nonnull)sdkTransactionID transactionStatus:(NSString * _Nonnull)transactionStatus OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic) BOOL consentGiven;
+- (nonnull instancetype)initWithSdkTransactionID:(NSString * _Nonnull)sdkTransactionID transactionStatus:(NSString * _Nonnull)transactionStatus consentGiven:(BOOL)consentGiven OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)getSDKTransactionID SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getTransactionStatus SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -455,6 +463,7 @@ enum PayUCardType : NSInteger;
 - (void)setResendOTPAllowCount:(NSInteger)count;
 - (void)setIssuerTyper:(enum PayUCardType)issuerType;
 - (void)setShouldPresent:(BOOL)shouldPresent;
+- (void)enableMFAViaBiometric:(BOOL)enableMFA;
 @end
 
 @class LabelCustomization;
@@ -471,6 +480,7 @@ enum PayUCardType : NSInteger;
 - (void)setMaxResendInfoString:(NSString * _Nonnull)infoString;
 - (void)setMerchantCustomization:(LabelCustomization * _Nonnull)labelCustomization;
 - (void)setAmountCustomization:(Customization * _Nonnull)customization;
+- (void)setBiometricType:(enum BiometricType)biometricType;
 @end
 
 
@@ -608,6 +618,7 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit26OutOfBandChallengeProtocol_")
 @protocol OutOfBandChallengeProtocol <GenericChallengeProtocol>
 @end
 
+@class PResMessageExtension;
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit4PArs")
 @interface PArs : NSObject
@@ -636,10 +647,14 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit4PArs")
 @property (nonatomic, copy) NSString * _Nullable errorComponent;
 @property (nonatomic, copy) NSString * _Nullable errorDetail;
 @property (nonatomic, copy) NSString * _Nullable messageVersion;
-- (nonnull instancetype)initWithBuild:(SWIFT_NOESCAPE void (^ _Nonnull)(PArs * _Nonnull))build OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithJson:(NSDictionary<NSString *, id> * _Nonnull)json error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic, copy) NSArray<PResMessageExtension *> * _Nullable messageExtension;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15PayU3DS2CoreKit20PResMessageExtension")
+@interface PResMessageExtension : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSCoder;
@@ -671,20 +686,14 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit14PayULoaderView")
 
 IB_DESIGNABLE
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit12PayULogoView")
-@interface PayULogoView : UIView <CAAnimationDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@interface PayULogoView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+- (void)drawRect:(CGRect)rect;
+/// Call this when removing from superview to ensure animations stop
+- (void)removeFromSuperview;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
-
-@class CAAnimation;
-
-@interface PayULogoView (SWIFT_EXTENSION(PayU3DS2CoreKit))
-- (void)animationDidStop:(CAAnimation * _Nonnull)anim finished:(BOOL)flag;
-@end
-
-
 
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit14ProgressDialog")
@@ -884,15 +893,11 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit6UIData")
 @class UIColor;
 
 @interface UIView (SWIFT_EXTENSION(PayU3DS2CoreKit))
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) PayULoaderView * _Nullable loaderView;)
-+ (PayULoaderView * _Nullable)loaderView SWIFT_WARN_UNUSED_RESULT;
-+ (void)setLoaderView:(PayULoaderView * _Nullable)value;
-- (void)addPayULogo;
-- (void)removePayULogo;
 - (void)showPayULoaderWithMessage:(NSString * _Nonnull)message backgroundColor:(UIColor * _Nonnull)backgroundColor alpha:(CGFloat)alpha;
 - (void)showPayULoaderWith:(NSString * _Nonnull)message and:(UIColor * _Nonnull)backgroundColor;
 - (void)hidePayULoader;
 @end
+
 
 
 enum ButtonTypeInt : NSInteger;
@@ -1286,7 +1291,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
-@import QuartzCore;
 @import UIKit;
 #endif
 
@@ -1351,6 +1355,11 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit31AuthenticationRequestParameters")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+typedef SWIFT_ENUM(NSInteger, BiometricType, open) {
+  BiometricTypeTouchId = 0,
+  BiometricTypeFaceId = 1,
+};
+
 
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit13Customization")
@@ -1394,6 +1403,8 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @property (nonatomic, copy) NSString * _Nullable acsSignedContent;
 @property (nonatomic, copy) NSString * _Nullable threeDSServerTransactionID;
 @property (nonatomic, copy) NSString * _Nullable threeDSRequestorAppURL;
+@property (nonatomic, copy) NSString * _Nullable tdyCardId;
+@property (nonatomic, copy) NSString * _Nullable clientId;
 /// Initializing ChallengeParameters with all the required parameters
 /// \param a3DSServerTransactionID Transaction identifier assigned by the 3DS Server to uniquely identify a single transaction
 ///
@@ -1403,7 +1414,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 ///
 /// \param acsSignedContent ACS signed content. This data includes the ACS URL, ACS ephemeral public key, and SDK ephemeral public key
 ///
-- (nonnull instancetype)initWithA3DSServerTransactionID:(NSString * _Nullable)a3DSServerTransactionID acsTransactionID:(NSString * _Nullable)acsTransactionID acsRefNumber:(NSString * _Nullable)acsRefNumber acsSignedContent:(NSString * _Nullable)acsSignedContent threeDSServerTransactionID:(NSString * _Nullable)threeDSServerTransactionID threeDSRequestorAppURL:(NSString * _Nullable)threeDSRequestorAppURL acsRenderingType:(enum ACSUITypeInt)acsRenderingType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithA3DSServerTransactionID:(NSString * _Nullable)a3DSServerTransactionID acsTransactionID:(NSString * _Nullable)acsTransactionID acsRefNumber:(NSString * _Nullable)acsRefNumber acsSignedContent:(NSString * _Nullable)acsSignedContent threeDSServerTransactionID:(NSString * _Nullable)threeDSServerTransactionID threeDSRequestorAppURL:(NSString * _Nullable)threeDSRequestorAppURL tdyCardId:(NSString * _Nullable)tdyCardId clientId:(NSString * _Nullable)clientId acsRenderingType:(enum ACSUITypeInt)acsRenderingType OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1421,6 +1432,7 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit23ChallengeStatusReceiver_")
 - (void)protocolError:(ProtocolErrorEvent * _Null_unspecified)e;
 - (void)runtimeError:(RuntimeErrorEvent * _Null_unspecified)e;
 - (void)uiResponseData:(UIData * _Nonnull)data;
+- (void)oobInitiated;
 @end
 
 
@@ -1428,7 +1440,8 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit15CompletionEvent")
 @interface CompletionEvent : NSObject
 @property (nonatomic, copy) NSString * _Nonnull sdkTransactionID;
 @property (nonatomic, copy) NSString * _Nonnull transactionStatus;
-- (nonnull instancetype)initWithSdkTransactionID:(NSString * _Nonnull)sdkTransactionID transactionStatus:(NSString * _Nonnull)transactionStatus OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic) BOOL consentGiven;
+- (nonnull instancetype)initWithSdkTransactionID:(NSString * _Nonnull)sdkTransactionID transactionStatus:(NSString * _Nonnull)transactionStatus consentGiven:(BOOL)consentGiven OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)getSDKTransactionID SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nonnull)getTransactionStatus SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1461,6 +1474,7 @@ enum PayUCardType : NSInteger;
 - (void)setResendOTPAllowCount:(NSInteger)count;
 - (void)setIssuerTyper:(enum PayUCardType)issuerType;
 - (void)setShouldPresent:(BOOL)shouldPresent;
+- (void)enableMFAViaBiometric:(BOOL)enableMFA;
 @end
 
 @class LabelCustomization;
@@ -1477,6 +1491,7 @@ enum PayUCardType : NSInteger;
 - (void)setMaxResendInfoString:(NSString * _Nonnull)infoString;
 - (void)setMerchantCustomization:(LabelCustomization * _Nonnull)labelCustomization;
 - (void)setAmountCustomization:(Customization * _Nonnull)customization;
+- (void)setBiometricType:(enum BiometricType)biometricType;
 @end
 
 
@@ -1614,6 +1629,7 @@ SWIFT_PROTOCOL("_TtP15PayU3DS2CoreKit26OutOfBandChallengeProtocol_")
 @protocol OutOfBandChallengeProtocol <GenericChallengeProtocol>
 @end
 
+@class PResMessageExtension;
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit4PArs")
 @interface PArs : NSObject
@@ -1642,10 +1658,14 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit4PArs")
 @property (nonatomic, copy) NSString * _Nullable errorComponent;
 @property (nonatomic, copy) NSString * _Nullable errorDetail;
 @property (nonatomic, copy) NSString * _Nullable messageVersion;
-- (nonnull instancetype)initWithBuild:(SWIFT_NOESCAPE void (^ _Nonnull)(PArs * _Nonnull))build OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithJson:(NSDictionary<NSString *, id> * _Nonnull)json error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic, copy) NSArray<PResMessageExtension *> * _Nullable messageExtension;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC15PayU3DS2CoreKit20PResMessageExtension")
+@interface PResMessageExtension : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSCoder;
@@ -1677,20 +1697,14 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit14PayULoaderView")
 
 IB_DESIGNABLE
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit12PayULogoView")
-@interface PayULogoView : UIView <CAAnimationDelegate>
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@interface PayULogoView : UIView
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder SWIFT_UNAVAILABLE;
+- (void)layoutSubviews;
+- (void)drawRect:(CGRect)rect;
+/// Call this when removing from superview to ensure animations stop
+- (void)removeFromSuperview;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
-
-@class CAAnimation;
-
-@interface PayULogoView (SWIFT_EXTENSION(PayU3DS2CoreKit))
-- (void)animationDidStop:(CAAnimation * _Nonnull)anim finished:(BOOL)flag;
-@end
-
-
 
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit14ProgressDialog")
@@ -1890,15 +1904,11 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit6UIData")
 @class UIColor;
 
 @interface UIView (SWIFT_EXTENSION(PayU3DS2CoreKit))
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) PayULoaderView * _Nullable loaderView;)
-+ (PayULoaderView * _Nullable)loaderView SWIFT_WARN_UNUSED_RESULT;
-+ (void)setLoaderView:(PayULoaderView * _Nullable)value;
-- (void)addPayULogo;
-- (void)removePayULogo;
 - (void)showPayULoaderWithMessage:(NSString * _Nonnull)message backgroundColor:(UIColor * _Nonnull)backgroundColor alpha:(CGFloat)alpha;
 - (void)showPayULoaderWith:(NSString * _Nonnull)message and:(UIColor * _Nonnull)backgroundColor;
 - (void)hidePayULoader;
 @end
+
 
 
 enum ButtonTypeInt : NSInteger;

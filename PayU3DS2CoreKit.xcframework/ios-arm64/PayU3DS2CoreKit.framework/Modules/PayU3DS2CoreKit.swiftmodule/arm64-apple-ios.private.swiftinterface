@@ -16,19 +16,6 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-extension PayU3DS2CoreKit.ConfigParameters {
-  @objc dynamic public func enableCustomizedOtpUIFlow(_ isCustomizedOtpFlow: Swift.Bool)
-  @objc dynamic public func setMerchantName(_ mechantName: Swift.String)
-  @objc dynamic public func setAmount(_ amount: Swift.String)
-  @objc dynamic public func enableTxnTimeoutTimer(_ isEnabled: Swift.Bool)
-  @objc dynamic public func setSubmitButtonTitle(_ title: Swift.String)
-  @objc dynamic public func setResendButtonTitle(_ title: Swift.String)
-  @objc dynamic public func setOtpInfoString(_ infoString: Swift.String)
-  @objc dynamic public func setResendInfoString(_ infoString: Swift.String)
-  @objc dynamic public func setMaxResendInfoString(_ infoString: Swift.String)
-  @objc dynamic public func setMerchantCustomization(_ labelCustomization: PayU3DS2CoreKit.LabelCustomization)
-  @objc dynamic public func setAmountCustomization(_ customization: PayU3DS2CoreKit.Customization)
-}
 extension PayU3DS2CoreKit.WFChaCha20 {
   convenience public init(key: Swift.String, iv: Swift.String) throws
 }
@@ -89,7 +76,7 @@ extension Swift.FixedWidthInteger {
 extension PayU3DS2CoreKit.WFAES {
   convenience public init(key: Swift.String, iv: Swift.String, padding: PayU3DS2CoreKit.WFPadding = .pkcs7) throws
 }
-@objc open class PArs : ObjectiveC.NSObject, Swift.Codable {
+@_inheritsConvenienceInitializers @objc open class PArs : ObjectiveC.NSObject, Swift.Codable {
   @objc open var p_messageVersion: Swift.String?
   @objc open var threeDSServerTransID: Swift.String?
   @objc open var threeDSServerRefNumber: Swift.String?
@@ -115,9 +102,8 @@ extension PayU3DS2CoreKit.WFAES {
   @objc open var errorComponent: Swift.String?
   @objc open var errorDetail: Swift.String?
   @objc open var messageVersion: Swift.String?
-  public typealias buildPArsClosure = (PayU3DS2CoreKit.PArs) -> Swift.Void
-  @objc public init(build: (PayU3DS2CoreKit.PArs) -> Swift.Void)
-  @objc public init(json: [Swift.String : Any]) throws
+  @objc open var messageExtension: [PayU3DS2CoreKit.PResMessageExtension]?
+  @objc override dynamic public init()
   @objc deinit
   open func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -140,15 +126,13 @@ public protocol WFBlockMode {
 @objc public class CompletionEvent : ObjectiveC.NSObject {
   @objc public var sdkTransactionID: Swift.String
   @objc public var transactionStatus: Swift.String
-  @objc public init(sdkTransactionID: Swift.String, transactionStatus: Swift.String)
+  @objc public var consentGiven: Swift.Bool
+  @objc public init(sdkTransactionID: Swift.String, transactionStatus: Swift.String, consentGiven: Swift.Bool = false)
   @objc public func getSDKTransactionID() -> Swift.String
   @objc public func getTransactionStatus() -> Swift.String
   @objc deinit
 }
 @objc extension UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public static var loaderView: PayU3DS2CoreKit.PayULoaderView?
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func addPayULogo()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func removePayULogo()
   @objc @_Concurrency.MainActor(unsafe) dynamic public func showPayULoader(message: Swift.String = "", backgroundColor: UIKit.UIColor = .white, alpha: CoreFoundation.CGFloat = 1.0)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func showPayULoader(with message: Swift.String = "", and backgroundColor: UIKit.UIColor = .white)
   @objc @_Concurrency.MainActor(unsafe) dynamic public func hidePayULoader()
@@ -187,6 +171,12 @@ extension PayU3DS2CoreKit.WFAES : PayU3DS2CoreKit.WFCryptors {
   @objc public init(message: Swift.String, errorCode: Swift.String?, cause: Swift.String?)
   @objc public func getErrorCode() -> Swift.String?
   @objc deinit
+}
+public struct AnyCodable : Swift.Codable {
+  public let value: Any
+  public init(_ value: Any)
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public enum WFPKCS7 {
 }
@@ -248,6 +238,7 @@ public class PArq : Swift.Codable {
   public var dsRefNumber: Swift.String?
   public var sdkMaxTimeout: Swift.String?
   public var threeDSRequestorAuthenticationInd: Swift.String?
+  public var messageExtension: [PayU3DS2CoreKit.MessageExtension]?
   public typealias builder = (PayU3DS2CoreKit.PArq) -> Swift.Void
   public init(build: (PayU3DS2CoreKit.PArq) -> Swift.Void)
   @objc deinit
@@ -325,6 +316,16 @@ public enum AcsUiTemplate : Swift.String, Swift.Codable {
   open func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@_inheritsConvenienceInitializers @objc open class PResMessageExtension : ObjectiveC.NSObject, Swift.Codable {
+  open var criticalityIndicator: Swift.Bool?
+  open var id: Swift.String?
+  open var name: Swift.String?
+  open var data: [Swift.String : PayU3DS2CoreKit.AnyCodable]?
+  @objc override dynamic public init()
+  @objc deinit
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 @objc public protocol ExceptionReceiver {
   @objc func didReceiveInvalidInputException(_ message: Swift.String)
   @objc func didReceiveInvalidAcsUITypeException(_ acsUIType: Swift.String)
@@ -371,6 +372,15 @@ public enum AcsUiTemplate : Swift.String, Swift.Codable {
     get
   }
 }
+@objc public enum BiometricType : Swift.Int {
+  case touchId
+  case faceId
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class ConfigParameters : ObjectiveC.NSObject {
   @objc public var params: [Swift.String : [Swift.String : Swift.String]]
   @objc override dynamic public init()
@@ -388,6 +398,7 @@ extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setResendOTPAllowCount(_ count: Swift.Int)
   @objc dynamic public func setIssuerTyper(_ issuerType: PayU3DS2CoreKit.PayUCardType)
   @objc dynamic public func setShouldPresent(_ shouldPresent: Swift.Bool)
+  @objc dynamic public func enableMFAViaBiometric(_ enableMFA: Swift.Bool)
 }
 extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setSupportedUITypes(_ supportedUITypes: [Swift.String])
@@ -456,16 +467,6 @@ public enum SDKLoadingType {
   open func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class FontFamilyCustomization : ObjectiveC.NSObject {
-  @objc public var headerFontFamilyName: Swift.String
-  @objc public var textFontFamilyName: Swift.String
-  @objc public func setHeaderFontFamily(_ fontName: Swift.String)
-  @objc public func getHeadingTextFontName() -> Swift.String
-  @objc public func setTextFontFamily(_ fontName: Swift.String)
-  @objc public func getTextFontFamily() -> Swift.String
-  @objc override dynamic public init()
-  @objc deinit
-}
 @objc public protocol Transaction {
   @objc func getAuthenticationRequestParameters() -> PayU3DS2CoreKit.AuthenticationRequestParameters?
   @objc func doChallenge(_ challengeParameters: PayU3DS2CoreKit.ChallengeParameters, challengeStatusReceiver: any PayU3DS2CoreKit.ChallengeStatusReceiver, timeOut: Swift.Int) throws
@@ -533,6 +534,9 @@ final public class WFMD5 {
 extension PayU3DS2CoreKit.WFMD5 : PayU3DS2CoreKit.WFUpdatable {
   final public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
 }
+extension UIKit.UIImageView {
+  @_Concurrency.MainActor(unsafe) public func wf_setImage(withURL url: Foundation.URL, placeholderImage: UIKit.UIImage? = nil, completion: @escaping (UIKit.UIImage?) -> Swift.Void)
+}
 @_inheritsConvenienceInitializers @objc public class SDKNotInitializedException : PayU3DS2CoreKit.RuntimeException {
   @objc override public init(message: Swift.String, cause: Swift.String?)
   @objc deinit
@@ -575,8 +579,10 @@ final internal class WFBlockEncryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreK
   @objc public var acsSignedContent: Swift.String?
   @objc public var threeDSServerTransactionID: Swift.String?
   @objc public var threeDSRequestorAppURL: Swift.String?
+  @objc public var tdyCardId: Swift.String?
+  @objc public var clientId: Swift.String?
   public var acsRenderingType: PayU3DS2CoreKit.ACSUIType?
-  @objc public init(a3DSServerTransactionID: Swift.String? = nil, acsTransactionID: Swift.String? = nil, acsRefNumber: Swift.String? = nil, acsSignedContent: Swift.String? = nil, threeDSServerTransactionID: Swift.String? = nil, threeDSRequestorAppURL: Swift.String? = nil, acsRenderingType: PayU3DS2CoreKit.ACSUITypeInt = ACSUITypeInt.unknown)
+  @objc public init(a3DSServerTransactionID: Swift.String? = nil, acsTransactionID: Swift.String? = nil, acsRefNumber: Swift.String? = nil, acsSignedContent: Swift.String? = nil, threeDSServerTransactionID: Swift.String? = nil, threeDSRequestorAppURL: Swift.String? = nil, tdyCardId: Swift.String? = nil, clientId: Swift.String? = nil, acsRenderingType: PayU3DS2CoreKit.ACSUITypeInt = ACSUITypeInt.unknown)
   @objc deinit
 }
 final public class WFGCM : PayU3DS2CoreKit.WFBlockMode {
@@ -1260,11 +1266,11 @@ public protocol WFFinalizingDecryptModeWorker : PayU3DS2CoreKit.WFCipherModeWork
   mutating func didDecryptLast(bytes plaintext: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.ArraySlice<Swift.UInt8>
   mutating func finalize(decrypt plaintext: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.ArraySlice<Swift.UInt8>
 }
-@objc @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PayULogoView : UIKit.UIView, QuartzCore.CAAnimationDelegate {
+@objc @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PayULogoView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
   @objc deinit
-}
-extension PayU3DS2CoreKit.PayULogoView {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
 }
 public protocol WFAuthenticator {
   func authenticate(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
@@ -1615,6 +1621,16 @@ extension PayU3DS2CoreKit.WFDevice {
   public var hasUltraWideCamera: Swift.Bool {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc public class FontFamilyCustomization : ObjectiveC.NSObject {
+  @objc public var headerFontFamilyName: Swift.String
+  @objc public var textFontFamilyName: Swift.String
+  @objc public func setHeaderFontFamily(_ fontName: Swift.String)
+  @objc public func getHeadingTextFontName() -> Swift.String
+  @objc public func setTextFontFamily(_ fontName: Swift.String)
+  @objc public func getTextFontFamily() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc public protocol StatusCallBack {
   @objc func didReceiveSuccess(message: Swift.String, actionType: PayU3DS2CoreKit.ActionType, uiData: PayU3DS2CoreKit.UIData)
@@ -2930,7 +2946,7 @@ public enum EventType {
   @objc public var messageVersion: Swift.String {
     get
   }
-  public init(sdkTransactionID: Swift.String, deviceData: Swift.String, sdkEphemeralPublicKey: PayU3DS2CoreKit.SdkEphemPubKey, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, messageVersion: Swift.String) throws
+  public init(sdkTransactionID: Swift.String, deviceData: Swift.String, sdkEphemeralPublicKey: PayU3DS2CoreKit.SdkEphemPubKey, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, messageVersion: Swift.String)
   public func getSDKEphemeralPublicKey() -> PayU3DS2CoreKit.SdkEphemPubKey
   @objc public func getDeviceData() -> Swift.String
   @objc public func getSDKTransactionID() -> Swift.String
@@ -3016,6 +3032,25 @@ public struct WFCBC : PayU3DS2CoreKit.WFBlockMode {
   @objc func protocolError(_ e: PayU3DS2CoreKit.ProtocolErrorEvent!)
   @objc func runtimeError(_ e: PayU3DS2CoreKit.RuntimeErrorEvent!)
   @objc func uiResponseData(_ data: PayU3DS2CoreKit.UIData)
+  @objc func oobInitiated()
+}
+public class MessageExtension : Swift.Codable {
+  final public let criticalityIndicator: Swift.Bool?
+  final public let id: Swift.String?
+  final public let name: Swift.String?
+  final public let data: PayU3DS2CoreKit.MessageExtensionData?
+  public init(criticalityIndicator: Swift.Bool?, id: Swift.String?, name: Swift.String?, data: PayU3DS2CoreKit.MessageExtensionData?)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public class MessageExtensionData : Swift.Codable {
+  final public let messageType: Swift.String?
+  final public let tdyClientId: Swift.String?
+  public init(messageType: Swift.String?, tdyClientId: Swift.String?)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public class WFCMAC : PayU3DS2CoreKit.WFAuthenticator {
   public enum WFError : Swift.Error {
@@ -3030,6 +3065,20 @@ public class WFCMAC : PayU3DS2CoreKit.WFAuthenticator {
   public func authenticate(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
   public func authenticate(_ bytes: Swift.Array<Swift.UInt8>, cipher: any PayU3DS2CoreKit.WFCipher) throws -> Swift.Array<Swift.UInt8>
   @objc deinit
+}
+extension PayU3DS2CoreKit.ConfigParameters {
+  @objc dynamic public func enableCustomizedOtpUIFlow(_ isCustomizedOtpFlow: Swift.Bool)
+  @objc dynamic public func setMerchantName(_ mechantName: Swift.String)
+  @objc dynamic public func setAmount(_ amount: Swift.String)
+  @objc dynamic public func enableTxnTimeoutTimer(_ isEnabled: Swift.Bool)
+  @objc dynamic public func setSubmitButtonTitle(_ title: Swift.String)
+  @objc dynamic public func setResendButtonTitle(_ title: Swift.String)
+  @objc dynamic public func setOtpInfoString(_ infoString: Swift.String)
+  @objc dynamic public func setResendInfoString(_ infoString: Swift.String)
+  @objc dynamic public func setMaxResendInfoString(_ infoString: Swift.String)
+  @objc dynamic public func setMerchantCustomization(_ labelCustomization: PayU3DS2CoreKit.LabelCustomization)
+  @objc dynamic public func setAmountCustomization(_ customization: PayU3DS2CoreKit.Customization)
+  @objc dynamic public func setBiometricType(_ biometricType: PayU3DS2CoreKit.BiometricType)
 }
 public protocol WFCryptor {
   mutating func seek(to: Swift.Int) throws
@@ -3162,6 +3211,9 @@ extension PayU3DS2CoreKit.AcsUiTemplate : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.PayUCardType : Swift.Equatable {}
 extension PayU3DS2CoreKit.PayUCardType : Swift.Hashable {}
 extension PayU3DS2CoreKit.PayUCardType : Swift.RawRepresentable {}
+extension PayU3DS2CoreKit.BiometricType : Swift.Equatable {}
+extension PayU3DS2CoreKit.BiometricType : Swift.Hashable {}
+extension PayU3DS2CoreKit.BiometricType : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.PayULoadingType : Swift.Equatable {}
 extension PayU3DS2CoreKit.PayULoadingType : Swift.Hashable {}
 extension PayU3DS2CoreKit.IndicatorType : Swift.Equatable {}
