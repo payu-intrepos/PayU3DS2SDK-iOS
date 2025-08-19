@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "PayUIndia-3DS2-SDK",
     platforms: [.iOS(
-        .v12
+        .v13
     )],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -20,12 +20,12 @@ let package = Package(
         .package(
             name: "PayUIndia-CrashReporter",
             url: "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
-            from: "3.0.1"
+            from: "4.0.2"
         ),
         .package(
             name: "PayUIndia-NetworkReachability",
             url: "https://github.com/payu-intrepos/PayUNetworkReachability-iOS",
-            from: "1.1.0"
+            from: "2.1.1"
         )
     ],
     targets: [
