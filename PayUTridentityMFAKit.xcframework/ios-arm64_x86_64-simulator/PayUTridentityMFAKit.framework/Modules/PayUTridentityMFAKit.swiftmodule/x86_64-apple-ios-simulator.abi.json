@@ -12282,6 +12282,47 @@
       },
       {
         "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "PayUTridentityMFAKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUTridentityMFAKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Security",
+        "printedName": "Security",
+        "declKind": "Import",
+        "moduleName": "PayUTridentityMFAKit"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "PayUTridentityMFAKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUTridentityMFAKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "QuartzCore",
         "printedName": "QuartzCore",
         "declKind": "Import",
@@ -26976,6 +27017,41 @@
           },
           {
             "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
             "name": "ReferenceConvertible",
             "printedName": "ReferenceConvertible",
             "children": [
@@ -27017,41 +27093,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
@@ -27805,6 +27846,51 @@
           },
           {
             "kind": "Conformance",
+            "name": "DataProtocol",
+            "printedName": "DataProtocol",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Regions",
+                "printedName": "Regions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CollectionOfOne",
+                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.UInt8]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UInt8",
+                            "printedName": "Swift.UInt8",
+                            "usr": "s:s5UInt8V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:s15CollectionOfOneV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation12DataProtocolP",
+            "mangledName": "$s10Foundation12DataProtocolP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "MutableDataProtocol",
+            "printedName": "MutableDataProtocol",
+            "usr": "s:10Foundation19MutableDataProtocolP",
+            "mangledName": "$s10Foundation19MutableDataProtocolP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ContiguousBytes",
             "printedName": "ContiguousBytes",
             "usr": "s:10Foundation15ContiguousBytesP",
@@ -27851,51 +27937,6 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DataProtocol",
-            "printedName": "DataProtocol",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Regions",
-                "printedName": "Regions",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CollectionOfOne",
-                    "printedName": "Swift.CollectionOfOne<[Swift.UInt8]>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[Swift.UInt8]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UInt8",
-                            "printedName": "Swift.UInt8",
-                            "usr": "s:s5UInt8V"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:s15CollectionOfOneV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation12DataProtocolP",
-            "mangledName": "$s10Foundation12DataProtocolP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "MutableDataProtocol",
-            "printedName": "MutableDataProtocol",
-            "usr": "s:10Foundation19MutableDataProtocolP",
-            "mangledName": "$s10Foundation19MutableDataProtocolP"
           }
         ]
       },
@@ -33243,21 +33284,21 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/PaymentViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 884,
+      "offset": 1225,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/PaymentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6268,
+      "offset": 7634,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/PaymentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6300,
+      "offset": 7666,
       "length": 1,
       "value": "0"
     },
@@ -33984,106 +34025,113 @@
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1393,
+      "length": 18,
+      "value": "\"M2tvdTd6cFJjRw==\""
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1371,
+      "offset": 1437,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1518,
+      "offset": 1584,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1936,
+      "offset": 2002,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2046,
+      "offset": 2112,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2087,
+      "offset": 2153,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2168,
+      "offset": 2234,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2488,
+      "offset": 2554,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2492,
+      "offset": 2558,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2497,
+      "offset": 2563,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2531,
+      "offset": 2597,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2571,
+      "offset": 2637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2610,
+      "offset": 2676,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "Array",
-      "offset": 2738,
+      "offset": 2804,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2981,
+      "offset": 3047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3134,
+      "offset": 3200,
       "length": 5,
       "value": "false"
     },
@@ -36104,6 +36152,20 @@
       "value": "0"
     },
     {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Utilities\/TDYKeyManager.swift",
+      "kind": "StringLiteral",
+      "offset": 417,
+      "length": 17,
+      "value": "\"TDY_RSA_KEY_TAG\""
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Utilities\/TDYKeyManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 543,
+      "length": 4,
+      "value": "2048"
+    },
+    {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/lottie-ios\/src\/Private\/NodeRenderSystem\/Nodes\/OutputNodes\/Renderables\/TDYGradientFillRenderer.swift",
       "kind": "BooleanLiteral",
       "offset": 288,
@@ -36197,14 +36259,14 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10527,
+      "offset": 10520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10611,
+      "offset": 10604,
       "length": 5,
       "value": "false"
     },
@@ -39347,14 +39409,14 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/RegistrationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3809,
+      "offset": 4011,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/RegistrationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10601,
+      "offset": 11439,
       "length": 5,
       "value": "false"
     },

@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayU3DS2CoreKit
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2CoreKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AdSupport
 import CoreLocation
 import Darwin
@@ -68,9 +69,9 @@ public struct WFOFB : PayU3DS2CoreKit.WFBlockMode {
 extension Swift.FixedWidthInteger {
   @inlinable internal func bytes(totalBytes: Swift.Int = MemoryLayout<Self>.size) -> Swift.Array<Swift.UInt8> {
     arrayOfBytes(value: self.littleEndian, length: totalBytes)
-    // TODO: adjust bytes order
-    // var value = self.littleEndian
-    // return withUnsafeBytes(of: &value, Array.init).reversed()
+     
+     
+     
   }
 }
 extension PayU3DS2CoreKit.WFAES {
@@ -133,9 +134,9 @@ public protocol WFBlockMode {
   @objc deinit
 }
 @objc extension UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func showPayULoader(message: Swift.String = "", backgroundColor: UIKit.UIColor = .white, alpha: CoreFoundation.CGFloat = 1.0)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func showPayULoader(with message: Swift.String = "", and backgroundColor: UIKit.UIColor = .white)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func hidePayULoader()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func showPayULoader(message: Swift.String = "", backgroundColor: UIKit.UIColor = .white, alpha: CoreFoundation.CGFloat = 1.0)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func showPayULoader(with message: Swift.String = "", and backgroundColor: UIKit.UIColor = .white)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func hidePayULoader()
 }
 @objc public class ProtocolErrorEvent : ObjectiveC.NSObject {
   @objc public var sdkTransactionID: Swift.String
@@ -535,7 +536,7 @@ extension PayU3DS2CoreKit.WFMD5 : PayU3DS2CoreKit.WFUpdatable {
   final public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
 }
 extension UIKit.UIImageView {
-  @_Concurrency.MainActor(unsafe) public func wf_setImage(withURL url: Foundation.URL, placeholderImage: UIKit.UIImage? = nil, completion: @escaping (UIKit.UIImage?) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func wf_setImage(withURL url: Foundation.URL, placeholderImage: UIKit.UIImage? = nil, completion: @escaping (UIKit.UIImage?) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc public class SDKNotInitializedException : PayU3DS2CoreKit.RuntimeException {
   @objc override public init(message: Swift.String, cause: Swift.String?)
@@ -554,12 +555,12 @@ extension UIKit.UIImageView {
   public func getButtonText() -> Swift.String?
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PayUBaseView : UIKit.UIView {
-  @objc @_Concurrency.MainActor(unsafe) public var onViewDismissed: (() -> Swift.Void)?
-  @objc @_Concurrency.MainActor(unsafe) public var onHeightChanged: ((CoreFoundation.CGFloat) -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor @preconcurrency public class PayUBaseView : UIKit.UIView {
+  @objc @_Concurrency.MainActor @preconcurrency public var onViewDismissed: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor @preconcurrency public var onHeightChanged: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @objc deinit
 }
 @usableFromInline
@@ -750,15 +751,15 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   @inlinable public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8> {
     self.accumulated += bytes
 
-    // If a worker (eg GCM) can combine ciphertext + tag
-    // we need to remove tag from the ciphertext.
+     
+     
     if !isLast && self.accumulated.count < self.blockSize + self.worker.additionalBufferSize {
       return []
     }
 
     let accumulatedWithoutSuffix: Array<UInt8>
     if self.worker.additionalBufferSize > 0 {
-      // FIXME: how slow is that?
+       
       accumulatedWithoutSuffix = Array(self.accumulated.prefix(self.accumulated.count - self.worker.additionalBufferSize))
     } else {
       accumulatedWithoutSuffix = self.accumulated
@@ -766,13 +767,13 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
 
     var processedBytesCount = 0
     var plaintext = Array<UInt8>(reserveCapacity: accumulatedWithoutSuffix.count)
-    // Processing in a block-size manner. It's good for block modes, but bad for stream modes.
+     
     for var chunk in accumulatedWithoutSuffix.batched(by: self.blockSize) {
       if isLast || (accumulatedWithoutSuffix.count - processedBytesCount) >= blockSize {
         let isLastChunk = processedBytesCount + chunk.count == accumulatedWithoutSuffix.count
 
         if isLast, isLastChunk, var finalizingWorker = worker as? WFFinalizingDecryptModeWorker {
-          chunk = try finalizingWorker.willDecryptLast(bytes: chunk + accumulated.suffix(worker.additionalBufferSize)) // tag size
+          chunk = try finalizingWorker.willDecryptLast(bytes: chunk + accumulated.suffix(worker.additionalBufferSize))  
         }
 
         if !chunk.isEmpty {
@@ -786,7 +787,7 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
         processedBytesCount += chunk.count
       }
     }
-    accumulated.removeFirst(processedBytesCount) // super-slow
+    accumulated.removeFirst(processedBytesCount)  
 
     if isLast {
       if accumulatedWithoutSuffix.isEmpty, var finalizingWorker = worker as? WFFinalizingDecryptModeWorker {
@@ -801,11 +802,11 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   public func seek(to position: Swift.Int) throws
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) open class ProgressDialog : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc @_Concurrency.MainActor(unsafe) open func start()
-  @objc @_Concurrency.MainActor(unsafe) open func stop()
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class ProgressDialog : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc @_Concurrency.MainActor @preconcurrency open func start()
+  @objc @_Concurrency.MainActor @preconcurrency open func stop()
   @objc deinit
 }
 @objc public class RuntimeException : ObjectiveC.NSObject, Swift.Error {
@@ -1105,7 +1106,7 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
     }
     public static func getPublicKeyComponents(_ keyData: Foundation.Data) throws -> PayU3DS2CoreKit.WFCC.EC.KeyComponents
     public static func getPrivateKeyComponents(_ keyData: Foundation.Data) throws -> PayU3DS2CoreKit.WFCC.EC.KeyComponents
-    public static func createFromData(_ keySize: Darwin.size_t, _ x: Foundation.Data, _ y: Foundation.Data) throws -> Foundation.Data
+    public static func createFromData(_ keySize: _Builtin_stddef.size_t, _ x: Foundation.Data, _ y: Foundation.Data) throws -> Foundation.Data
     public static func available() -> Swift.Bool
     @objc deinit
   }
@@ -1237,7 +1238,7 @@ extension Foundation.Data {
   public func jsonDataToDic() -> [Swift.String : Any]?
 }
 extension UIKit.UIApplication {
-  @_Concurrency.MainActor(unsafe) public class func topViewController(base: UIKit.UIViewController?) -> UIKit.UIViewController?
+  @_Concurrency.MainActor @preconcurrency public class func topViewController(base: UIKit.UIViewController?) -> UIKit.UIViewController?
 }
 public protocol WFCipherModeWorker {
   var cipherOperation: PayU3DS2CoreKit.CipherOperationOnBlock { get }
@@ -1266,11 +1267,11 @@ public protocol WFFinalizingDecryptModeWorker : PayU3DS2CoreKit.WFCipherModeWork
   mutating func didDecryptLast(bytes plaintext: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.ArraySlice<Swift.UInt8>
   mutating func finalize(decrypt plaintext: Swift.ArraySlice<Swift.UInt8>) throws -> Swift.ArraySlice<Swift.UInt8>
 }
-@objc @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PayULogoView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func layoutSubviews()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+@objc @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor @preconcurrency public class PayULogoView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
   @objc deinit
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func removeFromSuperview()
 }
 public protocol WFAuthenticator {
   func authenticate(_ bytes: Swift.Array<Swift.UInt8>) throws -> Swift.Array<Swift.UInt8>
@@ -1809,7 +1810,7 @@ final public class WFAES {
       b3 = lb30 ^ lb31 ^ lb32 ^ lb33
     }
 
-    // last round
+     
     let r = rounds - 1
 
     t[0] = b0 ^ rk[r][0]
@@ -1817,7 +1818,7 @@ final public class WFAES {
     t[2] = b2 ^ rk[r][2]
     t[3] = b3 ^ rk[r][3]
 
-    // rounds
+     
     b0 = F1(t[0], t[1], t[2], t[3]) ^ rk[rounds][0]
     b1 = F1(t[1], t[2], t[3], t[0]) ^ rk[rounds][1]
     b2 = F1(t[2], t[3], t[0], t[1]) ^ rk[rounds][2]
@@ -1849,7 +1850,7 @@ extension PayU3DS2CoreKit.WFAES : PayU3DS2CoreKit.WFCipher {
     for chunk in chunks {
       out += try oneTimeCryptor.update(withBytes: chunk, isLast: false)
     }
-    // Padding may be added at the very end
+     
     out += try oneTimeCryptor.finish()
 
     if self.blockMode.options.contains(.paddingRequired) && (out.count % WFAES.blockSize != 0) {
@@ -1874,8 +1875,8 @@ extension PayU3DS2CoreKit.WFAES : PayU3DS2CoreKit.WFCipher {
     var lastIdx = chunks.startIndex
     chunks.indices.formIndex(&lastIdx, offsetBy: chunks.count - 1)
 
-    // To properly remove padding, `isLast` has to be known when called with the last chunk of ciphertext
-    // Last chunk of ciphertext may contains padded data so next call to update(..) won't be able to remove it
+     
+     
     for idx in chunks.indices {
       out += try oneTimeCryptor.update(withBytes: chunks[idx], isLast: idx == lastIdx)
     }
@@ -1987,10 +1988,10 @@ public protocol WFCryptors : AnyObject {
 extension PayU3DS2CoreKit.WFCryptors {
   public static func randomIV(_ count: Swift.Int) -> Swift.Array<Swift.UInt8>
 }
-@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PayULoaderView : PayU3DS2CoreKit.PayUBaseView {
-  @objc @_Concurrency.MainActor(unsafe) public func updateDescriptionMessage(_ message: Swift.String)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency public class PayULoaderView : PayU3DS2CoreKit.PayUBaseView {
+  @objc @_Concurrency.MainActor @preconcurrency public func updateDescriptionMessage(_ message: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
 @objc public class Customization : ObjectiveC.NSObject {
@@ -2018,7 +2019,7 @@ final internal class WFStreamEncryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2Core
   @inlinable final public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool) throws -> Swift.Array<Swift.UInt8> {
     var accumulated = Array(bytes)
     if isLast {
-      // CTR doesn't need padding. Really. Add padding to the last block if really want. but... don't.
+       
       accumulated = self.padding.add(to: accumulated, blockSize: self.blockSize - self.lastBlockRemainder)
     }
 
@@ -2027,7 +2028,7 @@ final internal class WFStreamEncryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2Core
       encrypted += self.worker.encrypt(block: chunk)
     }
 
-    // omit unecessary calculation if not needed
+     
     if self.padding != .noPadding {
       self.lastBlockRemainder = encrypted.count.quotientAndRemainder(dividingBy: self.blockSize).remainder
     }
@@ -2080,12 +2081,12 @@ extension PayU3DS2CoreKit.WFSHA1 : PayU3DS2CoreKit.WFUpdatable {
 
     if isLast {
       let lengthInBits = (processedBytesTotalCount + self.accumulated.count) * 8
-      let lengthBytes = lengthInBits.bytes(totalBytes: 64 / 8) // A 64-bit representation of b
+      let lengthBytes = lengthInBits.bytes(totalBytes: 64 / 8)  
 
-      // Step 1. Append padding
+       
       bitPadding(to: &self.accumulated, blockSize: WFSHA1.blockSize, allowance: 64 / 8)
 
-      // Step 2. Append Length a 64-bit representation of lengthInBits
+       
       self.accumulated += lengthBytes
     }
 
@@ -2099,7 +2100,7 @@ extension PayU3DS2CoreKit.WFSHA1 : PayU3DS2CoreKit.WFUpdatable {
     self.accumulated.removeFirst(processedBytes)
     self.processedBytesTotalCount += processedBytes
 
-    // output current hash
+     
     var result = Array<UInt8>(repeating: 0, count: WFSHA1.digestLength)
     var pos = 0
     for idx in 0..<self.accumulatedHash.count {
@@ -2111,7 +2112,7 @@ extension PayU3DS2CoreKit.WFSHA1 : PayU3DS2CoreKit.WFUpdatable {
       pos += 4
     }
 
-    // reset hash value for instance
+     
     if isLast {
       self.accumulatedHash = WFSHA1.hashInitialValue
     }
@@ -2237,12 +2238,12 @@ extension PayU3DS2CoreKit.WFSHA2 : PayU3DS2CoreKit.WFUpdatable {
 
     if isLast {
       let lengthInBits = (processedBytesTotalCount + self.accumulated.count) * 8
-      let lengthBytes = lengthInBits.bytes(totalBytes: self.blockSize / 8) // A 64-bit/128-bit representation of b. blockSize fit by accident.
+      let lengthBytes = lengthInBits.bytes(totalBytes: self.blockSize / 8)  
 
-      // Step 1. Append padding
+       
       bitPadding(to: &self.accumulated, blockSize: self.blockSize, allowance: self.blockSize / 8)
 
-      // Step 2. Append Length a 64-bit representation of lengthInBits
+       
       self.accumulated += lengthBytes
     }
 
@@ -2261,7 +2262,7 @@ extension PayU3DS2CoreKit.WFSHA2 : PayU3DS2CoreKit.WFUpdatable {
     self.accumulated.removeFirst(processedBytes)
     self.processedBytesTotalCount += processedBytes
 
-    // output current hash
+     
     var result = Array<UInt8>(repeating: 0, count: variant.digestLength)
     switch self.variant {
       case .sha224, .sha256:
@@ -2290,11 +2291,11 @@ extension PayU3DS2CoreKit.WFSHA2 : PayU3DS2CoreKit.WFUpdatable {
         }
     }
 
-    // reset hash value for instance
+     
     if isLast {
       switch self.variant {
         case .sha224, .sha256:
-          self.accumulatedHash32 = self.variant.h.lazy.map { UInt32($0) } // FIXME: UInt64 for process64
+          self.accumulatedHash32 = self.variant.h.lazy.map { UInt32($0) }  
         case .sha384, .sha512:
           self.accumulatedHash64 = self.variant.h
       }
@@ -2487,7 +2488,7 @@ extension PayU3DS2CoreKit.ACSUIType {
     buf.deallocate()
   }
 
-  // xor
+   
   for i in 0..<length {
     buf[i] = left[left.startIndex.advanced(by: i)] ^ right[right.startIndex.advanced(by: i)]
   }
@@ -2496,13 +2497,13 @@ extension PayU3DS2CoreKit.ACSUIType {
 }
 @inline(__always) @inlinable internal func bitPadding(to data: inout Swift.Array<Swift.UInt8>, blockSize: Swift.Int, allowance: Swift.Int = 0) {
   let msgLength = data.count
-  // Step 1. Append Padding Bits
-  // append one bit (UInt8 with one bit) to message
+   
+   
   data.append(0x80)
 
-  // Step 2. append "0" bit until message length in bits ≡ 448 (mod 512)
-  let max = blockSize - allowance // 448, 986
-  if msgLength % blockSize < max { // 448
+   
+  let max = blockSize - allowance  
+  if msgLength % blockSize < max {  
     data += Array<UInt8>(repeating: 0, count: max - 1 - (msgLength % blockSize))
   } else {
     data += Array<UInt8>(repeating: 0, count: blockSize + max - 1 - (msgLength % blockSize))
@@ -2605,7 +2606,7 @@ final internal class WFStreamDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2Core
     let toProcess = self.accumulated.prefix(max(self.accumulated.count - self.worker.additionalBufferSize, 0))
 
     if var finalizingWorker = worker as? WFFinalizingDecryptModeWorker, isLast == true {
-      // will truncate suffix if needed
+       
       try finalizingWorker.willDecryptLast(bytes: self.accumulated.slice)
     }
 
@@ -2620,17 +2621,17 @@ final internal class WFStreamDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2Core
       plaintext = Array(try finalizingWorker.didDecryptLast(bytes: plaintext.slice))
     }
 
-    // omit unecessary calculation if not needed
+     
     if self.padding != .noPadding {
       self.lastBlockRemainder = plaintext.count.quotientAndRemainder(dividingBy: self.blockSize).remainder
     }
 
     if isLast {
-      // CTR doesn't need padding. Really. Add padding to the last block if really want. but... don't.
+       
       plaintext = self.padding.remove(from: plaintext, blockSize: self.blockSize - self.lastBlockRemainder)
     }
 
-    self.accumulated.removeFirst(processedBytesCount) // super-slow
+    self.accumulated.removeFirst(processedBytesCount)  
 
     if var finalizingWorker = worker as? WFFinalizingDecryptModeWorker, isLast == true {
       plaintext = Array(try finalizingWorker.finalize(decrypt: plaintext.slice))
@@ -2874,10 +2875,10 @@ extension PayU3DS2CoreKit.WFSHA3 : PayU3DS2CoreKit.WFUpdatable {
     self.accumulated += bytes
 
     if isLast {
-      // Add padding
+       
       let markByteIndex = self.accumulated.count
 
-      // We need to always pad the input. Even if the input is a multiple of blockSize.
+       
       let r = self.blockSize * 8
       let q = (r / 8) - (accumulated.count % (r / 8))
       self.accumulated += Array<UInt8>(repeating: 0, count: q)
@@ -2895,12 +2896,12 @@ extension PayU3DS2CoreKit.WFSHA3 : PayU3DS2CoreKit.WFUpdatable {
     }
     self.accumulated.removeFirst(processedBytes)
 
-    // TODO: verify performance, reduce vs for..in
+     
     let result = self.accumulatedHash.reduce(into: Array<UInt8>()) { (result, value) in
       result += value.bigEndian.bytes()
     }
 
-    // reset hash value for instance
+     
     if isLast {
       self.accumulatedHash = Array<UInt64>(repeating: 0, count: self.digestLength)
     }
@@ -3318,6 +3319,7 @@ extension PayU3DS2CoreKit.WFBit : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.WFSHA2.WFVariant : Swift.Equatable {}
 extension PayU3DS2CoreKit.WFSHA2.WFVariant : Swift.Hashable {}
 extension PayU3DS2CoreKit.WFSHA2.WFVariant : Swift.Sendable {}
+extension PayU3DS2CoreKit.WFSHA2.WFVariant : Swift.BitwiseCopyable {}
 extension PayU3DS2CoreKit.WFOCB.WFMode : Swift.Equatable {}
 extension PayU3DS2CoreKit.WFOCB.WFMode : Swift.Hashable {}
 extension PayU3DS2CoreKit.WFOCB.WFError : Swift.Equatable {}
