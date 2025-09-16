@@ -594,7 +594,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TridentityMF
 - (void)initiateRegistrationWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject in:(UIViewController * _Nonnull)homeViewController completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))completionHandler;
 - (void)checkRegistrationStatusWithIsBiometricChanged:(BOOL)isBiometricChanged with:(NSDictionary<NSString *, NSString *> * _Nonnull)jsonObject completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))completionHandler;
 - (void)processTransactionWith:(NSDictionary<NSString *, NSString *> * _Nonnull)jsonObject statusDelegate:(id <TridentityMFASDKProtocol> _Nonnull)statusDelegate;
-- (void)deRegisterUserWithUID:(NSString * _Nonnull)uid clientId:(NSString * _Nonnull)clientId statusDelegate:(id <TridentityMFASDKProtocol> _Nonnull)statusDelegate;
+- (void)deRegisterUserWithBCTIDs:(NSArray<NSString *> * _Nonnull)bctids clientId:(NSString * _Nonnull)clientId statusDelegate:(id <TridentityMFASDKProtocol> _Nonnull)statusDelegate;
 - (void)setRequestIdWithRequestId:(NSString * _Nonnull)requestId;
 @end
 

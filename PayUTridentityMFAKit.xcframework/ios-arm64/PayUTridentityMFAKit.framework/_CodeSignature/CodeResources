@@ -14,7 +14,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		mWbeenGMzHEbX3Lt4cNn4O5k1oM=
+		QsboD5FgL4RwzeeIqwqUPOg3WWg=
 		</data>
 		<key>BottomSheetViewController.nib</key>
 		<data>
@@ -22,39 +22,39 @@
 		</data>
 		<key>CongratulationsViewController.nib</key>
 		<data>
-		IW65ROW9fuwncp+wMNnoUDzV8vQ=
+		a2ClNL9w9vREf+87fAWelyn/W9Q=
 		</data>
 		<key>FailedRegistrationViewController.nib</key>
 		<data>
-		OdFSCrVOjFunfEBehGHwyDn2VpM=
+		VORhuS7gMvPWqlWtD2CecIvxt7k=
 		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
-		rhxlknbFGTouzkU0mGyzhVxo3ZA=
+		PCicm9nXecai/Zv/0FUWVxjtQ90=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		7C+yKf7XIxKftH6PtPSl3tGZVys=
+		mmBOHDTnGfeIGGQpICxVDVciJvE=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		WSDfFE1Ttkrwkl8w97Q5G3WTgys=
+		9dGDliknZ6q2W4fWtPJg6IAAsSw=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		KnXW5RfWDKh2nsStACQhk9Bdw0M=
+		75Dwg6C9sJuPP1/w7fbHeYGEERU=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		LEqHV/Gvf/BVB2xqNmbLGGuFhds=
+		j4gGZ93CRlIbH0btUWK3ruAcg3E=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		KnXW5RfWDKh2nsStACQhk9Bdw0M=
+		75Dwg6C9sJuPP1/w7fbHeYGEERU=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		4WkuJcKkpwsFvibl1BLRb6oqdEE=
+		ERMG8mtN0K990b2rMsc5/IU1o6A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tF68NArZTFrJFIONohR+ZI427RX/hD47eIgoAXmixjc=
+			69cuvIXG2cxpBOZU7tWZqAzcYv0YMzlFmsRJIrB4HOU=
 			</data>
 		</dict>
 		<key>BottomSheetViewController.nib</key>
@@ -120,56 +120,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mu+ine0BzA/HE1JidOK5SWX6uy9rauaAlC974aiMb9I=
+			hhHM8T/829COYDNu6RusKpSi3cZRuHMZuf2cRpDYVLM=
 			</data>
 		</dict>
 		<key>FailedRegistrationViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ROsBrBPESQ1G/0YWNJ0gMw1kpEX4VfUFE00XpqlsnQ=
+			KcgcjiRmwC8ZzYvYcS/bOZCgrioqAxPa0bwpf9EnGu4=
 			</data>
 		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kNVmqgH7BYwa+04H9FW97EDnUTc4sY0ZbGoukiAI+3Y=
+			1lXAzsPnx+D+85eudKDdq5eED18UJKdH3zgO1k7/Bww=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5XoN3Va4I3EvmU3ARIqbUnO/h/+7iUZIi0hWAPP6qiM=
+			/gIAbt6MbMoZNFWq0UCjRX3k3nEKN8EW3wvuNT8gMCg=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LSjk+taoCn2ei64rZlH082RJDrFVy9spjEayq7tVhbE=
+			yTF2gYut8YUAgHtSiE+AHYozfq7QMN7nWiyneGYsCL0=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ifl7lUubkf1cIv8XBsgil3zOaJSpWP3+M3TbbR24ANg=
+			nwZc/dLelAWBc9RicnubG8iX99HX/kOLwSdDesNB/ZA=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LSjk+taoCn2ei64rZlH082RJDrFVy9spjEayq7tVhbE=
+			yTF2gYut8YUAgHtSiE+AHYozfq7QMN7nWiyneGYsCL0=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HwRJIdDwHoeKHdCu95vr1fmZtICiThFnCdSvFMbSMSM=
+			lljhHiJsGynMBCfc8JTTT92307ZJbIPYTRxyth9K6oA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
