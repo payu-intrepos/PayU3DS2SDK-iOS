@@ -32,7 +32,6 @@ let package = Package(
         .target(
             name: "PayUIndia-3DS2-SDKTarget",
             dependencies: [
-                "PayUTridentityMFAKit",
                 "PayU3DS2CoreKit",
                 "PayU3DS2Kit",
                 .product(
@@ -45,10 +44,6 @@ let package = Package(
                 )
             ],
             path: "PayUIndia-3DS2-SDKWrapper"
-        ),
-        .binaryTarget(
-            name: "PayUTridentityMFAKit",
-            path: "./PayUTridentityMFAKit.xcframework"
         ),
         .binaryTarget(
             name: "PayU3DS2CoreKit",
