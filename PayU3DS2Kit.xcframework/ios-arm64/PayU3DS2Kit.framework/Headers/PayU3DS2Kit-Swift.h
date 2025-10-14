@@ -314,16 +314,22 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @protocol PayU3DS2HashDelegate;
 @class PayU3DS2CardData;
 @class PayU3DS2ChallengeParameter;
+@protocol PayU3DS2IniitateChallengeDelegate;
+@class PayU3DS2PaymentParam;
 enum PayU3DS2ACSActionType : NSInteger;
 @class PayU3DS2ACSActionParams;
-@class PayU3DS2PaymentParam;
 SWIFT_CLASS("_TtC11PayU3DS2Kit8PayU3DS2")
 @interface PayU3DS2 : NSObject
 + (void)startRedirectionFlowWithVc:(UIViewController * _Nonnull)vc params:(NSDictionary<NSString *, id> * _Nonnull)params uiCustomisation:(NSDictionary<NSString *, id> * _Nullable)uiCustomisation delegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
 + (void)initialiseWithKey:(NSString * _Nonnull)key requestId:(NSString * _Nonnull)requestId config:(PayU3DS2Config * _Nonnull)config completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
 + (void)cardBinInfoWithCardBinInfoRequest:(PayU3DS2CardBinInfoRequest * _Nonnull)cardBinInfoRequest delegate:(id <PayU3DS2HashDelegate> _Nonnull)delegate completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
 + (PayU3DS2Response * _Nonnull)extractDeviceDetailsWithCardData:(PayU3DS2CardData * _Nonnull)cardData SWIFT_WARN_UNUSED_RESULT;
-+ (void)initiateChallengeWithChallengeParameter:(PayU3DS2ChallengeParameter * _Nonnull)challengeParameter completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
++ (void)initiateChallengeWithChallengeParameter:(PayU3DS2ChallengeParameter * _Nonnull)challengeParameter vc:(UIViewController * _Nullable)vc completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
++ (void)initiateChallengeWithMFAWithChallengeParameter:(PayU3DS2ChallengeParameter * _Nonnull)challengeParameter vc:(UIViewController * _Nullable)vc delegate:(id <PayU3DS2IniitateChallengeDelegate> _Nonnull)delegate;
++ (void)callPaymentAPIWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate completion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable, PayU3DS2ChallengeParameter * _Nullable))completion;
++ (void)authorisePaymentWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
++ (void)authenticatePaymentWithDelegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
++ (void)setPlatformParamsWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams;
 + (void)actionWithAcsActionType:(enum PayU3DS2ACSActionType)acsActionType challengeInputParams:(PayU3DS2ACSActionParams * _Nonnull)challengeInputParams completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
 + (void)initiatePaymentWithVc:(UIViewController * _Nonnull)vc config:(PayU3DS2Config * _Nonnull)config paymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
 + (void)clean;
@@ -385,6 +391,13 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit25PayU3DS2BaseCustomisation")
 SWIFT_PROTOCOL("_TtP11PayU3DS2Kit20PayU3DS2BaseDelegate_")
 @protocol PayU3DS2BaseDelegate
 - (void)onErrorWithErrorCode:(NSInteger)errorCode errorMessage:(NSString * _Nonnull)errorMessage;
+@end
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit29PayU3DS2BaseTextCustomisation")
+@interface PayU3DS2BaseTextCustomisation : NSObject
+- (nonnull instancetype)initWithHeaderText:(NSString * _Nullable)headerText subHeaderText:(NSString * _Nullable)subHeaderText OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, PayU3DS2BillingCycle, open) {
@@ -472,13 +485,15 @@ typedef SWIFT_ENUM(NSInteger, PayU3DS2CardScheme, open) {
   PayU3DS2CardSchemeSodexo = 11,
 };
 
+@class PayU3DS2MFAParam;
 SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2ChallengeParameter")
 @interface PayU3DS2ChallengeParameter : NSObject
 @property (nonatomic, copy) NSString * _Nonnull acsSignedContent;
 @property (nonatomic, copy) NSString * _Nonnull acsRefNumber;
 @property (nonatomic, copy) NSString * _Nonnull acsTransactionID;
 @property (nonatomic, copy) NSString * _Nonnull threeDSServerTransactionID;
-- (nonnull instancetype)initWithAcsSignedContent:(NSString * _Nonnull)acsSignedContent acsRefNumber:(NSString * _Nonnull)acsRefNumber acsTransactionID:(NSString * _Nonnull)acsTransactionID threeDSServerTransactionID:(NSString * _Nonnull)threeDSServerTransactionID OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) PayU3DS2MFAParam * _Nullable mfaParams;
+- (nonnull instancetype)initWithAcsSignedContent:(NSString * _Nonnull)acsSignedContent acsRefNumber:(NSString * _Nonnull)acsRefNumber acsTransactionID:(NSString * _Nonnull)acsTransactionID threeDSServerTransactionID:(NSString * _Nonnull)threeDSServerTransactionID mfaParams:(PayU3DS2MFAParam * _Nullable)mfaParams OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -499,9 +514,16 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @property (nonatomic) enum PayUCurrency currency;
 @property (nonatomic, strong) PayU3DS2ACSContentConfig * _Nullable acsContentConfig;
 @property (nonatomic) BOOL shouldPresent;
+@property (nonatomic) BOOL enableMFAViaBiometric;
 /// Setup Loader UI
 - (void)setDefaultProgressLoaderWithShowDefaultLoader:(BOOL)showDefaultLoader defaultProgressLoaderColor:(NSString * _Nonnull)defaultProgressLoaderColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_PROTOCOL("_TtP11PayU3DS2Kit19PayU3DS2MFADelegate_")
+@protocol PayU3DS2MFADelegate
+@optional
+- (void)mfaRegistrationStatusWithResponse:(id _Nullable)response;
 @end
 
 SWIFT_PROTOCOL("_TtP11PayU3DS2Kit20PayU3DS2HashDelegate_")
@@ -510,10 +532,22 @@ SWIFT_PROTOCOL("_TtP11PayU3DS2Kit20PayU3DS2HashDelegate_")
 @end
 
 SWIFT_PROTOCOL("_TtP11PayU3DS2Kit16PayU3DS2Delegate_")
-@protocol PayU3DS2Delegate <PayU3DS2BaseDelegate, PayU3DS2HashDelegate>
+@protocol PayU3DS2Delegate <PayU3DS2BaseDelegate, PayU3DS2HashDelegate, PayU3DS2MFADelegate>
 - (void)onPaymentSuccessWithSuccessResponse:(id _Nullable)successResponse;
 - (void)onPaymentFailureWithFailureResponse:(id _Nullable)failureResponse;
 - (void)onPaymentCancelWithIsTxnInitiated:(BOOL)isTxnInitiated;
+@end
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit50PayU3DS2DeviceBindingConfirmationTextCustomisation")
+@interface PayU3DS2DeviceBindingConfirmationTextCustomisation : PayU3DS2BaseTextCustomisation
+- (nonnull instancetype)initWithHeaderText:(NSString * _Nullable)headerText subHeaderText:(NSString * _Nullable)subHeaderText buttonText:(NSString * _Nullable)buttonText OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithHeaderText:(NSString * _Nullable)headerText subHeaderText:(NSString * _Nullable)subHeaderText SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit38PayU3DS2DeviceBindingTextCustomisation")
+@interface PayU3DS2DeviceBindingTextCustomisation : PayU3DS2BaseTextCustomisation
+- (nonnull instancetype)initWithHeaderText:(NSString * _Nullable)headerText subHeaderText:(NSString * _Nullable)subHeaderText numberVerificationProcessingText:(NSString * _Nullable)numberVerificationProcessingText numberVerifiedText:(NSString * _Nullable)numberVerifiedText biometricSetupText:(NSString * _Nullable)biometricSetupText biometricVerifiedText:(NSString * _Nullable)biometricVerifiedText OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithHeaderText:(NSString * _Nullable)headerText subHeaderText:(NSString * _Nullable)subHeaderText SWIFT_UNAVAILABLE;
 @end
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit27PayU3DS2DeviceRenderOptions")
@@ -608,11 +642,49 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit20PayU3DS2ImageDetails")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_PROTOCOL("_TtP11PayU3DS2Kit33PayU3DS2IniitateChallengeDelegate_")
+@protocol PayU3DS2IniitateChallengeDelegate <PayU3DS2MFADelegate>
+- (void)onInitateChallengeWithResponse:(id _Nullable)response;
+@end
+
 SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2LabelCustomisation")
 @interface PayU3DS2LabelCustomisation : PayU3DS2BaseCustomisation
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontSize:(NSInteger)headingTextFontSize OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize backgroundColor:(NSString * _Nullable)backgroundColor headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontSize:(NSInteger)headingTextFontSize headingBackgroundColor:(NSString * _Nullable)headingBackgroundColor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit16PayU3DS2MFAParam")
+@interface PayU3DS2MFAParam : NSObject
+@property (nonatomic, copy) NSString * _Nullable cardId;
+@property (nonatomic, copy) NSString * _Nullable tempCardId;
+@property (nonatomic, copy) NSString * _Nullable cardBin;
+@property (nonatomic, copy) NSString * _Nullable clientId;
+@property (nonatomic, copy) NSString * _Nullable bankLogoURL;
+@property (nonatomic, copy) NSString * _Nullable networkLogoURL;
+@property (nonatomic) NSInteger transactionTimeout;
+@property (nonatomic) NSInteger registrationTimeout;
+@property (nonatomic) NSInteger fallbackVisibilityDuration;
+@property (nonatomic, copy) NSString * _Nullable bindingType;
+@property (nonatomic) NSInteger bankId;
+@property (nonatomic, copy) NSString * _Nullable customerId;
+@property (nonatomic, copy) NSString * _Nullable themeType;
+@property (nonatomic, copy) NSString * _Nullable hashKey;
+- (nonnull instancetype)initWithCardId:(NSString * _Nullable)cardId tempCardId:(NSString * _Nullable)tempCardId cardBin:(NSString * _Nullable)cardBin clientId:(NSString * _Nullable)clientId bankLogoURL:(NSString * _Nullable)bankLogoURL networkLogoURL:(NSString * _Nullable)networkLogoURL transactionTimeout:(NSInteger)transactionTimeout registrationTimeout:(NSInteger)registrationTimeout fallbackVisibilityDuration:(NSInteger)fallbackVisibilityDuration bindingType:(NSString * _Nullable)bindingType bankId:(NSInteger)bankId customerId:(NSString * _Nullable)customerId themeType:(NSString * _Nullable)themeType OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, PayU3DS2MFARequestType, open) {
+  PayU3DS2MFARequestTypeRegistration = 0,
+  PayU3DS2MFARequestTypeDeregistration = 1,
+};
+
+typedef SWIFT_ENUM(NSInteger, PayU3DS2MFAStatus, open) {
+  PayU3DS2MFAStatusInitiated = 0,
+  PayU3DS2MFAStatusSuccess = 1,
+  PayU3DS2MFAStatusError = 2,
+};
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit20PayU3DS2PArqResponse")
 @interface PayU3DS2PArqResponse : NSObject
@@ -735,6 +807,13 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2TextBoxCustomisation")
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
 @end
 
+SWIFT_CLASS("_TtC11PayU3DS2Kit25PayU3DS2TextCustomisation")
+@interface PayU3DS2TextCustomisation : NSObject
+- (nonnull instancetype)initWithDeviceBindingTextCustomisation:(PayU3DS2DeviceBindingTextCustomisation * _Nullable)deviceBindingTextCustomisation deviceBindingSuccessTextCustomisation:(PayU3DS2DeviceBindingConfirmationTextCustomisation * _Nullable)deviceBindingSuccessTextCustomisation deviceBindingFailureTextCustomisation:(PayU3DS2DeviceBindingConfirmationTextCustomisation * _Nullable)deviceBindingFailureTextCustomisation OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2ToolBarCustomisation")
 @interface PayU3DS2ToolBarCustomisation : PayU3DS2BaseCustomisation
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize backgroundColor:(NSString * _Nullable)backgroundColor buttonText:(NSString * _Nullable)buttonText headerText:(NSString * _Nullable)headerText OBJC_DESIGNATED_INITIALIZER;
@@ -744,6 +823,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2ToolBarCustomisation")
 SWIFT_CLASS("_TtC11PayU3DS2Kit23PayU3DS2UICustomisation")
 @interface PayU3DS2UICustomisation : NSObject
 - (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation fontFamilyCustomisation:(PayU3DS2FontFamilyCustomisation * _Nullable)fontFamilyCustomisation OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation fontFamilyCustomisation:(PayU3DS2FontFamilyCustomisation * _Nullable)fontFamilyCustomisation textCustomisation:(PayU3DS2TextCustomisation * _Nullable)textCustomisation OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -759,6 +839,11 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit19PayU3DS2UserDefines")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+SWIFT_CLASS("_TtC11PayU3DS2Kit13PayU3DS2Utils")
+@interface PayU3DS2Utils : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 SWIFT_CLASS("_TtC11PayU3DS2Kit17PayU3DS2Validator")
 @interface PayU3DS2Validator : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -767,6 +852,15 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit17PayU3DS2Validator")
 SWIFT_CLASS("_TtC11PayU3DS2Kit23PayU3DS2ValidatorHelper")
 @interface PayU3DS2ValidatorHelper : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit19PayU3ds2MFAResponse")
+@interface PayU3ds2MFAResponse : NSObject
+@property (nonatomic) enum PayU3DS2MFARequestType type;
+@property (nonatomic) enum PayU3DS2MFAStatus status;
+@property (nonatomic) NSInteger timeout;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, PayUCurrency, open) {

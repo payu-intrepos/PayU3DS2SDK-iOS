@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUTridentityMFAKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Combine
 import CommonCrypto
 import CoreData
@@ -303,6 +303,7 @@ final public class TDYFloatValueProvider {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TridentityMFASDKInterface : ObjectiveC.NSObject {
   @objc public static let shared: PayUTridentityMFAKit.TridentityMFASDKInterface
+  @objc deinit
   @objc public func initializeSDK()
   @objc public func configureSDK(with jsonObject: [Swift.String : Any], completionHandler: @escaping (Swift.Bool, [Swift.String : Any]) -> Swift.Void)
   @objc public func initiateRegistration(with jsonObject: [Swift.String : Any], in homeViewController: UIKit.UIViewController, completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
@@ -310,7 +311,6 @@ final public class TDYFloatValueProvider {
   @objc public func processTransaction(with jsonObject: [Swift.String : Swift.String], statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
   @objc public func deRegisterUser(withBCTIDs bctids: [Swift.String], clientId: Swift.String, statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
   @objc public func setRequestId(requestId: Swift.String)
-  @objc deinit
 }
 public class TDYAsset : Swift.Codable {
   final public let id: Swift.String
