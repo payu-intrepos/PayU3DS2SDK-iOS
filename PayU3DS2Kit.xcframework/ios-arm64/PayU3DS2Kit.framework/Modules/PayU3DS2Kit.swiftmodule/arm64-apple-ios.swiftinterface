@@ -61,11 +61,8 @@ import _SwiftConcurrencyShims
   @objc public var remarks: Swift.String?
   @objc public var billingLimit: Swift.String?
   @objc public var billingRule: Swift.String?
-  @objc public var billingDate: Swift.String?
-  @objc public var isPreAuthTxn: Swift.Bool
   @objc public init(billingAmount: Swift.String?, paymentStartDate: Foundation.Date?, paymentEndDate: Foundation.Date?, billingCycle: PayU3DS2Kit.PayU3DS2BillingCycle, billingInterval: Swift.Int)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc public init(paymentStartDate: Foundation.Date, paymentEndDate: Foundation.Date, isPreAuthTxn: Swift.Bool)
   @objc deinit
 }
 @objc public enum PayU3DS2BillingCycle : Swift.Int, Swift.CaseIterable {
@@ -325,7 +322,7 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public init(status: Swift.Int, errorMessage: Swift.String?)
   @objc deinit
 }
-@objc public class PayU3ds2MFAResponse : ObjectiveC.NSObject {
+@objc public class PayU3DS2MFAResponse : ObjectiveC.NSObject {
   @objc public var type: PayU3DS2Kit.PayU3DS2MFARequestType
   @objc public var status: PayU3DS2Kit.PayU3DS2MFAStatus
   @objc public var timeout: Swift.Int

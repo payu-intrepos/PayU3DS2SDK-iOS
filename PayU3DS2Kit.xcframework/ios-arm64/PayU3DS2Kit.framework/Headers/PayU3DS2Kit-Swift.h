@@ -680,6 +680,16 @@ typedef SWIFT_ENUM(NSInteger, PayU3DS2MFARequestType, open) {
   PayU3DS2MFARequestTypeDeregistration = 1,
 };
 
+enum PayU3DS2MFAStatus : NSInteger;
+SWIFT_CLASS("_TtC11PayU3DS2Kit19PayU3DS2MFAResponse")
+@interface PayU3DS2MFAResponse : NSObject
+@property (nonatomic) enum PayU3DS2MFARequestType type;
+@property (nonatomic) enum PayU3DS2MFAStatus status;
+@property (nonatomic) NSInteger timeout;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, PayU3DS2MFAStatus, open) {
   PayU3DS2MFAStatusInitiated = 0,
   PayU3DS2MFAStatusSuccess = 1,
@@ -792,11 +802,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit16PayU3DS2SIParams")
 @property (nonatomic, copy) NSString * _Nullable remarks;
 @property (nonatomic, copy) NSString * _Nullable billingLimit;
 @property (nonatomic, copy) NSString * _Nullable billingRule;
-@property (nonatomic, copy) NSString * _Nullable billingDate;
-@property (nonatomic) BOOL isPreAuthTxn;
 - (nonnull instancetype)initWithBillingAmount:(NSString * _Nullable)billingAmount paymentStartDate:(NSDate * _Nullable)paymentStartDate paymentEndDate:(NSDate * _Nullable)paymentEndDate billingCycle:(enum PayU3DS2BillingCycle)billingCycle billingInterval:(NSInteger)billingInterval OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)initWithPaymentStartDate:(NSDate * _Nonnull)paymentStartDate paymentEndDate:(NSDate * _Nonnull)paymentEndDate isPreAuthTxn:(BOOL)isPreAuthTxn OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -852,15 +859,6 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit17PayU3DS2Validator")
 SWIFT_CLASS("_TtC11PayU3DS2Kit23PayU3DS2ValidatorHelper")
 @interface PayU3DS2ValidatorHelper : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-SWIFT_CLASS("_TtC11PayU3DS2Kit19PayU3ds2MFAResponse")
-@interface PayU3ds2MFAResponse : NSObject
-@property (nonatomic) enum PayU3DS2MFARequestType type;
-@property (nonatomic) enum PayU3DS2MFAStatus status;
-@property (nonatomic) NSInteger timeout;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, PayUCurrency, open) {

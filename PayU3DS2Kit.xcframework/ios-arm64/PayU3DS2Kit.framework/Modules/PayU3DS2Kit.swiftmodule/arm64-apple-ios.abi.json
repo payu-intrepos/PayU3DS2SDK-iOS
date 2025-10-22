@@ -3839,216 +3839,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "billingDate",
-            "printedName": "billingDate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2SIParams(py)billingDate",
-            "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC11billingDateSSSgvp",
-            "moduleName": "PayU3DS2Kit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2SIParams(im)billingDate",
-                "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC11billingDateSSSgvg",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2SIParams(im)setBillingDate:",
-                "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC11billingDateSSSgvs",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11PayU3DS2Kit0abC8SIParamsC11billingDateSSSgvM",
-                "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC11billingDateSSSgvM",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "isPreAuthTxn",
-            "printedName": "isPreAuthTxn",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2SIParams(py)isPreAuthTxn",
-            "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC12isPreAuthTxnSbvp",
-            "moduleName": "PayU3DS2Kit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2SIParams(im)isPreAuthTxn",
-                "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC12isPreAuthTxnSbvg",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2SIParams(im)setIsPreAuthTxn:",
-                "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC12isPreAuthTxnSbvs",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11PayU3DS2Kit0abC8SIParamsC12isPreAuthTxnSbvM",
-                "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC12isPreAuthTxnSbvM",
-                "moduleName": "PayU3DS2Kit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(billingAmount:paymentStartDate:paymentEndDate:billingCycle:billingInterval:)",
@@ -4161,47 +3951,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(paymentStartDate:paymentEndDate:isPreAuthTxn:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PayU3DS2SIParams",
-                "printedName": "PayU3DS2Kit.PayU3DS2SIParams",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2SIParams"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Date",
-                "printedName": "Foundation.Date",
-                "usr": "s:10Foundation4DateV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2SIParams(im)initWithPaymentStartDate:paymentEndDate:isPreAuthTxn:",
-            "mangledName": "$s11PayU3DS2Kit0abC8SIParamsC16paymentStartDate0f3EndH012isPreAuthTxnAC10Foundation0H0V_AISbtcfc",
-            "moduleName": "PayU3DS2Kit",
-            "objc_name": "initWithPaymentStartDate:paymentEndDate:isPreAuthTxn:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
           },
           {
             "kind": "Constructor",
@@ -18873,8 +18622,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "PayU3ds2MFAResponse",
-        "printedName": "PayU3ds2MFAResponse",
+        "name": "PayU3DS2MFAResponse",
+        "printedName": "PayU3DS2MFAResponse",
         "children": [
           {
             "kind": "Var",
@@ -18889,8 +18638,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(py)type",
-            "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC4typeAA0abC14MFARequestTypeOvp",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(py)type",
+            "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC4typeAA0abC14MFARequestTypeOvp",
             "moduleName": "PayU3DS2Kit",
             "declAttributes": [
               "HasStorage",
@@ -18912,8 +18661,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(im)type",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC4typeAA0abC14MFARequestTypeOvg",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)type",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC4typeAA0abC14MFARequestTypeOvg",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "declAttributes": [
@@ -18939,8 +18688,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(im)setType:",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC4typeAA0abC14MFARequestTypeOvs",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)setType:",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC4typeAA0abC14MFARequestTypeOvs",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "declAttributes": [
@@ -18960,8 +18709,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11PayU3DS2Kit0A16U3ds2MFAResponseC4typeAA0abC14MFARequestTypeOvM",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC4typeAA0abC14MFARequestTypeOvM",
+                "usr": "s:11PayU3DS2Kit0abC11MFAResponseC4typeAA0abC14MFARequestTypeOvM",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC4typeAA0abC14MFARequestTypeOvM",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -18981,8 +18730,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(py)status",
-            "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC6statusAA0abC9MFAStatusOvp",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(py)status",
+            "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC6statusAA0abC9MFAStatusOvp",
             "moduleName": "PayU3DS2Kit",
             "declAttributes": [
               "HasStorage",
@@ -19004,8 +18753,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(im)status",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC6statusAA0abC9MFAStatusOvg",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)status",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC6statusAA0abC9MFAStatusOvg",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "declAttributes": [
@@ -19031,8 +18780,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(im)setStatus:",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC6statusAA0abC9MFAStatusOvs",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)setStatus:",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC6statusAA0abC9MFAStatusOvs",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "declAttributes": [
@@ -19052,8 +18801,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11PayU3DS2Kit0A16U3ds2MFAResponseC6statusAA0abC9MFAStatusOvM",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC6statusAA0abC9MFAStatusOvM",
+                "usr": "s:11PayU3DS2Kit0abC11MFAResponseC6statusAA0abC9MFAStatusOvM",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC6statusAA0abC9MFAStatusOvM",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -19073,8 +18822,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(py)timeout",
-            "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC7timeoutSivp",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(py)timeout",
+            "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC7timeoutSivp",
             "moduleName": "PayU3DS2Kit",
             "declAttributes": [
               "HasStorage",
@@ -19096,8 +18845,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(im)timeout",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC7timeoutSivg",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)timeout",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC7timeoutSivg",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "declAttributes": [
@@ -19123,8 +18872,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(im)setTimeout:",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC7timeoutSivs",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)setTimeout:",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC7timeoutSivs",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "declAttributes": [
@@ -19144,8 +18893,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11PayU3DS2Kit0A16U3ds2MFAResponseC7timeoutSivM",
-                "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC7timeoutSivM",
+                "usr": "s:11PayU3DS2Kit0abC11MFAResponseC7timeoutSivM",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC7timeoutSivM",
                 "moduleName": "PayU3DS2Kit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -19159,9 +18908,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PayU3ds2MFAResponse",
-                "printedName": "PayU3DS2Kit.PayU3ds2MFAResponse",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse"
+                "name": "PayU3DS2MFAResponse",
+                "printedName": "PayU3DS2Kit.PayU3DS2MFAResponse",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse"
               },
               {
                 "kind": "TypeNominal",
@@ -19184,8 +18933,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:11PayU3DS2Kit0A16U3ds2MFAResponseC4type6status7timeoutAcA0abC14MFARequestTypeO_AA0abC9MFAStatusOSitcfc",
-            "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC4type6status7timeoutAcA0abC14MFARequestTypeO_AA0abC9MFAStatusOSitcfc",
+            "usr": "s:11PayU3DS2Kit0abC11MFAResponseC4type6status7timeoutAcA0abC14MFARequestTypeO_AA0abC9MFAStatusOSitcfc",
+            "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC4type6status7timeoutAcA0abC14MFARequestTypeO_AA0abC9MFAStatusOSitcfc",
             "moduleName": "PayU3DS2Kit",
             "declAttributes": [
               "AccessControl"
@@ -19199,14 +18948,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "PayU3ds2MFAResponse",
-                "printedName": "PayU3DS2Kit.PayU3ds2MFAResponse",
-                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse"
+                "name": "PayU3DS2MFAResponse",
+                "printedName": "PayU3DS2Kit.PayU3DS2MFAResponse",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse(im)init",
-            "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseCACycfc",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)init",
+            "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseCACycfc",
             "moduleName": "PayU3DS2Kit",
             "overriding": true,
             "implicit": true,
@@ -19220,8 +18969,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3ds2MFAResponse",
-        "mangledName": "$s11PayU3DS2Kit0A16U3ds2MFAResponseC",
+        "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse",
+        "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC",
         "moduleName": "PayU3DS2Kit",
         "declAttributes": [
           "AccessControl",
@@ -29816,43 +29565,36 @@
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2SIParams.swift",
-      "kind": "BooleanLiteral",
-      "offset": 659,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2SIParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 2335,
+      "offset": 1761,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2SIParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 2350,
+      "offset": 1776,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2SIParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 2366,
+      "offset": 1792,
       "length": 7,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2SIParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 2383,
+      "offset": 1809,
       "length": 6,
       "value": "4"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2SIParams.swift",
       "kind": "IntegerLiteral",
-      "offset": 2399,
+      "offset": 1825,
       "length": 5,
       "value": "5"
     },
