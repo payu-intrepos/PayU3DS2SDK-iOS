@@ -1,28 +1,42 @@
 PODS:
-  - PayUIndia-3DS2-SDK (1.0.0-alpha.3):
-    - PayUIndia-3DS2Core-SDK (~> 1.0.0-alpha.2)
-    - PayUIndia-CrashReporter (= 3.0.0-alpha)
-    - PayUIndia-NetworkReachability (~> 1.0)
-  - PayUIndia-3DS2Core-SDK (1.0.0-alpha.2)
-  - PayUIndia-CrashReporter (3.0.0-alpha)
-  - PayUIndia-NetworkReachability (1.0.1)
+  - PayUIndia-3DS2-SDK (3.0.0.alpha.1):
+    - PayUIndia-3DS2Core-SDK (= 3.0.0.alpha.1)
+    - PayUIndia-CrashReporter (~> 4.0)
+    - PayUIndia-NetworkReachability (~> 2.1)
+    - PayUIndia-TridentityMFA-SDK (= 1.0.0-alpha.2)
+  - PayUIndia-3DS2Core-SDK (3.0.0.alpha.1)
+  - PayUIndia-Analytics (4.0.2):
+    - PayUIndia-NetworkReachability (~> 2.1)
+  - PayUIndia-CrashReporter (4.0.2)
+  - PayUIndia-NetworkReachability (2.1.1)
+  - PayUIndia-TridentityMFA-SDK (1.0.0-alpha.2):
+    - PayUIndia-Analytics (~> 4.0)
+    - PayUIndia-CrashReporter (~> 4.0)
+  - Toast-Swift (5.1.1)
 
 DEPENDENCIES:
-  - PayUIndia-3DS2-SDK (= 1.0.0-alpha.3)
+  - PayUIndia-3DS2-SDK (= 3.0.0-alpha.1)
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
     - PayUIndia-3DS2-SDK
     - PayUIndia-3DS2Core-SDK
+    - PayUIndia-Analytics
     - PayUIndia-CrashReporter
     - PayUIndia-NetworkReachability
+    - PayUIndia-TridentityMFA-SDK
+    - Toast-Swift
 
 SPEC CHECKSUMS:
-  PayUIndia-3DS2-SDK: a9d3b1f45f73a33848c7d13ee8a375d9439c533a
-  PayUIndia-3DS2Core-SDK: 905f0dadb6c8d22f63f27ce686f432acde9f40c0
-  PayUIndia-CrashReporter: bd33844a6f5c3e240c60998b486d8cd64d634cfb
-  PayUIndia-NetworkReachability: 99e69781b3be99d7b713075ab7b73e6d73a153e4
+  PayUIndia-3DS2-SDK: 88319c14a4448a9f16492c82c87c885e630204ee
+  PayUIndia-3DS2Core-SDK: 5334752484f1a0da2e499f77ba74acde247cfa9a
+  PayUIndia-Analytics: 90a4c1a9d3f7a79422a4f4b0c3d9f5a8362b89fb
+  PayUIndia-CrashReporter: 913f79270aef2281e1b01af6b41d8465d8fb1b18
+  PayUIndia-NetworkReachability: 581c04b9ea3a8aaa78faef179ad819759942f381
+  PayUIndia-TridentityMFA-SDK: 0df7688a13668495a2f259f0aec90c643113f76e
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
 
-PODFILE CHECKSUM: 484ae1a65d422a994fb0ec78fda2365fd0c65dd1
+PODFILE CHECKSUM: abbbf0664598ed960e76f86d002b317f434bd43e
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.16.2

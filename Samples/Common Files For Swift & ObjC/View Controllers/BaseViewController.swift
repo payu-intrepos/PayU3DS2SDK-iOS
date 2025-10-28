@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Toast_Swift
 
 class BaseViewController: UIViewController {
     // MARK: - Class Life Cycle -
@@ -69,11 +70,13 @@ extension BaseViewController: UIGestureRecognizerDelegate {
 extension BaseViewController {
     func showAlert(title: String, message: Any?) {
         DispatchQueue.main.async {
-            let alert = UIAlertController(title: title, message: String(describing: message), preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "DISMISS", style: .default, handler: { _ in
-                //            self.dismiss(animated: true, completion: nil)
-            }))
-            self.present(alert, animated: true, completion: nil)
+//            let alert = UIAlertController(title: title, message: String(describing: message), preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "DISMISS", style: .default, handler: { _ in
+//                //            self.dismiss(animated: true, completion: nil)
+//            }))
+//            self.present(alert, animated: true, completion: nil)
+            ToastManager.shared.isTapToDismissEnabled = true
+            self.view.makeToast(String(describing: message), duration: 3.0, position: .center)
         }
     }
 }

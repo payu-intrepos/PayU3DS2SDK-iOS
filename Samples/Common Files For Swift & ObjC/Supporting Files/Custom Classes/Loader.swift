@@ -37,15 +37,19 @@ class Loader: UIView {
     }
 
     func show() {
-        let application = UIApplication.shared.delegate as! AppDelegate
-        application.window?.addSubview(self)
-
-        loader.startAnimating()
-        loader.bringSubviewToFront((application.window?.rootViewController?.view)!)
+        DispatchQueue.main.async {
+            let application = UIApplication.shared.delegate as! AppDelegate
+            application.window?.addSubview(self)
+            
+            self.loader.startAnimating()
+            self.loader.bringSubviewToFront((application.window?.rootViewController?.view)!)
+        }
     }
 
     func hide() {
-        removeFromSuperview()
-        loader.stopAnimating()
+        DispatchQueue.main.async {
+            self.removeFromSuperview()
+            self.loader.stopAnimating()
+        }
     }
 }
