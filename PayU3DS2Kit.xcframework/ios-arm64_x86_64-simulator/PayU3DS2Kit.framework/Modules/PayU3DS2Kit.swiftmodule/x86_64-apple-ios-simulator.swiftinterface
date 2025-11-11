@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2Kit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import DeveloperToolsSupport
 import Foundation
 import LocalAuthentication
@@ -18,7 +18,9 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public class PayU3DS2TextBoxCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, borderColor: Swift.String?, borderWidth: Swift.Int, cornerRadius: Swift.Int)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class PayU3DS2ChallengeParameter : ObjectiveC.NSObject, Swift.Encodable {
@@ -27,7 +29,9 @@ import _SwiftConcurrencyShims
   @objc public var acsTransactionID: Swift.String
   @objc public var threeDSServerTransactionID: Swift.String
   @objc public var mfaParams: PayU3DS2Kit.PayU3DS2MFAParam?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(acsSignedContent: Swift.String, acsRefNumber: Swift.String, acsTransactionID: Swift.String, threeDSServerTransactionID: Swift.String, mfaParams: PayU3DS2Kit.PayU3DS2MFAParam? = nil)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -47,7 +51,9 @@ import _SwiftConcurrencyShims
   @objc public var themeType: Swift.String?
   @objc public var hashKey: Swift.String?
   required public init(from decoder: any Swift.Decoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(cardId: Swift.String?, tempCardId: Swift.String?, cardBin: Swift.String?, clientId: Swift.String?, bankLogoURL: Swift.String?, networkLogoURL: Swift.String?, transactionTimeout: Swift.Int, registrationTimeout: Swift.Int, fallbackVisibilityDuration: Swift.Int, bindingType: Swift.String?, bankId: Swift.Int, customerId: Swift.String?, themeType: Swift.String?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -61,8 +67,12 @@ import _SwiftConcurrencyShims
   @objc public var remarks: Swift.String?
   @objc public var billingLimit: Swift.String?
   @objc public var billingRule: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(billingAmount: Swift.String?, paymentStartDate: Foundation.Date?, paymentEndDate: Foundation.Date?, billingCycle: PayU3DS2Kit.PayU3DS2BillingCycle, billingInterval: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  #endif
   @objc deinit
 }
 @objc public enum PayU3DS2BillingCycle : Swift.Int, Swift.CaseIterable {
@@ -72,7 +82,9 @@ import _SwiftConcurrencyShims
   case monthly
   case yearly
   case adhoc
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [PayU3DS2Kit.PayU3DS2BillingCycle]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [PayU3DS2Kit.PayU3DS2BillingCycle] {
@@ -89,7 +101,9 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 extension PayU3DS2Kit.PayU3DS2Utils {
+  #if compiler(>=5.3) && $NonescapableTypes
   public class func getSIPostParams(_ params: PayU3DS2Kit.PayU3DS2PaymentParam?) -> [Swift.String : Swift.String]
+  #endif
   public class func billingCycleToString(_ billingCycle: PayU3DS2Kit.PayU3DS2BillingCycle) -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayU3DS2ValidatorHelper : ObjectiveC.NSObject {
@@ -110,7 +124,9 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc public class PayU3DS2FontFamilyCustomisation : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(headerFontFamily: Swift.String?, subTextFontFamily: Swift.String?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayU3DS2HashConstants : ObjectiveC.NSObject {
@@ -122,29 +138,39 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   @objc deinit
 }
 @objc public class PayU3DS2LabelCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, headingTextColor: Swift.String?, headingTextFontSize: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, backgroundColor: Swift.String?, headingTextColor: Swift.String?, headingTextFontSize: Swift.Int, headingBackgroundColor: Swift.String?)
+  #endif
   @objc deinit
 }
 @objc public enum PayU3DS2ButtonTextCaseType : Swift.Int {
   case lowercase
   case uppercase
   case `default`
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 @objc public class PayU3DS2ButtonCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, backgroundColor: Swift.String?, cornerRadius: Swift.Int, resendButtonTextFontColor: Swift.String?, textCaseType: PayU3DS2Kit.PayU3DS2ButtonTextCaseType = .default)
+  #endif
   @objc deinit
 }
 @objc public enum PayU3DS2DeviceSeverity : Swift.Int {
   case low
   case medium
   case high
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -172,11 +198,15 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc public class PayU3DS2BaseCustomisation : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int)
+  #endif
   @objc deinit
 }
 @objc public class PayU3DS2BaseTextCustomisation : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(headerText: Swift.String? = nil, subHeaderText: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayU3DS2Config : PayU3DS2Kit.PayU3DS2BaseConfig {
@@ -207,7 +237,9 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   @objc deinit
 }
 @objc public class PayU3DS2TextCustomisation : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(deviceBindingTextCustomisation: PayU3DS2Kit.PayU3DS2DeviceBindingTextCustomisation?, deviceBindingSuccessTextCustomisation: PayU3DS2Kit.PayU3DS2DeviceBindingConfirmationTextCustomisation?, deviceBindingFailureTextCustomisation: PayU3DS2Kit.PayU3DS2DeviceBindingConfirmationTextCustomisation?)
+  #endif
   @objc deinit
 }
 @objc public class PayU3DS2HeadlessData : ObjectiveC.NSObject, Swift.Encodable {
@@ -254,7 +286,9 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   case stateBankMaestro
   case unknown
   case sodexo
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -275,14 +309,22 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc func generateHash(for param: [Swift.String : Swift.String], onCompletion: @escaping PayU3DS2Kit.PayU3DS2HashGenerationCompletion)
 }
 @objc public protocol PayU3DS2MFADelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func mfaRegistrationStatus(response: Any?)
+  #endif
 }
 @objc public protocol PayU3DS2IniitateChallengeDelegate : PayU3DS2Kit.PayU3DS2MFADelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onInitateChallenge(response: Any?)
+  #endif
 }
 @objc public protocol PayU3DS2Delegate : PayU3DS2Kit.PayU3DS2BaseDelegate, PayU3DS2Kit.PayU3DS2HashDelegate, PayU3DS2Kit.PayU3DS2MFADelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onPaymentSuccess(successResponse: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onPaymentFailure(failureResponse: Any?)
+  #endif
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
 }
 @objc public class PayU3DS2ACSResponse : ObjectiveC.NSObject, Swift.Encodable {
@@ -294,7 +336,9 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc public class PayU3DS2DeviceBindingConfirmationTextCustomisation : PayU3DS2Kit.PayU3DS2BaseTextCustomisation {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(headerText: Swift.String? = nil, subHeaderText: Swift.String? = nil, buttonText: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayU3DS2Validator : ObjectiveC.NSObject {
@@ -302,37 +346,50 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc deinit
 }
 @objc public class PayU3DS2ToolBarCustomisation : PayU3DS2Kit.PayU3DS2BaseCustomisation {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int, backgroundColor: Swift.String?, buttonText: Swift.String?, headerText: Swift.String?)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class PayU3DS2Error : ObjectiveC.NSObject, Foundation.LocalizedError {
   @objc public var message: Swift.String
   @objc public var errorCode: Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var errorDescription: Swift.String? {
     @objc get
   }
+  #endif
   @objc deinit
 }
 @objc public class PayU3DS2Response : ObjectiveC.NSObject {
   @objc public var status: Swift.Int
   @objc public var errorMessage: Swift.String?
   @objc public var result: Any?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(status: Swift.Int, errorMessage: Swift.String?, result: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(status: Swift.Int, result: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(status: Swift.Int, errorMessage: Swift.String?)
+  #endif
   @objc deinit
 }
 @objc public class PayU3DS2MFAResponse : ObjectiveC.NSObject {
   @objc public var type: PayU3DS2Kit.PayU3DS2MFARequestType
   @objc public var status: PayU3DS2Kit.PayU3DS2MFAStatus
   @objc public var timeout: Swift.Int
+  @objc public var message: Swift.String?
   public init(type: PayU3DS2Kit.PayU3DS2MFARequestType, status: PayU3DS2Kit.PayU3DS2MFAStatus, timeout: Swift.Int = 0)
   @objc deinit
 }
 @objc public enum PayU3DS2MFARequestType : Swift.Int {
   case registration
   case deregistration
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -342,7 +399,9 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   case initiated
   case success
   case error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -358,7 +417,9 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   case submit = 0
   case cancel = 1
   case resend = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -368,18 +429,28 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public var challengeData: Swift.String?
   @objc public var acsRenderingType: Swift.String?
   @objc public var acsTransactionID: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(challengeData: Swift.String? = nil, acsRenderingType: Swift.String?, acsTransactionID: Swift.String?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class PayU3DS2 : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func startRedirectionFlow(vc: UIKit.UIViewController, params: [Swift.String : Any], uiCustomisation: [Swift.String : Any]? = nil, delegate: any PayU3DS2Kit.PayU3DS2Delegate)
+  #endif
   @objc public static func initialise(key: Swift.String, requestId: Swift.String, config: PayU3DS2Kit.PayU3DS2Config, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func cardBinInfo(cardBinInfoRequest: PayU3DS2Kit.PayU3DS2CardBinInfoRequest, delegate: any PayU3DS2Kit.PayU3DS2HashDelegate, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func extractDeviceDetails(cardData: PayU3DS2Kit.PayU3DS2CardData) -> PayU3DS2Kit.PayU3DS2Response
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initiateChallenge(challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter, vc: UIKit.UIViewController?, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initiateChallengeWithMFA(challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter, vc: UIKit.UIViewController?, delegate: any PayU3DS2Kit.PayU3DS2IniitateChallengeDelegate)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func callPaymentAPI(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate, completion: @escaping (_ error: Swift.String?, _ flowType: Swift.String?, _ challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter?) -> Swift.Void)
+  #endif
   @objc public static func authorisePayment(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate)
   @objc public static func authenticatePayment(delegate: any PayU3DS2Kit.PayU3DS2Delegate)
   @objc public static func setPlatformParams(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam)
@@ -391,7 +462,9 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc deinit
 }
 @objc public class PayU3DS2DeviceBindingTextCustomisation : PayU3DS2Kit.PayU3DS2BaseTextCustomisation {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(headerText: Swift.String? = nil, subHeaderText: Swift.String? = nil, numberVerificationProcessingText: Swift.String? = nil, numberVerifiedText: Swift.String? = nil, biometricSetupText: Swift.String? = nil, biometricVerifiedText: Swift.String? = nil)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayU3DS2Utils : ObjectiveC.NSObject {
@@ -437,10 +510,12 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
 @_inheritsConvenienceInitializers @objc public class PayU3DS2CardInfo : ObjectiveC.NSObject {
   @objc public var cardName: Swift.String?
   @objc public var cardAlias: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public var cardNumber: Swift.String? {
     @objc get
     @objc set
   }
+  #endif
   @objc public var expiryMonth: Swift.String?
   @objc public var expiryYear: Swift.String?
   @objc public var cvv: Swift.String?
@@ -451,8 +526,12 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc deinit
 }
 @objc public class PayU3DS2UICustomisation : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil, textCustomisation: PayU3DS2Kit.PayU3DS2TextCustomisation? = nil)
+  #endif
   @objc deinit
 }
 @objc public class PayU3DS2Params : ObjectiveC.NSObject, Swift.Codable {
@@ -490,7 +569,9 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
 }
 @objc public enum PayUCurrency : Swift.Int {
   case inr
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

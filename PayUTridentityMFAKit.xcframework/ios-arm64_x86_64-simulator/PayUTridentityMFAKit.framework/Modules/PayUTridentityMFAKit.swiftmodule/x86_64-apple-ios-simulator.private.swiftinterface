@@ -309,7 +309,7 @@ final public class TDYFloatValueProvider {
   @objc public func initiateRegistration(with jsonObject: [Swift.String : Any], in homeViewController: UIKit.UIViewController, completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc public func checkRegistrationStatus(isBiometricChanged: Swift.Bool = false, with jsonObject: [Swift.String : Swift.String], completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc public func processTransaction(with jsonObject: [Swift.String : Swift.String], statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
-  @objc public func deRegisterUser(withBCTIDs bctids: [Swift.String], clientId: Swift.String, statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
+  @objc public func deRegisterUser(withBCTIDs bctids: [Swift.String], statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
   @objc public func setRequestId(requestId: Swift.String)
 }
 public class TDYAsset : Swift.Codable {
