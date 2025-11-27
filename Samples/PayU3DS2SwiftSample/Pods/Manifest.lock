@@ -1,21 +1,21 @@
 PODS:
-  - PayUIndia-3DS2-SDK (3.0.0.alpha.1):
-    - PayUIndia-3DS2Core-SDK (= 3.0.0.alpha.1)
+  - PayUIndia-3DS2-SDK (3.0.0.alpha.4):
+    - PayUIndia-3DS2Core-SDK (= 3.0.0.alpha.2)
     - PayUIndia-CrashReporter (~> 4.0)
     - PayUIndia-NetworkReachability (~> 2.1)
-    - PayUIndia-TridentityMFA-SDK (= 1.0.0-alpha.2)
-  - PayUIndia-3DS2Core-SDK (3.0.0.alpha.1)
+    - PayUIndia-TridentityMFA-SDK (= 1.0.0-alpha.4)
+  - PayUIndia-3DS2Core-SDK (3.0.0.alpha.2)
   - PayUIndia-Analytics (4.0.2):
     - PayUIndia-NetworkReachability (~> 2.1)
   - PayUIndia-CrashReporter (4.0.2)
   - PayUIndia-NetworkReachability (2.1.1)
-  - PayUIndia-TridentityMFA-SDK (1.0.0-alpha.2):
+  - PayUIndia-TridentityMFA-SDK (1.0.0-alpha.4):
     - PayUIndia-Analytics (~> 4.0)
     - PayUIndia-CrashReporter (~> 4.0)
   - Toast-Swift (5.1.1)
 
 DEPENDENCIES:
-  - PayUIndia-3DS2-SDK (= 3.0.0-alpha.1)
+  - PayUIndia-3DS2-SDK (= 3.0.0.alpha.4)
   - Toast-Swift
 
 SPEC REPOS:
@@ -29,14 +29,14 @@ SPEC REPOS:
     - Toast-Swift
 
 SPEC CHECKSUMS:
-  PayUIndia-3DS2-SDK: 88319c14a4448a9f16492c82c87c885e630204ee
-  PayUIndia-3DS2Core-SDK: 5334752484f1a0da2e499f77ba74acde247cfa9a
+  PayUIndia-3DS2-SDK: 49943326407945163ae4b70f301a14377b14516b
+  PayUIndia-3DS2Core-SDK: a3a0d31c772003fc5621dc849bcb50ffb936c00d
   PayUIndia-Analytics: 90a4c1a9d3f7a79422a4f4b0c3d9f5a8362b89fb
   PayUIndia-CrashReporter: 913f79270aef2281e1b01af6b41d8465d8fb1b18
   PayUIndia-NetworkReachability: 581c04b9ea3a8aaa78faef179ad819759942f381
-  PayUIndia-TridentityMFA-SDK: 0df7688a13668495a2f259f0aec90c643113f76e
+  PayUIndia-TridentityMFA-SDK: 0801ee140bed432c9a5ef76a94655acacb74bd09
   Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
 
-PODFILE CHECKSUM: 10be80d31363ec046fcad8c6fb9bb08a06493915
+PODFILE CHECKSUM: daacfd0f035e9d8a39db2138245c13490bdc91a8
 
 COCOAPODS: 1.16.2

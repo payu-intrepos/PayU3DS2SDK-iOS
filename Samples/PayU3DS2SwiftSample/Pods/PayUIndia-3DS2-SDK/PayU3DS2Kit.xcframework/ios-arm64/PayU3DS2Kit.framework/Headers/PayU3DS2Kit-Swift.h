@@ -686,6 +686,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit19PayU3DS2MFAResponse")
 @property (nonatomic) enum PayU3DS2MFARequestType type;
 @property (nonatomic) enum PayU3DS2MFAStatus status;
 @property (nonatomic) NSInteger timeout;
+@property (nonatomic, copy) NSString * _Nullable message;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

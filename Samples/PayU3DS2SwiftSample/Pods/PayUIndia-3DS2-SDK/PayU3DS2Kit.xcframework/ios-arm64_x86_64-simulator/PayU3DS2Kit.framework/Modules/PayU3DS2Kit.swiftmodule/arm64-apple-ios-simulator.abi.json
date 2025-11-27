@@ -18902,6 +18902,123 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(py)message",
+            "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC7messageSSSgvp",
+            "moduleName": "PayU3DS2Kit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)message",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC7messageSSSgvg",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayU3DS2Kit@objc(cs)PayU3DS2MFAResponse(im)setMessage:",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC7messageSSSgvs",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11PayU3DS2Kit0abC11MFAResponseC7messageSSSgvM",
+                "mangledName": "$s11PayU3DS2Kit0abC11MFAResponseC7messageSSSgvM",
+                "moduleName": "PayU3DS2Kit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(type:status:timeout:)",
@@ -24451,6 +24568,7 @@
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
+                "hasDefaultArg": true,
                 "usr": "s:SS"
               },
               {
@@ -30679,28 +30797,28 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2Response.swift",
       "kind": "IntegerLiteral",
-      "offset": 1034,
+      "offset": 1072,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2Response.swift",
       "kind": "IntegerLiteral",
-      "offset": 1212,
+      "offset": 1250,
       "length": 14,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2Response.swift",
       "kind": "IntegerLiteral",
-      "offset": 1301,
+      "offset": 1339,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2Response.swift",
       "kind": "IntegerLiteral",
-      "offset": 1318,
+      "offset": 1356,
       "length": 5,
       "value": "2"
     },
@@ -33283,112 +33401,168 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24442,
+      "offset": 24412,
+      "length": 14,
+      "value": "\"OOB_CONTINUE\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 24454,
+      "length": 27,
+      "value": "\"OOB_BIOMETRIC_TRANSACTION\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 24503,
+      "length": 21,
+      "value": "\"OOB_OTP_TRANSACTION\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 24548,
+      "length": 14,
+      "value": "\"OOB_ELIGIBLE\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 24616,
       "length": 14,
       "value": "\"Bin Info API\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24482,
+      "offset": 24656,
       "length": 14,
       "value": "\"_Payment API\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24522,
+      "offset": 24696,
       "length": 12,
       "value": "\"Paytxn API\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24563,
+      "offset": 24737,
       "length": 23,
       "value": "\"Authorize Payment API\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24618,
+      "offset": 24792,
       "length": 26,
       "value": "\"Authenticate Payment API\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24667,
+      "offset": 24841,
       "length": 13,
       "value": "\"ThreeDS SDK\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24713,
+      "offset": 24887,
       "length": 16,
       "value": "\"Challenge Flow\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24768,
+      "offset": 24942,
       "length": 23,
       "value": "\"Challenge Action Flow\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24817,
+      "offset": 24991,
       "length": 16,
       "value": "\"Device Details\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24863,
+      "offset": 25037,
       "length": 20,
       "value": "\"SDK Initialisation\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24908,
+      "offset": 25082,
       "length": 15,
       "value": "\"Fallback Flow\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24968,
+      "offset": 25121,
+      "length": 14,
+      "value": "\"OOB_CONTINUE\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 25163,
+      "length": 27,
+      "value": "\"OOB_BIOMETRIC_TRANSACTION\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 25212,
+      "length": 21,
+      "value": "\"OOB_OTP_TRANSACTION\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 25257,
+      "length": 14,
+      "value": "\"OOB_ELIGIBLE\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 25316,
       "length": 11,
       "value": "\"configSdk\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25012,
+      "offset": 25360,
       "length": 25,
       "value": "\"checkRegistrationStatus\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25065,
+      "offset": 25413,
       "length": 22,
       "value": "\"initiateRegistration\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25114,
+      "offset": 25462,
       "length": 20,
       "value": "\"processTransaction\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25165,
+      "offset": 25513,
       "length": 17,
       "value": "\"selectionScreen\""
     },
@@ -33412,6 +33586,13 @@
       "offset": 1040,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2PaymentParam.swift",
+      "kind": "StringLiteral",
+      "offset": 1401,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/PublicFiles\/Models\/PayU3DS2Params.swift",
@@ -33458,35 +33639,42 @@
     {
       "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/PayU3DS2-ftsdciqyxfgszsdowktfezzhmfwt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayU3DS2Kit\/IntermediateBuildFilesPath\/PayU3DS2Kit.build\/Release-iphonesimulator\/PayU3DS2Kit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1441,
+      "offset": 1447,
+      "length": 11,
+      "value": "\"biometric\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/PayU3DS2-ftsdciqyxfgszsdowktfezzhmfwt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayU3DS2Kit\/IntermediateBuildFilesPath\/PayU3DS2Kit.build\/Release-iphonesimulator\/PayU3DS2Kit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1580,
       "length": 8,
       "value": "\"faceId\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/PayU3DS2-ftsdciqyxfgszsdowktfezzhmfwt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayU3DS2Kit\/IntermediateBuildFilesPath\/PayU3DS2Kit.build\/Release-iphonesimulator\/PayU3DS2Kit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1581,
+      "offset": 1720,
       "length": 13,
       "value": "\"fingerprint\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/PayU3DS2-ftsdciqyxfgszsdowktfezzhmfwt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayU3DS2Kit\/IntermediateBuildFilesPath\/PayU3DS2Kit.build\/Release-iphonesimulator\/PayU3DS2Kit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1720,
+      "offset": 1859,
       "length": 10,
       "value": "\"lineDark\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/PayU3DS2-ftsdciqyxfgszsdowktfezzhmfwt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayU3DS2Kit\/IntermediateBuildFilesPath\/PayU3DS2Kit.build\/Release-iphonesimulator\/PayU3DS2Kit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1997,
       "length": 11,
       "value": "\"lineLight\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/PayU3DS2-ftsdciqyxfgszsdowktfezzhmfwt\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayU3DS2Kit\/IntermediateBuildFilesPath\/PayU3DS2Kit.build\/Release-iphonesimulator\/PayU3DS2Kit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1999,
+      "offset": 2138,
       "length": 12,
       "value": "\"payuFooter\""
     }
