@@ -222,6 +222,38 @@ extension Foundation.NSNotification.Name {
   public static var jsonFileName: Swift.String
   @objc deinit
 }
+public enum Status : Swift.String {
+  case initiated
+  case success
+  case failure
+  case cancelled
+  case notSpecified
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum EventType : Swift.String {
+  case info
+  case error
+  case notSpecified
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum EventSeverity : Swift.String {
+  case low
+  case medium
+  case high
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @objc public class SimBindingScreenConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var appBarText: Swift.String?, topHeaderText: Swift.String?, topSubHeaderText: Swift.String?, headerTextForContents: Swift.String?
   @objc public var subTextForContents: Swift.String?, textForFullScreenSubContent: Swift.String?, buttonTextForProceed: Swift.String?
@@ -636,7 +668,7 @@ public struct TDYTOTP {
   public let digits: Swift.Int
   public let timeInterval: Swift.Int
   public let algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm
-  public init?(secret: Foundation.Data, digits: Swift.Int = 6, timeInterval: Swift.Int = 30, algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm = .sha1)
+  public init?(secret: Foundation.Data, digits: Swift.Int = 6, timeInterval: Swift.Int = 60, algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm = .sha1)
   public func generate(time: Foundation.Date) -> Swift.String?
   public func generate(secondsPast1970: Swift.Int) -> Swift.String?
 }
@@ -656,6 +688,15 @@ public protocol AuthenticatorTheme {
 extension PayUTridentityMFAKit.KeyChainKey : Swift.Equatable {}
 extension PayUTridentityMFAKit.KeyChainKey : Swift.Hashable {}
 extension PayUTridentityMFAKit.KeyChainKey : Swift.RawRepresentable {}
+extension PayUTridentityMFAKit.Status : Swift.Equatable {}
+extension PayUTridentityMFAKit.Status : Swift.Hashable {}
+extension PayUTridentityMFAKit.Status : Swift.RawRepresentable {}
+extension PayUTridentityMFAKit.EventType : Swift.Equatable {}
+extension PayUTridentityMFAKit.EventType : Swift.Hashable {}
+extension PayUTridentityMFAKit.EventType : Swift.RawRepresentable {}
+extension PayUTridentityMFAKit.EventSeverity : Swift.Equatable {}
+extension PayUTridentityMFAKit.EventSeverity : Swift.Hashable {}
+extension PayUTridentityMFAKit.EventSeverity : Swift.RawRepresentable {}
 extension PayUTridentityMFAKit.ConnectionFailureReason : Swift.Equatable {}
 extension PayUTridentityMFAKit.ConnectionFailureReason : Swift.Hashable {}
 extension PayUTridentityMFAKit.SmsSendFailureReason : Swift.Equatable {}
