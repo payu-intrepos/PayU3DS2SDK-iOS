@@ -8,18 +8,6 @@
 		<data>
 		MjcY+5JfyUiTqU/dTHhmZRx+RT4=
 		</data>
-		<key>Frameworks/Pods_PayU3DS2Kit.framework/Info.plist</key>
-		<data>
-		JDOaDhVNxVshKzUHJEcaX7ek7iU=
-		</data>
-		<key>Frameworks/Pods_PayU3DS2Kit.framework/Pods_PayU3DS2Kit</key>
-		<data>
-		Xy+VC3YUiC5fwYFSJSnQb5/jFtI=
-		</data>
-		<key>Frameworks/Pods_PayU3DS2Kit.framework/_CodeSignature/CodeResources</key>
-		<data>
-		jBCuyw7od2WfajFEY7lc9SR5/RM=
-		</data>
 		<key>Headers/PayU3DS2Kit-Swift.h</key>
 		<data>
 		ACogxNU8T1gbA2a7CPSpsv3eXCE=
@@ -96,27 +84,6 @@
 			<key>hash2</key>
 			<data>
 			BF3T/iEcw/RJnGfCg2pPO9nBoMs8PR96jgvHcHZ20+I=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_PayU3DS2Kit.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yldYsP8nKy6jY+kOJwtNVa1fuIg+tyZY+Ox3mW3sjsg=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_PayU3DS2Kit.framework/Pods_PayU3DS2Kit</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			m6oHgDOlqh0rk7/K3zSxaf7jXWGpc3E9kbcLcGWSe6I=
-			</data>
-		</dict>
-		<key>Frameworks/Pods_PayU3DS2Kit.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			yXpMTpA9JkEpnmXxVNAJz+KwDGVlf4JSm++m1SASW8s=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2Kit-Swift.h</key>
