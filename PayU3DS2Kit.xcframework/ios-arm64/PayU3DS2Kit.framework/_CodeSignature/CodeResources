@@ -14,7 +14,7 @@
 		</data>
 		<key>Frameworks/Pods_PayU3DS2Kit.framework/Pods_PayU3DS2Kit</key>
 		<data>
-		YIt6YJsw2+sAYw39/715APv5idk=
+		Xy+VC3YUiC5fwYFSJSnQb5/jFtI=
 		</data>
 		<key>Frameworks/Pods_PayU3DS2Kit.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/PayU3DS2Kit-Swift.h</key>
 		<data>
-		xZgG3WwU2dzvfWTfjjDoFa6LGVk=
+		ACogxNU8T1gbA2a7CPSpsv3eXCE=
 		</data>
 		<key>Headers/PayU3DS2Kit.h</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		01gxC2UfnTI7cKqdCBWvf4wJ5TU=
+		C7CAKd0P5rCTr6de+yk70MCIkHI=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		SEnqDt57hcXF+0O5ucy/GKxt/Yg=
+		IvINIgM0sxHnW6Iheg73C+oqGUA=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		SEnqDt57hcXF+0O5ucy/GKxt/Yg=
+		IvINIgM0sxHnW6Iheg73C+oqGUA=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		29CSSli33FrzwK8NIwmxrTjy7TE=
+		nSuW6pPERt9EiocSDFIir9kf9c4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			n96Mv1QNFT09h9OUt8EBjCHzXESN4PVLYzF3vser6ic=
+			m6oHgDOlqh0rk7/K3zSxaf7jXWGpc3E9kbcLcGWSe6I=
 			</data>
 		</dict>
 		<key>Frameworks/Pods_PayU3DS2Kit.framework/_CodeSignature/CodeResources</key>
@@ -123,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L18C6Y3uCo8eoy4s/Zs9uvkGYpc59xncnjfiebI/0WQ=
+			X1riaKdhVLg3d8nIXKo5x6MyD93eR45D7SYltOxuR+U=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2Kit.h</key>
@@ -186,14 +186,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			00Omm/ko9j4T2Z0VK0+kn5IlyGi9Vxu+bkSP7EwqTVs=
+			8EmMoSvPrgXR20Vgm1b4+8MLIYDW3Cdm1kexYZVu4A4=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b/D5qTBo4SXmN1lEDMo7CT7t1hpAa023DQRhvyqVXTM=
+			MhMBXOFeaEF8ixgqsTGywM7vbhdTKrjsfalf2JX3HTs=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -207,14 +207,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b/D5qTBo4SXmN1lEDMo7CT7t1hpAa023DQRhvyqVXTM=
+			MhMBXOFeaEF8ixgqsTGywM7vbhdTKrjsfalf2JX3HTs=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QP0yM7N07adQyvoLGTDq1i6Fd+t76Wc+l0tuLkJLd3A=
+			u5klU3U7A6xn52aezhw/jy5PTILYqDZGs1DCP1/ASno=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -317,9 +317,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class PayU3DS2CardData;
 @class PayU3DS2ChallengeParameter;
 @protocol PayU3DS2IniitateChallengeDelegate;
+@class PayU3DS2PaymentParam;
 enum PayU3DS2ACSActionType : NSInteger;
 @class PayU3DS2ACSActionParams;
-@class PayU3DS2PaymentParam;
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit8PayU3DS2")
 @interface PayU3DS2 : NSObject
@@ -329,6 +329,10 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit8PayU3DS2")
 + (PayU3DS2Response * _Nonnull)extractDeviceDetailsWithCardData:(PayU3DS2CardData * _Nonnull)cardData SWIFT_WARN_UNUSED_RESULT;
 + (void)initiateChallengeWithChallengeParameter:(PayU3DS2ChallengeParameter * _Nonnull)challengeParameter vc:(UIViewController * _Nullable)vc completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
 + (void)initiateChallengeWithMFAWithChallengeParameter:(PayU3DS2ChallengeParameter * _Nonnull)challengeParameter vc:(UIViewController * _Nullable)vc delegate:(id <PayU3DS2IniitateChallengeDelegate> _Nonnull)delegate;
++ (void)callPaymentAPIWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate completion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable, PayU3DS2ChallengeParameter * _Nullable))completion;
++ (void)authorisePaymentWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
++ (void)authenticatePaymentWithDelegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
++ (void)setPlatformParamsWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams;
 + (void)actionWithAcsActionType:(enum PayU3DS2ACSActionType)acsActionType challengeInputParams:(PayU3DS2ACSActionParams * _Nonnull)challengeInputParams completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
 + (void)initiatePaymentWithVc:(UIViewController * _Nonnull)vc config:(PayU3DS2Config * _Nonnull)config paymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
 + (void)clean;
@@ -1245,9 +1249,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class PayU3DS2CardData;
 @class PayU3DS2ChallengeParameter;
 @protocol PayU3DS2IniitateChallengeDelegate;
+@class PayU3DS2PaymentParam;
 enum PayU3DS2ACSActionType : NSInteger;
 @class PayU3DS2ACSActionParams;
-@class PayU3DS2PaymentParam;
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit8PayU3DS2")
 @interface PayU3DS2 : NSObject
@@ -1257,6 +1261,10 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit8PayU3DS2")
 + (PayU3DS2Response * _Nonnull)extractDeviceDetailsWithCardData:(PayU3DS2CardData * _Nonnull)cardData SWIFT_WARN_UNUSED_RESULT;
 + (void)initiateChallengeWithChallengeParameter:(PayU3DS2ChallengeParameter * _Nonnull)challengeParameter vc:(UIViewController * _Nullable)vc completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
 + (void)initiateChallengeWithMFAWithChallengeParameter:(PayU3DS2ChallengeParameter * _Nonnull)challengeParameter vc:(UIViewController * _Nullable)vc delegate:(id <PayU3DS2IniitateChallengeDelegate> _Nonnull)delegate;
++ (void)callPaymentAPIWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate completion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable, PayU3DS2ChallengeParameter * _Nullable))completion;
++ (void)authorisePaymentWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
++ (void)authenticatePaymentWithDelegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
++ (void)setPlatformParamsWithPaymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams;
 + (void)actionWithAcsActionType:(enum PayU3DS2ACSActionType)acsActionType challengeInputParams:(PayU3DS2ACSActionParams * _Nonnull)challengeInputParams completion:(void (^ _Nonnull)(PayU3DS2Response * _Nonnull))completion;
 + (void)initiatePaymentWithVc:(UIViewController * _Nonnull)vc config:(PayU3DS2Config * _Nonnull)config paymentParams:(PayU3DS2PaymentParam * _Nonnull)paymentParams delegate:(id <PayU3DS2Delegate> _Nonnull)delegate;
 + (void)clean;
