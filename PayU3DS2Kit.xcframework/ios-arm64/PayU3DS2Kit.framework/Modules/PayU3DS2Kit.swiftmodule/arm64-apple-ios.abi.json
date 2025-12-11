@@ -30685,98 +30685,70 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3596,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3642,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3698,
+      "offset": 3598,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3741,
+      "offset": 3641,
       "length": 2,
       "value": "35"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3784,
-      "length": 2,
-      "value": "36"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3834,
-      "length": 2,
-      "value": "37"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3873,
+      "offset": 3680,
       "length": 26,
       "value": "\"Client Id cannot be null\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3947,
+      "offset": 3754,
       "length": 40,
       "value": "\"TempCardId and CardId both are missing\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "Array",
-      "offset": 4040,
-      "length": 8,
-      "value": "[15, 36]"
+      "offset": 3847,
+      "length": 10,
+      "value": "[305, 300]"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4153,
+      "offset": 3962,
       "length": 42,
       "value": "\"Missing mandatory parameter: acsTemplate\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4252,
+      "offset": 4061,
       "length": 35,
       "value": "\"Invalid mandatory parameter: SURL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4344,
+      "offset": 4153,
       "length": 35,
       "value": "\"Invalid mandatory parameter: FURL\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4444,
+      "offset": 4253,
       "length": 31,
       "value": "\"Invalid ACS Template encoding\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2ErrorConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4528,
+      "offset": 4337,
       "length": 3,
       "value": "110"
     },

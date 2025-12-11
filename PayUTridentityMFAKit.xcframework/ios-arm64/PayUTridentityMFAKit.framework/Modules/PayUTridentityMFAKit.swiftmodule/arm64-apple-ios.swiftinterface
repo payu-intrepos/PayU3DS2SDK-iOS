@@ -438,7 +438,7 @@ infix operator +- : DefaultPrecedence
   @objc public var cornerRadius: Swift.Int {
     get
   }
-  @objc public init(primaryButtonCustomization: PayUTridentityMFAKit.PrimaryCustomButtonCustomization? = nil, secondaryButtonCustomization: PayUTridentityMFAKit.SecondaryCustomButtonCustomization? = nil, fontName: Swift.String? = nil, fontSize: Swift.Int = 14, cornerRadius: Swift.Int = 8)
+  @objc public init(primaryButtonCustomization: PayUTridentityMFAKit.PrimaryCustomButtonCustomization? = nil, secondaryButtonCustomization: PayUTridentityMFAKit.SecondaryCustomButtonCustomization? = nil, fontName: Swift.String? = nil, fontSize: Swift.Int = 14, cornerRadius: Swift.Int = 12)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
