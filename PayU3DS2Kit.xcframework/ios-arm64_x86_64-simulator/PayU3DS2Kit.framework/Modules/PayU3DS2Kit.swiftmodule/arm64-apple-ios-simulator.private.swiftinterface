@@ -46,8 +46,9 @@ import _SwiftConcurrencyShims
   @objc public var customerId: Swift.String?
   @objc public var themeType: Swift.String?
   @objc public var hashKey: Swift.String?
+  @objc public var tdyUrl: Swift.String?
   required public init(from decoder: any Swift.Decoder) throws
-  @objc public init(cardId: Swift.String?, tempCardId: Swift.String?, cardBin: Swift.String?, clientId: Swift.String?, bankLogoURL: Swift.String?, networkLogoURL: Swift.String?, transactionTimeout: Swift.Int, registrationTimeout: Swift.Int, fallbackVisibilityDuration: Swift.Int, bindingType: Swift.String?, bankId: Swift.Int, customerId: Swift.String?, themeType: Swift.String?)
+  @objc public init(cardId: Swift.String?, tempCardId: Swift.String?, cardBin: Swift.String?, clientId: Swift.String?, bankLogoURL: Swift.String?, networkLogoURL: Swift.String?, transactionTimeout: Swift.Int, registrationTimeout: Swift.Int, fallbackVisibilityDuration: Swift.Int, bindingType: Swift.String?, bankId: Swift.Int, customerId: Swift.String?, themeType: Swift.String?, hashKey: Swift.String?, tdyUrl: Swift.String?)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }

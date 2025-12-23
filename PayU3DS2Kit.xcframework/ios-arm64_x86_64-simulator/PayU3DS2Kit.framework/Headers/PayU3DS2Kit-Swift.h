@@ -704,7 +704,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit16PayU3DS2MFAParam")
 @property (nonatomic, copy) NSString * _Nullable customerId;
 @property (nonatomic, copy) NSString * _Nullable themeType;
 @property (nonatomic, copy) NSString * _Nullable hashKey;
-- (nonnull instancetype)initWithCardId:(NSString * _Nullable)cardId tempCardId:(NSString * _Nullable)tempCardId cardBin:(NSString * _Nullable)cardBin clientId:(NSString * _Nullable)clientId bankLogoURL:(NSString * _Nullable)bankLogoURL networkLogoURL:(NSString * _Nullable)networkLogoURL transactionTimeout:(NSInteger)transactionTimeout registrationTimeout:(NSInteger)registrationTimeout fallbackVisibilityDuration:(NSInteger)fallbackVisibilityDuration bindingType:(NSString * _Nullable)bindingType bankId:(NSInteger)bankId customerId:(NSString * _Nullable)customerId themeType:(NSString * _Nullable)themeType OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * _Nullable tdyUrl;
+- (nonnull instancetype)initWithCardId:(NSString * _Nullable)cardId tempCardId:(NSString * _Nullable)tempCardId cardBin:(NSString * _Nullable)cardBin clientId:(NSString * _Nullable)clientId bankLogoURL:(NSString * _Nullable)bankLogoURL networkLogoURL:(NSString * _Nullable)networkLogoURL transactionTimeout:(NSInteger)transactionTimeout registrationTimeout:(NSInteger)registrationTimeout fallbackVisibilityDuration:(NSInteger)fallbackVisibilityDuration bindingType:(NSString * _Nullable)bindingType bankId:(NSInteger)bankId customerId:(NSString * _Nullable)customerId themeType:(NSString * _Nullable)themeType hashKey:(NSString * _Nullable)hashKey tdyUrl:(NSString * _Nullable)tdyUrl OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1636,7 +1637,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit16PayU3DS2MFAParam")
 @property (nonatomic, copy) NSString * _Nullable customerId;
 @property (nonatomic, copy) NSString * _Nullable themeType;
 @property (nonatomic, copy) NSString * _Nullable hashKey;
-- (nonnull instancetype)initWithCardId:(NSString * _Nullable)cardId tempCardId:(NSString * _Nullable)tempCardId cardBin:(NSString * _Nullable)cardBin clientId:(NSString * _Nullable)clientId bankLogoURL:(NSString * _Nullable)bankLogoURL networkLogoURL:(NSString * _Nullable)networkLogoURL transactionTimeout:(NSInteger)transactionTimeout registrationTimeout:(NSInteger)registrationTimeout fallbackVisibilityDuration:(NSInteger)fallbackVisibilityDuration bindingType:(NSString * _Nullable)bindingType bankId:(NSInteger)bankId customerId:(NSString * _Nullable)customerId themeType:(NSString * _Nullable)themeType OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * _Nullable tdyUrl;
+- (nonnull instancetype)initWithCardId:(NSString * _Nullable)cardId tempCardId:(NSString * _Nullable)tempCardId cardBin:(NSString * _Nullable)cardBin clientId:(NSString * _Nullable)clientId bankLogoURL:(NSString * _Nullable)bankLogoURL networkLogoURL:(NSString * _Nullable)networkLogoURL transactionTimeout:(NSInteger)transactionTimeout registrationTimeout:(NSInteger)registrationTimeout fallbackVisibilityDuration:(NSInteger)fallbackVisibilityDuration bindingType:(NSString * _Nullable)bindingType bankId:(NSInteger)bankId customerId:(NSString * _Nullable)customerId themeType:(NSString * _Nullable)themeType hashKey:(NSString * _Nullable)hashKey tdyUrl:(NSString * _Nullable)tdyUrl OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

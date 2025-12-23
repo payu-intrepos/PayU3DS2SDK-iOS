@@ -82,7 +82,7 @@
         "bottomSheetFailureScreenConfiguration": {
             "topHeaderText": "Failed!",
             "topSubHeaderText": "",
-            "headerTextForContents": "Could not verify mobile number with Bank",
+            "headerTextForContents": "Could not verify mobile number",
             "subTextForContents": "There was an error verifying your mobile number. Please try in future payments again to enrol for biometric.",
             "buttonText": "TAKING BACK TO MERCHANT"
         },

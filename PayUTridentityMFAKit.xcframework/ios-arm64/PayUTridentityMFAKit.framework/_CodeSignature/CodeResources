@@ -26,7 +26,7 @@
 		</data>
 		<key>FailedRegistrationViewController.nib</key>
 		<data>
-		y+CwzEDaSoLbL0QfyfOLjmsgE/8=
+		YHX3dtUfckZqDIvcsXqAekG213s=
 		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		WocvL0P0ix7/MHMa3tzhvHvZBeM=
+		H/QGLj9iaecp/mc712Hs25uCDdU=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		CtKfyqmhRlJR5mmGEGrrvA00Zw0=
+		Gpu6hSHIZw/QjbL7Q+j2sxnf7z0=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8dipKENCG+PiPaIe/ziXQ0dhemI=
+		TvstVi3YULUdxEVBwfHQpaAAsXY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,13 +70,13 @@
 		</data>
 		<key>TDY_BNK.json</key>
 		<data>
-		FpKSWW47U43RHDWwwLSk+75RFds=
+		O9aVw/22QqIv1YX6MV/GZRwyWt4=
 		</data>
 		<key>en.lproj/Localize.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			78DMsb9CPhV8UGFe7yKk7pcpauc=
+			h7V3eUQW6XeP6Cb/pcxFpm+tkjg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -127,7 +127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aXeqt3aKv6P7KsUH2foayUWClPtyjyTeNtsM6fRG33c=
+			DlF79L1sP70LwgLfwDxdk8R7EayxKJwRXV6cYOMMA7c=
 			</data>
 		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
@@ -141,7 +141,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8GrZuf4ho3Hkbig0bwiCt38s0fr3knkX6s6GYeIIx6I=
+			Tpnmu0rZ3m/uTBPTnpFtaGFAJ4880riF9loDaRcH2B8=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -169,7 +169,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6l0rvERR40SpZ7ScCNg49IeYC67GyrbxBCXz9yPbnOA=
+			pjdaXWyi+/uFadw0SeHZC7tQOT7fvZPbnyWbba3Vhis=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -197,14 +197,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MJrFmXO9fB9dSRiLGhfpGqIiTzqfhYPl6E3otsM04hU=
+			1Y0GlH6+fIc+vyUBAsGcAlj9KM0BhNwuuutAeirg4Vg=
 			</data>
 		</dict>
 		<key>en.lproj/Localize.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZkghkYA/ibs5IoxrBqp2Ds6i3AEErV2zHZxmDjLhfkU=
+			VpiyHoTQXwYcETjeyWevOL4Mm6b2Byd4yWJgu3mgbYM=
 			</data>
 			<key>optional</key>
 			<true/>

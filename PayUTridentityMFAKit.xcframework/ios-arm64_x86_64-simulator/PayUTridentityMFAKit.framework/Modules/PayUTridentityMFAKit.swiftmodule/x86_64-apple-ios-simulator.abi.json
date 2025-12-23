@@ -33195,21 +33195,35 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Auth&Security\/BiometricAuthManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 230,
+      "offset": 232,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Auth&Security\/BiometricAuthManager.swift",
+      "kind": "StringLiteral",
+      "offset": 444,
+      "length": 31,
+      "value": "\"com.tridentity.biometric.auth\""
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Auth&Security\/BiometricAuthManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 533,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Auth&Security\/BiometricAuthManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2227,
+      "offset": 3219,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Auth&Security\/BiometricAuthManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2308,
+      "offset": 3300,
       "length": 5,
       "value": "false"
     },
@@ -35666,21 +35680,21 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/RequestAndResposne\/Themes\/GetSdkConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1714,
+      "offset": 1715,
       "length": 9,
       "value": "\"overlay\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/RequestAndResposne\/Themes\/GetSdkConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1762,
       "length": 9,
       "value": "\"overlay\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/RequestAndResposne\/Themes\/GetSdkConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1804,
+      "offset": 1805,
       "length": 9,
       "value": "\"overlay\""
     },
@@ -35827,35 +35841,42 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 45127,
+      "offset": 38700,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 45185,
+      "offset": 48141,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 48199,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 46991,
+      "offset": 50420,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 47541,
+      "offset": 51026,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 47781,
+      "offset": 51266,
       "length": 5,
       "value": "false"
     },
@@ -36430,20 +36451,20 @@
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Theme\/Models\/BottomSheetFailureConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 2466,
-      "length": 42,
-      "value": "\"Could not verify mobile number with Bank\""
+      "length": 32,
+      "value": "\"Could not verify mobile number\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Theme\/Models\/BottomSheetFailureConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2565,
+      "offset": 2555,
       "length": 110,
       "value": "\"There was an error verifying your mobile number. Please try in future payments again to enrol for biometric.\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Theme\/Models\/BottomSheetFailureConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 2715,
+      "offset": 2705,
       "length": 27,
       "value": "\"Returning to the seller..\""
     },
@@ -37290,77 +37311,91 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 127,
+      "offset": 149,
       "length": 11,
       "value": "\"X-api-key\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 155,
+      "offset": 177,
       "length": 13,
       "value": "\"x-api-token\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 187,
+      "offset": 209,
       "length": 15,
       "value": "\"x-product-key\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 323,
+      "offset": 244,
+      "length": 14,
+      "value": "\"Content-Type\""
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 275,
+      "length": 10,
+      "value": "\"clientId\""
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 345,
+      "offset": 454,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 367,
+      "offset": 476,
       "length": 5,
       "value": "\"PUT\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 391,
+      "offset": 500,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1192,
+      "offset": 645,
       "length": 6,
       "value": "\"PROD\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1214,
+      "offset": 667,
       "length": 5,
       "value": "\"UAT\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 688,
       "length": 5,
       "value": "\"DEV\""
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 1258,
+      "offset": 711,
       "length": 4,
       "value": "\"QA\""
     },
@@ -37451,91 +37486,91 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "BooleanLiteral",
-      "offset": 366,
+      "offset": 414,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "IntegerLiteral",
-      "offset": 558,
+      "offset": 606,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "BooleanLiteral",
-      "offset": 699,
+      "offset": 747,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "IntegerLiteral",
-      "offset": 896,
+      "offset": 944,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "BooleanLiteral",
-      "offset": 960,
+      "offset": 1051,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "FloatLiteral",
-      "offset": 1157,
+      "offset": 1248,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1223,
+      "offset": 1314,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "FloatLiteral",
-      "offset": 1421,
+      "offset": 1512,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1487,
+      "offset": 1578,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1666,
+      "offset": 1757,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1737,
+      "offset": 1828,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1799,
+      "offset": 1890,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/BiometricSetupView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1981,
+      "offset": 2072,
       "length": 5,
       "value": "false"
     },
@@ -38984,14 +39019,21 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10396,
+      "offset": 10545,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10480,
+      "offset": 10629,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10660,
       "length": 5,
       "value": "false"
     },
@@ -39801,6 +39843,20 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Extensions\/TDYString+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2446,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Extensions\/TDYString+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2898,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Theme\/Models\/PrimaryCustomButtonCustomization.swift",
       "kind": "StringLiteral",
       "offset": 2863,
@@ -40258,14 +40314,14 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFASDKManager.swift",
       "kind": "Dictionary",
-      "offset": 1580,
+      "offset": 1867,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFASDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9958,
+      "offset": 10245,
       "length": 4,
       "value": "true"
     },
@@ -40279,35 +40335,35 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/SetupBiometricViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 413,
+      "offset": 416,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/SetupBiometricViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 473,
+      "offset": 476,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/SetupBiometricViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 518,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/SetupBiometricViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2078,
+      "offset": 2088,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/SetupBiometricViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2399,
+      "offset": 2409,
       "length": 13,
       "value": "\"placeholder\""
     },
@@ -42218,7 +42274,7 @@
     {
       "filePath": "\/Users\/kamlesh.kumar\/Documents\/PayULabs\/Tridentity\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/RegistrationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 14791,
+      "offset": 14853,
       "length": 5,
       "value": "false"
     },
