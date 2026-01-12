@@ -1,28 +1,42 @@
 PODS:
-  - PayUIndia-3DS2-SDK (1.1.0):
-    - PayUIndia-3DS2Core-SDK (~> 1.1)
-    - PayUIndia-CrashReporter (= 3.0.0)
-    - PayUIndia-NetworkReachability (~> 1.0)
-  - PayUIndia-3DS2Core-SDK (1.1.0)
-  - PayUIndia-CrashReporter (3.0.0)
-  - PayUIndia-NetworkReachability (1.0.1)
+  - PayUIndia-3DS2-SDK (3.0.0.alpha.4):
+    - PayUIndia-3DS2Core-SDK (= 3.0.0.alpha.2)
+    - PayUIndia-CrashReporter (~> 4.0)
+    - PayUIndia-NetworkReachability (~> 2.1)
+    - PayUIndia-TridentityMFA-SDK (= 1.0.0-alpha.4)
+  - PayUIndia-3DS2Core-SDK (3.0.0.alpha.2)
+  - PayUIndia-Analytics (4.0.2):
+    - PayUIndia-NetworkReachability (~> 2.1)
+  - PayUIndia-CrashReporter (4.0.2)
+  - PayUIndia-NetworkReachability (2.1.1)
+  - PayUIndia-TridentityMFA-SDK (1.0.0-alpha.4):
+    - PayUIndia-Analytics (~> 4.0)
+    - PayUIndia-CrashReporter (~> 4.0)
+  - Toast-Swift (5.1.1)
 
 DEPENDENCIES:
-  - PayUIndia-3DS2-SDK
+  - PayUIndia-3DS2-SDK (= 3.0.0.alpha.4)
+  - Toast-Swift
 
 SPEC REPOS:
   trunk:
     - PayUIndia-3DS2-SDK
     - PayUIndia-3DS2Core-SDK
+    - PayUIndia-Analytics
     - PayUIndia-CrashReporter
     - PayUIndia-NetworkReachability
+    - PayUIndia-TridentityMFA-SDK
+    - Toast-Swift
 
 SPEC CHECKSUMS:
-  PayUIndia-3DS2-SDK: 0ca67042ea11e4cf4132046b422c1775074a26e7
-  PayUIndia-3DS2Core-SDK: decca4f4c9fe54c46235420932bf41c469dc6c65
-  PayUIndia-CrashReporter: 5e3d459c0ec8c88573bd4510f42f47e10d52f319
-  PayUIndia-NetworkReachability: 99e69781b3be99d7b713075ab7b73e6d73a153e4
+  PayUIndia-3DS2-SDK: 49943326407945163ae4b70f301a14377b14516b
+  PayUIndia-3DS2Core-SDK: a3a0d31c772003fc5621dc849bcb50ffb936c00d
+  PayUIndia-Analytics: 90a4c1a9d3f7a79422a4f4b0c3d9f5a8362b89fb
+  PayUIndia-CrashReporter: 913f79270aef2281e1b01af6b41d8465d8fb1b18
+  PayUIndia-NetworkReachability: 581c04b9ea3a8aaa78faef179ad819759942f381
+  PayUIndia-TridentityMFA-SDK: 0801ee140bed432c9a5ef76a94655acacb74bd09
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
 
-PODFILE CHECKSUM: c927893f73bf4335f2955931354e97d3a7d2c66e
+PODFILE CHECKSUM: daacfd0f035e9d8a39db2138245c13490bdc91a8
 
-COCOAPODS: 1.15.0
+COCOAPODS: 1.16.2

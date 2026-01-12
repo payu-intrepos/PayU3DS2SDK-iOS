@@ -11,18 +11,27 @@ import UIKit
 class MerchantViewController: BaseViewController {
     // MARK: - Variables -
 
+    let keySalt = [["<key>", "<sat>"]]
+
+    let indexKeySalt = 0
     var amount: String = "1"
-    var email: String = "amit@salaria.com"
+    var email: String = "amit.salaria@payu.in"
     var userCredential: String = "amit:salaria"
 
     // MARK: - IBOutlets -
 
+    @IBOutlet weak var firstOTPInfo: UITextField!
+    @IBOutlet weak var resendBtnTF: UITextField!
+    @IBOutlet weak var submitBtnTF: UITextField!
+    @IBOutlet weak var merchantNameTf: UITextField!
+    @IBOutlet weak var txnTimoutSwitch: UISwitch!
+    @IBOutlet weak var newCustomizedUISwitch: UISwitch!
     @IBOutlet var keyTextField: UITextField!
     @IBOutlet var saltTextField: UITextField!
-    @IBOutlet var transactionIdTextField: UITextField!
     @IBOutlet var amountTextField: UITextField!
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var userCredentialTextField: UITextField!
+    @IBOutlet var supportedUITextField: UITextField!
     @IBOutlet var nextButton: UIButton!
     // Buttons
     @IBOutlet var buttonBackgroundColorTextFields: [UITextField]!
@@ -32,13 +41,26 @@ class MerchantViewController: BaseViewController {
     @IBOutlet var buttonFontNameTextFields: [UITextField]!
     @IBOutlet var resendFontColorTextField: UITextField!
     @IBOutlet var textCaseTypeTextField: UITextField!
+    
+    @IBOutlet var primaryButtonEnableFontColorTextFields: UITextField!
+    @IBOutlet var primaryButtonDisableFontColorTextFields: UITextField!
+    @IBOutlet var primaryButtonEnableBackgroundColorTextFields: UITextField!
+    @IBOutlet var primaryButtonDisableBackgroundColorTextFields: UITextField!
+
+    @IBOutlet var secondaryButtonEnableFontColorTextFields: UITextField!
+    @IBOutlet var secondaryButtonDisableFontColorTextFields: UITextField!
+    @IBOutlet var secondaryButtonEnableBackgroundColorTextFields: UITextField!
+    @IBOutlet var secondaryButtonDisableBackgroundColorTextFields: UITextField!
+
     // Label
     @IBOutlet var labelHeaderFontColorTextField: UITextField!
     @IBOutlet var labelHeaderFontSizeTextField: UITextField!
     @IBOutlet var labelHeaderFontNameTextField: UITextField!
+    @IBOutlet var labelHeaderBackgroundColorTextField: UITextField!
     @IBOutlet var labelFontSizeTextField: UITextField!
     @IBOutlet var labelFontColorTextField: UITextField!
     @IBOutlet var labelFontNameTextField: UITextField!
+    @IBOutlet var labelBackgroundColorTextField: UITextField!
     // Textbox
     @IBOutlet var textboxBorderColorTextField: UITextField!
     @IBOutlet var textboxBorderWidthTextField: UITextField!
@@ -56,6 +78,27 @@ class MerchantViewController: BaseViewController {
     // Font Family
     @IBOutlet var headerFontNameTextField: UITextField!
     @IBOutlet var subtextFontNameTextField: UITextField!
+    // Text
+    @IBOutlet var topHeaderText: UITextView!
+    @IBOutlet var topSubHeaderText: UITextView!
+    @IBOutlet var headerTextForContents: UITextView!
+    @IBOutlet var subTextForContents: UITextView!
+    @IBOutlet var numberVerificationProcessingText: UITextView!
+    @IBOutlet var numberVerifiedText: UITextView!
+    @IBOutlet var biometricSetupText: UITextView!
+    @IBOutlet var biometricVerifiedText: UITextView!
+    // Success Text
+    @IBOutlet var successTopHeaderText: UITextView!
+    @IBOutlet var successTopSubHeaderText: UITextView!
+    @IBOutlet var successHeaderTextForContents: UITextView!
+    @IBOutlet var successSubTextForContents: UITextView!
+    @IBOutlet var successButtonText: UITextView!
+    // Failure Text
+    @IBOutlet var failureTopHeaderText: UITextView!
+    @IBOutlet var failureTopSubHeaderText: UITextView!
+    @IBOutlet var failureHeaderTextForContents: UITextView!
+    @IBOutlet var failureSubTextForContents: UITextView!
+    @IBOutlet var failureButtonText: UITextView!
 
     // Config
     @IBOutlet var isProductionSwitch: UISwitch!
@@ -70,11 +113,17 @@ class MerchantViewController: BaseViewController {
     @IBOutlet var resendOTPAllowCountTextField: UITextField!
     @IBOutlet var customizeUISwitch: UISwitch!
     @IBOutlet var customizeUIStackView: UIStackView!
-
+    @IBOutlet weak var maxResendOTPInfoTF: UITextField!
+    @IBOutlet weak var resendOTPInfoTF: UITextField!
+    
     // MARK: - Class Life Cycle -
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setUpValuesInTextFields()
     }
 
@@ -86,7 +135,6 @@ class MerchantViewController: BaseViewController {
         vc.amount = amountTextField.text ?? ""
         vc.email = emailTextField.text ?? ""
         vc.userCredential = userCredentialTextField.text ?? ""
-        vc.transactionId = transactionIdTextField.text ?? ""
         vc.config = getSDKConfig()
     }
 
@@ -106,11 +154,16 @@ class MerchantViewController: BaseViewController {
 
 extension MerchantViewController {
     private func setUpValuesInTextFields() {
-        keyTextField.text = "<Use your key here>"
+        keyTextField.text = keySalt[indexKeySalt][0]
+        saltTextField.text = keySalt[indexKeySalt][1]
         amountTextField.text = amount
         emailTextField.text = email
         userCredentialTextField.text = userCredential
-        transactionIdTextField.text = "iOS\(Int64(Date().timeIntervalSince1970))"
+        submitBtnTF.text = "SUBMIT"
+        resendBtnTF.text = "RESEND OTP"
+        merchantNameTf.text = "Swiggy"
+        firstOTPInfo.text = "Successfully sent OTP to your registered mobile number"
+        isProductionSwitch.isOn = false
     }
 
     private func updateNextButtonVisibility() {
@@ -125,16 +178,17 @@ extension MerchantViewController {
             labelCustomisation: getLabelCustomisation(),
             textBoxCustomisation: getTextboxCustomisation(),
             toolbarCustomisation: getToolbarCustomisation(),
-            fontFamilyCustomisation: getFontFamilyCustomisation()
+            fontFamilyCustomisation: getFontFamilyCustomisation(),
+            textCustomisation: getTextCustomisation()
         )
     }
 
     private func getButtonCustomisation() -> PayU3DS2ButtonCustomisation {
         PayU3DS2ButtonCustomisation(
             textFontColor: buttonFontColorTextFields[2].text,
-            textFontSize: Int(buttonFontSizeTextFields[2].text ?? "0") ?? 0,
+            textFontSize: Int(buttonFontSizeTextFields[2].text ?? "") ?? 15,
             backgroundColor: buttonBackgroundColorTextFields[2].text,
-            cornerRadius: Int(buttonCornerRadiusTextFields[2].text ?? "0") ?? 0,
+            cornerRadius: Int(buttonCornerRadiusTextFields[2].text ?? "") ?? 5,
             resendButtonTextFontColor: resendFontColorTextField.text,
             textCaseType: getTextCaseType()
         )
@@ -151,26 +205,28 @@ extension MerchantViewController {
     private func getLabelCustomisation() -> PayU3DS2LabelCustomisation {
         PayU3DS2LabelCustomisation(
             textFontColor: labelFontColorTextField.text,
-            textFontSize: Int(labelFontSizeTextField.text ?? "0") ?? 0,
+            textFontSize: Int(labelFontSizeTextField.text ?? "") ?? 15,
+            backgroundColor: labelBackgroundColorTextField.text,
             headingTextColor: labelHeaderFontColorTextField.text,
-            headingTextFontSize: Int(labelHeaderFontSizeTextField.text ?? "0") ?? 0
+            headingTextFontSize: Int(labelHeaderFontSizeTextField.text ?? "") ?? 15,
+            headingBackgroundColor: labelHeaderBackgroundColorTextField.text
         )
     }
 
     private func getTextboxCustomisation() -> PayU3DS2TextBoxCustomisation {
         PayU3DS2TextBoxCustomisation(
             textFontColor: textboxFontColorTextField.text,
-            textFontSize: Int(textboxFontSizeTextField.text ?? "0") ?? 0,
+            textFontSize: Int(textboxFontSizeTextField.text ?? "") ?? 15,
             borderColor: textboxBorderColorTextField.text,
-            borderWidth: Int(textboxBorderWidthTextField.text ?? "0") ?? 0,
-            cornerRadius: Int(textboxCornerRadiusTextField.text ?? "0") ?? 0
+            borderWidth: Int(textboxBorderWidthTextField.text ?? "") ?? 1,
+            cornerRadius: Int(textboxCornerRadiusTextField.text ?? "") ?? 5
         )
     }
 
     private func getToolbarCustomisation() -> PayU3DS2ToolBarCustomisation {
         PayU3DS2ToolBarCustomisation(
             textFontColor: toolbarFontColorTextField.text,
-            textFontSize: Int(toolbarFontSizeTextField.text ?? "0") ?? 0,
+            textFontSize: Int(toolbarFontSizeTextField.text ?? "") ?? 15,
             backgroundColor: toolbarBackgroundColorTextField.text,
             buttonText: toolbarButtonTextTextField.text,
             headerText: toolbarHeaderTextTextField.text
@@ -181,6 +237,41 @@ extension MerchantViewController {
         PayU3DS2FontFamilyCustomisation(
             headerFontFamily: headerFontNameTextField.text,
             subTextFontFamily: subtextFontNameTextField.text
+        )
+    }
+
+    private func getTextCustomisation() -> PayU3DS2TextCustomisation {
+        PayU3DS2TextCustomisation(
+            deviceBindingTextCustomisation: getDeviceBindingTextCustomisation(),
+            deviceBindingSuccessTextCustomisation: getSuccessTextCustomisation(),
+            deviceBindingFailureTextCustomisation: getFailureTextCustomisation()
+        )
+    }
+    
+    private func getDeviceBindingTextCustomisation() -> PayU3DS2DeviceBindingTextCustomisation {
+        PayU3DS2DeviceBindingTextCustomisation(
+            headerText: topHeaderText.text,
+            subHeaderText: topSubHeaderText.text,
+            numberVerificationProcessingText: numberVerificationProcessingText.text,
+            numberVerifiedText: numberVerifiedText.text,
+            biometricSetupText: biometricSetupText.text,
+            biometricVerifiedText: biometricVerifiedText.text
+        )
+    }
+
+    private func getSuccessTextCustomisation() -> PayU3DS2DeviceBindingConfirmationTextCustomisation {
+        PayU3DS2DeviceBindingConfirmationTextCustomisation(
+            headerText: successTopHeaderText.text,
+            subHeaderText: successTopSubHeaderText.text,
+            buttonText: successButtonText.text
+        )
+    }
+
+    private func getFailureTextCustomisation() -> PayU3DS2DeviceBindingConfirmationTextCustomisation {
+        PayU3DS2DeviceBindingConfirmationTextCustomisation(
+            headerText: nil, // not in use
+            subHeaderText: nil, // not in use
+            buttonText: failureButtonText.text
         )
     }
 
@@ -195,20 +286,23 @@ extension MerchantViewController {
             config.uiCustomisation = getUICustomisation()
         }
         config.setDefaultProgressLoader(showDefaultLoader: showDefaultLoaderSwitch.isOn, defaultProgressLoaderColor: defaultLoaderColorTextField.text ?? "")
-        config.enableCustomizedOtpUIFlow = true
-        config.supportedUIMode = []
-        config.merchantName = "Swiggy"
-        config.amount = "1.00"
-        config.enableTxnTimeoutTimer = true
-
-//        config.acsContentConfig = PayU3DS2ACSContentConfig()
-        config.acsContentConfig?.submitButtonTitle = "Submit"
-        config.acsContentConfig?.resendButtonTitle = "Resend"
-        config.acsContentConfig?.otpContent =  "OTP has been sent to your registered mobile number"  //you can set this value to as per your need
-
-        config.acsContentConfig?.resendInfoContent =  "OTP has been resent to your registered mobile number" //you can set this value to as per your need
-
-        config.acsContentConfig?.maxResendInfoContent =  "Limit has been exceeded to send OTP. Please retry with latest OTP or initiate a new payment" //you can set this value to as per your need
+        if let text = supportedUITextField.text,
+           !text.isEmpty {
+            config.supportedUIMode = text.components(separatedBy: ",")
+        } else {
+            config.supportedUIMode = []
+        }
+        config.enableCustomizedOtpUIFlow = newCustomizedUISwitch.isOn
+        config.merchantName = merchantNameTf.text
+        config.amount = amountTextField.text
+        config.enableTxnTimeoutTimer = txnTimoutSwitch.isOn
+        config.acsContentConfig = PayU3DS2ACSContentConfig()
+        config.acsContentConfig?.submitButtonTitle = submitBtnTF.text
+        config.acsContentConfig?.resendButtonTitle = resendBtnTF.text
+        config.acsContentConfig?.otpContent = firstOTPInfo.text
+        config.acsContentConfig?.resendInfoContent = resendOTPInfoTF.text
+        config.acsContentConfig?.maxResendInfoContent = maxResendOTPInfoTF.text
+        config.enableMFAViaBiometric = true
 
         return config
     }

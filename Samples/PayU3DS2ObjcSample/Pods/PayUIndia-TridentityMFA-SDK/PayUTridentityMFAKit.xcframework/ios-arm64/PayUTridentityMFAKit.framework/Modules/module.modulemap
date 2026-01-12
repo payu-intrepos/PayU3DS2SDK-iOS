@@ -1,0 +1,4 @@
+framework module PayUTridentityMFAKit {
+  header "PayUTridentityMFAKit-Swift.h"
+  requires objc
+}

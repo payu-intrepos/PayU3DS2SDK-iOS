@@ -6,19 +6,19 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		67fmboEiGUKKC8UQGKkaPKkQVtc=
+		u3XAHUohicmbosDCjXgOdgt+hfA=
 		</data>
-		<key>Headers/CMethodsFile.h</key>
+		<key>BottomSheetViewController.nib</key>
 		<data>
-		AGzs26GR15XF76nmYJBDEdZDH8I=
+		QiSo8j3u2rqTPOwrfYAL6L+hpmo=
 		</data>
 		<key>Headers/PayU3DS2CoreKit-Swift.h</key>
 		<data>
-		i/NvmTCok6VROUzmCqhsgwV/hIk=
+		KnvNpITbm4nioSMiVQigtKhcvJ4=
 		</data>
 		<key>Headers/PayU3DS2CoreKit.h</key>
 		<data>
-		iNjZF1IlJrQALdvGzRyHNDFxRAg=
+		CsG9hj0waERdwyrwoKE2wWl5XBk=
 		</data>
 		<key>Headers/WFGMEllipticCurveCrypto+hash.h</key>
 		<data>
@@ -26,43 +26,55 @@
 		</data>
 		<key>Headers/WFGMEllipticCurveCrypto.h</key>
 		<data>
-		+zwbcRk9z6Eol5iWl34brjgrA+E=
+		YnjWD95kjBw5bUhk4/iuoklnrqY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0APnn92S4ddcRiBdQzHigxU1LdI=
+		NC9iVURARl1F1n9VTJ7qXAZftDQ=
+		</data>
+		<key>LearnMoreViewController.nib</key>
+		<data>
+		7nb1vFxHxzjT6WKlUUuD+Oy0RY8=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		ltskRLVHEq+tHdW3rpSor1i7x/M=
+		wBJH6JQT9w/tut976RwdTL+8rEw=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		A2xVtIApKQTsVgk5yO2eME+njaI=
+		b4NBF21zJk2YzM6EKIAKHHNSVoM=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ki0tfZPLgTygHGuFOZQGLihVMEw=
+		ZyGQ1Q8A8ocmaUrCYxU3rdHH+CQ=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		A2xVtIApKQTsVgk5yO2eME+njaI=
+		b4NBF21zJk2YzM6EKIAKHHNSVoM=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		teZVWFde12SfYzLW//TNaD8IFas=
+		MYmIkf61PnYX09TkIylkKfjlSAI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		K1TceIYsAuQpqCXo4glVpj94GQ0=
+		cUBvY9H3JKNk5C5Ed89rq0rKQYo=
 		</data>
 		<key>PayULoaderView.nib</key>
 		<data>
-		gWf/hUambsAZl+2uM4k1CVYYzQE=
+		c/yLx3pxGS4KpWuZXMe5iSmq3DA=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		PAOoglshHOa8HgxdW8NyxMeLj3A=
+		</data>
+		<key>Wibmo3ds.storyboardc/CResChallengeCustomizedTextViewControllerStId.nib</key>
+		<data>
+		0GknEu3lQ1aa0y2iMrcDClMwR2g=
 		</data>
 		<key>Wibmo3ds.storyboardc/CResChallengeNavigationViewControllerStId.nib</key>
 		<data>
-		a95j0ZC/RnIgoLMx4QnYi9T9QKo=
+		AdWbaBhkB9Tzi6J/6W508StyjaQ=
 		</data>
 		<key>Wibmo3ds.storyboardc/CResChallengeTextViewControllerStId.nib</key>
 		<data>
@@ -70,11 +82,15 @@
 		</data>
 		<key>Wibmo3ds.storyboardc/Info.plist</key>
 		<data>
-		JbkjLLDK0j869/04HASolrh6xBc=
+		On/aKDpsaBCiZOq6pb4VqC4HFMc=
 		</data>
 		<key>Wibmo3ds.storyboardc/OKI-zx-C6y-view-D4k-Lz-Ta4.nib</key>
 		<data>
-		vKKhfoBHqFYk062KkHXEXO+W9Dk=
+		/8A+Dfn2+MqCLagqG35WlrM7bd0=
+		</data>
+		<key>Wibmo3ds.storyboardc/w9A-uJ-2f0-view-Y3y-Nw-Mnd.nib</key>
+		<data>
+		oARE288xLk8gustohinfwZBCr48=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -83,28 +99,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z5fISwHWwCztX3zsJREbEihQwIZnuHmazmq/7Q+2z1A=
+			+W0GKOEpk+WiDGc+Xxl7x+rGhJ6oFja50ajTxFKANVk=
 			</data>
 		</dict>
-		<key>Headers/CMethodsFile.h</key>
+		<key>BottomSheetViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			inhgWiC7ZDBAQoiZCNlXp5eXayjyssIKSLViIdCZHiM=
+			4oYLnZ3xdGaT/gJ2UDY9awgftQJvcH26quJ3UvUjLgI=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2CoreKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KIZfcqWxJ+Kv1dvIjluZKLa8JsHJ0fXd5CNi6ZgX6cM=
+			KPR9Lo4p8jbQSNnDLuZfiK+LfJRqDfZnSc/wcKJEX44=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2CoreKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4i5RMRWlIgBXNKWZhk+ikVDRh4kfOdEIXSwWE9dlcgY=
+			2zfdAcyKIvx5J5K4Iaq6cUqliv52RIhKFeyTNEF3U3E=
 			</data>
 		</dict>
 		<key>Headers/WFGMEllipticCurveCrypto+hash.h</key>
@@ -118,63 +134,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XAVvZo12OSQZZQgsvcjW/Ml+NfIYrYtlV0sdIct0l6o=
+			+JV4+6QAF8y+vPeX/14TRmrfet31Lw4VwmSAHD6U+Z0=
+			</data>
+		</dict>
+		<key>LearnMoreViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			g66U+x7OWPoQEK0Ke/Z4VP9+SVrQfMQUVkamW4EJk2s=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MFv51AVK7y0T19b3h8q/MLSh1O9As84lb6Cvu0zlo5Q=
+			vLGtSFOQxYfy6d281gsdtcCLJHzmLDj5hWVY9SbnpDc=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fGqAnbPx264fbd25OwcuG4bUa7/lsGa0MgUGl6VK4Dk=
+			2mURZpjORxqq2/DMRxZdkcIh3lQ0+jO882b5VSxee5w=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5dRo055NsYs9nqS0oQ/Kwew9EkbbxEr0p2X+IIS6pQ0=
+			droo0nX89no8b4wga1U3ggHIQMI0HB7CyJZH2vSE2mg=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fGqAnbPx264fbd25OwcuG4bUa7/lsGa0MgUGl6VK4Dk=
+			2mURZpjORxqq2/DMRxZdkcIh3lQ0+jO882b5VSxee5w=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nSUVmBtsMhfVkiVMiLs6HBNy2ctHXNroqXhxK0XtMak=
+			89nveKTD77zL21yQdDPOOGBK408B3PmEfgyvdiZFkhY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sxf49u4O42sFwmzCUmqn6wZkPBNVSjpHmOfr29OeN70=
+			PHez5wnDmxfLZRiuCTD6U3zZuAm6+4aZQQNn2ylrNQE=
 			</data>
 		</dict>
 		<key>PayULoaderView.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xzBEFcpwyG+unYlz0ZLrtjjMjiwU6sJb9MLqFO6IvbY=
+			HCPYlr5YnAe0QY1kYzHgYk2FwDZY5fqLljPDJqPQI04=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3lx8655/HgXjXI6W9xlGC3b7c/5NGdGaMBvtHSfu+ZI=
+			</data>
+		</dict>
+		<key>Wibmo3ds.storyboardc/CResChallengeCustomizedTextViewControllerStId.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			A61YidUcSKl4QyWr9+M3igf76xlv3BnIXFtpoBPQjco=
 			</data>
 		</dict>
 		<key>Wibmo3ds.storyboardc/CResChallengeNavigationViewControllerStId.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BPh6Telfd/2Mc4PEycsSlbFhKMvZi6wuSohgmlXaUBE=
+			SQANPgykDP7U2Auo7lnmVLHyfket1s6IRkwTMpsddYs=
 			</data>
 		</dict>
 		<key>Wibmo3ds.storyboardc/CResChallengeTextViewControllerStId.nib</key>
@@ -188,14 +225,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ovKTVxdtKmyNM4RFaxg6ewSfqXEox5YdH94YtyaYUdE=
+			ldK+93teP4XW+85k/Um4Zo31X0Z8En5TibiU2aZRD/g=
 			</data>
 		</dict>
 		<key>Wibmo3ds.storyboardc/OKI-zx-C6y-view-D4k-Lz-Ta4.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/ZMlrjejYZBjkJqKFLGb/EftMHNGx4EOjx552hC6oFc=
+			ryqzF06SGMyK2LcS0K0PRHNB81r/f1lfBHhz2DSeACc=
+			</data>
+		</dict>
+		<key>Wibmo3ds.storyboardc/w9A-uJ-2f0-view-Y3y-Nw-Mnd.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pkSXs5t+mZxmxhruOZYZhWVrwNR4zOkglmmMzFnYhhs=
 			</data>
 		</dict>
 	</dict>
