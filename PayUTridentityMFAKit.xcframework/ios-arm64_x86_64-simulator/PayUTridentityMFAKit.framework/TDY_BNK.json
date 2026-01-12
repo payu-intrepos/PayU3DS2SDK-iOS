@@ -3,9 +3,9 @@
         "processingCircleColor": "#66676b",
         "buttonCustomization": {
             "primaryButtonCustomization": {
-                "disabledBackgroundColor": "#F26522",
+                "disabledBackgroundColor": "#9e9e9d",
                 "disabledTextColor": "#FFFFFF",
-                "enabledBackgroundColor": "#25272C",
+                "enabledBackgroundColor": "#F26522",
                 "enabledTextColor": "#FFFFFF"
             },
             "secondaryButtonCustomization": {
@@ -19,7 +19,7 @@
             "cornerRadius": 8
         },
         "toolbarCustomization": {
-            "backgroundColor": "#128242",
+            "backgroundColor": "#F26522",
             "textColor": "#FFFFFF",
             "fontName": "Avenir-Medium",
             "fontSize": 10
@@ -82,12 +82,12 @@
         "bottomSheetFailureScreenConfiguration": {
             "topHeaderText": "Failed!",
             "topSubHeaderText": "",
-            "headerTextForContents": "Could not verify mobile number with Bank",
+            "headerTextForContents": "Could not verify mobile number",
             "subTextForContents": "There was an error verifying your mobile number. Please try in future payments again to enrol for biometric.",
             "buttonText": "TAKING BACK TO MERCHANT"
         },
         "transactionHistoryScreenConfiguration": {
-            "appBarText": "Swipe to Pay",
+            "appBarText": "Card Authentication Services",
             "topHeaderText": "Authentication History",
             "topSubHeaderText": "",
             "headerTextForContents": "",
@@ -96,7 +96,7 @@
             "bottomBarOfflineOTPText": "Offline OTP"
         },
         "offlineOTPScreenConfiguration": {
-            "appBarText": "Swipe to Pay",
+            "appBarText": "Card Authentication Services",
             "topHeaderText": "Offline OTP",
             "topSubHeaderText": "",
             "headerTextForContents": "",
