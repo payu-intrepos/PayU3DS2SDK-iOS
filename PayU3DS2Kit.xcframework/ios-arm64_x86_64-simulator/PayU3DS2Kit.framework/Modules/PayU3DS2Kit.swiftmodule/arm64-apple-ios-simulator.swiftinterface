@@ -459,12 +459,6 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func initiateChallengeWithMFA(challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter, vc: UIKit.UIViewController?, delegate: any PayU3DS2Kit.PayU3DS2IniitateChallengeDelegate)
   #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public static func callPaymentAPI(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate, completion: @escaping (_ error: Swift.String?, _ flowType: Swift.String?, _ challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter?) -> Swift.Void)
-  #endif
-  @objc public static func authorisePayment(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate)
-  @objc public static func authenticatePayment(delegate: any PayU3DS2Kit.PayU3DS2Delegate)
-  @objc public static func setPlatformParams(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam)
   @objc public static func action(acsActionType: PayU3DS2Kit.PayU3DS2ACSActionType, challengeInputParams: PayU3DS2Kit.PayU3DS2ACSActionParams, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func initiatePayment(vc: UIKit.UIViewController, config: PayU3DS2Kit.PayU3DS2Config, paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate)
   @objc public static func clean()
