@@ -752,7 +752,6 @@ public enum PushStatus : Swift.String, Swift.Codable {
   }
 }
 public typealias URLString = Swift.String
-public func print(_ items: Swift.String..., function: Swift.String = #function, separator: Swift.String = " ", terminator: Swift.String = "\n")
 extension Swift.Array where Element == Swift.UInt8 {
   public func toHexString() -> Swift.String
 }
