@@ -14,9 +14,6 @@ Pod::Spec.new do |s|
   s.documentation_url   = "https://devguide.payu.in/mobile-sdk-ios/introduction-to-payu-mobile-sdk/"
   s.platform            = :ios , "13.0"
   s.vendored_frameworks = 'PayU3DS2Kit.xcframework'
-  s.pod_target_xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
-  }
   s.dependency            'PayUIndia-3DS2Core-SDK', '~> 3.0'
   s.dependency            'PayUIndia-TridentityMFA-SDK', '1.1.0.alpha.1'
   s.dependency            'PayUIndia-NetworkReachability', '~> 2.1'
