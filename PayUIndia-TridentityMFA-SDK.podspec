@@ -17,6 +17,9 @@ Pod::Spec.new do |s|
   'PayUTridentityMFAKit.xcframework',
   'PayUliboqs.xcframework'
   ]
+  s.pod_target_xcconfig = {
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64'
+  }
   s.dependency            'PayUIndia-CrashReporter', '~> 4.0'
   s.dependency            'PayUIndia-Analytics', '~> 4.0'
 end
