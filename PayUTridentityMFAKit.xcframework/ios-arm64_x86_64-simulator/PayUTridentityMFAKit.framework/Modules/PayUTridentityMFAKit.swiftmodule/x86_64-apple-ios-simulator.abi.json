@@ -37478,9 +37478,9 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/Reachability\/SDKReachability.swift",
       "kind": "BooleanLiteral",
-      "offset": 4912,
-      "length": 4,
-      "value": "true"
+      "offset": 4873,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/Reachability\/SDKReachability.swift",
@@ -38237,13 +38237,6 @@
       "offset": 2308,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYRuntimeHookChecker.swift",
-      "kind": "StringLiteral",
-      "offset": 375,
-      "length": 8,
-      "value": "\"dladdr\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/SwiftOTP\/Base32\/TDYBase32.swift",
@@ -39301,27 +39294,6 @@
       "offset": 1043,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYFishHookChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5445,
-      "length": 3,
-      "value": "102"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYFishHookChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29825,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYFishHookChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 30291,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/FailedRegistrationViewController.swift",
@@ -42782,90 +42754,6 @@
       "value": "\"Error occured when calling ptrace(). Denying debugger may not be reliable\""
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1610,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1729,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1938,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2132,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2247,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2374,
-      "length": 10,
-      "value": "0xe7ffdefe"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2425,
-      "length": 10,
-      "value": "0xd4200000"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2522,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2725,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2742,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2966,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/Classes\/ThirdPartryCode\/IOSSecuritySuite\/TDYDebuggerChecker.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3029,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/amit.salaria\/Documents\/GitHub\/tridentity\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/TokenViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 3291,
@@ -43979,14 +43867,14 @@
       "value": "64"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/Tridentity-czgkucooonbjalaeguumrtymiqbk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUTridentityMFAKit\/IntermediateBuildFilesPath\/TridentitySDK.build\/Release-iphoneos\/PayUTridentityMFAKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/Tridentity-czgkucooonbjalaeguumrtymiqbk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUTridentityMFAKit\/IntermediateBuildFilesPath\/TridentitySDK.build\/Release-iphonesimulator\/PayUTridentityMFAKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 14,
       "value": "\"phone_iphone\""
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/Tridentity-czgkucooonbjalaeguumrtymiqbk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUTridentityMFAKit\/IntermediateBuildFilesPath\/TridentitySDK.build\/Release-iphoneos\/PayUTridentityMFAKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/Tridentity-czgkucooonbjalaeguumrtymiqbk\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUTridentityMFAKit\/IntermediateBuildFilesPath\/TridentitySDK.build\/Release-iphonesimulator\/PayUTridentityMFAKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 882,
       "length": 13,
