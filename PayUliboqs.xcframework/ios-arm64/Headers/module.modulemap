@@ -1,0 +1,4 @@
+module PayUliboqs {
+    header "PayUliboqs.h"
+    export *
+}

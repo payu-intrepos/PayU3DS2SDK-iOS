@@ -20,7 +20,7 @@ let package = Package(
         .package(
             name: "PayUIndia-CrashReporter",
             url: "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
-            from: "4.0.2"
+            from: "4.0.3"
         ),
         .package(
             name: "PayUIndia-NetworkReachability",
@@ -35,6 +35,7 @@ let package = Package(
                 "PayUTridentityMFAKit",
                 "PayU3DS2CoreKit",
                 "PayU3DS2Kit",
+                "PayUliboqs",
                 .product(
                     name: "PayUIndia-CrashReporter",
                     package: "PayUIndia-CrashReporter"
@@ -57,6 +58,10 @@ let package = Package(
         .binaryTarget(
             name: "PayU3DS2Kit",
             path: "./PayU3DS2Kit.xcframework"
+        ),
+        .binaryTarget(
+            name: "PayUliboqs",
+            path: "./PayUliboqs.xcframework"
         )
     ]
 )
