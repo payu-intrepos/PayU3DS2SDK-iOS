@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUTridentityMFAKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUTridentityMFAKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import Combine
 import CommonCrypto
 import CoreData
@@ -18,7 +18,6 @@ import MachO
 import MessageUI
 import PayUAnalyticsKit
 import PayUCrashReporter
-import PayUliboqs
 import QuartzCore
 import Security
 import Swift
@@ -200,18 +199,26 @@ public struct TDYS3EndPoint {
     get
   }
 }
-@objc public protocol TridentSDKDelegate {
+@objc public protocol TridentSDKDelegate : PayUTridentityMFAKit.SDKClosureDelegate {
   @objc func fetchStatus(data: [Swift.String : Any])
   @objc func showCustomerStatus(message: Swift.String)
 }
 @objc public protocol SDKClosureDelegate {
-  @objc func sdkDidClose(with info: [Swift.String : Any])
+  @objc optional func sdkDidClose(with info: [Swift.String : Any])
 }
 @objc public protocol HeadlessSDKProtocol {
   @objc func sdkStatusUpdate(data: [Swift.String : Any])
 }
 @objc public protocol TridentityMFASDKProtocol {
   @objc func sdkStatusUpdate(data: [Swift.String : Any])
+}
+public struct LogoConfig : Swift.Codable {
+  public var defaultLogo: Swift.String?
+  public var roundedLogo: Swift.String?
+  public var gifLogo: Swift.String?
+  public init(defaultLogo: Swift.String? = nil, roundedLogo: Swift.String? = nil, gifLogo: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
 public let SDKReachabilityChangedNotification: Foundation.NSNotification.Name
@@ -270,7 +277,7 @@ public enum EventSeverity : Swift.String {
   @objc public var textCustomization: PayUTridentityMFAKit.TextCustomization? {
     get
   }
-  public init(uiCustomization: PayUTridentityMFAKit.UICustomization? = nil, textCustomization: PayUTridentityMFAKit.TextCustomization? = nil)
+  @objc public init(uiCustomization: PayUTridentityMFAKit.UICustomization? = nil, textCustomization: PayUTridentityMFAKit.TextCustomization? = nil)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -477,6 +484,7 @@ public enum WibmoAuthenticatorError : Swift.Error {
   case registerFailed(reason: PayUTridentityMFAKit.RegisterFailedReason)
   case failedByReason(Swift.String)
   case updateTransactionFailed(reason: Swift.String)
+  case invalidParameter(Swift.String)
 }
 extension PayUTridentityMFAKit.WibmoAuthenticatorError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
@@ -606,6 +614,7 @@ public enum TDYOTPAlgorithm {
   public var expTimeStamp: Swift.Double
   public var type: Swift.String?
   public var transactionId: Swift.String
+  public var lastFourDigits: Swift.String?
   public var authenticationType: Swift.String
   public var expireTimer: Foundation.Timer?
   @objc deinit

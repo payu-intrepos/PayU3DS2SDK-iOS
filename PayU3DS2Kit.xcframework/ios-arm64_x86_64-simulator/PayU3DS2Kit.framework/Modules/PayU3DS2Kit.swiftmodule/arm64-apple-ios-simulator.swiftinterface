@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayU3DS2Kit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2Kit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
 import DeveloperToolsSupport
 import Foundation
 import LocalAuthentication
@@ -353,7 +353,7 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
 @objc public enum PayU3DS2MFAStatus : Swift.Int {
   case initiated
   case success
-  case error
+  case failed
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -423,6 +423,7 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public var cardTokenType: Swift.String?
   @objc public var udfs: PayU3DS2Kit.PayU3DS2UserDefines?
   @objc public var cardinfo: PayU3DS2Kit.PayU3DS2CardInfo?
+  @objc public var isPreAuthTxn: Swift.Bool
   @objc public var threeDS2Params: PayU3DS2Kit.PayU3DS2Params?
   @objc public var termUrl: Swift.String?
   @objc public var authOnly: Swift.Bool

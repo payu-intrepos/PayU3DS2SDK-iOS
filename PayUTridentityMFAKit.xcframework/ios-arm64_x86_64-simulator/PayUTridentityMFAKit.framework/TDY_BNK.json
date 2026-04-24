@@ -43,7 +43,7 @@
             "consentPopUpSkipButtonText": "Skip for now,I'll do it later"
         },
         "tncScreenConfiguration": {
-            "consentPopUpOkButtonText": "Ok"
+            "consentPopUpOkButtonText": "OK"
         },
         "bottomSheetPermissionPopupConfiguration": {
             "topHeaderText": "Permissions Required",
@@ -83,7 +83,7 @@
             "topHeaderText": "Failed!",
             "topSubHeaderText": "",
             "headerTextForContents": "Could not verify mobile number",
-            "subTextForContents": "There was an error verifying your mobile number. Please try in future payments again to enrol for biometric.",
+            "subTextForContents": "We couldn't verify your number because it doesn't match what your bank has on record. To set up Face ID, make sure both numbers match, then try again",
             "buttonText": "TAKING BACK TO MERCHANT"
         },
         "transactionHistoryScreenConfiguration": {
@@ -116,7 +116,7 @@
             "topSubHeaderText": "",
             "headerTextForContents": "De-Register",
             "subTextForContents": "This action will De-Register from Secure Pay. Is this what you intended to do?",
-            "okButtonText": "Ok",
+            "okButtonText": "OK",
             "cancelButtonText": "Cancel"
         }
     }
