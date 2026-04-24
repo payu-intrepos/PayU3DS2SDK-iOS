@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "PayUIndia-Analytics",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "5531c51a199d25780459f3285b198dfc13f3f990",
+          "version": "4.0.2"
+        }
+      },
+      {
         "package": "PayUIndia-CrashReporter",
         "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
         "state": {

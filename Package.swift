@@ -26,7 +26,12 @@ let package = Package(
             name: "PayUIndia-NetworkReachability",
             url: "https://github.com/payu-intrepos/PayUNetworkReachability-iOS",
             from: "2.1.1"
-        )
+        ),
+        .package(
+            name: "PayUIndia-Analytics",
+            url: "https://github.com/payu-intrepos/PayUAnalytics-iOS.git",
+            from: "4.0.2"
+        ),
     ],
     targets: [
         .target(
@@ -43,6 +48,10 @@ let package = Package(
                 .product(
                     name: "PayUIndia-NetworkReachability",
                     package: "PayUIndia-NetworkReachability"
+                ),
+                .product(
+                    name: "PayUIndia-Analytics",
+                    package: "PayUIndia-Analytics"
                 )
             ],
             path: "PayUIndia-3DS2-SDKWrapper"
