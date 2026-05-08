@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/PayU3DS2Kit-Swift.h</key>
 		<data>
-		lxSGMDHxak/8nUtsGXfHreHO2Es=
+		k3MqYJ2Vu7bH81Q2oSw2L3rRDnQ=
 		</data>
 		<key>Headers/PayU3DS2Kit.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		iJioJ9A3HQba3KP0KcwFcUNrjZI=
+		Jb1Mndf0b53kGNScEgFPTLEOdis=
 		</data>
 		<key>MFA.storyboardc/Info.plist</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		EvpxrFqq8YImDT92dnODA98uNvU=
+		BhybD1xkLhZK0TWdGWBFx6KW5K4=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Q6AE2zRbeP+f1X6icIfd0jGuj0k=
+		YdJ8/bWrdh6gNpAKAAFNR4uGrTM=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Q6AE2zRbeP+f1X6icIfd0jGuj0k=
+		YdJ8/bWrdh6gNpAKAAFNR4uGrTM=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		CtrLl08oI/XrzsFDfZP4ObyANOc=
+		5K7UZXIncTB32AYnGtWHjZZe3YU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6ay3f4t1Xa6Rxs6VI5MNcCSVUTD3uVPMrupG/j7WYLY=
+			RHy6FqLtpJTFRp4hxr5si2UqdeqHkfFvrsZgfEcHtOI=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2Kit.h</key>
@@ -153,14 +153,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AX3AafNcEVNcgoe2RZCaGrGtf1MfTA/y/wLinn9esY4=
+			bFLCCS9d1uDMmt8yXJAxYAllwuiBYzALaNDbbk2xiPY=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mHeF9jkJ8IDOK1EEYLW1l5z7feB2pgrxHeR/ywNkzF0=
+			oOepA5g/hLvMRSZvvJsPAN/NHN+xyrA0HzgnyudnQ+0=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -174,14 +174,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mHeF9jkJ8IDOK1EEYLW1l5z7feB2pgrxHeR/ywNkzF0=
+			oOepA5g/hLvMRSZvvJsPAN/NHN+xyrA0HzgnyudnQ+0=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3HC1G2CxCNnHbxyS7XEbE3/0dlce27N1nj/2A9d98xE=
+			gEWGns3r7z5N8ebOrW62kPHqd8eQlvFkowNFQCgcySw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
