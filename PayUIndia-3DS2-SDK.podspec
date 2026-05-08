@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
   s.platform            = :ios , "13.0"
   s.vendored_frameworks = 'PayU3DS2Kit.xcframework'
   s.dependency            'PayUIndia-3DS2Core-SDK', '~> 4.0'
-  s.dependency            'PayUIndia-TridentityMFA-SDK', '~> 1.2'
   s.dependency            'PayUIndia-NetworkReachability', '~> 2.1'
   s.dependency            'PayUIndia-CrashReporter', '~> 4.0'
 
