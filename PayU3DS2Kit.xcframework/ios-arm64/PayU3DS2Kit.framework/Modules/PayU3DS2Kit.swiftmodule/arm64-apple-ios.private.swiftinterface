@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2Kit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import CryptoKit
 import DeveloperToolsSupport
 import Foundation
 import LocalAuthentication
@@ -31,26 +32,21 @@ import _SwiftConcurrencyShims
   public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc public class PayU3DS2MFAParam : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var cardId: Swift.String?
-  @objc public var tempCardId: Swift.String?
-  @objc public var cardBin: Swift.String?
-  @objc public var clientId: Swift.String?
-  @objc public var bankLogoURL: Swift.String?
-  @objc public var networkLogoURL: Swift.String?
-  @objc public var transactionTimeout: Swift.Int
-  @objc public var registrationTimeout: Swift.Int
-  @objc public var fallbackVisibilityDuration: Swift.Int
-  @objc public var bindingType: Swift.String?
-  @objc public var bankId: Swift.Int
-  @objc public var customerId: Swift.String?
-  @objc public var themeType: Swift.String?
-  @objc public var hashKey: Swift.String?
-  @objc public var tdyUrl: Swift.String?
+  @objc public var tdyCardId: Swift.String?
+  @objc public var tdyClientId: Swift.String?
+  @objc public var issuerImage: Swift.String?
+  @objc public var psImage: Swift.String?
   @objc public var messageType: Swift.String?
+  @objc public var name: Swift.String?
+  @objc public var mfaId: Swift.String?
+  @objc public var criticalityIndicator: Swift.Bool
+  @objc public var status: Swift.String?
+  @objc public var data: Swift.String?
+  @objc public var cardBin: Swift.String?
   required public init(from decoder: any Swift.Decoder) throws
-  @objc public init(cardId: Swift.String?, tempCardId: Swift.String?, cardBin: Swift.String?, clientId: Swift.String?, bankLogoURL: Swift.String?, networkLogoURL: Swift.String?, transactionTimeout: Swift.Int, registrationTimeout: Swift.Int, fallbackVisibilityDuration: Swift.Int, bindingType: Swift.String?, bankId: Swift.Int, customerId: Swift.String?, themeType: Swift.String?, hashKey: Swift.String?, tdyUrl: Swift.String?, messageType: Swift.String? = nil)
-  @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
+  @objc public init(tdyCardId: Swift.String?, tdyClientId: Swift.String?, issuerImage: Swift.String?, psImage: Swift.String?, messageType: Swift.String?, name: Swift.String?, mfaId: Swift.String?, criticalityIndicator: Swift.Bool, status: Swift.String? = nil, data: Swift.String? = nil, cardBin: Swift.String? = nil)
+  @objc deinit
 }
 @objc public class PayU3DS2SIParams : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var billingAmount: Swift.String?
@@ -273,7 +269,7 @@ extension PayU3DS2Kit.PayU3DS2Utils {
 @objc public class PayU3DS2CardData : ObjectiveC.NSObject {
   @objc public var cardScheme: PayU3DS2Kit.PayU3DS2CardScheme
   @objc public var threeDSVersion: Swift.String
-  @objc public init(cardScheme: PayU3DS2Kit.PayU3DS2CardScheme, threeDSVersion: Swift.String)
+  @objc public init(cardScheme: PayU3DS2Kit.PayU3DS2CardScheme, threeDSVersion: Swift.String = "2.2.0")
   @objc deinit
 }
 public typealias PayU3DS2Completion = (_ response: PayU3DS2Kit.PayU3DS2Response) -> Swift.Void
@@ -390,6 +386,10 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public static func extractDeviceDetails(cardData: PayU3DS2Kit.PayU3DS2CardData) -> PayU3DS2Kit.PayU3DS2Response
   @objc public static func initiateChallenge(challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter, vc: UIKit.UIViewController?, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func initiateChallengeWithMFA(challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter, vc: UIKit.UIViewController?, delegate: any PayU3DS2Kit.PayU3DS2IniitateChallengeDelegate)
+  @objc public static func callPaymentAPI(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate, completion: @escaping (_ error: Swift.String?, _ flowType: Swift.String?, _ challengeParameter: PayU3DS2Kit.PayU3DS2ChallengeParameter?) -> Swift.Void)
+  @objc public static func authorisePayment(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate)
+  @objc public static func authenticatePayment(delegate: any PayU3DS2Kit.PayU3DS2Delegate)
+  @objc public static func setPlatformParams(paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam)
   @objc public static func action(acsActionType: PayU3DS2Kit.PayU3DS2ACSActionType, challengeInputParams: PayU3DS2Kit.PayU3DS2ACSActionParams, completion: @escaping PayU3DS2Kit.PayU3DS2Completion)
   @objc public static func initiatePayment(vc: UIKit.UIViewController, config: PayU3DS2Kit.PayU3DS2Config, paymentParams: PayU3DS2Kit.PayU3DS2PaymentParam, delegate: any PayU3DS2Kit.PayU3DS2Delegate)
   @objc public static func clean()
@@ -429,6 +429,7 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public var pgCode: Swift.String?
   @objc public var bankCode: Swift.String?
   @objc public var siParam: PayU3DS2Kit.PayU3DS2SIParams?
+  @objc public var encryptData: Swift.Bool
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String = "", surl: Swift.String, furl: Swift.String)
   @objc deinit
 }
