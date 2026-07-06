@@ -269,7 +269,7 @@ extension PayU3DS2Kit.PayU3DS2Utils {
 @objc public class PayU3DS2CardData : ObjectiveC.NSObject {
   @objc public var cardScheme: PayU3DS2Kit.PayU3DS2CardScheme
   @objc public var threeDSVersion: Swift.String
-  @objc public init(cardScheme: PayU3DS2Kit.PayU3DS2CardScheme, threeDSVersion: Swift.String = "2.2.0")
+  @objc public init(cardScheme: PayU3DS2Kit.PayU3DS2CardScheme, threeDSVersion: Swift.String)
   @objc deinit
 }
 public typealias PayU3DS2Completion = (_ response: PayU3DS2Kit.PayU3DS2Response) -> Swift.Void
