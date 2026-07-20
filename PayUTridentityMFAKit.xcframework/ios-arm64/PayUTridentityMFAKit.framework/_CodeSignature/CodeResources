@@ -14,69 +14,53 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		seYja0yr1293gMm82C8+4LcI/TA=
-		</data>
-		<key>BottomSheetViewController.nib</key>
-		<data>
-		FZrw757YHyTBdGbGDHcPmFB1knQ=
-		</data>
-		<key>CongratulationsViewController.nib</key>
-		<data>
-		r1Gcbrv49Fl+rvqxhhVbyUebqVU=
-		</data>
-		<key>FailedRegistrationViewController.nib</key>
-		<data>
-		5Rq2RG/9/4iHH+Ui5TlHQq+00D4=
+		LfX8Z8jGkQRtnWtmygS6lsRUS4k=
 		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
-		DjAhzv/UHS2qczg7qzlEFd6E73k=
+		yANlfFY/wKEfDE0p1cEOzGaKP30=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bs8ajF0iKrwTxatrSqGqDrMig1k=
+		IPltv7w1Q5NfSFRE3DRmstJ4mro=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		zz4PxQ6aS7PtFyoB3bGzPPhQkb0=
+		6BUdGAB/M5E8SY6zb5X1GWZ6mH0=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		+d1tB9WFAXRY61ZokByhc2QIBlU=
+		lkQJs2n1XAwiSH9H57YGJ5TdOeY=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		5ASa/pqzDWtNAM+QFqXgsihJFTs=
+		qkWm9MbmeU0dcv3nqdTHgplKGdU=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+d1tB9WFAXRY61ZokByhc2QIBlU=
+		lkQJs2n1XAwiSH9H57YGJ5TdOeY=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		R6fbhCvtc7shzx3T/7refEj7Oww=
+		qBZPzVaaCSvvkUbWfYY2jj+CLCQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		oBvxzKjhnfhxG2h9YGNrE0on/yE=
+		WFLHlOdY58D5fWZjaNjyfdhdP7Y=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		Jw+Bu9BV2EJs5U5zUaw5HxyNI/4=
 		</data>
-		<key>SetupBiometricViewController.nib</key>
-		<data>
-		Eg5SkWaiJHhAh3UQwRIrSlJ/MH4=
-		</data>
 		<key>TDY_BNK.json</key>
 		<data>
-		I+PCucuBhCOqazq6CP5ErOzlwps=
+		43RGVylJQrScWLtvsOn9y6cmVNs=
 		</data>
 		<key>en.lproj/Localize.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/41CpD7F7VMmrErXBvYaFfdzHbU=
+			hUNNLVXrgCbj4CXa9btNLYg8W+A=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -106,77 +90,56 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PAp2L0ImCg3zWhCm6du6vytfAx1pxAYpUxjesArY/t8=
-			</data>
-		</dict>
-		<key>BottomSheetViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			RatzyZHguQ0k5sJa3tRbCywGKNvGOpFj10aJ5sAbsQ0=
-			</data>
-		</dict>
-		<key>CongratulationsViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gAfsjjIUPysZt9/5vkBhRlNDssfM94h9BSZqfZ+krQ4=
-			</data>
-		</dict>
-		<key>FailedRegistrationViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			E005GHVKtePziDdk9i5Z2lpERvTnaOQZNmoLfCDZACc=
+			/3zTkPTvt3/D3rcj6eFrd7t16uYnDRbaWqIUKt+emBw=
 			</data>
 		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mvKYaEii+Ed84KRwuD8Ciycf6lYEuwB6NK93LmStlyw=
+			cQC+nHmpnVIYLfokQ2ATEJpVX9jiQCky9VnwVWPMsfI=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			et8/REq0e7QQqDjzq+F4gNWZ7FuW4lCqq9blsz6DCTY=
+			Kb+kKsvDSIp5KupFvqpGP7fL0BUk4ia6dTyD5F1LF0w=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCFjfJHTFTiDUIpgCt00B1KkHqi5tAaOhf/kmsW77+Y=
+			5V4gHosm97msc2cmT8A5GiWQp0CZGPDcGo4NOHx8hK0=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x9h1csaYieH8wOqGXx91e+f1cd8285yDRtlJUzO8dJ0=
+			ArmrlJVCT3rFArdJ/acSlZ3XPT1Bw1EtLpKI2E9qLLA=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CCFjfJHTFTiDUIpgCt00B1KkHqi5tAaOhf/kmsW77+Y=
+			5V4gHosm97msc2cmT8A5GiWQp0CZGPDcGo4NOHx8hK0=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			taw4iXQefNMLgrzDJjU5o2oZ865bALjTWiNOMYo397M=
+			OMqxH5vJVNWMlh2p2NxwqM8psNAB14XS3vD2b4cGvOg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oUASmCo53bmk5Qktc8L4Rin1yrae1Cbc+Ew9zYZ4g98=
+			B2y1ToogGOp+T8WdXHJyki8HOn5PLNc8HAPuQeDRlzE=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -186,25 +149,18 @@
 			FiNhnMG+ThNFwKTUxQN3KlScEqWIbZkFl2QOkrdIuTU=
 			</data>
 		</dict>
-		<key>SetupBiometricViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KRZ/Njql1GFDMNyvIg23s2LHGvPcu6UmQegE2iATDYA=
-			</data>
-		</dict>
 		<key>TDY_BNK.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S4ytEHet6J3e7shHtDqKiCBwuukKm2gY04ImiINfIes=
+			7j+hoXX/JhfsKoGRZrKa5NQKRn4ripVxCB8YqpREewM=
 			</data>
 		</dict>
 		<key>en.lproj/Localize.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nKCL0i5iEs6Zy9uQ45mlE+wBQ617Q3XJqOeEPtAhB6M=
+			ULnkC47Wt8wY3QZDtYyb0Ta8oUs45uKr7Cwr/KKnxeg=
 			</data>
 			<key>optional</key>
 			<true/>

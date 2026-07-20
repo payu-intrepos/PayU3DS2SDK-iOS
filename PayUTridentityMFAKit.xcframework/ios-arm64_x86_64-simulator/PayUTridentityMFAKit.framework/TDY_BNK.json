@@ -15,7 +15,7 @@
                 "enabledTextColor": "#FFFFFF"
             },
             "fontName": "Avenir-Medium",
-            "fontSize": 16,
+            "fontSize": 14,
             "cornerRadius": 8
         },
         "toolbarCustomization": {
@@ -28,7 +28,7 @@
             "headingCustomization": {
                 "textColor": "#25272C",
                 "fontName": "Avenir-Heavy",
-                "fontSize": 18
+                "fontSize": 17
             },
             "subHeadingCustomization": {
                 "textColor": "#25272C",
@@ -118,6 +118,66 @@
             "subTextForContents": "This action will De-Register from Secure Pay. Is this what you intended to do?",
             "okButtonText": "OK",
             "cancelButtonText": "Cancel"
+        },
+        "mfaRegistrationFlowConfiguration": {
+            "stepper": {
+                "step1Title": "Face ID Capture",
+                "step2Title": "SMS Verification"
+            },
+            "faceIdInstruction": {
+                "title": "Smile, you're almost in",
+                "subtitle": "Face ID is scanning. Just look naturally at your screen for a second."
+            },
+            "smsInstruction": {
+                "title": "Verify your mobile number",
+                "subtitle": "Click on 'Send' without changing anything in the message",
+                "redirectButton": "Redirecting to SMS App"
+            },
+            "simBinding": {
+                "inProgressTitle": "Verifying your mobile number",
+                "inProgressSubtitle": "Almost there...Do not press ‘Back’ or exit the app.",
+                "successTitle": "Mobile Verification Successful!"
+            },
+            "faceIdRetry": {
+                "title": "Face Not Recognised",
+                "subtitle": "Remove mask/sunglasses and ensure you are in a well lit area",
+                "tryAgainButton": "Try Face ID Again",
+                "cancelButton": "Cancel"
+            },
+            "faceIdUnavailable": {
+                "title": "Face ID unavailable",
+                "instruction": "Please follow the instructions below to set up Face ID on your device:",
+                "settingsStep1": "Tap \"Open Settings\"",
+                "settingsStep2": "Open Face ID & Passcode",
+                "settingsStep3": "Enable Face ID for %@",
+                "settingsStep4": "Return to %@",
+                "securityNote": "Your biometric data stays secure on your device and is never shared",
+                "continueWithoutRegistration": "Continue Without Registration"
+            },
+            "cancelSetup": {
+                "title": "Are you sure you want to leave?",
+                "subtitle": "You're just 2 steps away from never typing an OTP again",
+                "paymentSafeTitle": "Don't worry, your payment is safe",
+                "paymentSafeSubtitle": "Exiting will only cancel your face ID set up, not your payment.",
+                "finishSetupButton": "No, I'll Finish Setup",
+                "leaveSetupButton": "Yes, Leave Setup"
+            },
+            "outcome": {
+                "successTitle": "Face ID Enabled!",
+                "successSubtitle": "You're all set. Pay with just your Face ID next time, no OTP ever again.",
+                "setupFailedTitle": "Face ID Setup Failed",
+                "setupFailedMessage": "Please check your phone's Face ID permissions and try again.",
+                "accessDeniedBadge": "Face ID access denied",
+                "returningToOrderButton": "Returning to your order"
+            },
+            "payment": {
+                "paymentInProgress": "Your payment is in progress..",
+                "payingToPrefix": "Paying to "
+            },
+            "paymentSafe": {
+                "title": "Don't worry, your payment is safe",
+                "subtitle": "We have successfully processed your payment!"
+            }
         }
     }
 }

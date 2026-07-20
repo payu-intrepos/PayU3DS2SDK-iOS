@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2CoreKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AdSupport
 import CoreLocation
 import Darwin
@@ -566,8 +566,10 @@ final internal class WFBlockEncryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreK
   @objc public var threeDSRequestorAppURL: Swift.String?
   @objc public var tdyCardId: Swift.String?
   @objc public var clientId: Swift.String?
+  @objc public var name: Swift.String?
+  @objc public var id: Swift.String?
   public var acsRenderingType: PayU3DS2CoreKit.ACSUIType?
-  @objc public init(a3DSServerTransactionID: Swift.String? = nil, acsTransactionID: Swift.String? = nil, acsRefNumber: Swift.String? = nil, acsSignedContent: Swift.String? = nil, threeDSServerTransactionID: Swift.String? = nil, threeDSRequestorAppURL: Swift.String? = nil, tdyCardId: Swift.String? = nil, clientId: Swift.String? = nil, acsRenderingType: PayU3DS2CoreKit.ACSUITypeInt = ACSUITypeInt.unknown)
+  @objc public init(a3DSServerTransactionID: Swift.String? = nil, acsTransactionID: Swift.String? = nil, acsRefNumber: Swift.String? = nil, acsSignedContent: Swift.String? = nil, threeDSServerTransactionID: Swift.String? = nil, threeDSRequestorAppURL: Swift.String? = nil, tdyCardId: Swift.String? = nil, clientId: Swift.String? = nil, name: Swift.String? = nil, id: Swift.String? = nil, acsRenderingType: PayU3DS2CoreKit.ACSUITypeInt = ACSUITypeInt.unknown)
   @objc deinit
 }
 final public class WFGCM : PayU3DS2CoreKit.WFBlockMode {
@@ -1966,7 +1968,7 @@ extension Swift.UInt64 {
   }
 }
 @objc public class TextBoxCustomization : PayU3DS2CoreKit.Customization {
-  @objc public init(borderWidth: Swift.Int = 1, cornerRadius: Swift.Int = 5, borderColor: Swift.String? = nil)
+  @objc public init(borderWidth: Swift.Int = 1, cornerRadius: Swift.Int = 8, borderColor: Swift.String? = nil)
   @objc public func setBorderWidth(_ borderWidth: Swift.Int)
   @objc public func getBorderWidth() -> Swift.Int
   @objc public func setBorderColor(_ hexColorCode: Swift.String)
@@ -2646,7 +2648,7 @@ final internal class WFStreamDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2Core
 @objc public class ButtonCustomization : PayU3DS2CoreKit.Customization {
   @objc public var backgroundColor: Swift.String?
   @objc public var cornerRadius: Swift.Int
-  public init(backgroundColor: Swift.String?, cornerRadius: Swift.Int = 0)
+  public init(backgroundColor: Swift.String?, cornerRadius: Swift.Int? = nil)
   public func setBackgroundColor(_ hexColorCode: Swift.String)
   public func setCornerRadius(_ cornerRadius: Swift.Int)
   public func getBackgroundColor() -> Swift.String?
@@ -2935,12 +2937,23 @@ public enum EventSeverity : Swift.String {
     get
   }
 }
+public enum EventStatus : Swift.String {
+  case initiated
+  case failure
+  case success
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class LogHelper : ObjectiveC.NSObject {
   @objc public static var shared: PayU3DS2CoreKit.LogHelper
-  public func logEventFor(types: [PayU3DS2CoreKit.EventLogger] = [.Clevertap, .Kibana], key: Swift.String, value: Swift.String = "", className: Swift.String = "", eventType: PayU3DS2CoreKit.EventType = .info, eventSeverity: PayU3DS2CoreKit.EventSeverity = .low, txnId: Swift.String? = nil, sdkTime: Swift.Int = -999)
+  public func logEventFor(types: [PayU3DS2CoreKit.EventLogger] = [.Clevertap, .Kibana], key: Swift.String, value: Swift.String = "", className: Swift.String = "", eventType: PayU3DS2CoreKit.EventType = .info, eventSeverity: PayU3DS2CoreKit.EventSeverity = .low, eventStatus: PayU3DS2CoreKit.EventStatus? = nil, txnId: Swift.String? = nil, sdkTime: Swift.Int = -999, errorCode: Swift.String? = nil, additionalData: [Swift.String : Any]? = nil, rootAdditionalData: [Swift.String : Any]? = nil)
   @objc public func logKibanaEvent(key: Swift.String, value: Swift.String = "", className: Swift.String = "", txnId: Swift.String? = nil, sdkTime: Swift.Int = -999)
   @objc public func logKibanaEvent(key: Swift.String, value: Swift.String, className: Swift.String, eventType: Swift.String, eventSeverity: Swift.String, txnId: Swift.String?, sdkTime: Swift.Int)
-  public func logKibanaEvent(key: Swift.String, value: Swift.String = "", className: Swift.String = "", eventType: PayU3DS2CoreKit.EventType, eventSeverity: PayU3DS2CoreKit.EventSeverity = .low, txnId: Swift.String? = nil, sdkTime: Swift.Int = -999)
+  @objc public func logKibanaEvent(key: Swift.String, value: Swift.String, className: Swift.String, eventType: Swift.String, eventSeverity: Swift.String, eventStatus: Swift.String, txnId: Swift.String?, sdkTime: Swift.Int)
+  public func logKibanaEvent(key: Swift.String, value: Swift.String = "", className: Swift.String = "", eventType: PayU3DS2CoreKit.EventType, eventSeverity: PayU3DS2CoreKit.EventSeverity = .low, eventStatus: PayU3DS2CoreKit.EventStatus? = nil, txnId: Swift.String? = nil, sdkTime: Swift.Int = -999, errorCode: Swift.String? = nil, additionalData: [Swift.String : Any]? = nil, rootAdditionalData: [Swift.String : Any]? = nil)
   @objc deinit
 }
 @objc public class AuthenticationRequestParameters : ObjectiveC.NSObject {
@@ -3086,6 +3099,7 @@ extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func enableCustomizedOtpUIFlow(_ isCustomizedOtpFlow: Swift.Bool)
   @objc dynamic public func setMerchantName(_ mechantName: Swift.String)
   @objc dynamic public func setAmount(_ amount: Swift.String)
+  @objc dynamic public func setSdkVersion(_ sdkVersion: Swift.String)
   @objc dynamic public func enableTxnTimeoutTimer(_ isEnabled: Swift.Bool)
   @objc dynamic public func setSubmitButtonTitle(_ title: Swift.String)
   @objc dynamic public func setResendButtonTitle(_ title: Swift.String)
@@ -3376,6 +3390,9 @@ extension PayU3DS2CoreKit.EventType : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.EventSeverity : Swift.Equatable {}
 extension PayU3DS2CoreKit.EventSeverity : Swift.Hashable {}
 extension PayU3DS2CoreKit.EventSeverity : Swift.RawRepresentable {}
+extension PayU3DS2CoreKit.EventStatus : Swift.Equatable {}
+extension PayU3DS2CoreKit.EventStatus : Swift.Hashable {}
+extension PayU3DS2CoreKit.EventStatus : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.WFCBC.WFError : Swift.Equatable {}
 extension PayU3DS2CoreKit.WFCBC.WFError : Swift.Hashable {}
 extension PayU3DS2CoreKit.UiCustomization.ButtonTypeInt : Swift.Equatable {}

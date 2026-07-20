@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.1 effective-5.10 (swiftlang-6.3.1.1.2 clang-2100.0.123.102)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUTridentityMFAKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.1
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUTridentityMFAKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Combine
 import CommonCrypto
 import CoreData
@@ -34,15 +34,29 @@ extension QuartzCore.CALayer {
   public func logLayerTree(withIndent: Swift.Int = 0)
 }
 public protocol TransactionInfo {
+  #if compiler(>=5.3) && $NonescapableTypes
   var amount: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var merchantName: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var productId: Swift.String? { get }
+  #endif
   var timeStamp: Swift.Double { get }
   var expTimeStamp: Swift.Double { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   var type: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var transactionId: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var requesterTxnId: Swift.String? { get }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   var authenticationType: Swift.String? { get }
+  #endif
 }
 public protocol TransactionPayment {
   associatedtype Info : PayUTridentityMFAKit.TransactionInfo
@@ -69,7 +83,9 @@ public struct DefaultConstants {
   @objc public var labelCustomization: PayUTridentityMFAKit.LabelCustomization? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(processingCircleColor: Swift.String? = nil, buttonCustomization: PayUTridentityMFAKit.ButtonCustomization? = nil, toolbarCustomization: PayUTridentityMFAKit.ToolbarThemeCustomization? = nil, labelCustomization: PayUTridentityMFAKit.LabelCustomization? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -78,6 +94,7 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
   case clientId
   case secretKey
   case apiKey
+  case tdyApiKey
   case clientToken
   case clientExpiry
   case clientServerPubkey
@@ -100,7 +117,9 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
   case shouldAllowSecurityCheck
   case bankURL
   case bankId
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -111,7 +130,9 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
   @objc public var buttonText: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, buttonText: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -123,7 +144,102 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
   @objc public var consentPopUpSkipButtonText: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(consentPopUpRegisterButtonText: Swift.String? = nil, consentPopUpSkipButtonText: Swift.String? = nil)
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public class BiometricTextConfiguration : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var lockoutMessage: Swift.String? {
+    get
+  }
+  @objc public var biometricNotAvailable: Swift.String? {
+    get
+  }
+  @objc public var registration: PayUTridentityMFAKit.BiometricFlowTextConfig? {
+    get
+  }
+  @objc public var transaction: PayUTridentityMFAKit.BiometricFlowTextConfig? {
+    get
+  }
+  @objc public var permissionDialog: PayUTridentityMFAKit.BiometricPermissionDialogConfig? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(lockoutMessage: Swift.String? = nil, biometricNotAvailable: Swift.String? = nil, registration: PayUTridentityMFAKit.BiometricFlowTextConfig? = nil, transaction: PayUTridentityMFAKit.BiometricFlowTextConfig? = nil, permissionDialog: PayUTridentityMFAKit.BiometricPermissionDialogConfig? = nil)
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public class BiometricFlowTextConfig : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var maxAttemptsMessage: Swift.String? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(maxAttemptsMessage: Swift.String? = nil)
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public class BiometricPermissionDialogConfig : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var iOS: PayUTridentityMFAKit.PermissionDialogConfig? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(iOS: PayUTridentityMFAKit.PermissionDialogConfig? = nil)
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public class PermissionDialogConfig : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var heading: Swift.String? {
+    get
+  }
+  @objc public var message: Swift.String? {
+    get
+  }
+  @objc public var buttonOKText: Swift.String? {
+    get
+  }
+  @objc public var buttonSkipText: Swift.String? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(heading: Swift.String? = nil, message: Swift.String? = nil, buttonOKText: Swift.String? = nil, buttonSkipText: Swift.String? = nil)
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public class UIMessageConfiguration : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var pnTapMessageConfiguration: PayUTridentityMFAKit.PNTapMessageConfiguration? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(pnTapMessageConfiguration: PayUTridentityMFAKit.PNTapMessageConfiguration? = nil)
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc public class PNTapMessageConfiguration : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var expiredOrNotFoundMessage: Swift.String? {
+    get
+  }
+  @objc public var alreadyActionedPrefix: Swift.String? {
+    get
+  }
+  @objc public var enableStrictHistoryValidation: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(expiredOrNotFoundMessage: Swift.String? = nil, alreadyActionedPrefix: Swift.String? = nil, enableStrictHistoryValidation: Swift.Bool = false)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -131,7 +247,9 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
 @objc public class TransactionHistoryScreenConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var appBarText: Swift.String, topHeaderText: Swift.String, topSubHeaderText: Swift.String, headerTextForContents: Swift.String
   @objc public var subTextForContents: Swift.String, bottomBarTransactionsText: Swift.String, bottomBarOfflineOTPText: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(appBarText: Swift.String? = nil, topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, bottomBarTransactionsText: Swift.String? = nil, bottomBarOfflineOTPText: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -144,7 +262,9 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
   @objc public var backgroundColor: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(textColor: Swift.String? = nil, fontName: Swift.String? = nil, fontSize: Swift.Int = 10, backgroundColor: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -153,7 +273,9 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
   @objc public var textColor: Swift.String?, fontName: Swift.String?
   @objc public var fontSize: Swift.Int
   @objc public var backgroundColor: Swift.String?
-  @objc public init(textColor: Swift.String? = nil, fontName: Swift.String? = nil, fontSize: Swift.Int = 16, backgroundColor: Swift.String? = nil)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(textColor: Swift.String? = nil, fontName: Swift.String? = nil, fontSize: Swift.Int = 17, backgroundColor: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -161,7 +283,9 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
 @objc public class DeRegPopupConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var topHeaderText: Swift.String?, topSubHeaderText: Swift.String?, headerTextForContents: Swift.String?, subTextForContents: Swift.String?
   @objc public var okButtonText: Swift.String?, cancelButtonText: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, okButtonText: Swift.String? = nil, cancelButtonText: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -171,7 +295,9 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
   @objc public var buttonText: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, buttonText: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -183,7 +309,9 @@ public enum KeyChainKey : Swift.String, Swift.Codable {
   @objc public var subHeadingCustomization: PayUTridentityMFAKit.SubHeadingThemeCustomization? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(headingCustomization: PayUTridentityMFAKit.HeadingThemeCustomization? = nil, subHeadingCustomization: PayUTridentityMFAKit.SubHeadingThemeCustomization? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -211,12 +339,15 @@ public struct TDYS3EndPoint {
 }
 @objc public protocol TridentityMFASDKProtocol {
   @objc func sdkStatusUpdate(data: [Swift.String : Any])
+  @objc optional func onStatusUpdate(requestType: Swift.String, message: Swift.String)
 }
 public struct LogoConfig : Swift.Codable {
   public var defaultLogo: Swift.String?
   public var roundedLogo: Swift.String?
   public var gifLogo: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(defaultLogo: Swift.String? = nil, roundedLogo: Swift.String? = nil, gifLogo: Swift.String? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -236,7 +367,9 @@ public enum Status : Swift.String {
   case failure
   case cancelled
   case notSpecified
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -246,7 +379,9 @@ public enum EventType : Swift.String {
   case info
   case error
   case notSpecified
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -256,7 +391,9 @@ public enum EventSeverity : Swift.String {
   case low
   case medium
   case high
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -265,7 +402,9 @@ public enum EventSeverity : Swift.String {
 @objc public class SimBindingScreenConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var appBarText: Swift.String?, topHeaderText: Swift.String?, topSubHeaderText: Swift.String?, headerTextForContents: Swift.String?
   @objc public var subTextForContents: Swift.String?, textForFullScreenSubContent: Swift.String?, buttonTextForProceed: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(appBarText: Swift.String? = nil, topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, textForFullScreenSubContent: Swift.String? = nil, buttonTextForProceed: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -277,34 +416,52 @@ public enum EventSeverity : Swift.String {
   @objc public var textCustomization: PayUTridentityMFAKit.TextCustomization? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(uiCustomization: PayUTridentityMFAKit.UICustomization? = nil, textCustomization: PayUTridentityMFAKit.TextCustomization? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public func base32Encode(_ data: Foundation.Data) -> Swift.String
 public func base32HexEncode(_ data: Foundation.Data) -> Swift.String
+#if compiler(>=5.3) && $NonescapableTypes
 public func base32DecodeToData(_ string: Swift.String) -> Foundation.Data?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
 public func base32HexDecodeToData(_ string: Swift.String) -> Foundation.Data?
+#endif
 public func base32Encode(_ array: [Swift.UInt8]) -> Swift.String
 public func base32HexEncode(_ array: [Swift.UInt8]) -> Swift.String
+#if compiler(>=5.3) && $NonescapableTypes
 public func base32Decode(_ string: Swift.String) -> [Swift.UInt8]?
+#endif
+#if compiler(>=5.3) && $NonescapableTypes
 public func base32HexDecode(_ string: Swift.String) -> [Swift.UInt8]?
+#endif
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var base32DecodedData: Foundation.Data? {
     get
   }
+  #endif
   public var base32EncodedString: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func base32DecodedString(_ encoding: Swift.String.Encoding = .utf8) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var base32HexDecodedData: Foundation.Data? {
     get
   }
+  #endif
   public var base32HexEncodedString: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func base32HexDecodedString(_ encoding: Swift.String.Encoding = .utf8) -> Swift.String?
+  #endif
 }
 extension Foundation.Data {
   public var base32EncodedString: Swift.String {
@@ -313,18 +470,22 @@ extension Foundation.Data {
   public var base32EncodedData: Foundation.Data {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var base32DecodedData: Foundation.Data? {
     get
   }
+  #endif
   public var base32HexEncodedString: Swift.String {
     get
   }
   public var base32HexEncodedData: Foundation.Data {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var base32HexDecodedData: Foundation.Data? {
     get
   }
+  #endif
 }
 final public class TDYFloatValueProvider {
   public typealias CGFloatValueBlock = (CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
@@ -347,10 +508,17 @@ final public class TDYFloatValueProvider {
   @objc public func initializeSDK()
   @objc public func configureSDK(with jsonObject: [Swift.String : Any], completionHandler: @escaping (Swift.Bool, [Swift.String : Any]) -> Swift.Void)
   @objc public func initiateRegistration(with jsonObject: [Swift.String : Any], in homeViewController: UIKit.UIViewController, completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func initiateRegistration(with jsonObject: [Swift.String : Any], in homeViewController: UIKit.UIViewController, statusDelegate: (any PayUTridentityMFAKit.TridentityMFASDKProtocol)?, completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  #endif
   @objc public func checkRegistrationStatus(isBiometricChanged: Swift.Bool = false, with jsonObject: [Swift.String : Swift.String], completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
+  @objc public func checkRegistrationStatus(isBiometricChanged: Swift.Bool = false, isLocalCheck: Swift.Bool = false, shouldTriggerServerDeregister: Swift.Bool = false, with jsonObject: [Swift.String : Swift.String], completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc public func processTransaction(with jsonObject: [Swift.String : Swift.String], statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
+  @objc public func processTxn(with jsonObject: [Swift.String : Swift.String], statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
+  @objc public func directProcessAndUpdateTxn(with jsonObject: [Swift.String : Swift.String], statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
   @objc public func deRegisterUser(withBCTIDs bctids: [Swift.String], statusDelegate: any PayUTridentityMFAKit.TridentityMFASDKProtocol)
   @objc public func setRequestId(requestId: Swift.String)
+  @objc public func clearData()
 }
 public class TDYAsset : Swift.Codable {
   final public let id: Swift.String
@@ -407,7 +575,15 @@ infix operator +- : DefaultPrecedence
   @objc public var deRegPopupConfiguration: PayUTridentityMFAKit.DeRegPopupConfiguration? {
     get
   }
-  @objc public init(consentScreenConfiguration: PayUTridentityMFAKit.ConsentScreenConfiguration? = nil, tncScreenConfiguration: PayUTridentityMFAKit.TNCScreenConfiguration? = nil, bottomSheetPermissionPopupConfiguration: PayUTridentityMFAKit.BottomSheetPermissionPopupConfiguration? = nil, simBindingScreenConfiguration: PayUTridentityMFAKit.SimBindingScreenConfiguration? = nil, bottomSheetSimBindingProcessingPopupConfiguration: PayUTridentityMFAKit.BottomSheetSimBindingProcessingPopupConfiguration? = nil, bottomSheetRegistrationSuccessfulPopupConfiguration: PayUTridentityMFAKit.BottomSheetSuccessConfiguration? = nil, bottomSheetFailureScreenConfiguration: PayUTridentityMFAKit.BottomSheetFailureConfiguration? = nil, transactionHistoryScreenConfiguration: PayUTridentityMFAKit.TransactionHistoryScreenConfiguration? = nil, offlineOTPScreenConfiguration: PayUTridentityMFAKit.OfflineOTPScreenConfiguration? = nil, bottomSheetAuthenticationPopupConfiguration: PayUTridentityMFAKit.BottomSheetAuthenticationPopupConfiguration? = nil, deRegPopupConfiguration: PayUTridentityMFAKit.DeRegPopupConfiguration? = nil)
+  @objc public var biometricTextConfiguration: PayUTridentityMFAKit.BiometricTextConfiguration? {
+    get
+  }
+  @objc public var uiMessageConfiguration: PayUTridentityMFAKit.UIMessageConfiguration? {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(consentScreenConfiguration: PayUTridentityMFAKit.ConsentScreenConfiguration? = nil, tncScreenConfiguration: PayUTridentityMFAKit.TNCScreenConfiguration? = nil, bottomSheetPermissionPopupConfiguration: PayUTridentityMFAKit.BottomSheetPermissionPopupConfiguration? = nil, simBindingScreenConfiguration: PayUTridentityMFAKit.SimBindingScreenConfiguration? = nil, bottomSheetSimBindingProcessingPopupConfiguration: PayUTridentityMFAKit.BottomSheetSimBindingProcessingPopupConfiguration? = nil, bottomSheetRegistrationSuccessfulPopupConfiguration: PayUTridentityMFAKit.BottomSheetSuccessConfiguration? = nil, bottomSheetFailureScreenConfiguration: PayUTridentityMFAKit.BottomSheetFailureConfiguration? = nil, transactionHistoryScreenConfiguration: PayUTridentityMFAKit.TransactionHistoryScreenConfiguration? = nil, offlineOTPScreenConfiguration: PayUTridentityMFAKit.OfflineOTPScreenConfiguration? = nil, bottomSheetAuthenticationPopupConfiguration: PayUTridentityMFAKit.BottomSheetAuthenticationPopupConfiguration? = nil, deRegPopupConfiguration: PayUTridentityMFAKit.DeRegPopupConfiguration? = nil, biometricTextConfiguration: PayUTridentityMFAKit.BiometricTextConfiguration? = nil, uiMessageConfiguration: PayUTridentityMFAKit.UIMessageConfiguration? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -425,7 +601,9 @@ infix operator +- : DefaultPrecedence
   @objc public var disabledTextColor: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(enabledBackgroundColor: Swift.String? = nil, enabledTextColor: Swift.String? = nil, disabledBackgroundColor: Swift.String? = nil, disabledTextColor: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -436,7 +614,9 @@ infix operator +- : DefaultPrecedence
   case `default` = 2
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -461,7 +641,9 @@ infix operator +- : DefaultPrecedence
   @objc public var cornerRadius: Swift.Int {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(primaryButtonCustomization: PayUTridentityMFAKit.PrimaryCustomButtonCustomization? = nil, secondaryButtonCustomization: PayUTridentityMFAKit.SecondaryCustomButtonCustomization? = nil, fontName: Swift.String? = nil, fontSize: Swift.Int = 14, buttonTextTransform: PayUTridentityMFAKit.ButtonTextTransformType = .default, cornerRadius: Swift.Int = 12)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -487,9 +669,11 @@ public enum WibmoAuthenticatorError : Swift.Error {
   case invalidParameter(Swift.String)
 }
 extension PayUTridentityMFAKit.WibmoAuthenticatorError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 public enum RegisterFailedReason {
   case pvcRetry
@@ -524,24 +708,32 @@ public enum SmsSendFailureReason {
   }
 }
 extension PayUTridentityMFAKit.RegisterFailedReason : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 extension PayUTridentityMFAKit.ConnectionFailureReason : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 extension PayUTridentityMFAKit.ServerResponseFailure : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 extension PayUTridentityMFAKit.SmsSendFailureReason : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
+  #endif
 }
 @objc public class SecondaryCustomButtonCustomization : ObjectiveC.NSObject, Swift.Codable {
   @objc public var enabledBackgroundColor: Swift.String? {
@@ -556,17 +748,25 @@ extension PayUTridentityMFAKit.SmsSendFailureReason : Foundation.LocalizedError 
   @objc public var disabledTextColor: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(enabledBackgroundColor: Swift.String? = nil, enabledTextColor: Swift.String? = nil, disabledBackgroundColor: Swift.String? = nil, disabledTextColor: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public protocol NotificationState : AnyObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   func doClearNotification(_ trnxID: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func recievedNotification(_ trnxID: Swift.String?)
+  #endif
 }
 public struct PushTransactionConvertor {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func makeTransactionDetail(fromPushInfo userInfo: [Swift.AnyHashable : Any]) -> PayUTridentityMFAKit.TransactionDetail?
+  #endif
 }
 @objc public class SubHeadingThemeCustomization : ObjectiveC.NSObject, Swift.Codable {
   @objc public var textColor: Swift.String?, fontName: Swift.String?
@@ -576,7 +776,9 @@ public struct PushTransactionConvertor {
   @objc public var backgroundColor: Swift.String? {
     get
   }
-  @objc public init(textColor: Swift.String? = nil, fontName: Swift.String? = nil, fontSize: Swift.Int = 13, backgroundColor: Swift.String? = nil)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public init(textColor: Swift.String? = nil, fontName: Swift.String? = nil, fontSize: Swift.Int = 14, backgroundColor: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -584,7 +786,9 @@ public struct PushTransactionConvertor {
 @objc public class BottomSheetAuthenticationPopupConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var topHeaderText: Swift.String?, topSubHeaderText: Swift.String?, headerTextForContents: Swift.String?, subTextForContents: Swift.String?
   @objc public var declineButtontext: Swift.String?, swipeToPayButtonText: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, declineButtontext: Swift.String? = nil, swipeToPayButtonText: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -602,7 +806,9 @@ public enum TDYOTPAlgorithm {
 @objc public class BottomSheetPermissionPopupConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var topHeaderText: Swift.String?, topSubHeaderText: Swift.String?, headerTextForContents: Swift.String?, subTextForContents: Swift.String?
   @objc public var buttonTextForAllowPermissions: Swift.String?, buttonTextForSkipPermissions: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, buttonTextForAllowPermissions: Swift.String? = nil, buttonTextForSkipPermissions: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -623,13 +829,19 @@ public struct TDYHOTP {
   public let secret: Foundation.Data
   public let digits: Swift.Int
   public let algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(secret: Foundation.Data, digits: Swift.Int = 6, algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm = .sha1)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func generate(counter: Swift.UInt64) -> Swift.String?
+  #endif
 }
 @objc public class OfflineOTPScreenConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var appBarText: Swift.String?, topHeaderText: Swift.String?, topSubHeaderText: Swift.String?, headerTextForContents: Swift.String?
   @objc public var subTextForContents: Swift.String?, copyText: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(appBarText: Swift.String? = nil, topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, copyText: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -638,7 +850,9 @@ public struct TDYHOTP {
   @objc public var consentPopUpOkButtonText: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(consentPopUpOkButtonText: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -648,7 +862,9 @@ public enum PushStatus : Swift.String, Swift.Codable {
   case decline
   case expired
   case cancelled
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -661,7 +877,9 @@ extension Swift.Array where Element == Swift.UInt8 {
 @objc public class BottomSheetSimBindingProcessingPopupConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var topHeaderText: Swift.String?, topSubHeaderText: Swift.String?, headerTextForContents: Swift.String?, subTextForContents: Swift.String?
   @objc public var numberVerificationProcessingText: Swift.String?, numberVerifiedText: Swift.String?, biometricSetupText: Swift.String?, biometricVerifiedText: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(topHeaderText: Swift.String? = nil, topSubHeaderText: Swift.String? = nil, headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, numberVerificationProcessingText: Swift.String? = nil, numberVerifiedText: Swift.String? = nil, biometricSetupText: Swift.String? = nil, biometricVerifiedText: Swift.String? = nil)
+  #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -685,7 +903,9 @@ public enum RegistrationResponseCode : Swift.Int {
   case registrationCommL2Failed
   case tempCardIdMissing
   case binMissing
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -696,9 +916,15 @@ public struct TDYTOTP {
   public let digits: Swift.Int
   public let timeInterval: Swift.Int
   public let algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(secret: Foundation.Data, digits: Swift.Int = 6, timeInterval: Swift.Int = 60, algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm = .sha1)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func generate(time: Foundation.Date) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func generate(secondsPast1970: Swift.Int) -> Swift.String?
+  #endif
 }
 @objc public class TDYTokenValidateResponse : ObjectiveC.NSObject, Swift.Codable {
   @objc final public let status: Swift.String?
