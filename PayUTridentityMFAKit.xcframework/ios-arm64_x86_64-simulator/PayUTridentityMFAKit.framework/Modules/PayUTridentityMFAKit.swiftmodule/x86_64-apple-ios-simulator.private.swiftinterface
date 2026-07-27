@@ -429,6 +429,7 @@ final public class TDYFloatValueProvider {
   @objc deinit
   @objc public func initializeSDK()
   @objc public func configureSDK(with jsonObject: [Swift.String : Any], completionHandler: @escaping (Swift.Bool, [Swift.String : Any]) -> Swift.Void)
+  @objc public func configureSDK(with jsonObject: [Swift.String : Any], in presenterViewController: UIKit.UIViewController?, completionHandler: @escaping (Swift.Bool, [Swift.String : Any]) -> Swift.Void)
   @objc public func initiateRegistration(with jsonObject: [Swift.String : Any], in homeViewController: UIKit.UIViewController, completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc public func initiateRegistration(with jsonObject: [Swift.String : Any], in homeViewController: UIKit.UIViewController, statusDelegate: (any PayUTridentityMFAKit.TridentityMFASDKProtocol)?, completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
   @objc public func checkRegistrationStatus(isBiometricChanged: Swift.Bool = false, with jsonObject: [Swift.String : Swift.String], completionHandler: @escaping ([Swift.String : Any]) -> Swift.Void)
@@ -603,7 +604,7 @@ public enum ConnectionFailureReason {
   }
 }
 public enum ServerResponseFailure {
-  case serverError(Swift.String?)
+  case serverError(Swift.String?, responseBody: [Swift.String : Any]? = nil, httpStatusCode: Swift.Int? = nil)
 }
 public enum SmsSendFailureReason {
   case cancelled

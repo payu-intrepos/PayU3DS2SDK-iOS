@@ -50,7 +50,7 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-TridentityMFA-SDK"
-podVersion="2.0.0.alpha.1"
+podVersion="2.0.0.alpha.2"
 
 podSpec="${podName}.podspec"
 tag="${podName}${podVersion}"

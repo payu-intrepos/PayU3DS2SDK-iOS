@@ -166,8 +166,8 @@
                 "successTitle": "Face ID Enabled!",
                 "successSubtitle": "You're all set. Pay with just your Face ID next time, no OTP ever again.",
                 "setupFailedTitle": "Face ID Setup Failed",
-                "setupFailedMessage": "Please check your phone's Face ID permissions and try again.",
-                "accessDeniedBadge": "Face ID access denied",
+                "setupFailedMessage": "Ensure the required permissions are enabled and you’re using the bank registered SIM, then try again.",
+                "accessDeniedBadge": "Face ID Verification Unsuccessful",
                 "returningToOrderButton": "Returning to your order"
             },
             "payment": {

@@ -743,6 +743,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TridentityMF
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeSDK;
 - (void)configureSDKWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject completionHandler:(void (^ _Nonnull)(BOOL, NSDictionary<NSString *, id> * _Nonnull))completionHandler;
+/// Configure the SDK using an optional presenter view controller for configure-time UI (e.g. Face ID unavailable bottom sheet).
+- (void)configureSDKWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject in:(UIViewController * _Nullable)presenterViewController completionHandler:(void (^ _Nonnull)(BOOL, NSDictionary<NSString *, id> * _Nonnull))completionHandler;
 - (void)initiateRegistrationWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject in:(UIViewController * _Nonnull)homeViewController completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))completionHandler;
 - (void)initiateRegistrationWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject in:(UIViewController * _Nonnull)homeViewController statusDelegate:(id <TridentityMFASDKProtocol> _Nullable)statusDelegate completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))completionHandler;
 - (void)checkRegistrationStatusWithIsBiometricChanged:(BOOL)isBiometricChanged with:(NSDictionary<NSString *, NSString *> * _Nonnull)jsonObject completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))completionHandler;
@@ -1543,6 +1545,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) TridentityMF
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initializeSDK;
 - (void)configureSDKWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject completionHandler:(void (^ _Nonnull)(BOOL, NSDictionary<NSString *, id> * _Nonnull))completionHandler;
+/// Configure the SDK using an optional presenter view controller for configure-time UI (e.g. Face ID unavailable bottom sheet).
+- (void)configureSDKWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject in:(UIViewController * _Nullable)presenterViewController completionHandler:(void (^ _Nonnull)(BOOL, NSDictionary<NSString *, id> * _Nonnull))completionHandler;
 - (void)initiateRegistrationWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject in:(UIViewController * _Nonnull)homeViewController completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))completionHandler;
 - (void)initiateRegistrationWith:(NSDictionary<NSString *, id> * _Nonnull)jsonObject in:(UIViewController * _Nonnull)homeViewController statusDelegate:(id <TridentityMFASDKProtocol> _Nullable)statusDelegate completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))completionHandler;
 - (void)checkRegistrationStatusWithIsBiometricChanged:(BOOL)isBiometricChanged with:(NSDictionary<NSString *, NSString *> * _Nonnull)jsonObject completionHandler:(void (^ _Nonnull)(NSDictionary<NSString *, id> * _Nonnull))completionHandler;
