@@ -16,6 +16,18 @@
 		<data>
 		W5vyOR+k806AZDw/PZBtVX2s9ls=
 		</data>
+		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
+		<data>
+		T4mSPoF8LFYmeCyIGNHZouopzF4=
+		</data>
+		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
+		<data>
+		zGqK6Nde2TiUyahC51u0sHg0kvI=
+		</data>
+		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
+		<data>
+		WUEO6Z+J2w3T7tEpG5fF6iAoqj8=
+		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
 		a5tmo6cPcz57L1wURzSV3oRZiS8=
@@ -26,7 +38,7 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		4s/6wE+aDFIymHDTCZzG4/DpQxQ=
+		H5EVC/JNpXXoqfWVBxiQ1SnbLKM=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -42,7 +54,7 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		rsq6c9z7UZ+5EQ9CeRYi/QdV5+g=
+		ktdMLArqvZcERlsxS38y7TVncf8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -60,7 +72,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LNG2Z/D0duC0s14sN9B0nb/qPtE=
+			Xa6yA+EVAL/KhcXQrchpcYhf0SE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -93,6 +105,27 @@
 			nksQFD28ZodabDHXLhCUvWLvjMExL9mjvMnKMji5bao=
 			</data>
 		</dict>
+		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			62Qb8Eo6pNFGaaZBrjpfJM08wF/Sp9fen/tH4uixPKQ=
+			</data>
+		</dict>
+		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Fpef+bx6AwdiylkfBYAG9dVmQhPIWC5xYkIbm8uAS3I=
+			</data>
+		</dict>
+		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8E8FfrmacCuM9/2j4+qgzds68SduC+dLwPKDqPzJ3RE=
+			</data>
+		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -104,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lCBUtstmZyEQLhcb1OZZmUmpKx7+6BzJPU5H4OmNOlA=
+			SVnH1GJviK1GG+lfOJexPhWp0i0DOTFDX4Md7sta7f8=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -132,7 +165,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xi8DibYw1DDQTQAZUeIjYBNKCEK4olvhAMQj7vva2w4=
+			nKHWSboJke3sikGusnLxajhpaSoAdZ4DQquE40TE2Us=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -160,7 +193,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J53mLbvrENMQ0yJVVvQzOcZn+6Xbg7qr+219SqGnjWo=
+			GNyoBkRMFYHvUvnM2jg1lGOqh558HI72FAY5CyEjiG8=
 			</data>
 			<key>optional</key>
 			<true/>

@@ -16,6 +16,18 @@
 		<data>
 		W5vyOR+k806AZDw/PZBtVX2s9ls=
 		</data>
+		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
+		<data>
+		T4mSPoF8LFYmeCyIGNHZouopzF4=
+		</data>
+		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
+		<data>
+		zviVpyfYNZAj8L5WxbVRGleYGh8=
+		</data>
+		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
+		<data>
+		WUEO6Z+J2w3T7tEpG5fF6iAoqj8=
+		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
 		ackcN25zGbzWCXPtw9uEGSBjVJk=
@@ -26,7 +38,7 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		BZk6iKr+B9n9TdCk+Nr3/doKU4U=
+		/tIGjvDYoh6cZ7Ddura0befyWV4=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -42,11 +54,11 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		BL72MAsS4qBiXvhSkKUkGS4FUWU=
+		DtMuBzBRdgcQhioeUTkWU5Jq7k8=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4X8FdUXIdDe7VrnxeQW2ChpwWmQ=
+		aRVtN7+MQVpvTDUl2pfz/jlcUWs=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -62,7 +74,7 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nQzX1zs7zMDSK1haGQDreK6HQZU=
+		5SPeaHYIhMVXbDj1eUSHROr46UA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -80,7 +92,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LNG2Z/D0duC0s14sN9B0nb/qPtE=
+			Xa6yA+EVAL/KhcXQrchpcYhf0SE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -113,6 +125,27 @@
 			nksQFD28ZodabDHXLhCUvWLvjMExL9mjvMnKMji5bao=
 			</data>
 		</dict>
+		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			62Qb8Eo6pNFGaaZBrjpfJM08wF/Sp9fen/tH4uixPKQ=
+			</data>
+		</dict>
+		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nAnN19H+elwt/BIJ1B97eAA+e2sZh2uU1Fhw2EkZG+Q=
+			</data>
+		</dict>
+		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8E8FfrmacCuM9/2j4+qgzds68SduC+dLwPKDqPzJ3RE=
+			</data>
+		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -124,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VP0cZhZekWqOsbmzHVqGFlicCnoGcLv30RnhH61PeKQ=
+			fTFaG/52i5QDH9dv82Rtlv9ETABkI834/lKNJTONqhs=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -152,14 +185,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+KNERdBOGKjUvPGZHFq0MRkRUtxpU/R1V9EZCmsWh0o=
+			q6dhovxoHXGUU1aYV53N/y907BgO6k/342dPo2j59ik=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gT+ev+uzAl5M8Tj6Nv+2bvTc6v2p6SY6PqbiMmzukI8=
+			M4xcDIEKaRBUTWKj6c1V28KHz68/Oyuw27l2H0Lb2ac=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -187,7 +220,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lp+Q9acjVcBgF9j2dZ7tK921HAfLd7HgsX/1kyHMSbA=
+			a0nRdeeZeJAvNhxtYNvPf0BtucWzXGaYrOFOh2Rk+ds=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -215,7 +248,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J53mLbvrENMQ0yJVVvQzOcZn+6Xbg7qr+219SqGnjWo=
+			GNyoBkRMFYHvUvnM2jg1lGOqh558HI72FAY5CyEjiG8=
 			</data>
 			<key>optional</key>
 			<true/>

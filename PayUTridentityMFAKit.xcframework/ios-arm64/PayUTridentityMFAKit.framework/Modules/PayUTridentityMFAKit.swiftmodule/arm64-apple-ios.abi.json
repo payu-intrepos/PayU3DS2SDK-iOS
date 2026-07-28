@@ -94,6 +94,13 @@
       },
       {
         "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "PayUTridentityMFAKit"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -37931,56 +37938,63 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7196,
+      "offset": 4948,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10474,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
       "kind": "StringLiteral",
-      "offset": 7228,
+      "offset": 10506,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7304,
+      "offset": 10582,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7359,
+      "offset": 10637,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7401,
+      "offset": 10679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7454,
+      "offset": 10732,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7506,
+      "offset": 10784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7538,
+      "offset": 10816,
       "length": 5,
       "value": "false"
     },
@@ -38022,28 +38036,35 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 965,
+      "offset": 1024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1014,
+      "offset": 1106,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 1063,
+      "offset": 1155,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationCoordinator.swift",
       "kind": "BooleanLiteral",
-      "offset": 23934,
+      "offset": 1204,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/RegistrationFlow\/MFARegistrationCoordinator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 27544,
       "length": 4,
       "value": "true"
     },
@@ -43713,112 +43734,112 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "Dictionary",
-      "offset": 8734,
+      "offset": 8728,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13949,
+      "offset": 14491,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 14016,
+      "offset": 14558,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "StringLiteral",
-      "offset": 14706,
+      "offset": 15248,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 82189,
+      "offset": 85200,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 82254,
+      "offset": 85265,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 82336,
+      "offset": 85347,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 101757,
+      "offset": 104866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 119776,
+      "offset": 122885,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 119832,
+      "offset": 122941,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 119924,
+      "offset": 123033,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 119981,
+      "offset": 123090,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 127247,
+      "offset": 130354,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 127329,
+      "offset": 130436,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 128796,
+      "offset": 131903,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/Headless+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 129036,
+      "offset": 132143,
       "length": 5,
       "value": "false"
     },
@@ -43832,21 +43853,21 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/ProcessTxn+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 11776,
+      "offset": 13688,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/ProcessTxn+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 30692,
+      "offset": 35211,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/ProcessTxn+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 32164,
+      "offset": 36683,
       "length": 4,
       "value": "true"
     },
@@ -47108,525 +47129,525 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 807,
       "length": 30,
       "value": "\"Wibmo_Tridentity_IntactCheck\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 868,
+      "offset": 865,
       "length": 35,
       "value": "\"Wibmo_Tridentity_IntactCheck_Flow\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 927,
+      "offset": 924,
       "length": 30,
       "value": "\"Wibmo_Tridentity_Transaction\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 987,
+      "offset": 981,
       "length": 33,
       "value": "\"Wibmo_Tridentity_Deregistration\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1042,
+      "offset": 1036,
       "length": 30,
       "value": "\"Wibmo_Tridentity_Auto_De-Reg\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1104,
+      "offset": 1098,
       "length": 40,
       "value": "\"Wibmo_Tridentity_Validate_Client_Token\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1180,
+      "offset": 1174,
       "length": 45,
       "value": "\"Wibmo_Tridentity_Validate_Client_Token_Flow\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1250,
+      "offset": 1244,
       "length": 32,
       "value": "\"Wibmo_Tridentity_Token_Refresh\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1311,
+      "offset": 1305,
       "length": 37,
       "value": "\"Wibmo_Tridentity_Token_Refresh_Flow\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1384,
+      "offset": 1378,
       "length": 43,
       "value": "\"Wibmo_Tridentity_Biometric_Authentication\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1450,
+      "offset": 1441,
       "length": 27,
       "value": "\"Wibmo_Tridentity_Send_SMS\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1505,
+      "offset": 1496,
       "length": 35,
       "value": "\"Wibmo_Tridentity_Permission_Check\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1566,
+      "offset": 1557,
       "length": 33,
       "value": "\"Wibmo_Tridentity_Security_Event\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1626,
+      "offset": 1617,
       "length": 34,
       "value": "\"Wibmo_Tridentity_Network_Request\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1683,
+      "offset": 1674,
       "length": 30,
       "value": "\"Wibmo_Tridentity_Token_Error\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1742,
+      "offset": 1733,
       "length": 36,
       "value": "\"Wibmo_Tridentity_Merchant_Callback\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1803,
+      "offset": 1794,
       "length": 33,
       "value": "\"Wibmo_Tridentity_Set_Request_Id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1858,
+      "offset": 1849,
       "length": 29,
       "value": "\"Wibmo_Tridentity_Clear_Data\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 1984,
+      "offset": 1975,
       "length": 13,
       "value": "\"init_params\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2023,
+      "offset": 2014,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2057,
+      "offset": 2048,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2097,
+      "offset": 2088,
       "length": 17,
       "value": "\"api_init_params\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2143,
+      "offset": 2134,
       "length": 13,
       "value": "\"api_success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2184,
+      "offset": 2175,
       "length": 12,
       "value": "\"api_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2223,
+      "offset": 2214,
       "length": 11,
       "value": "\"api_retry\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2257,
+      "offset": 2248,
       "length": 6,
       "value": "\"sent\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2291,
+      "offset": 2282,
       "length": 11,
       "value": "\"delivered\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2391,
+      "offset": 2382,
       "length": 29,
       "value": "\"biometric_prompt_invocation\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2493,
+      "offset": 2484,
       "length": 33,
       "value": "\"USB debugging enabled on device\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2560,
+      "offset": 2551,
       "length": 19,
       "value": "\"Flight mode check\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2612,
+      "offset": 2603,
       "length": 17,
       "value": "\"Bank Validation\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2683,
+      "offset": 2674,
       "length": 18,
       "value": "\"sdk_init_started\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2734,
+      "offset": 2725,
       "length": 18,
       "value": "\"sdk_init_success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2791,
+      "offset": 2782,
       "length": 24,
       "value": "\"consent_update_started\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2854,
+      "offset": 2845,
       "length": 24,
       "value": "\"consent_update_success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 2916,
+      "offset": 2907,
       "length": 23,
       "value": "\"consent_update_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3012,
+      "offset": 3003,
       "length": 29,
       "value": "\"biometric_permission_action\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3083,
+      "offset": 3074,
       "length": 27,
       "value": "\"biometric_capture_outcome\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3146,
+      "offset": 3137,
       "length": 22,
       "value": "\"sms_app_user_outcome\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3206,
+      "offset": 3197,
       "length": 22,
       "value": "\"verification_outcome\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3264,
+      "offset": 3255,
       "length": 21,
       "value": "\"back_button_pressed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3329,
+      "offset": 3320,
       "length": 30,
       "value": "\"back_interception_cta_tapped\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3409,
+      "offset": 3400,
       "length": 36,
       "value": "\"registration_failure_screen_viewed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3495,
+      "offset": 3486,
       "length": 36,
       "value": "\"registration_success_screen_viewed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3578,
+      "offset": 3569,
       "length": 32,
       "value": "\"registration_validation_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3674,
+      "offset": 3665,
       "length": 31,
       "value": "\"sms_instruction_screen_viewed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3744,
+      "offset": 3735,
       "length": 24,
       "value": "\"sms_composer_presented\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3804,
+      "offset": 3795,
       "length": 21,
       "value": "\"sms_composer_result\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3876,
+      "offset": 3867,
       "length": 39,
       "value": "\"sim_binding_in_progress_screen_viewed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 3955,
+      "offset": 3946,
       "length": 25,
       "value": "\"binding_retry_scheduled\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4028,
+      "offset": 4019,
       "length": 35,
       "value": "\"sim_binding_success_screen_viewed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4104,
+      "offset": 4095,
       "length": 27,
       "value": "\"sim_binding_timer_expired\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4169,
+      "offset": 4160,
       "length": 23,
       "value": "\"app_toggling_detected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4235,
+      "offset": 4226,
       "length": 28,
       "value": "\"composer_validation_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4311,
+      "offset": 4302,
       "length": 12,
       "value": "\"local_pass\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4353,
+      "offset": 4344,
       "length": 14,
       "value": "\"local_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4409,
+      "offset": 4400,
       "length": 27,
       "value": "\"biometric_check_initiated\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4475,
+      "offset": 4466,
       "length": 24,
       "value": "\"biometric_check_passed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4537,
+      "offset": 4528,
       "length": 23,
       "value": "\"security_check_passed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4597,
+      "offset": 4588,
       "length": 22,
       "value": "\"auto_dereg_initiated\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4656,
+      "offset": 4647,
       "length": 22,
       "value": "\"auto_dereg_completed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4726,
+      "offset": 4717,
       "length": 34,
       "value": "\"different_device_dereg_initiated\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4808,
+      "offset": 4799,
       "length": 34,
       "value": "\"different_device_dereg_completed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4882,
+      "offset": 4873,
       "length": 25,
       "value": "\"token_validation_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 4968,
+      "offset": 4959,
       "length": 20,
       "value": "\"local_check_passed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5023,
+      "offset": 5014,
       "length": 20,
       "value": "\"local_check_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5081,
+      "offset": 5072,
       "length": 23,
       "value": "\"security_check_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5147,
+      "offset": 5138,
       "length": 29,
       "value": "\"date_time_validation_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5259,
+      "offset": 5250,
       "length": 41,
       "value": "\"biometric_auto_deregistration_triggered\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5366,
+      "offset": 5357,
       "length": 24,
       "value": "\"token_expired_detected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5443,
+      "offset": 5434,
       "length": 20,
       "value": "\"jailbreak_detected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5508,
+      "offset": 5499,
       "length": 30,
       "value": "\"reverse_engineering_detected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5572,
+      "offset": 5563,
       "length": 19,
       "value": "\"SIM Swap Detected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5633,
+      "offset": 5624,
       "length": 27,
       "value": "\"screen_recording_detected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventMatrix.swift",
       "kind": "StringLiteral",
-      "offset": 5721,
+      "offset": 5712,
       "length": 19,
       "value": "\"merchant_callback\""
     },
@@ -47639,66 +47660,94 @@
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 454,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 510,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 569,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "Dictionary",
-      "offset": 5015,
+      "offset": 5498,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "Dictionary",
-      "offset": 13793,
+      "offset": 14273,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "Dictionary",
-      "offset": 14443,
+      "offset": 14920,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "Dictionary",
-      "offset": 15209,
+      "offset": 15683,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "Dictionary",
-      "offset": 19251,
+      "offset": 19722,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "StringLiteral",
-      "offset": 19681,
+      "offset": 20223,
       "length": 28,
       "value": "\"All security checks passed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "Dictionary",
-      "offset": 20373,
+      "offset": 20989,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "StringLiteral",
-      "offset": 23775,
+      "offset": 24391,
       "length": 28,
       "value": "\"All security checks passed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
       "kind": "StringLiteral",
-      "offset": 24214,
+      "offset": 24830,
       "length": 14,
       "value": "\"sim_observer\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/Logging\/MFAEventLogger.swift",
+      "kind": "Dictionary",
+      "offset": 26552,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/DataModel's\/SimInfo.swift",
@@ -47710,35 +47759,35 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "StringLiteral",
-      "offset": 14463,
+      "offset": 14922,
       "length": 14,
       "value": "\"registration\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "StringLiteral",
-      "offset": 14511,
+      "offset": 14970,
       "length": 13,
       "value": "\"transaction\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17897,
+      "offset": 18356,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 17981,
+      "offset": 18440,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/tridentity-sdk-ios\/TridentitySDK\/Manager\/TridentitySecurityCheckManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 18012,
+      "offset": 18471,
       "length": 5,
       "value": "false"
     },
