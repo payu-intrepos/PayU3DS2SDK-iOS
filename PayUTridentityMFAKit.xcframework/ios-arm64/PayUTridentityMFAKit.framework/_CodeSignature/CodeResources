@@ -16,18 +16,6 @@
 		<data>
 		W5vyOR+k806AZDw/PZBtVX2s9ls=
 		</data>
-		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
-		<data>
-		T4mSPoF8LFYmeCyIGNHZouopzF4=
-		</data>
-		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
-		<data>
-		LjFNq0CrZoE3eWUjf10g6X53sz0=
-		</data>
-		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
-		<data>
-		WUEO6Z+J2w3T7tEpG5fF6iAoqj8=
-		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
 		a5tmo6cPcz57L1wURzSV3oRZiS8=
@@ -54,7 +42,7 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ktdMLArqvZcERlsxS38y7TVncf8=
+		Ch6cJ7igcrguboCX8FK+0FoDytE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -105,27 +93,6 @@
 			nksQFD28ZodabDHXLhCUvWLvjMExL9mjvMnKMji5bao=
 			</data>
 		</dict>
-		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			62Qb8Eo6pNFGaaZBrjpfJM08wF/Sp9fen/tH4uixPKQ=
-			</data>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EGYP8Fsqh1XJV01/eUiRfAHDcz97oMAKJE2CAsZ/K8U=
-			</data>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8E8FfrmacCuM9/2j4+qgzds68SduC+dLwPKDqPzJ3RE=
-			</data>
-		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -165,7 +132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nKHWSboJke3sikGusnLxajhpaSoAdZ4DQquE40TE2Us=
+			bnCV69N7Fv3aM4sr137BLe7h/gmZ4umusYAHi463TBc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

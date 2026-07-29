@@ -16,18 +16,6 @@
 		<data>
 		W5vyOR+k806AZDw/PZBtVX2s9ls=
 		</data>
-		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
-		<data>
-		T4mSPoF8LFYmeCyIGNHZouopzF4=
-		</data>
-		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
-		<data>
-		zviVpyfYNZAj8L5WxbVRGleYGh8=
-		</data>
-		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
-		<data>
-		WUEO6Z+J2w3T7tEpG5fF6iAoqj8=
-		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
 		ackcN25zGbzWCXPtw9uEGSBjVJk=
@@ -54,7 +42,7 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DtMuBzBRdgcQhioeUTkWU5Jq7k8=
+		7hQR5/MByLcmqtS0YhGDXOqC1jA=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -74,7 +62,7 @@
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5SPeaHYIhMVXbDj1eUSHROr46UA=
+		c4bSzfe/ze/ysLDMs3ERoK5GrRg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -125,27 +113,6 @@
 			nksQFD28ZodabDHXLhCUvWLvjMExL9mjvMnKMji5bao=
 			</data>
 		</dict>
-		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			62Qb8Eo6pNFGaaZBrjpfJM08wF/Sp9fen/tH4uixPKQ=
-			</data>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nAnN19H+elwt/BIJ1B97eAA+e2sZh2uU1Fhw2EkZG+Q=
-			</data>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8E8FfrmacCuM9/2j4+qgzds68SduC+dLwPKDqPzJ3RE=
-			</data>
-		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
@@ -185,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			q6dhovxoHXGUU1aYV53N/y907BgO6k/342dPo2j59ik=
+			upOoo8F+2M1kDpkz1yqhsTfCvEcyINMgC4ea3IS9oqE=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -220,7 +187,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a0nRdeeZeJAvNhxtYNvPf0BtucWzXGaYrOFOh2Rk+ds=
+			2yx1bpdWVFSwsYMXktP1vk7FNv47ixSZnWCpzxd1eAg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
