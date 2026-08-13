@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2CoreKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2CoreKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import AdSupport
 import CoreLocation
 import Darwin
@@ -25,7 +25,9 @@ extension PayU3DS2CoreKit.WFChaCha20 {
     case LOW
     case MEDIUM
     case HIGH
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -37,7 +39,9 @@ extension PayU3DS2CoreKit.WFChaCha20 {
     case SW03
     case SW04
     case SW05
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -113,10 +117,14 @@ public typealias CipherOperationOnBlock = (_ block: Swift.ArraySlice<Swift.UInt8
 public protocol WFBlockMode {
   var options: PayU3DS2CoreKit.WFBlockModeOption { get }
   @inlinable func worker(blockSize: Swift.Int, cipherOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock, encryptionOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock) throws -> any PayU3DS2CoreKit.WFCipherModeWorker
+  #if compiler(>=5.3) && $NonescapableTypes
   var customBlockSize: Swift.Int? { get }
+  #endif
 }
 @objc @_inheritsConvenienceInitializers public class InvalidInputException : PayU3DS2CoreKit.RuntimeException {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public init(message: Swift.String, cause: Swift.String?)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers final public class WFCBCMAC : PayU3DS2CoreKit.WFCMAC {
@@ -127,6 +135,8 @@ public protocol WFBlockMode {
 @objc extension UIKit.UIView {
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func showPayULoader(message: Swift.String = "", backgroundColor: UIKit.UIColor = .white, alpha: CoreFoundation.CGFloat = 1.0)
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func showPayULoader(with message: Swift.String = "", and backgroundColor: UIKit.UIColor = .white)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func showPayULoader(message: Swift.String = "", backgroundColor: UIKit.UIColor = .white, alpha: CoreFoundation.CGFloat = 1.0, presentationStyle: PayU3DS2CoreKit.PayULoaderPresentationStyle)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func showPayUBottomSheetLoader(message: Swift.String = "", backgroundColor: UIKit.UIColor = .white)
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func hidePayULoader()
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func updateLoaderText(with text: Swift.String)
 }
@@ -161,8 +171,12 @@ extension PayU3DS2CoreKit.WFAES : PayU3DS2CoreKit.WFCryptors {
   public var errorCode: Swift.String? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(message: Swift.String, errorCode: Swift.String?, cause: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getErrorCode() -> Swift.String?
+  #endif
   @objc deinit
 }
 public struct AnyCodable : Swift.Codable {
@@ -249,7 +263,9 @@ extension PayU3DS2CoreKit.WFPKCS5 {
         get
       }
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(password: Swift.Array<Swift.UInt8>, salt: Swift.Array<Swift.UInt8>, iterations: Swift.Int = 4096, keyLength: Swift.Int? = nil, variant: PayU3DS2CoreKit.WFHMAC.WFVariant = .sha2(.sha256)) throws
+    #endif
     public func calculate() throws -> Swift.Array<Swift.UInt8>
     public func callAsFunction() throws -> Swift.Array<Swift.UInt8>
   }
@@ -268,22 +284,32 @@ public struct WFCCM {
   public let options: PayU3DS2CoreKit.WFBlockModeOption
   public let customBlockSize: Swift.Int?
   public var authenticationTag: Swift.Array<Swift.UInt8>?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(iv: Swift.Array<Swift.UInt8>, tagLength: Swift.Int, messageLength: Swift.Int, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(iv: Swift.Array<Swift.UInt8>, tagLength: Swift.Int, messageLength: Swift.Int, authenticationTag: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil)
+  #endif
   public func worker(blockSize: Swift.Int, cipherOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock, encryptionOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock) throws -> any PayU3DS2CoreKit.WFCipherModeWorker
 }
 @objc public class RuntimeErrorEvent : ObjectiveC.NSObject {
   @objc public var errorCode: Swift.String?
   @objc public var errorMessage: Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(_ errorCode: Swift.String?, _ errorMessage: Swift.String)
+  #endif
   @objc public func getErrorMessage() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getErrorCode() -> Swift.String?
+  #endif
   @objc deinit
 }
 public enum AcsInterface : Swift.String, Swift.Codable {
   case native
   case html
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -295,7 +321,9 @@ public enum AcsUiTemplate : Swift.String, Swift.Codable {
   case multiSelect
   case oob
   case html
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -324,8 +352,12 @@ public enum AcsUiTemplate : Swift.String, Swift.Codable {
   @objc func didReceiveInvalidAcsUITypeException(_ acsUIType: Swift.String)
 }
 @objc public protocol ThreeDS2Service {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func initialize(_ application: UIKit.UIApplication?, configParameters: PayU3DS2CoreKit.ConfigParameters?, locale: Swift.String?, uiCustomization: PayU3DS2CoreKit.UiCustomization?, logHandlerDelegate: any PayU3DS2CoreKit.LogHandler) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func createTransaction(_ directoryServerID: Swift.String, messageVersion: Swift.String?) throws -> any PayU3DS2CoreKit.Transaction
+  #endif
   @objc func cleanup() throws
   @objc func getSDKVersion() throws -> Swift.String
   @objc func getWarnings() throws -> [PayU3DS2CoreKit.Warning]
@@ -359,7 +391,9 @@ public enum AcsUiTemplate : Swift.String, Swift.Codable {
 @objc public enum PayUCardType : Swift.Int {
   case mastercard
   case visa
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -368,7 +402,9 @@ public enum AcsUiTemplate : Swift.String, Swift.Codable {
 @objc public enum BiometricType : Swift.Int {
   case touchId
   case faceId
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -377,9 +413,15 @@ public enum AcsUiTemplate : Swift.String, Swift.Codable {
 @_inheritsConvenienceInitializers @objc public class ConfigParameters : ObjectiveC.NSObject {
   @objc public var params: [Swift.String : [Swift.String : Swift.String]]
   @objc override dynamic public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func addParam(_ group: Swift.String?, paramName: Swift.String?, paramValue: Swift.String?) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getParamValue(_ group: Swift.String?, _ paramName: Swift.String?) throws -> Swift.String
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func removeParam(_ group: Swift.String?, _ paramName: Swift.String?) throws -> Swift.String
+  #endif
   @objc deinit
 }
 extension PayU3DS2CoreKit.ConfigParameters {
@@ -392,6 +434,9 @@ extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setIssuerTyper(_ issuerType: PayU3DS2CoreKit.PayUCardType)
   @objc dynamic public func setShouldPresent(_ shouldPresent: Swift.Bool)
   @objc dynamic public func enableMFAViaBiometric(_ enableMFA: Swift.Bool)
+  @objc dynamic public func setPreferredLoaderPresentationStyle(_ style: PayU3DS2CoreKit.PayULoaderPresentationStyle)
+  @objc dynamic public func setPreferredBottomSheetLoaderHeight(_ height: CoreFoundation.CGFloat)
+  @objc dynamic public func setPreferredLoaderPresentationStyleRawValue(_ rawValue: Swift.Int)
 }
 extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func setSupportedUITypes(_ supportedUITypes: [Swift.String])
@@ -417,6 +462,7 @@ public struct WFDigest {
 public enum PayULoadingType {
   case center
   case fullScreen
+  case bottomSheet
   public static func == (a: PayU3DS2CoreKit.PayULoadingType, b: PayU3DS2CoreKit.PayULoadingType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -461,7 +507,9 @@ public enum SDKLoadingType {
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public protocol Transaction {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func getAuthenticationRequestParameters() -> PayU3DS2CoreKit.AuthenticationRequestParameters?
+  #endif
   @objc func doChallenge(_ challengeParameters: PayU3DS2CoreKit.ChallengeParameters, challengeStatusReceiver: any PayU3DS2CoreKit.ChallengeStatusReceiver, timeOut: Swift.Int) throws
   @objc func submitAction(actionType: PayU3DS2CoreKit.ActionType, challengeInputParams: PayU3DS2CoreKit.ChallengeInputParameters, statusCallback: any PayU3DS2CoreKit.StatusCallBack)
   @objc func getProgressView() throws -> PayU3DS2CoreKit.ProgressDialog
@@ -476,6 +524,7 @@ final public class WFChecksum {
   internal static let table16: [Swift.UInt16]
   @usableFromInline
   internal init()
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable final internal func crc32(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32 {
     var crc: UInt32 = seed != nil ? seed! : 0xFFFF_FFFF
     for chunk in message.batched(by: 256) {
@@ -486,6 +535,8 @@ final public class WFChecksum {
     }
     return (reflect ? crc : reversed(crc)) ^ 0xFFFF_FFFF
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable final internal func crc32c(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32 {
     var crc: UInt32 = seed != nil ? seed! : 0xFFFF_FFFF
     for chunk in message.batched(by: 256) {
@@ -496,6 +547,8 @@ final public class WFChecksum {
     }
     return (reflect ? crc : reversed(crc)) ^ 0xFFFF_FFFF
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable final internal func crc16(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt16? = nil) -> Swift.UInt16 {
     var crc: UInt16 = seed != nil ? seed! : 0x0000
     for chunk in message.batched(by: 256) {
@@ -505,18 +558,25 @@ final public class WFChecksum {
     }
     return crc
   }
+  #endif
   @objc deinit
 }
 extension PayU3DS2CoreKit.WFChecksum {
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public static func crc32(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32 {
     WFChecksum().crc32(message, seed: seed, reflect: reflect)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public static func crc32c(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32 {
     WFChecksum().crc32c(message, seed: seed, reflect: reflect)
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public static func crc16(_ message: Swift.Array<Swift.UInt8>, seed: Swift.UInt16? = nil) -> Swift.UInt16 {
     WFChecksum().crc16(message, seed: seed)
   }
+  #endif
 }
 final public class WFMD5 {
   public init()
@@ -528,23 +588,35 @@ extension PayU3DS2CoreKit.WFMD5 : PayU3DS2CoreKit.WFUpdatable {
   final public func update(withBytes bytes: Swift.ArraySlice<Swift.UInt8>, isLast: Swift.Bool = false) throws -> Swift.Array<Swift.UInt8>
 }
 extension UIKit.UIImageView {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public func wf_setImage(withURL url: Foundation.URL, placeholderImage: UIKit.UIImage? = nil, completion: @escaping (UIKit.UIImage?) -> Swift.Void)
+  #endif
 }
 @_inheritsConvenienceInitializers @objc public class SDKNotInitializedException : PayU3DS2CoreKit.RuntimeException {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public init(message: Swift.String, cause: Swift.String?)
+  #endif
   @objc deinit
 }
 @objc public class ToolbarCustomization : PayU3DS2CoreKit.Customization {
   @objc public var backgroundColor: Swift.String?
   @objc public var headerText: Swift.String?
   @objc public var buttonText: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(backgroundColor: Swift.String? = nil, headerText: Swift.String? = nil, buttonText: Swift.String? = nil)
+  #endif
   public func setBackgroundColor(_ hexColorCode: Swift.String)
   public func setHeaderText(_ headerText: Swift.String)
   public func setButtonText(_ buttonText: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getBackgroundColor() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getHeaderText() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getButtonText() -> Swift.String?
+  #endif
   @objc deinit
 }
 @usableFromInline
@@ -569,7 +641,9 @@ final internal class WFBlockEncryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreK
   @objc public var name: Swift.String?
   @objc public var id: Swift.String?
   public var acsRenderingType: PayU3DS2CoreKit.ACSUIType?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(a3DSServerTransactionID: Swift.String? = nil, acsTransactionID: Swift.String? = nil, acsRefNumber: Swift.String? = nil, acsSignedContent: Swift.String? = nil, threeDSServerTransactionID: Swift.String? = nil, threeDSRequestorAppURL: Swift.String? = nil, tdyCardId: Swift.String? = nil, clientId: Swift.String? = nil, name: Swift.String? = nil, id: Swift.String? = nil, acsRenderingType: PayU3DS2CoreKit.ACSUITypeInt = ACSUITypeInt.unknown)
+  #endif
   @objc deinit
 }
 final public class WFGCM : PayU3DS2CoreKit.WFBlockMode {
@@ -594,8 +668,12 @@ final public class WFGCM : PayU3DS2CoreKit.WFBlockMode {
   }
   final public let customBlockSize: Swift.Int?
   final public var authenticationTag: Swift.Array<Swift.UInt8>?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(iv: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil, tagLength: Swift.Int = 16, mode: PayU3DS2CoreKit.WFGCM.WFMode = .detached)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(iv: Swift.Array<Swift.UInt8>, authenticationTag: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil, mode: PayU3DS2CoreKit.WFGCM.WFMode = .detached)
+  #endif
   final public func worker(blockSize: Swift.Int, cipherOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock, encryptionOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock) throws -> any PayU3DS2CoreKit.WFCipherModeWorker
   @objc deinit
 }
@@ -614,7 +692,9 @@ public enum ProtocolConstants : Swift.String {
   case VisaAccquirerBinProd
   case MasterMerchantIdProd
   case VisaMerchantIdProd
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -627,7 +707,9 @@ public enum AresTxnStatus : Swift.String, Swift.Codable {
   case attempt
   case unable
   case rejected
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -641,7 +723,9 @@ public enum MessageType : Swift.String, Swift.Codable {
   case creq
   case cres
   case error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -650,7 +734,9 @@ public enum MessageType : Swift.String, Swift.Codable {
 public enum MessageCategory : Swift.String, Swift.Codable {
   case paymentAuthentication
   case nonPaymentAuthentication
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -662,7 +748,9 @@ public enum TransactionType : Swift.String, Swift.Codable {
   case accountFunding
   case cashTransaction
   case activationAndLoad
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -672,7 +760,9 @@ public enum DeviceChannel : Swift.String, Swift.Codable {
   case app
   case browser
   case ri3
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -682,7 +772,9 @@ public enum DeviceChannel : Swift.String, Swift.Codable {
   case submit = 0
   case cancel = 1
   case resend = 2
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -696,14 +788,20 @@ public enum DeviceChannel : Swift.String, Swift.Codable {
   @objc deinit
 }
 extension PayU3DS2CoreKit.Wibmo3ds : PayU3DS2CoreKit.ThreeDS2Service {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func initialize(_ application: UIKit.UIApplication?, configParameters: PayU3DS2CoreKit.ConfigParameters?, locale: Swift.String?, uiCustomization: PayU3DS2CoreKit.UiCustomization?, logHandlerDelegate: any PayU3DS2CoreKit.LogHandler) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func createTransaction(_ directoryServerID: Swift.String, messageVersion: Swift.String?) throws -> any PayU3DS2CoreKit.Transaction
+  #endif
   @objc dynamic public func cleanup() throws
   @objc dynamic public func getSDKVersion() throws -> Swift.String
   @objc dynamic public func getWarnings() throws -> [PayU3DS2CoreKit.Warning]
 }
 extension PayU3DS2CoreKit.Wibmo3ds {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func loggingDictionaryForKibana(key: Swift.String, value: Swift.String = "", className: Swift.String = "", txnId: Swift.String? = nil) -> [Swift.String : Any]
+  #endif
 }
 extension Swift.UInt32 {
   @_specialize(exported: false, kind: full, where T == Swift.ArraySlice<Swift.UInt8>)
@@ -790,14 +888,20 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
 }
 @_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency open class ProgressDialog : UIKit.UIView {
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
   @objc @_Concurrency.MainActor @preconcurrency open func start()
   @objc @_Concurrency.MainActor @preconcurrency open func stop()
   @objc deinit
 }
 @objc public class RuntimeException : ObjectiveC.NSObject, Swift.Error {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(message: Swift.String, cause: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getMessage() -> Swift.String?
+  #endif
   @objc deinit
 }
 @objc public class ErrorMessage : ObjectiveC.NSObject, Swift.Codable, Swift.Error {
@@ -811,11 +915,15 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   @objc public var messageType: Swift.String?
   @objc public var messageVersion: Swift.String?
   @objc public var sdkTransID: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(_ transactionID: Swift.String, _ errorCode: Swift.String, _ errorDescription: Swift.String, _ errorDetail: Swift.String?)
+  #endif
   @objc public func getTransactionID() -> Swift.String
   @objc public func getErrorCode() -> Swift.String
   @objc public func getErrorDescription() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getErrorDetails() -> Swift.String?
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -833,7 +941,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
     case decode
     case missingEntitlement
     public static var debugLevel: Swift.Int
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Darwin.OSStatus)
+    #endif
     public typealias RawValue = Darwin.OSStatus
     public var rawValue: Darwin.OSStatus {
       get
@@ -875,15 +985,23 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
 }
 @_hasMissingDesignatedInitializers open class WFPKCS8 {
   @_hasMissingDesignatedInitializers open class PrivateKey {
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func getPKCS1DEROffset(_ derKey: Foundation.Data) -> Swift.Int?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func stripHeaderIfAny(_ derKey: Foundation.Data) -> Foundation.Data?
+    #endif
     public static func hasCorrectHeader(_ derKey: Foundation.Data) -> Swift.Bool
     @objc deinit
   }
   @_hasMissingDesignatedInitializers open class PublicKey {
     public static func addHeader(_ derKey: Foundation.Data) -> Foundation.Data
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func getPKCS1DEROffset(_ derKey: Foundation.Data) -> Swift.Int?
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public static func stripHeaderIfAny(_ derKey: Foundation.Data) -> Foundation.Data?
+    #endif
     public static func hasCorrectHeader(_ derKey: Foundation.Data) -> Swift.Bool
     @objc deinit
   }
@@ -937,7 +1055,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
     case keySizeError
     case invalidKey
     public static var debugLevel: Swift.Int
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFCC.CCCryptorStatus)
+    #endif
     public typealias RawValue = PayU3DS2CoreKit.WFCC.CCCryptorStatus
     public var rawValue: PayU3DS2CoreKit.WFCC.CCCryptorStatus {
       get
@@ -951,7 +1071,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
     case rmd128, rmd160, rmd256, rmd320
     case sha1
     case sha224, sha256, sha384, sha512
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFCC.CCDigestAlgorithm)
+    #endif
     public typealias RawValue = PayU3DS2CoreKit.WFCC.CCDigestAlgorithm
     public var rawValue: PayU3DS2CoreKit.WFCC.CCDigestAlgorithm {
       get
@@ -961,7 +1083,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   public typealias CCHmacAlgorithm = Swift.UInt32
   public enum HMACAlg : PayU3DS2CoreKit.WFCC.CCHmacAlgorithm {
     case sha1, md5, sha256, sha384, sha512, sha224
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFCC.CCHmacAlgorithm)
+    #endif
     public typealias RawValue = PayU3DS2CoreKit.WFCC.CCHmacAlgorithm
     public var rawValue: PayU3DS2CoreKit.WFCC.CCHmacAlgorithm {
       get
@@ -971,7 +1095,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   public typealias CCOperation = Swift.UInt32
   public enum OpMode : PayU3DS2CoreKit.WFCC.CCOperation {
     case encrypt, decrypt
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFCC.CCOperation)
+    #endif
     public typealias RawValue = PayU3DS2CoreKit.WFCC.CCOperation
     public var rawValue: PayU3DS2CoreKit.WFCC.CCOperation {
       get
@@ -980,7 +1106,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   public typealias CCMode = Swift.UInt32
   public enum BlockMode : PayU3DS2CoreKit.WFCC.CCMode {
     case ecb, cbc, cfb, ctr, f8, lrw, ofb, xts, rc4, cfb8
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFCC.CCMode)
+    #endif
     public typealias RawValue = PayU3DS2CoreKit.WFCC.CCMode
     public var rawValue: PayU3DS2CoreKit.WFCC.CCMode {
       get
@@ -988,7 +1116,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   }
   public enum AuthBlockMode : PayU3DS2CoreKit.WFCC.CCMode {
     case gcm, ccm
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFCC.CCMode)
+    #endif
     public typealias RawValue = PayU3DS2CoreKit.WFCC.CCMode
     public var rawValue: PayU3DS2CoreKit.WFCC.CCMode {
       get
@@ -997,7 +1127,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   public typealias CCAlgorithm = Swift.UInt32
   public enum Algorithm : PayU3DS2CoreKit.WFCC.CCAlgorithm {
     case aes, des, threeDES, cast, rc4, rc2, blowfish
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFCC.CCAlgorithm)
+    #endif
     public typealias RawValue = PayU3DS2CoreKit.WFCC.CCAlgorithm
     public var rawValue: PayU3DS2CoreKit.WFCC.CCAlgorithm {
       get
@@ -1006,7 +1138,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
   public typealias CCPadding = Swift.UInt32
   public enum Padding : PayU3DS2CoreKit.WFCC.CCPadding {
     case noPadding, pkcs7Padding
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFCC.CCPadding)
+    #endif
     public typealias RawValue = PayU3DS2CoreKit.WFCC.CCPadding
     public var rawValue: PayU3DS2CoreKit.WFCC.CCPadding {
       get
@@ -1034,7 +1168,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
     public enum AsymmetricPadding : PayU3DS2CoreKit.WFCC.RSA.CCAsymmetricPadding {
       case pkcs1
       case oaep
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: PayU3DS2CoreKit.WFCC.RSA.CCAsymmetricPadding)
+      #endif
       public typealias RawValue = PayU3DS2CoreKit.WFCC.RSA.CCAsymmetricPadding
       public var rawValue: PayU3DS2CoreKit.WFCC.RSA.CCAsymmetricPadding {
         get
@@ -1043,7 +1179,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
     public enum AsymmetricSAPadding : Swift.UInt32 {
       case pkcs15
       case pss
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.UInt32)
+      #endif
       public typealias RawValue = Swift.UInt32
       public var rawValue: Swift.UInt32 {
         get
@@ -1100,7 +1238,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
     public typealias CNcrc = Swift.UInt32
     public enum Mode : PayU3DS2CoreKit.WFCC.CRC.CNcrc {
       case crc8, crc8ICODE, crc8ITU, crc8ROHC, crc8WCDMA, crc16, crc16CCITTTrue, crc16CCITTFalse, crc16USB, crc16XMODEM, crc16DECTR, crc16DECTX, crc16ICODE, crc16VERIFONE, crc16A, crc16B, crc16Fletcher, crc32Adler, crc32, crc32CASTAGNOLI, crc32BZIP2, crc32MPEG2, crc32POSIX, crc32XFER, crc64ECMA182
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: PayU3DS2CoreKit.WFCC.CRC.CNcrc)
+      #endif
       public typealias RawValue = PayU3DS2CoreKit.WFCC.CRC.CNcrc
       public var rawValue: PayU3DS2CoreKit.WFCC.CRC.CNcrc {
         get
@@ -1119,7 +1259,9 @@ public class WFBlockDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreKit.WFUpd
     public typealias CCPseudoRandomAlgorithm = Swift.UInt32
     public enum PRFAlg : PayU3DS2CoreKit.WFCC.KeyDerivation.CCPseudoRandomAlgorithm {
       case sha1, sha224, sha256, sha384, sha512
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: PayU3DS2CoreKit.WFCC.KeyDerivation.CCPseudoRandomAlgorithm)
+      #endif
       public typealias RawValue = PayU3DS2CoreKit.WFCC.KeyDerivation.CCPseudoRandomAlgorithm
       public var rawValue: PayU3DS2CoreKit.WFCC.KeyDerivation.CCPseudoRandomAlgorithm {
         get
@@ -1143,20 +1285,26 @@ extension Foundation.Data {
   public func arrayOfBytes() -> [Swift.UInt8]
 }
 extension Swift.String {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func dataFromHexadecimalString() -> Foundation.Data?
+  #endif
 }
 @objc public class ChallengeInputParameters : ObjectiveC.NSObject {
   @objc public var challengeData: Swift.String?
   @objc public var acsTransID: Swift.String?
   @objc public var acsRenderingType: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(challengeData: Swift.String? = nil, acsTransID: Swift.String?, acsRenderingType: Swift.String?)
+  #endif
   @objc deinit
 }
 public enum DeviceRenderInterface : Swift.String, Swift.Codable {
   case native
   case html
   case both
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1168,7 +1316,9 @@ public enum DeviceRenderUiType : Swift.String, Swift.Codable {
   case multiSelect
   case oob
   case html
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1218,13 +1368,19 @@ extension Swift.Collection where Self.Element == Swift.UInt8, Self.Index == Swif
 @usableFromInline
 internal func strideCount(from: Swift.Int, to: Swift.Int, by: Swift.Int) -> Swift.Int
 extension Foundation.Data {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(base64URLEncodedString: Swift.String)
+  #endif
   public func base64URLEncodedString() -> Swift.String
   public func toArrayUInt8() -> [Swift.UInt8]
+  #if compiler(>=5.3) && $NonescapableTypes
   public func jsonDataToDic() -> [Swift.String : Any]?
+  #endif
 }
 extension UIKit.UIApplication {
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public class func topViewController(base: UIKit.UIViewController?) -> UIKit.UIViewController?
+  #endif
 }
 public protocol WFCipherModeWorker {
   var cipherOperation: PayU3DS2CoreKit.CipherOperationOnBlock { get }
@@ -1420,9 +1576,11 @@ public enum WFDevice {
   public var realDevice: PayU3DS2CoreKit.WFDevice {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var isZoomed: Swift.Bool? {
     get
   }
+  #endif
   public static var allTouchIDCapableDevices: [PayU3DS2CoreKit.WFDevice] {
     get
   }
@@ -1463,24 +1621,36 @@ public enum WFDevice {
     get
   }
   public func isOneOf(_ devices: [PayU3DS2CoreKit.WFDevice]) -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public var name: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var systemName: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var systemVersion: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var model: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var localizedModel: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var ppi: Swift.Int? {
     get
   }
+  #endif
   public var isGuidedAccessSessionActive: Swift.Bool {
     get
   }
@@ -1509,12 +1679,16 @@ extension PayU3DS2CoreKit.WFDevice {
       get
     }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var batteryState: PayU3DS2CoreKit.WFDevice.BatteryState? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var batteryLevel: Swift.Int? {
     get
   }
+  #endif
 }
 @available(iOS 8.0, watchOS 4.0, *)
 extension PayU3DS2CoreKit.WFDevice.BatteryState : Swift.Comparable {
@@ -1536,24 +1710,34 @@ extension PayU3DS2CoreKit.WFDevice {
   }
 }
 extension PayU3DS2CoreKit.WFDevice {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var volumeTotalCapacity: Swift.Int? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var volumeAvailableCapacity: Swift.Int? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 11.0, *)
   public static var volumeAvailableCapacityForImportantUsage: Swift.Int64? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 11.0, *)
   public static var volumeAvailableCapacityForOpportunisticUsage: Swift.Int64? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 11.0, *)
   public static var volumes: [Foundation.URLResourceKey : Swift.Int64]? {
     get
   }
+  #endif
 }
 extension PayU3DS2CoreKit.WFDevice {
   public struct ApplePencilSupport : Swift.OptionSet {
@@ -1623,7 +1807,9 @@ extension PayU3DS2CoreKit.WFDevice {
 }
 @objc public protocol StatusCallBack {
   @objc func didReceiveSuccess(message: Swift.String, actionType: PayU3DS2CoreKit.ActionType, uiData: PayU3DS2CoreKit.UIData)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func didReceiveError(errorCode: Swift.String, errorMessage: Swift.String, uiData: PayU3DS2CoreKit.UIData?)
+  #endif
 }
 @_hasMissingDesignatedInitializers public class LoadingOverlay {
   public enum LoadingType {
@@ -1631,7 +1817,9 @@ extension PayU3DS2CoreKit.WFDevice {
     case customProgress(Swift.String, UIKit.UIColor)
     case logo(logoImageName: Swift.String)
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func show(view: UIKit.UIView? = nil, loadingType: PayU3DS2CoreKit.LoadingOverlay.LoadingType = .progress)
+  #endif
   public func hide()
   @objc deinit
 }
@@ -1646,7 +1834,9 @@ extension PayU3DS2CoreKit.WFBlowfish {
   @objc public var customerId: Swift.String?
   @objc public var bindingType: Swift.String?
   @objc public var isMFARegistered: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(sdkTransactionID: Swift.String, transactionStatus: Swift.String, consentGiven: Swift.Bool = false, bankId: Swift.String? = nil, customerId: Swift.String? = nil, bindingType: Swift.String? = nil, isMFARegistered: Swift.Bool = false)
+  #endif
   @objc public func getSDKTransactionID() -> Swift.String
   @objc public func getTransactionStatus() -> Swift.String
   @objc deinit
@@ -1686,7 +1876,9 @@ final public class WFAES {
   }
   public enum WFVariant : Swift.Int {
     case aes128, aes192, aes256
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -1740,6 +1932,7 @@ final public class WFAES {
   @usableFromInline
   internal static let U4: [Swift.UInt32]
   public init(key: Swift.Array<Swift.UInt8>, blockMode: any PayU3DS2CoreKit.WFBlockMode, padding: PayU3DS2CoreKit.WFPadding = .pkcs7) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable final internal func encrypt(block: Swift.ArraySlice<Swift.UInt8>) -> Swift.Array<Swift.UInt8>? {
     if self.blockMode.options.contains(.paddingRequired) && block.count != WFAES.blockSize {
       return Array(block)
@@ -1833,8 +2026,11 @@ final public class WFAES {
     ]
     return encrypted
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @usableFromInline
   final internal func decrypt(block: Swift.ArraySlice<Swift.UInt8>) -> Swift.Array<Swift.UInt8>?
+  #endif
   @objc deinit
 }
 extension PayU3DS2CoreKit.WFAES {
@@ -1936,12 +2132,16 @@ extension PayU3DS2CoreKit.WFUpdatable {
   @objc public var headingTxtFontSize: Swift.Int {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(headingTxtFontName: Swift.String = DefaultConstants.fontName, headingTxtColor: Swift.String? = nil, headingTxtFontSize: Swift.Int = Int(UIFont.systemFontSize))
+  #endif
   @objc public func setHeadingTextFontName(_ fontName: Swift.String)
   @objc public func setHeadingTextColor(_ hexColorCode: Swift.String)
   @objc public func setHeadingTextFontSize(_ fontSize: Swift.Int)
   @objc public func getHeadingTextFontName() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getHeadingTextColor() -> Swift.String?
+  #endif
   @objc public func getHeadingTextFontSize() -> Swift.Int
   @objc deinit
 }
@@ -1968,15 +2168,21 @@ extension Swift.UInt64 {
   }
 }
 @objc public class TextBoxCustomization : PayU3DS2CoreKit.Customization {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(borderWidth: Swift.Int = 1, cornerRadius: Swift.Int = 8, borderColor: Swift.String? = nil)
+  #endif
   @objc public func setBorderWidth(_ borderWidth: Swift.Int)
   @objc public func getBorderWidth() -> Swift.Int
   @objc public func setBorderColor(_ hexColorCode: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getBorderColor() -> Swift.String?
+  #endif
   @objc public func setCornerRadius(_ cornerRadius: Swift.Int)
   @objc public func getCornerRadius() -> Swift.Int
   @objc public func setPlaceHolderText(_ placeHolder: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getPlaceHolderText() -> Swift.String?
+  #endif
   @objc public func setSecureTextField(_ isSecureTextField: Swift.Bool)
   @objc public func getSecureTextField() -> Swift.Bool
   @objc deinit
@@ -1990,12 +2196,16 @@ extension PayU3DS2CoreKit.WFCryptors {
   public static func randomIV(_ count: Swift.Int) -> Swift.Array<Swift.UInt8>
 }
 @objc public class Customization : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(txtFontName: Swift.String = DefaultConstants.fontName, txtColor: Swift.String? = nil, txtFontSize: Swift.Int = Int(UIFont.systemFontSize))
+  #endif
   @objc public func setTextFontName(_ fontName: Swift.String)
   @objc public func setTextColor(_ hexColorCode: Swift.String)
   @objc public func setTextFontSize(_ fontSize: Swift.Int)
   @objc public func getTextFontName() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getTextColor() -> Swift.String?
+  #endif
   @objc public func getTextFontSize() -> Swift.Int
   @objc deinit
 }
@@ -2040,7 +2250,9 @@ final internal class WFStreamEncryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2Core
   deinit
 }
 @_inheritsConvenienceInitializers @objc public class SDKAlreadyInitializedException : PayU3DS2CoreKit.RuntimeException {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public init(message: Swift.String, cause: Swift.String?)
+  #endif
   @objc deinit
 }
 final public class WFSHA1 {
@@ -2148,7 +2360,9 @@ extension PayU3DS2CoreKit.WFPKCS5 {
     internal let keyLength: Swift.Int
     @usableFromInline
     internal let t1: Swift.Array<Swift.UInt8>
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(password: Swift.Array<Swift.UInt8>, salt: Swift.Array<Swift.UInt8>, variant: PayU3DS2CoreKit.WFPKCS5.WFPBKDF1.WFVariant = .sha1, iterations: Swift.Int = 4096, keyLength: Swift.Int? = nil) throws
+    #endif
     @inlinable public func calculate() -> Swift.Array<Swift.UInt8> {
       var t = self.t1
       for _ in 2...self.iterations {
@@ -2162,7 +2376,9 @@ extension PayU3DS2CoreKit.WFPKCS5 {
 public enum WFBit : Swift.Int {
   case zero
   case one
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -2202,7 +2418,9 @@ final public class WFSHA2 {
     public var rawValue: PayU3DS2CoreKit.WFSHA2.WFVariant.RawValue {
       get
     }
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: PayU3DS2CoreKit.WFSHA2.WFVariant.RawValue)
+    #endif
     @usableFromInline
     internal var h: Swift.Array<Swift.UInt64> {
       get
@@ -2313,11 +2531,13 @@ extension Swift.Array {
     self[self.startIndex ..< self.endIndex]
   }
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable internal subscript(safe index: Swift.Array<Element>.Index) -> Element? {
     get {
     return indices.contains(index) ? self[index] : nil
   }
   }
+  #endif
 }
 extension Swift.Array where Element == Swift.UInt8 {
   public init(hexString: Swift.String)
@@ -2334,9 +2554,15 @@ extension Swift.Array where Element == Swift.UInt8 {
   public func wfsha512() -> [Element]
   public func wfsha2(_ variant: PayU3DS2CoreKit.WFSHA2.WFVariant) -> [Element]
   public func wfsha3(_ variant: PayU3DS2CoreKit.WFSHA3.WFVariant) -> [Element]
+  #if compiler(>=5.3) && $NonescapableTypes
   public func wfcrc32(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func wfcrc32c(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.UInt32
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func wfcrc16(seed: Swift.UInt16? = nil) -> Swift.UInt16
+  #endif
   public func wfencrypt(cipher: any PayU3DS2CoreKit.WFCipher) throws -> [Element]
   public func wfdecrypt(cipher: any PayU3DS2CoreKit.WFCipher) throws -> [Element]
   public func wfauthenticate<A>(with authenticator: A) throws -> [Element] where A : PayU3DS2CoreKit.WFAuthenticator
@@ -2363,11 +2589,15 @@ final public class WFOCB : PayU3DS2CoreKit.WFBlockMode {
   }
   final public let customBlockSize: Swift.Int?
   final public var authenticationTag: Swift.Array<Swift.UInt8>?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(nonce N: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil, tagLength: Swift.Int = 16, mode: PayU3DS2CoreKit.WFOCB.WFMode = .detached)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable convenience public init(nonce N: Swift.Array<Swift.UInt8>, authenticationTag: Swift.Array<Swift.UInt8>, additionalAuthenticatedData: Swift.Array<Swift.UInt8>? = nil, mode: PayU3DS2CoreKit.WFOCB.WFMode = .detached) {
     self.init(nonce: N, additionalAuthenticatedData: additionalAuthenticatedData, tagLength: authenticationTag.count, mode: mode)
     self.authenticationTag = authenticationTag
   }
+  #endif
   final public func worker(blockSize: Swift.Int, cipherOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock, encryptionOperation: @escaping PayU3DS2CoreKit.CipherOperationOnBlock) throws -> any PayU3DS2CoreKit.WFCipherModeWorker
   @objc deinit
 }
@@ -2396,7 +2626,9 @@ public struct WFPCBC : PayU3DS2CoreKit.WFBlockMode {
 public enum KeyType : Swift.String {
   case rsa
   case ec
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2410,7 +2642,9 @@ public enum KeyType : Swift.String {
   case multiSelect
   case oob
   case html
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -2424,7 +2658,9 @@ public enum ACSUIType : Swift.String, Swift.Codable {
   case multiSelect
   case oob
   case html
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2506,12 +2742,16 @@ extension PayU3DS2CoreKit.ACSUIType {
 }
 public protocol WFPaddingProtocol {
   func add(to: Swift.Array<Swift.UInt8>, blockSize: Swift.Int) -> Swift.Array<Swift.UInt8>
+  #if compiler(>=5.3) && $NonescapableTypes
   func remove(from: Swift.Array<Swift.UInt8>, blockSize: Swift.Int?) -> Swift.Array<Swift.UInt8>
+  #endif
 }
 public enum WFPadding : PayU3DS2CoreKit.WFPaddingProtocol {
   case noPadding, zeroPadding, pkcs7, pkcs5, eme_pkcs1v15, emsa_pkcs1v15, iso78164, iso10126
   public func add(to: Swift.Array<Swift.UInt8>, blockSize: Swift.Int) -> Swift.Array<Swift.UInt8>
+  #if compiler(>=5.3) && $NonescapableTypes
   public func remove(from: Swift.Array<Swift.UInt8>, blockSize: Swift.Int?) -> Swift.Array<Swift.UInt8>
+  #endif
   public static func == (a: PayU3DS2CoreKit.WFPadding, b: PayU3DS2CoreKit.WFPadding) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
@@ -2648,10 +2888,14 @@ final internal class WFStreamDecryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2Core
 @objc public class ButtonCustomization : PayU3DS2CoreKit.Customization {
   @objc public var backgroundColor: Swift.String?
   @objc public var cornerRadius: Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(backgroundColor: Swift.String?, cornerRadius: Swift.Int? = nil)
+  #endif
   public func setBackgroundColor(_ hexColorCode: Swift.String)
   public func setCornerRadius(_ cornerRadius: Swift.Int)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getBackgroundColor() -> Swift.String?
+  #endif
   public func getCornerRadius() -> Swift.Int
   @objc deinit
 }
@@ -2660,7 +2904,9 @@ extension PayU3DS2CoreKit.ButtonCustomization {
     case lowercase
     case uppercase
     case `default`
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -2680,9 +2926,15 @@ extension Foundation.Data {
   public func wfsha384() -> Foundation.Data
   public func wfsha512() -> Foundation.Data
   public func wfsha3(_ variant: PayU3DS2CoreKit.WFSHA3.WFVariant) -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func wfcrc32(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func wfcrc32c(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Foundation.Data
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func wfcrc16(seed: Swift.UInt16? = nil) -> Foundation.Data
+  #endif
   public func wfencrypt(cipher: any PayU3DS2CoreKit.WFCipher) throws -> Foundation.Data
   public func wfdecrypt(cipher: any PayU3DS2CoreKit.WFCipher) throws -> Foundation.Data
   public func wfauthenticate(with authenticator: any PayU3DS2CoreKit.WFAuthenticator) throws -> Foundation.Data
@@ -2721,15 +2973,21 @@ extension Swift.String {
   @inlinable public func wfsha3(_ variant: PayU3DS2CoreKit.WFSHA3.WFVariant) -> Swift.String {
     self.wfbytes.wfsha3(variant).wftoHexString()
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public func wfcrc32(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.String {
     self.wfbytes.wfcrc32(seed: seed, reflect: reflect).bytes().wftoHexString()
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public func wfcrc32c(seed: Swift.UInt32? = nil, reflect: Swift.Bool = true) -> Swift.String {
     self.wfbytes.wfcrc32c(seed: seed, reflect: reflect).bytes().wftoHexString()
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @inlinable public func wfcrc16(seed: Swift.UInt16? = nil) -> Swift.String {
     self.wfbytes.wfcrc16(seed: seed).bytes().wftoHexString()
   }
+  #endif
   @inlinable public func wfencrypt(cipher: any PayU3DS2CoreKit.WFCipher) throws -> Swift.String {
     try self.wfbytes.wfencrypt(cipher: cipher).wftoHexString()
   }
@@ -2760,6 +3018,17 @@ final public class WFBlowfish {
 extension PayU3DS2CoreKit.WFBlowfish : PayU3DS2CoreKit.WFCipher {
   final public func encrypt<C>(_ bytes: C) throws -> Swift.Array<Swift.UInt8> where C : Swift.Collection, C.Element == Swift.UInt8, C.Index == Swift.Int
   final public func decrypt<C>(_ bytes: C) throws -> Swift.Array<Swift.UInt8> where C : Swift.Collection, C.Element == Swift.UInt8, C.Index == Swift.Int
+}
+@objc public enum PayULoaderPresentationStyle : Swift.Int {
+  case fullScreen = 0
+  case bottomSheet = 1
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public struct WFECB : PayU3DS2CoreKit.WFBlockMode {
   public let options: PayU3DS2CoreKit.WFBlockModeOption
@@ -2822,7 +3091,9 @@ public struct WFCFB : PayU3DS2CoreKit.WFBlockMode {
   public enum WFSegmentSize : Swift.Int {
     case cfb8
     case cfb128
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -2921,7 +3192,9 @@ public enum EventType : Swift.String {
   case info
   case error
   case notSpecified
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2931,7 +3204,9 @@ public enum EventSeverity : Swift.String {
   case low
   case medium
   case high
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2941,7 +3216,9 @@ public enum EventStatus : Swift.String {
   case initiated
   case failure
   case success
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -2949,11 +3226,21 @@ public enum EventStatus : Swift.String {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class LogHelper : ObjectiveC.NSObject {
   @objc public static var shared: PayU3DS2CoreKit.LogHelper
+  #if compiler(>=5.3) && $NonescapableTypes
   public func logEventFor(types: [PayU3DS2CoreKit.EventLogger] = [.Clevertap, .Kibana], key: Swift.String, value: Swift.String = "", className: Swift.String = "", eventType: PayU3DS2CoreKit.EventType = .info, eventSeverity: PayU3DS2CoreKit.EventSeverity = .low, eventStatus: PayU3DS2CoreKit.EventStatus? = nil, txnId: Swift.String? = nil, sdkTime: Swift.Int = -999, errorCode: Swift.String? = nil, additionalData: [Swift.String : Any]? = nil, rootAdditionalData: [Swift.String : Any]? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func logKibanaEvent(key: Swift.String, value: Swift.String = "", className: Swift.String = "", txnId: Swift.String? = nil, sdkTime: Swift.Int = -999)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func logKibanaEvent(key: Swift.String, value: Swift.String, className: Swift.String, eventType: Swift.String, eventSeverity: Swift.String, txnId: Swift.String?, sdkTime: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func logKibanaEvent(key: Swift.String, value: Swift.String, className: Swift.String, eventType: Swift.String, eventSeverity: Swift.String, eventStatus: Swift.String, txnId: Swift.String?, sdkTime: Swift.Int)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func logKibanaEvent(key: Swift.String, value: Swift.String = "", className: Swift.String = "", eventType: PayU3DS2CoreKit.EventType, eventSeverity: PayU3DS2CoreKit.EventSeverity = .low, eventStatus: PayU3DS2CoreKit.EventStatus? = nil, txnId: Swift.String? = nil, sdkTime: Swift.Int = -999, errorCode: Swift.String? = nil, additionalData: [Swift.String : Any]? = nil, rootAdditionalData: [Swift.String : Any]? = nil)
+  #endif
   @objc deinit
 }
 @objc public class AuthenticationRequestParameters : ObjectiveC.NSObject {
@@ -3013,7 +3300,9 @@ public struct WFCBC : PayU3DS2CoreKit.WFBlockMode {
   @objc public var fontFamilyCustomization: PayU3DS2CoreKit.FontFamilyCustomization? {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(btnCustomizations: Swift.Dictionary<Swift.String, PayU3DS2CoreKit.ButtonCustomization>?, tbrCustomization: PayU3DS2CoreKit.ToolbarCustomization?, lblCustomization: PayU3DS2CoreKit.LabelCustomization?, txtBxCustomization: PayU3DS2CoreKit.TextBoxCustomization?, fontFamilyCustomization: PayU3DS2CoreKit.FontFamilyCustomization?)
+  #endif
   @objc open class func customizeUI() -> PayU3DS2CoreKit.UiCustomization
   @objc public enum ButtonTypeInt : Swift.Int {
     case VERIFY = 0
@@ -3023,7 +3312,9 @@ public struct WFCBC : PayU3DS2CoreKit.WFBlockMode {
     case RESEND = 4
     case SUBMIT = 5
     public static func buttonType(intType: PayU3DS2CoreKit.UiCustomization.ButtonTypeInt) -> PayU3DS2CoreKit.UiCustomization.ButtonType
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.Int
     public var rawValue: Swift.Int {
       get
@@ -3036,7 +3327,9 @@ public struct WFCBC : PayU3DS2CoreKit.WFBlockMode {
     case CANCEL
     case RESEND
     case SUBMIT
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -3047,19 +3340,35 @@ public struct WFCBC : PayU3DS2CoreKit.WFBlockMode {
   @objc public func setLabelCustomization(_ labelCustomization: PayU3DS2CoreKit.LabelCustomization) throws
   @objc public func setTextBoxCustomization(_ textBoxCustomization: PayU3DS2CoreKit.TextBoxCustomization) throws
   @objc public func setFontFamilyCustomization(_ fontFamilyCustomization: PayU3DS2CoreKit.FontFamilyCustomization) throws
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getButtonCustomization(_ buttonType: PayU3DS2CoreKit.UiCustomization.ButtonTypeInt) -> PayU3DS2CoreKit.ButtonCustomization?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getToolbarCustomization() -> PayU3DS2CoreKit.ToolbarCustomization?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getLabelCustomization() -> PayU3DS2CoreKit.LabelCustomization?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getTextBoxCustomization() -> PayU3DS2CoreKit.TextBoxCustomization?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getFontFamilyCustomization() -> PayU3DS2CoreKit.FontFamilyCustomization?
+  #endif
   @objc deinit
 }
 @objc public protocol ChallengeStatusReceiver {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func completed(_ e: PayU3DS2CoreKit.CompletionEvent!)
+  #endif
   @objc func cancelled()
   @objc func timedout()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func protocolError(_ e: PayU3DS2CoreKit.ProtocolErrorEvent!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func runtimeError(_ e: PayU3DS2CoreKit.RuntimeErrorEvent!)
+  #endif
   @objc func uiResponseData(_ data: PayU3DS2CoreKit.UIData)
   @objc func oobInitiated()
 }
@@ -3068,7 +3377,9 @@ public class MessageExtension : Swift.Codable {
   final public let id: Swift.String?
   final public let name: Swift.String?
   final public let data: PayU3DS2CoreKit.MessageExtensionData?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(criticalityIndicator: Swift.Bool?, id: Swift.String?, name: Swift.String?, data: PayU3DS2CoreKit.MessageExtensionData?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -3076,7 +3387,9 @@ public class MessageExtension : Swift.Codable {
 public class MessageExtensionData : Swift.Codable {
   final public let messageType: Swift.String?
   final public let tdyClientId: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(messageType: Swift.String?, tdyClientId: Swift.String?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -3170,9 +3483,15 @@ public class Reachability {
   public var connection: PayU3DS2CoreKit.Reachability.Connection {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  #endif
   @objc deinit
 }
 extension PayU3DS2CoreKit.Reachability {
@@ -3375,6 +3694,9 @@ extension PayU3DS2CoreKit.ButtonCustomization.ButtonTextTransformType : Swift.Ha
 extension PayU3DS2CoreKit.ButtonCustomization.ButtonTextTransformType : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.WFBlowfish.WFError : Swift.Equatable {}
 extension PayU3DS2CoreKit.WFBlowfish.WFError : Swift.Hashable {}
+extension PayU3DS2CoreKit.PayULoaderPresentationStyle : Swift.Equatable {}
+extension PayU3DS2CoreKit.PayULoaderPresentationStyle : Swift.Hashable {}
+extension PayU3DS2CoreKit.PayULoaderPresentationStyle : Swift.RawRepresentable {}
 extension PayU3DS2CoreKit.WFCFB.WFError : Swift.Equatable {}
 extension PayU3DS2CoreKit.WFCFB.WFError : Swift.Hashable {}
 extension PayU3DS2CoreKit.WFCFB.WFSegmentSize : Swift.Equatable {}

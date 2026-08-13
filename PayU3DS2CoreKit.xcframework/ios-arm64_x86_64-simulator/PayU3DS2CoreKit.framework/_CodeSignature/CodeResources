@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		x9oL2a30U+hRZiN4YChQZKRMi4U=
+		Uto48C4aXBarK2QEXc7cSYIs3t8=
 		</data>
 		<key>BottomSheetViewController.nib</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/PayU3DS2CoreKit-Swift.h</key>
 		<data>
-		FCC8tsOwRJnGOJlgV55I1ipi/L8=
+		KZykI9Nbpuo5bQlbCmGSOMdwgnI=
 		</data>
 		<key>Headers/PayU3DS2CoreKit.h</key>
 		<data>
@@ -30,55 +30,55 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Xsj+tBjqkECK4KqgUxAltOwK1go=
+		N+yRJA9NPhe0Ayq0NJCqHUOHSzI=
 		</data>
 		<key>LearnMoreViewController.nib</key>
 		<data>
-		cUf0D29GTYxGqGEBgh09Uo+xaVM=
+		MtbjqOzzf2IJNkzoZPzTqYGDJi0=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rQE/Sy7tZyz8TnnnWI+ifEo/Mcw=
+		FWoCh8X4K0XRIKXSQ+dnPqBuurg=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3zMJz7Z1rjqHQbWzHxM1hPdtJ58=
+		vtyCIu7JWmQpK/JW2SILC53qiEc=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		iwEin3H5R1JAzZNEoI1RuianXwU=
+		Zf6XZ/vwrKn5ZTu7aPugr+OHR/Y=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3zMJz7Z1rjqHQbWzHxM1hPdtJ58=
+		vtyCIu7JWmQpK/JW2SILC53qiEc=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hzCqTQxCoHmS5nh6nVXDCC+oFJ4=
+		pAObFwcvgCbGgIfrxQvXPQx5P5c=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rQE/Sy7tZyz8TnnnWI+ifEo/Mcw=
+		FWoCh8X4K0XRIKXSQ+dnPqBuurg=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		NwMVJF0uohU8KMRBAnnuk2VRqPk=
+		sKJbhRnhhzLupLCgHfUYKOuTYkY=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KyOXlHkvQkmNPBzIvWotmfwewzQ=
+		46lTULea4+NV54OtnEnFiT/6EbI=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		NwMVJF0uohU8KMRBAnnuk2VRqPk=
+		sKJbhRnhhzLupLCgHfUYKOuTYkY=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OTTUmJiaML6zPpELhT+6SNvtYgA=
+		hfwVe71HF8eoK6qGewOicGWytzA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		dt3sGxmvtPbXjIkZQnaYnE4CoQc=
+		cUBvY9H3JKNk5C5Ed89rq0rKQYo=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -115,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Si71OC261X+0MUh6UypITvKKgFs01+A+dLPqwHnPLH0=
+			oTYPa2y2kORMOvzWKNp7lYPHIKOwwMJgneZIim7opSo=
 			</data>
 		</dict>
 		<key>BottomSheetViewController.nib</key>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OYAhiIN5Xnhzu8Z3dWsasBU00WA8z/sgaZAAEpHmWNE=
+			VzLCbkcG3e7N7uQc9OYfRD9GwvRD5A8Ol0mu+VelvJ4=
 			</data>
 		</dict>
 		<key>Headers/PayU3DS2CoreKit.h</key>
@@ -157,84 +157,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JysE61XiAYN7/3j/e8HW6lQFf9/UUHpSGadKegtpFA0=
+			eUJp+0sluD4NFZvtj323PNrOMrFB+yg/Cnf40i8p6t0=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VkPUqsnImJUMWgirml780VnF7NPr+7qJVWf7rlYUxkM=
+			mm0cp2ZKqkNwiujAwbntjPaXCLCKwvdNjVP4Cow7/As=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uqT9yVx5htRDC6X0ccWwA1vGEZHigUHJ53zqrXqBfLg=
+			Geg+h7TzjSciZI5/xamzZTr4U+xBfyjBhJvCONAacjY=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aC6z7dIsLFzPX75IxrxjkQ3zJ3riqNNZ7r/t5XTzTCU=
+			inWQuGqZ5FaUbjXXvJyGuvNSJ7IRU0fXfxUhYc7k4SY=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uqT9yVx5htRDC6X0ccWwA1vGEZHigUHJ53zqrXqBfLg=
+			Geg+h7TzjSciZI5/xamzZTr4U+xBfyjBhJvCONAacjY=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ui+6nC41pcE1hRbTbNmyLqjDd+xuaQ/ENECnarDoX2U=
+			rDYwTFAPrAaAPwsJIS3rbAB4jzEDdsYP0FOHjavNN5k=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VkPUqsnImJUMWgirml780VnF7NPr+7qJVWf7rlYUxkM=
+			mm0cp2ZKqkNwiujAwbntjPaXCLCKwvdNjVP4Cow7/As=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qkq31AerpnPCI4z5DGSuom7EgKkx7Wx/Jq2pwRRNzns=
+			z41s1lnDso0IuK4Lh+Wkw3EP/K+pYkI9n3Y9Irt5oN8=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M/8pmavs9hKw85MCphjh59ZYzCQ4jUgVd/E2qyMauF0=
+			nJ7Qhktls17fCK37DyX1ryUHMORZGUcIaEBS1Wi+sk8=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qkq31AerpnPCI4z5DGSuom7EgKkx7Wx/Jq2pwRRNzns=
+			z41s1lnDso0IuK4Lh+Wkw3EP/K+pYkI9n3Y9Irt5oN8=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I0VdbauJUh4OSrf0sH+lU7rAh+L8mKVa5X7hvdMM5RY=
+			pxL9YagF59WhKXxQiQ4bS8AJdnbvtV1oLhcCsAI3v6k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tCF1G8BtehNp65CHZQEQnb2TljGY8+YazIAlLcuS7DA=
+			PHez5wnDmxfLZRiuCTD6U3zZuAm6+4aZQQNn2ylrNQE=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

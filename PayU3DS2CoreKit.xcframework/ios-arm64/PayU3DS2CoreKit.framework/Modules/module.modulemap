@@ -7,4 +7,5 @@ framework module PayU3DS2CoreKit {
 
 module PayU3DS2CoreKit.Swift {
   header "PayU3DS2CoreKit-Swift.h"
+  requires objc
 }

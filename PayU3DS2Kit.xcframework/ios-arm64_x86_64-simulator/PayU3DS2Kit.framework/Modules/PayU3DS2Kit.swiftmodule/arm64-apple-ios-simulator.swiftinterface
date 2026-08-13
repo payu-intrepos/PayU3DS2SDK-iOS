@@ -102,7 +102,8 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   @objc public var y: Swift.String
   @objc public var sdkTransID: Swift.String
   @objc public var sdkReferenceNumber: Swift.String
-  @objc public init(sdkAppID: Swift.String, sdkEncData: Swift.String, crv: Swift.String, kty: Swift.String, x: Swift.String, y: Swift.String, sdkTransID: Swift.String, sdkReferenceNumber: Swift.String)
+  @objc public var mfaVersion: Swift.String
+  @objc public init(sdkAppID: Swift.String, sdkEncData: Swift.String, crv: Swift.String, kty: Swift.String, x: Swift.String, y: Swift.String, sdkTransID: Swift.String, sdkReferenceNumber: Swift.String, mfaVersion: Swift.String)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
@@ -485,7 +486,8 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public var sdkMaxTimeout: Swift.String
   @objc public var deviceRenderOptions: PayU3DS2Kit.PayU3DS2DeviceRenderOptions
   @objc public var sdkEphemPubKey: PayU3DS2Kit.PayU3DS2SDKEphemPubKey
-  @objc public init(sdkEncData: Swift.String, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, sdkTransID: Swift.String, sdkMaxTimeout: Swift.String, deviceRenderOptions: PayU3DS2Kit.PayU3DS2DeviceRenderOptions, sdkEphemPubKey: PayU3DS2Kit.PayU3DS2SDKEphemPubKey)
+  @objc public var mfaVersion: Swift.String
+  @objc public init(sdkEncData: Swift.String, sdkAppID: Swift.String, sdkReferenceNumber: Swift.String, sdkTransID: Swift.String, sdkMaxTimeout: Swift.String, deviceRenderOptions: PayU3DS2Kit.PayU3DS2DeviceRenderOptions, sdkEphemPubKey: PayU3DS2Kit.PayU3DS2SDKEphemPubKey, mfaVersion: Swift.String)
   @objc public func toString() -> Swift.String
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws

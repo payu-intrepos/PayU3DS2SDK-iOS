@@ -50,7 +50,7 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-3DS2-SDK"
-podVersion="5.0.0.alpha.2"
+podVersion="5.0.0.alpha.3"
 
 podSpec="${podName}.podspec"
 tag="${podVersion}"

@@ -774,7 +774,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit20PayU3DS2PArqResponse")
 @property (nonatomic, copy) NSString * _Nonnull y;
 @property (nonatomic, copy) NSString * _Nonnull sdkTransID;
 @property (nonatomic, copy) NSString * _Nonnull sdkReferenceNumber;
-- (nonnull instancetype)initWithSdkAppID:(NSString * _Nonnull)sdkAppID sdkEncData:(NSString * _Nonnull)sdkEncData crv:(NSString * _Nonnull)crv kty:(NSString * _Nonnull)kty x:(NSString * _Nonnull)x y:(NSString * _Nonnull)y sdkTransID:(NSString * _Nonnull)sdkTransID sdkReferenceNumber:(NSString * _Nonnull)sdkReferenceNumber OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * _Nonnull mfaVersion;
+- (nonnull instancetype)initWithSdkAppID:(NSString * _Nonnull)sdkAppID sdkEncData:(NSString * _Nonnull)sdkEncData crv:(NSString * _Nonnull)crv kty:(NSString * _Nonnull)kty x:(NSString * _Nonnull)x y:(NSString * _Nonnull)y sdkTransID:(NSString * _Nonnull)sdkTransID sdkReferenceNumber:(NSString * _Nonnull)sdkReferenceNumber mfaVersion:(NSString * _Nonnull)mfaVersion OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -857,7 +858,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit15PayU3DS2SDKInfo")
 @property (nonatomic, copy) NSString * _Nonnull sdkMaxTimeout;
 @property (nonatomic, strong) PayU3DS2DeviceRenderOptions * _Nonnull deviceRenderOptions;
 @property (nonatomic, strong) PayU3DS2SDKEphemPubKey * _Nonnull sdkEphemPubKey;
-- (nonnull instancetype)initWithSdkEncData:(NSString * _Nonnull)sdkEncData sdkAppID:(NSString * _Nonnull)sdkAppID sdkReferenceNumber:(NSString * _Nonnull)sdkReferenceNumber sdkTransID:(NSString * _Nonnull)sdkTransID sdkMaxTimeout:(NSString * _Nonnull)sdkMaxTimeout deviceRenderOptions:(PayU3DS2DeviceRenderOptions * _Nonnull)deviceRenderOptions sdkEphemPubKey:(PayU3DS2SDKEphemPubKey * _Nonnull)sdkEphemPubKey OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * _Nonnull mfaVersion;
+- (nonnull instancetype)initWithSdkEncData:(NSString * _Nonnull)sdkEncData sdkAppID:(NSString * _Nonnull)sdkAppID sdkReferenceNumber:(NSString * _Nonnull)sdkReferenceNumber sdkTransID:(NSString * _Nonnull)sdkTransID sdkMaxTimeout:(NSString * _Nonnull)sdkMaxTimeout deviceRenderOptions:(PayU3DS2DeviceRenderOptions * _Nonnull)deviceRenderOptions sdkEphemPubKey:(PayU3DS2SDKEphemPubKey * _Nonnull)sdkEphemPubKey mfaVersion:(NSString * _Nonnull)mfaVersion OBJC_DESIGNATED_INITIALIZER;
 - (NSString * _Nonnull)toString SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
