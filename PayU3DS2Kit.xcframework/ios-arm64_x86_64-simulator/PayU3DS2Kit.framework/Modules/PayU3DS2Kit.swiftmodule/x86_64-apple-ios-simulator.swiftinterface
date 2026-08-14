@@ -168,8 +168,8 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   @objc public var isOtpOnTheFly: Swift.Int
   @objc public var messageVersion: Swift.String?
   required public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
 }
 @objc public class PayU3DS2BaseCustomisation : ObjectiveC.NSObject, Swift.Codable {
   @objc public init(textFontColor: Swift.String?, textFontSize: Swift.Int)

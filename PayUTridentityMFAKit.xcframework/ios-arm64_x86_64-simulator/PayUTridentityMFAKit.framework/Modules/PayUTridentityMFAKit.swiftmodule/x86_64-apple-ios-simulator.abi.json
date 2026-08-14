@@ -39598,14 +39598,14 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/PaymentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20240,
+      "offset": 20422,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/PaymentViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 20272,
+      "offset": 20454,
       "length": 1,
       "value": "0"
     },
@@ -40676,56 +40676,70 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 432,
+      "offset": 304,
+      "length": 12,
+      "value": "\"tdyVersion\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 7,
+      "value": "\"2.0.0\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
+      "kind": "StringLiteral",
+      "offset": 494,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 454,
+      "offset": 516,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 476,
+      "offset": 538,
       "length": 5,
       "value": "\"PUT\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 500,
+      "offset": 562,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 645,
+      "offset": 707,
       "length": 6,
       "value": "\"PROD\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 667,
+      "offset": 729,
       "length": 5,
       "value": "\"UAT\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 688,
+      "offset": 750,
       "length": 5,
       "value": "\"DEV\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/NetworkLayer\/Endpoint.swift",
       "kind": "StringLiteral",
-      "offset": 711,
+      "offset": 773,
       "length": 4,
       "value": "\"QA\""
     },
@@ -45520,7 +45534,7 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/ViewModels\/RegistrationViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 25181,
+      "offset": 25264,
       "length": 5,
       "value": "false"
     },

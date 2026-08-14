@@ -94922,57 +94922,57 @@
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Views\/BiometricRegistrationNudgeView.swift",
-      "kind": "StringLiteral",
-      "offset": 1198,
-      "length": 9,
-      "value": "\"#EFF4FA\""
+      "kind": "IntegerLiteral",
+      "offset": 1245,
+      "length": 1,
+      "value": "1"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Views\/BiometricRegistrationNudgeView.swift",
       "kind": "StringLiteral",
-      "offset": 1282,
+      "offset": 1304,
       "length": 9,
       "value": "\"#5C84B6\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Views\/BiometricRegistrationNudgeView.swift",
       "kind": "StringLiteral",
-      "offset": 1358,
+      "offset": 1380,
       "length": 9,
       "value": "\"#72747A\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Views\/BiometricRegistrationNudgeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1428,
+      "offset": 1450,
       "length": 2,
       "value": "54"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Views\/BiometricRegistrationNudgeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1483,
+      "offset": 1505,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Views\/BiometricRegistrationNudgeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1526,
+      "offset": 1548,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Views\/BiometricRegistrationNudgeView.swift",
       "kind": "StringLiteral",
-      "offset": 1567,
+      "offset": 1589,
       "length": 31,
       "value": "\"Activated by 2M+ | Secured by\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Loader\/Views\/BiometricRegistrationNudgeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1645,
+      "offset": 1667,
       "length": 2,
       "value": "26"
     },
@@ -95441,322 +95441,343 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1122,
+      "offset": 1390,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1156,
+      "offset": 1424,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1194,
+      "offset": 1462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1245,
+      "offset": 1513,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1301,
+      "offset": 1569,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 1613,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1396,
+      "offset": 1664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1739,
+      "offset": 2007,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1794,
+      "offset": 2062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1846,
+      "offset": 2114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2002,
+      "offset": 2270,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2441,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "StringLiteral",
-      "offset": 40527,
+      "offset": 2486,
+      "length": 15,
+      "value": "\"secured-wibmo\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2564,
+      "length": 9,
+      "value": "\"#F9FAFB\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 42914,
       "length": 9,
       "value": "\"#E0E1E2\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 40556,
+      "offset": 42943,
       "length": 4,
       "value": "0.88"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40569,
+      "offset": 42956,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "StringLiteral",
-      "offset": 40626,
+      "offset": 43013,
       "length": 9,
       "value": "\"#72747A\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "StringLiteral",
-      "offset": 40699,
+      "offset": 43086,
       "length": 9,
       "value": "\"#EFEFEF\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 40728,
+      "offset": 43115,
       "length": 5,
       "value": "0.937"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40742,
+      "offset": 43129,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40788,
+      "offset": 43175,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40844,
+      "offset": 43231,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40854,
+      "offset": 43241,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40866,
+      "offset": 43253,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40877,
+      "offset": 43264,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40920,
+      "offset": 43307,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 40964,
+      "offset": 43351,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41007,
+      "offset": 43394,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 41061,
+      "offset": 43448,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41107,
+      "offset": 43494,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41151,
+      "offset": 43538,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41402,
+      "offset": 43789,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41412,
+      "offset": 43799,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41424,
+      "offset": 43811,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41435,
+      "offset": 43822,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "StringLiteral",
-      "offset": 41496,
+      "offset": 43883,
       "length": 9,
       "value": "\"#B00020\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 41566,
+      "offset": 43953,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 48624,
+      "offset": 51011,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 48679,
+      "offset": 51066,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 50851,
+      "offset": 53238,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 50909,
+      "offset": 53296,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 50951,
+      "offset": 53338,
       "length": 2,
       "value": "22"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 51002,
+      "offset": 53389,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 51056,
+      "offset": 53443,
       "length": 3,
       "value": "1.5"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "StringLiteral",
-      "offset": 51117,
+      "offset": 53504,
       "length": 9,
       "value": "\"#759DD0\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 51246,
+      "offset": 53633,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 53506,
+      "offset": 55893,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/CResChallengeTextViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 66987,
+      "offset": 69374,
       "length": 4,
       "value": "true"
     },
@@ -98990,16 +99011,16 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 874,
+      "offset": 880,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 929,
+      "offset": 935,
       "length": 2,
-      "value": "16"
+      "value": "24"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
@@ -99011,133 +99032,105 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1042,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1094,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1162,
+      "offset": 1055,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1204,
+      "offset": 1097,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1252,
+      "offset": 1145,
       "length": 2,
       "value": "45"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1316,
+      "offset": 1209,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1388,
+      "offset": 1281,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1475,
+      "offset": 1368,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1548,
+      "offset": 1441,
       "length": 9,
       "value": "\"#0D1B2E\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1619,
+      "offset": 1512,
       "length": 9,
       "value": "\"#121822\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1706,
+      "offset": 1599,
       "length": 9,
       "value": "\"#121822\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1794,
+      "offset": 1687,
       "length": 9,
       "value": "\"#E7E8E9\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1876,
+      "offset": 1769,
       "length": 9,
       "value": "\"#25272C\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1960,
-      "length": 9,
-      "value": "\"#EFF4FA\""
-    },
-    {
-      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2046,
-      "length": 9,
-      "value": "\"#72747A\""
-    },
-    {
-      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 2109,
+      "offset": 1836,
       "length": 15,
       "value": "\"secured-wibmo\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2174,
+      "offset": 1901,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2234,
+      "offset": 1961,
       "length": 4,
       "value": "0.78"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/LearnMoreViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2371,
+      "offset": 2098,
       "length": 2,
       "value": "32"
     },

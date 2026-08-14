@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		lqbToFvQB6xOKiqWvTGI0paF+gY=
+		vC5Y/3Hmcx8uJT1ud/n8WR+maBg=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ZlyaOfqIdiXtWuM22T85ulAwJwk=
+		PNXX5na+F5J4CxJ+pmhynPOfBRs=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZlyaOfqIdiXtWuM22T85ulAwJwk=
+		PNXX5na+F5J4CxJ+pmhynPOfBRs=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Gnuxd+BKq50EkIHfvxBqa8e/RE8=
+		eWmNeXhpxWKQ2TFn5M/o0660ld8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -153,14 +153,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			2YHuEvvSuTKutG9gSYPnQ4GctFrLlKZzIkFhMuOaSQ0=
+			+awqRBFfEoO8Z1YnEdGW3WQczYHWJAjt8HZnIztAvZ8=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kxz658vM8bOsCXNdDY4k/R2Y6ea7DTGkARe4pzoRX+M=
+			2mSDwuzFtQIHl41mJ7sLViirPY4MtOGueYsvjeWvAFQ=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -174,14 +174,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kxz658vM8bOsCXNdDY4k/R2Y6ea7DTGkARe4pzoRX+M=
+			2mSDwuzFtQIHl41mJ7sLViirPY4MtOGueYsvjeWvAFQ=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DxzUfMa5mkS7V3+tNV6zOhIowByQotmZw6TK7QXYs/Q=
+			itlr3skFIaNKiY8ebpIxOOuW5NZR/Sh3k8OR5Cr3qjg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
