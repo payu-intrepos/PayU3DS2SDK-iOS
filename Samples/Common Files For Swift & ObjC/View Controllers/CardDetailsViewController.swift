@@ -703,7 +703,7 @@ extension CardDetailsViewController: PayU3DS2IniitateChallengeDelegate {
                 switch resp.status {
                 case .initiated: statusString = "initiated"
                 case .success:   statusString = "success"
-                case .error:     statusString = "error"
+                case .failed:     statusString = "error"
                 @unknown default: statusString = "unknown"
                 }
 

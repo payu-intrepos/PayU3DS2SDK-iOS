@@ -42,7 +42,8 @@ class PayU3DS2SDKHelper {
             sdkTransID: pArq.sdkTransID,
             sdkMaxTimeout: "05",
             deviceRenderOptions: deviceRenderOptions,
-            sdkEphemPubKey: sdkEphemPubKey
+            sdkEphemPubKey: sdkEphemPubKey,
+            mfaVersion: pArq.mfaVersion
         )
         let threeDS2Params = PayU3DS2Params(
             sdkInfo: sdkInfo,
