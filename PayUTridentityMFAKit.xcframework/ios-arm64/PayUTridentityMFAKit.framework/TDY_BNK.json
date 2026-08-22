@@ -147,11 +147,11 @@
             "faceIdUnavailable": {
                 "title": "Face ID unavailable",
                 "instruction": "Please follow the instructions below to set up Face ID on your device:",
-                "settingsStep1": "Tap \"Open Settings\"",
+                "settingsStep1": "Open the Phone Settings",
                 "settingsStep2": "Open Face ID & Passcode",
                 "settingsStep3": "Enable Face ID for %@",
                 "settingsStep4": "Return to %@",
-                "securityNote": "Your biometric data stays secure on your device and is never shared",
+                "securityNote": "Your Face ID data stays secure on your device and is never shared",
                 "continueWithoutRegistration": "Continue Without Registration"
             },
             "cancelSetup": {

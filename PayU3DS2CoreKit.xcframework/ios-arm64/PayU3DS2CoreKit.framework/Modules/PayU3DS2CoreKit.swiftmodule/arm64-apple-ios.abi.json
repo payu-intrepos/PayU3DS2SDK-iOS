@@ -92751,6 +92751,13 @@
       "value": "\"sdk_platform\""
     },
     {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3212,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Utilities\/Crypto\/WFBlockEncryptor.swift",
       "kind": "IntegerLiteral",
       "offset": 1197,
@@ -93152,14 +93159,35 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Wibmo3ds.swift",
       "kind": "StringLiteral",
-      "offset": 17452,
+      "offset": 2191,
+      "length": 17,
+      "value": "\"client_ip_fetch\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Wibmo3ds.swift",
+      "kind": "StringLiteral",
+      "offset": 2276,
+      "length": 73,
+      "value": "\"https:\/\/secure-tdyapi-b3-indmum-mumrdc.wibmo.com\/tdy-prod\/sdk\/client-ip\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Wibmo3ds.swift",
+      "kind": "StringLiteral",
+      "offset": 2374,
+      "length": 12,
+      "value": "\"lll1444466\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Wibmo3ds.swift",
+      "kind": "StringLiteral",
+      "offset": 17911,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/wibmo-ios-3ds-sdk\/Wibmo3dsSDK\/Wibmo3dsSDK\/Classes\/Wibmo3ds.swift",
       "kind": "StringLiteral",
-      "offset": 17476,
+      "offset": 17935,
       "length": 2,
       "value": "\"\""
     },
