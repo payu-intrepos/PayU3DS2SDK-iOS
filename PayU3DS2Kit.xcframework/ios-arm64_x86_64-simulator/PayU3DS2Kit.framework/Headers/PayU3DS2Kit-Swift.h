@@ -580,6 +580,9 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @property (nonatomic) BOOL enableMFAViaBiometric;
 @property (nonatomic) BOOL enableFullScreenAuthSelectionBottomSheet;
 @property (nonatomic) BOOL showToast;
+@property (nonatomic) BOOL hideInitialLoader;
+/// Merchant override for the auto-invoke biometric timer (seconds). Takes priority over the backend value. 0 = use BE value.
+@property (nonatomic) double autoInvokeBiometricTime;
 /// Setup Loader UI
 - (void)setDefaultProgressLoaderWithShowDefaultLoader:(BOOL)showDefaultLoader defaultProgressLoaderColor:(NSString * _Nonnull)defaultProgressLoaderColor;
 - (NSString * _Nonnull)toString SWIFT_WARN_UNUSED_RESULT;
@@ -592,13 +595,19 @@ SWIFT_PROTOCOL("_TtP11PayU3DS2Kit19PayU3DS2MFADelegate_")
 - (void)mfaRegistrationStatusWithResponse:(id _Nullable)response;
 @end
 
+SWIFT_PROTOCOL("_TtP11PayU3DS2Kit22PayU3DS2StatusDelegate_")
+@protocol PayU3DS2StatusDelegate <PayU3DS2MFADelegate>
+@optional
+- (void)onStatusUpdateWithResponse:(NSDictionary<NSString *, id> * _Nonnull)response;
+@end
+
 SWIFT_PROTOCOL("_TtP11PayU3DS2Kit20PayU3DS2HashDelegate_")
 @protocol PayU3DS2HashDelegate
 - (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
 @end
 
 SWIFT_PROTOCOL("_TtP11PayU3DS2Kit16PayU3DS2Delegate_")
-@protocol PayU3DS2Delegate <PayU3DS2BaseDelegate, PayU3DS2HashDelegate, PayU3DS2MFADelegate>
+@protocol PayU3DS2Delegate <PayU3DS2BaseDelegate, PayU3DS2HashDelegate, PayU3DS2StatusDelegate>
 - (void)onPaymentSuccessWithSuccessResponse:(id _Nullable)successResponse;
 - (void)onPaymentFailureWithFailureResponse:(id _Nullable)failureResponse;
 - (void)onPaymentCancelWithIsTxnInitiated:(BOOL)isTxnInitiated;
@@ -814,6 +823,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit20PayU3DS2PaymentParam")
 @property (nonatomic) BOOL authOnly;
 @property (nonatomic, copy) NSString * _Nullable pgCode;
 @property (nonatomic, copy) NSString * _Nullable bankCode;
+@property (nonatomic, copy) NSString * _Nullable altId;
+@property (nonatomic, copy) NSString * _Nullable forcePgId;
 @property (nonatomic, strong) PayU3DS2SIParams * _Nullable siParam;
 @property (nonatomic) BOOL encryptData;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl OBJC_DESIGNATED_INITIALIZER;
@@ -1528,6 +1539,9 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @property (nonatomic) BOOL enableMFAViaBiometric;
 @property (nonatomic) BOOL enableFullScreenAuthSelectionBottomSheet;
 @property (nonatomic) BOOL showToast;
+@property (nonatomic) BOOL hideInitialLoader;
+/// Merchant override for the auto-invoke biometric timer (seconds). Takes priority over the backend value. 0 = use BE value.
+@property (nonatomic) double autoInvokeBiometricTime;
 /// Setup Loader UI
 - (void)setDefaultProgressLoaderWithShowDefaultLoader:(BOOL)showDefaultLoader defaultProgressLoaderColor:(NSString * _Nonnull)defaultProgressLoaderColor;
 - (NSString * _Nonnull)toString SWIFT_WARN_UNUSED_RESULT;
@@ -1540,13 +1554,19 @@ SWIFT_PROTOCOL("_TtP11PayU3DS2Kit19PayU3DS2MFADelegate_")
 - (void)mfaRegistrationStatusWithResponse:(id _Nullable)response;
 @end
 
+SWIFT_PROTOCOL("_TtP11PayU3DS2Kit22PayU3DS2StatusDelegate_")
+@protocol PayU3DS2StatusDelegate <PayU3DS2MFADelegate>
+@optional
+- (void)onStatusUpdateWithResponse:(NSDictionary<NSString *, id> * _Nonnull)response;
+@end
+
 SWIFT_PROTOCOL("_TtP11PayU3DS2Kit20PayU3DS2HashDelegate_")
 @protocol PayU3DS2HashDelegate
 - (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
 @end
 
 SWIFT_PROTOCOL("_TtP11PayU3DS2Kit16PayU3DS2Delegate_")
-@protocol PayU3DS2Delegate <PayU3DS2BaseDelegate, PayU3DS2HashDelegate, PayU3DS2MFADelegate>
+@protocol PayU3DS2Delegate <PayU3DS2BaseDelegate, PayU3DS2HashDelegate, PayU3DS2StatusDelegate>
 - (void)onPaymentSuccessWithSuccessResponse:(id _Nullable)successResponse;
 - (void)onPaymentFailureWithFailureResponse:(id _Nullable)failureResponse;
 - (void)onPaymentCancelWithIsTxnInitiated:(BOOL)isTxnInitiated;
@@ -1762,6 +1782,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit20PayU3DS2PaymentParam")
 @property (nonatomic) BOOL authOnly;
 @property (nonatomic, copy) NSString * _Nullable pgCode;
 @property (nonatomic, copy) NSString * _Nullable bankCode;
+@property (nonatomic, copy) NSString * _Nullable altId;
+@property (nonatomic, copy) NSString * _Nullable forcePgId;
 @property (nonatomic, strong) PayU3DS2SIParams * _Nullable siParam;
 @property (nonatomic) BOOL encryptData;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl OBJC_DESIGNATED_INITIALIZER;

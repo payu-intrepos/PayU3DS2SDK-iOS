@@ -640,6 +640,7 @@ final internal class WFBlockEncryptor : PayU3DS2CoreKit.WFCryptor, PayU3DS2CoreK
   @objc public var clientId: Swift.String?
   @objc public var name: Swift.String?
   @objc public var id: Swift.String?
+  @objc public var oobContinue: Foundation.NSNumber?
   public var acsRenderingType: PayU3DS2CoreKit.ACSUIType?
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(a3DSServerTransactionID: Swift.String? = nil, acsTransactionID: Swift.String? = nil, acsRefNumber: Swift.String? = nil, acsSignedContent: Swift.String? = nil, threeDSServerTransactionID: Swift.String? = nil, threeDSRequestorAppURL: Swift.String? = nil, tdyCardId: Swift.String? = nil, clientId: Swift.String? = nil, name: Swift.String? = nil, id: Swift.String? = nil, acsRenderingType: PayU3DS2CoreKit.ACSUITypeInt = ACSUITypeInt.unknown)

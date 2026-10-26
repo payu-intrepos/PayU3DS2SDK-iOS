@@ -381,6 +381,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit24ChallengeInputParameters")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSNumber;
 /// The ChallengeParameters class shall hold the parameters that are required to conduct the challenge process.
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @interface ChallengeParameters : NSObject
@@ -394,6 +395,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @property (nonatomic, copy) NSString * _Nullable clientId;
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, strong) NSNumber * _Nullable oobContinue;
 /// Initializing ChallengeParameters with all the required parameters
 /// \param a3DSServerTransactionID Transaction identifier assigned by the 3DS Server to uniquely identify a single transaction
 ///

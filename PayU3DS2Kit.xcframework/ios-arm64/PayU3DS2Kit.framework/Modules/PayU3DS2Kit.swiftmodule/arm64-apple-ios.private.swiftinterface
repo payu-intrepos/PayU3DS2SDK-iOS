@@ -199,6 +199,8 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   @objc public var enableMFAViaBiometric: Swift.Bool
   @objc public var enableFullScreenAuthSelectionBottomSheet: Swift.Bool
   @objc public var showToast: Swift.Bool
+  @objc public var hideInitialLoader: Swift.Bool
+  @objc public var autoInvokeBiometricTime: Swift.Double
   @objc public func setDefaultProgressLoader(showDefaultLoader: Swift.Bool, defaultProgressLoaderColor: Swift.String)
   @objc public func toString() -> Swift.String
   @objc override dynamic public init()
@@ -287,10 +289,13 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
 @objc public protocol PayU3DS2MFADelegate {
   @objc optional func mfaRegistrationStatus(response: Any?)
 }
+@objc public protocol PayU3DS2StatusDelegate : PayU3DS2Kit.PayU3DS2MFADelegate {
+  @objc optional func onStatusUpdate(response: [Swift.String : Any])
+}
 @objc public protocol PayU3DS2IniitateChallengeDelegate : PayU3DS2Kit.PayU3DS2MFADelegate {
   @objc func onInitateChallenge(response: Any?)
 }
-@objc public protocol PayU3DS2Delegate : PayU3DS2Kit.PayU3DS2BaseDelegate, PayU3DS2Kit.PayU3DS2HashDelegate, PayU3DS2Kit.PayU3DS2MFADelegate {
+@objc public protocol PayU3DS2Delegate : PayU3DS2Kit.PayU3DS2BaseDelegate, PayU3DS2Kit.PayU3DS2HashDelegate, PayU3DS2Kit.PayU3DS2StatusDelegate {
   @objc func onPaymentSuccess(successResponse: Any?)
   @objc func onPaymentFailure(failureResponse: Any?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
@@ -428,6 +433,8 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public var authOnly: Swift.Bool
   @objc public var pgCode: Swift.String?
   @objc public var bankCode: Swift.String?
+  @objc public var altId: Swift.String?
+  @objc public var forcePgId: Swift.String?
   @objc public var siParam: PayU3DS2Kit.PayU3DS2SIParams?
   @objc public var encryptData: Swift.Bool
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String = "", surl: Swift.String, furl: Swift.String)
