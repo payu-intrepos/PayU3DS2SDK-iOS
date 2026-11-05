@@ -8,41 +8,37 @@
 		<data>
 		mDXQjFZIjZMagzLmBnxwO1xp968=
 		</data>
-		<key>.gitkeep</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		zN+0bVbOGeEhRUtnwA6PM3nzn40=
+		MhFGO95fdAnBC4aP9lRgyvwGMnQ=
 		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
-		Tzx4b1sRVTSER/6wZMtYATClSaM=
+		9WLAvzl0X9Hup9VDjuJpKb1tMbI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		IPltv7w1Q5NfSFRE3DRmstJ4mro=
+		UVXB9SCVmXyl9RRO2FilDCoDfhA=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		xwjeh7KfyLUIt7EkIe1KT4mMDNk=
+		VZH2vyqfm0S5hsj+utozgI5wk8o=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		sQlzSrU5efBfH25K8lqIbNU6F8w=
+		kZhj/F6nkQ49oxZIU/gJAYebI00=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		01xqqXe14Yf0c6WEDRAj3nOYeWQ=
+		hJUhkpfB/ywLKaVTY5DG2CsjaVI=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		sQlzSrU5efBfH25K8lqIbNU6F8w=
+		kZhj/F6nkQ49oxZIU/gJAYebI00=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		L7dYNmhf9HLtrgUsgIzNC2ghMfw=
+		+e3DpTc7e/VHlDMLduMaCoJB+CU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,21 +50,17 @@
 		</data>
 		<key>TDY_BNK.json</key>
 		<data>
-		M7yN4QhFXKc/ulHzzRBM00zK9nA=
+		d2rwO4O0tHlgjwRvUuxyTJx438A=
 		</data>
 		<key>en.lproj/Localize.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rxmhj2z92DjnjtANRbk5Vgm1KAY=
+			XRiE3GLdiRm0XGO+no4d0l1P/ys=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>registerCustomer.json</key>
-		<data>
-		d/4SsW/YAzVQgbKo89auGIewyfI=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -79,60 +71,53 @@
 			6uOIebCnM1tbJRZKQvCHcGf9p+LANhSzslF8SL8DtZM=
 			</data>
 		</dict>
-		<key>.gitkeep</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CwRH0/5JqOaP2WeVD67UqgaeDao5zLyZqgniM0FLBeI=
+			aiyDCnj95PARZyX+RpoqHhqq4m2QtLDkyKgpg5qR5rU=
 			</data>
 		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ptknoWXqKBQWNVdziRHpKMwGWvw2kmJtyV5O2rPcevo=
+			8K7RK57Hry2lvVM7P1Q6/pGm7iYEGzhqguiVWi2qCCU=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lu9VLC+V1kGKfmDJGkib7xgQi2pnPyVq1u48pdGPzqY=
+			6EdOpUbM/+B0FG0XFGsedh19jGY5sni+JNDlStvHYXs=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l9nJ6bf8aK0g8T2eiIHw67g0ioDiqFklwGFYtjZE+H8=
+			n7jqfe2McfUvFY01cShZs/pekT/oTdrGolGBc0+KbII=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ia5yhqgXlk8onPEjJeFtoCf56oEuxgFuKJSW2+p33EE=
+			7VLFBF9qBmBE61W9CJjdJsbJc2UE8s+vgdKW2JdIptg=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			l9nJ6bf8aK0g8T2eiIHw67g0ioDiqFklwGFYtjZE+H8=
+			n7jqfe2McfUvFY01cShZs/pekT/oTdrGolGBc0+KbII=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sjo0SIingbGQVhDayNrPc2qgcDcEVqPWDILz7/IvvKw=
+			2KurxJSWjmjDgUX6EDRRgPQzsiE2pmZ08Js23jw9hVY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -153,24 +138,17 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yeRjT0JzEPx9ehsqXXdK3DtyRWv51E6nJj9W9eSeogs=
+			atzb38+lttwu833Ehc8PjSWsVoDqDm6XgpflRA7Np/M=
 			</data>
 		</dict>
 		<key>en.lproj/Localize.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UbadMhEcdNbPDUKggDp0eW6Ja1RZt1QMEBX1Kjziepk=
+			tO4lGMy/eX9WccUU0Ucl+/RufCqg5y3AHS5jj/xT5+w=
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>registerCustomer.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Wv4wWKxgajGzZ2XsYKba8bh3+k+ZYm4u3wNRWr7MRmk=
-			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

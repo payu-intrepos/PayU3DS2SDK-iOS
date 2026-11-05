@@ -436,6 +436,8 @@ extension PayU3DS2CoreKit.ConfigParameters {
   @objc dynamic public func enableMFAViaBiometric(_ enableMFA: Swift.Bool)
   @objc dynamic public func setPreferredLoaderPresentationStyle(_ style: PayU3DS2CoreKit.PayULoaderPresentationStyle)
   @objc dynamic public func setPreferredBottomSheetLoaderHeight(_ height: CoreFoundation.CGFloat)
+  @objc dynamic public func setBgGradientColor(_ hex: Swift.String)
+  @objc dynamic public func setMerchantLogoAssetName(_ name: Swift.String)
   @objc dynamic public func setPreferredLoaderPresentationStyleRawValue(_ rawValue: Swift.Int)
 }
 extension PayU3DS2CoreKit.ConfigParameters {

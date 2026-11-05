@@ -480,6 +480,11 @@ SWIFT_CLASS("_TtC20PayUTridentityMFAKit18LabelCustomization")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+SWIFT_CLASS("_TtC20PayUTridentityMFAKit32MFARegistrationFlowConfiguration")
+@interface MFARegistrationFlowConfiguration : NSObject
+- (nonnull instancetype)init;
+@end
+
 SWIFT_CLASS("_TtC20PayUTridentityMFAKit29OfflineOTPScreenConfiguration")
 @interface OfflineOTPScreenConfiguration : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable appBarText;
@@ -585,11 +590,6 @@ SWIFT_CLASS("_TtC20PayUTridentityMFAKit28SubHeadingThemeCustomization")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC20PayUTridentityMFAKit24TDYTokenValidateResponse")
-@interface TDYTokenValidateResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable status;
-@end
-
 SWIFT_CLASS("_TtC20PayUTridentityMFAKit22TNCScreenConfiguration")
 @interface TNCScreenConfiguration : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable consentPopUpOkButtonText;
@@ -615,7 +615,8 @@ SWIFT_CLASS("_TtC20PayUTridentityMFAKit17TextCustomization")
 @property (nonatomic, readonly, strong) DeRegPopupConfiguration * _Nullable deRegPopupConfiguration;
 @property (nonatomic, readonly, strong) BiometricTextConfiguration * _Nullable biometricTextConfiguration;
 @property (nonatomic, readonly, strong) UIMessageConfiguration * _Nullable uiMessageConfiguration;
-- (nonnull instancetype)initWithConsentScreenConfiguration:(ConsentScreenConfiguration * _Nullable)consentScreenConfiguration tncScreenConfiguration:(TNCScreenConfiguration * _Nullable)tncScreenConfiguration bottomSheetPermissionPopupConfiguration:(BottomSheetPermissionPopupConfiguration * _Nullable)bottomSheetPermissionPopupConfiguration simBindingScreenConfiguration:(SimBindingScreenConfiguration * _Nullable)simBindingScreenConfiguration bottomSheetSimBindingProcessingPopupConfiguration:(BottomSheetSimBindingProcessingPopupConfiguration * _Nullable)bottomSheetSimBindingProcessingPopupConfiguration bottomSheetRegistrationSuccessfulPopupConfiguration:(BottomSheetSuccessConfiguration * _Nullable)bottomSheetRegistrationSuccessfulPopupConfiguration bottomSheetFailureScreenConfiguration:(BottomSheetFailureConfiguration * _Nullable)bottomSheetFailureScreenConfiguration transactionHistoryScreenConfiguration:(TransactionHistoryScreenConfiguration * _Nullable)transactionHistoryScreenConfiguration offlineOTPScreenConfiguration:(OfflineOTPScreenConfiguration * _Nullable)offlineOTPScreenConfiguration bottomSheetAuthenticationPopupConfiguration:(BottomSheetAuthenticationPopupConfiguration * _Nullable)bottomSheetAuthenticationPopupConfiguration deRegPopupConfiguration:(DeRegPopupConfiguration * _Nullable)deRegPopupConfiguration biometricTextConfiguration:(BiometricTextConfiguration * _Nullable)biometricTextConfiguration uiMessageConfiguration:(UIMessageConfiguration * _Nullable)uiMessageConfiguration OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, strong) MFARegistrationFlowConfiguration * _Nullable mfaRegistrationFlowConfiguration;
+- (nonnull instancetype)initWithConsentScreenConfiguration:(ConsentScreenConfiguration * _Nullable)consentScreenConfiguration tncScreenConfiguration:(TNCScreenConfiguration * _Nullable)tncScreenConfiguration bottomSheetPermissionPopupConfiguration:(BottomSheetPermissionPopupConfiguration * _Nullable)bottomSheetPermissionPopupConfiguration simBindingScreenConfiguration:(SimBindingScreenConfiguration * _Nullable)simBindingScreenConfiguration bottomSheetSimBindingProcessingPopupConfiguration:(BottomSheetSimBindingProcessingPopupConfiguration * _Nullable)bottomSheetSimBindingProcessingPopupConfiguration bottomSheetRegistrationSuccessfulPopupConfiguration:(BottomSheetSuccessConfiguration * _Nullable)bottomSheetRegistrationSuccessfulPopupConfiguration bottomSheetFailureScreenConfiguration:(BottomSheetFailureConfiguration * _Nullable)bottomSheetFailureScreenConfiguration transactionHistoryScreenConfiguration:(TransactionHistoryScreenConfiguration * _Nullable)transactionHistoryScreenConfiguration offlineOTPScreenConfiguration:(OfflineOTPScreenConfiguration * _Nullable)offlineOTPScreenConfiguration bottomSheetAuthenticationPopupConfiguration:(BottomSheetAuthenticationPopupConfiguration * _Nullable)bottomSheetAuthenticationPopupConfiguration deRegPopupConfiguration:(DeRegPopupConfiguration * _Nullable)deRegPopupConfiguration biometricTextConfiguration:(BiometricTextConfiguration * _Nullable)biometricTextConfiguration uiMessageConfiguration:(UIMessageConfiguration * _Nullable)uiMessageConfiguration mfaRegistrationFlowConfiguration:(MFARegistrationFlowConfiguration * _Nullable)mfaRegistrationFlowConfiguration OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

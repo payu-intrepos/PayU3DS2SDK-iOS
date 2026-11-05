@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2Kit
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2Kit
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CryptoKit
 import DeveloperToolsSupport
@@ -183,6 +183,15 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc public class PayU3DS2LogoCustomisation : ObjectiveC.NSObject {
+  @objc public var merchant: Swift.String?
+  @objc public var mfaBiometric: Swift.String?
+  @objc public var mfaBiometricEnabled: Swift.String?
+  @objc public var mfaMessaging: Swift.String?
+  @objc public var mfaTick: Swift.String?
+  @objc public init(merchant: Swift.String? = nil, mfaBiometric: Swift.String? = nil, mfaBiometricEnabled: Swift.String? = nil, mfaMessaging: Swift.String? = nil, mfaTick: Swift.String? = nil)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class PayU3DS2Config : PayU3DS2Kit.PayU3DS2BaseConfig {
   @objc public var fallback3DS1: Swift.Bool
   @objc public var uiCustomisation: PayU3DS2Kit.PayU3DS2UICustomisation?
@@ -201,6 +210,7 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   @objc public var showToast: Swift.Bool
   @objc public var hideInitialLoader: Swift.Bool
   @objc public var autoInvokeBiometricTime: Swift.Double
+  @objc public var logoCustomisation: PayU3DS2Kit.PayU3DS2LogoCustomisation?
   @objc public func setDefaultProgressLoader(showDefaultLoader: Swift.Bool, defaultProgressLoaderColor: Swift.String)
   @objc public func toString() -> Swift.String
   @objc override dynamic public init()
@@ -469,6 +479,7 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc deinit
 }
 @objc public class PayU3DS2UICustomisation : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var bgGradientColor: Swift.String?
   @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil)
   @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil, textCustomisation: PayU3DS2Kit.PayU3DS2TextCustomisation? = nil)
   required public init(from decoder: any Swift.Decoder) throws

@@ -563,6 +563,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2ChallengeParameter")
 
 @class PayU3DS2UICustomisation;
 SWIFT_ENUM_FWD_DECL(NSInteger, PayUCurrency)
+@class PayU3DS2LogoCustomisation;
 SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @interface PayU3DS2Config : PayU3DS2BaseConfig
 @property (nonatomic) BOOL fallback3DS1;
@@ -581,8 +582,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @property (nonatomic) BOOL enableFullScreenAuthSelectionBottomSheet;
 @property (nonatomic) BOOL showToast;
 @property (nonatomic) BOOL hideInitialLoader;
-/// Merchant override for the auto-invoke biometric timer (seconds). Takes priority over the backend value. 0 = use BE value.
 @property (nonatomic) double autoInvokeBiometricTime;
+@property (nonatomic, strong) PayU3DS2LogoCustomisation * _Nullable logoCustomisation;
 /// Setup Loader UI
 - (void)setDefaultProgressLoaderWithShowDefaultLoader:(BOOL)showDefaultLoader defaultProgressLoaderColor:(NSString * _Nonnull)defaultProgressLoaderColor;
 - (NSString * _Nonnull)toString SWIFT_WARN_UNUSED_RESULT;
@@ -728,6 +729,18 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2LabelCustomisation")
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontSize:(NSInteger)headingTextFontSize OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize backgroundColor:(NSString * _Nullable)backgroundColor headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontSize:(NSInteger)headingTextFontSize headingBackgroundColor:(NSString * _Nullable)headingBackgroundColor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit25PayU3DS2LogoCustomisation")
+@interface PayU3DS2LogoCustomisation : NSObject
+@property (nonatomic, copy) NSString * _Nullable merchant;
+@property (nonatomic, copy) NSString * _Nullable mfaBiometric;
+@property (nonatomic, copy) NSString * _Nullable mfaBiometricEnabled;
+@property (nonatomic, copy) NSString * _Nullable mfaMessaging;
+@property (nonatomic, copy) NSString * _Nullable mfaTick;
+- (nonnull instancetype)initWithMerchant:(NSString * _Nullable)merchant mfaBiometric:(NSString * _Nullable)mfaBiometric mfaBiometricEnabled:(NSString * _Nullable)mfaBiometricEnabled mfaMessaging:(NSString * _Nullable)mfaMessaging mfaTick:(NSString * _Nullable)mfaTick OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit16PayU3DS2MFAParam")
@@ -912,6 +925,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2ToolBarCustomisation")
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit23PayU3DS2UICustomisation")
 @interface PayU3DS2UICustomisation : NSObject
+@property (nonatomic, copy) NSString * _Nullable bgGradientColor;
 - (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation fontFamilyCustomisation:(PayU3DS2FontFamilyCustomisation * _Nullable)fontFamilyCustomisation OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation fontFamilyCustomisation:(PayU3DS2FontFamilyCustomisation * _Nullable)fontFamilyCustomisation textCustomisation:(PayU3DS2TextCustomisation * _Nullable)textCustomisation OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1522,6 +1536,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2ChallengeParameter")
 
 @class PayU3DS2UICustomisation;
 SWIFT_ENUM_FWD_DECL(NSInteger, PayUCurrency)
+@class PayU3DS2LogoCustomisation;
 SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @interface PayU3DS2Config : PayU3DS2BaseConfig
 @property (nonatomic) BOOL fallback3DS1;
@@ -1540,8 +1555,8 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit14PayU3DS2Config")
 @property (nonatomic) BOOL enableFullScreenAuthSelectionBottomSheet;
 @property (nonatomic) BOOL showToast;
 @property (nonatomic) BOOL hideInitialLoader;
-/// Merchant override for the auto-invoke biometric timer (seconds). Takes priority over the backend value. 0 = use BE value.
 @property (nonatomic) double autoInvokeBiometricTime;
+@property (nonatomic, strong) PayU3DS2LogoCustomisation * _Nullable logoCustomisation;
 /// Setup Loader UI
 - (void)setDefaultProgressLoaderWithShowDefaultLoader:(BOOL)showDefaultLoader defaultProgressLoaderColor:(NSString * _Nonnull)defaultProgressLoaderColor;
 - (NSString * _Nonnull)toString SWIFT_WARN_UNUSED_RESULT;
@@ -1687,6 +1702,18 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit26PayU3DS2LabelCustomisation")
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontSize:(NSInteger)headingTextFontSize OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize backgroundColor:(NSString * _Nullable)backgroundColor headingTextColor:(NSString * _Nullable)headingTextColor headingTextFontSize:(NSInteger)headingTextFontSize headingBackgroundColor:(NSString * _Nullable)headingBackgroundColor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithTextFontColor:(NSString * _Nullable)textFontColor textFontSize:(NSInteger)textFontSize SWIFT_UNAVAILABLE;
+@end
+
+SWIFT_CLASS("_TtC11PayU3DS2Kit25PayU3DS2LogoCustomisation")
+@interface PayU3DS2LogoCustomisation : NSObject
+@property (nonatomic, copy) NSString * _Nullable merchant;
+@property (nonatomic, copy) NSString * _Nullable mfaBiometric;
+@property (nonatomic, copy) NSString * _Nullable mfaBiometricEnabled;
+@property (nonatomic, copy) NSString * _Nullable mfaMessaging;
+@property (nonatomic, copy) NSString * _Nullable mfaTick;
+- (nonnull instancetype)initWithMerchant:(NSString * _Nullable)merchant mfaBiometric:(NSString * _Nullable)mfaBiometric mfaBiometricEnabled:(NSString * _Nullable)mfaBiometricEnabled mfaMessaging:(NSString * _Nullable)mfaMessaging mfaTick:(NSString * _Nullable)mfaTick OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit16PayU3DS2MFAParam")
@@ -1871,6 +1898,7 @@ SWIFT_CLASS("_TtC11PayU3DS2Kit28PayU3DS2ToolBarCustomisation")
 
 SWIFT_CLASS("_TtC11PayU3DS2Kit23PayU3DS2UICustomisation")
 @interface PayU3DS2UICustomisation : NSObject
+@property (nonatomic, copy) NSString * _Nullable bgGradientColor;
 - (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation fontFamilyCustomisation:(PayU3DS2FontFamilyCustomisation * _Nullable)fontFamilyCustomisation OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithButtonCustomisation:(PayU3DS2ButtonCustomisation * _Nullable)buttonCustomisation labelCustomisation:(PayU3DS2LabelCustomisation * _Nullable)labelCustomisation textBoxCustomisation:(PayU3DS2TextBoxCustomisation * _Nullable)textBoxCustomisation toolbarCustomisation:(PayU3DS2ToolBarCustomisation * _Nullable)toolbarCustomisation fontFamilyCustomisation:(PayU3DS2FontFamilyCustomisation * _Nullable)fontFamilyCustomisation textCustomisation:(PayU3DS2TextCustomisation * _Nullable)textCustomisation OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
