@@ -61,7 +61,7 @@ let package = Package(
             path: "PayUIndia-3DS2-SDKWrapper"
         ),
         .target(
-            name: "PayUIndia-FlashPay-SDKTarget",
+            name: "PayUIndia-Flashpay-SDKTarget",
             dependencies: [
                 "PayUTridentityMFAKit",
                 "PayUFlashPayKit",
@@ -79,7 +79,7 @@ let package = Package(
                     package: "PayUIndia-Analytics"
                 )
             ],
-            path: "PayUIndia-3DS2-SDKWrapper"
+            path: "PayUIndia-Flashpay-SDKWrapper"
         ),
         .binaryTarget(
             name: "PayUTridentityMFAKit",
