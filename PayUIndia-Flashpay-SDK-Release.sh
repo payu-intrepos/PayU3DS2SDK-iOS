@@ -53,7 +53,7 @@ podName="PayUIndia-Flashpay-SDK"
 podVersion="1.0.0"
 
 podSpec="${podName}.podspec"
-tag="${podVersion}"
+tag="${podName}${podVersion}"
 
 podLibLint ${podSpec} &&
 createLocalTag ${tag} &&
