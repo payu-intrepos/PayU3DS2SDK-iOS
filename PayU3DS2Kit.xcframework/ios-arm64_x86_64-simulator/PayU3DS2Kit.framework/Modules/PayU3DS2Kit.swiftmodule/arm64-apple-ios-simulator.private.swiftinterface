@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2Kit
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayU3DS2Kit
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CryptoKit
 import DeveloperToolsSupport
@@ -183,6 +183,15 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@objc public class PayU3DS2LogoCustomisation : ObjectiveC.NSObject {
+  @objc public var merchant: Swift.String?
+  @objc public var mfaBiometric: Swift.String?
+  @objc public var mfaBiometricEnabled: Swift.String?
+  @objc public var mfaMessaging: Swift.String?
+  @objc public var mfaTick: Swift.String?
+  @objc public init(merchant: Swift.String? = nil, mfaBiometric: Swift.String? = nil, mfaBiometricEnabled: Swift.String? = nil, mfaMessaging: Swift.String? = nil, mfaTick: Swift.String? = nil)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class PayU3DS2Config : PayU3DS2Kit.PayU3DS2BaseConfig {
   @objc public var fallback3DS1: Swift.Bool
   @objc public var uiCustomisation: PayU3DS2Kit.PayU3DS2UICustomisation?
@@ -199,6 +208,9 @@ extension PayU3DS2Kit.PayU3DS2Utils {
   @objc public var enableMFAViaBiometric: Swift.Bool
   @objc public var enableFullScreenAuthSelectionBottomSheet: Swift.Bool
   @objc public var showToast: Swift.Bool
+  @objc public var hideInitialLoader: Swift.Bool
+  @objc public var merchantAutoInvokeBiometricTime: Swift.Double
+  @objc public var bgGradientColor: Swift.String?
   @objc public func setDefaultProgressLoader(showDefaultLoader: Swift.Bool, defaultProgressLoaderColor: Swift.String)
   @objc public func toString() -> Swift.String
   @objc override dynamic public init()
@@ -287,10 +299,13 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
 @objc public protocol PayU3DS2MFADelegate {
   @objc optional func mfaRegistrationStatus(response: Any?)
 }
+@objc public protocol PayU3DS2StatusDelegate : PayU3DS2Kit.PayU3DS2MFADelegate {
+  @objc optional func onStatusUpdate(response: [Swift.String : Any])
+}
 @objc public protocol PayU3DS2IniitateChallengeDelegate : PayU3DS2Kit.PayU3DS2MFADelegate {
   @objc func onInitateChallenge(response: Any?)
 }
-@objc public protocol PayU3DS2Delegate : PayU3DS2Kit.PayU3DS2BaseDelegate, PayU3DS2Kit.PayU3DS2HashDelegate, PayU3DS2Kit.PayU3DS2MFADelegate {
+@objc public protocol PayU3DS2Delegate : PayU3DS2Kit.PayU3DS2BaseDelegate, PayU3DS2Kit.PayU3DS2HashDelegate, PayU3DS2Kit.PayU3DS2StatusDelegate {
   @objc func onPaymentSuccess(successResponse: Any?)
   @objc func onPaymentFailure(failureResponse: Any?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
@@ -428,6 +443,8 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc public var authOnly: Swift.Bool
   @objc public var pgCode: Swift.String?
   @objc public var bankCode: Swift.String?
+  @objc public var altId: Swift.String?
+  @objc public var forcePgId: Swift.String?
   @objc public var siParam: PayU3DS2Kit.PayU3DS2SIParams?
   @objc public var encryptData: Swift.Bool
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String = "", surl: Swift.String, furl: Swift.String)
@@ -462,8 +479,9 @@ public typealias PayU3DS2HashGenerationCompletion = (_ hashDict: [Swift.String :
   @objc deinit
 }
 @objc public class PayU3DS2UICustomisation : ObjectiveC.NSObject, Swift.Codable {
-  @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil)
-  @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil, textCustomisation: PayU3DS2Kit.PayU3DS2TextCustomisation? = nil)
+  @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil, logoCustomisation: PayU3DS2Kit.PayU3DS2LogoCustomisation? = nil)
+  @objc public init(buttonCustomisation: PayU3DS2Kit.PayU3DS2ButtonCustomisation? = nil, labelCustomisation: PayU3DS2Kit.PayU3DS2LabelCustomisation? = nil, textBoxCustomisation: PayU3DS2Kit.PayU3DS2TextBoxCustomisation? = nil, toolbarCustomisation: PayU3DS2Kit.PayU3DS2ToolBarCustomisation? = nil, fontFamilyCustomisation: PayU3DS2Kit.PayU3DS2FontFamilyCustomisation? = nil, textCustomisation: PayU3DS2Kit.PayU3DS2TextCustomisation? = nil, logoCustomisation: PayU3DS2Kit.PayU3DS2LogoCustomisation? = nil)
+  @objc public func setLogoCustomisation(_ logoCustomisation: PayU3DS2Kit.PayU3DS2LogoCustomisation?)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws

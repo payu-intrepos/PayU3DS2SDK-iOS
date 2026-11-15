@@ -168,7 +168,7 @@
                 "setupFailedTitle": "Face ID Setup Failed",
                 "setupFailedMessage": "Ensure the required permissions are enabled and you’re using the bank registered SIM, then try again.",
                 "accessDeniedBadge": "Face ID Verification Unsuccessful",
-                "returningToOrderButton": "Returning to your order"
+                "returningToOrderButton": "Continue Shopping"
             },
             "payment": {
                 "paymentInProgress": "Your payment is in progress..",

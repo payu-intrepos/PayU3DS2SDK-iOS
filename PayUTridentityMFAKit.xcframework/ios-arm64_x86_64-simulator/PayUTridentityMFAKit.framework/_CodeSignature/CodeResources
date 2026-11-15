@@ -8,61 +8,57 @@
 		<data>
 		mDXQjFZIjZMagzLmBnxwO1xp968=
 		</data>
-		<key>.gitkeep</key>
-		<data>
-		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
-		</data>
 		<key>Assets.car</key>
 		<data>
-		zN+0bVbOGeEhRUtnwA6PM3nzn40=
+		MhFGO95fdAnBC4aP9lRgyvwGMnQ=
 		</data>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<data>
-		fFhvzJEWq0RrRgW6hIdeSfUCexI=
+		/VWzbK33S634hxBQhRpTMSIt0QY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LcSxHxOM2QFXPE5NxD86ZzP1c7g=
+		A2wA2bPbd1PX62gu+T/TqrhN1lQ=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		AvjyaOuSUTbql3YeUTAbxH9XQJ8=
+		0Ac/GXvE86j6sMGDtW7+a4J2Ryk=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		PXPmYVqvhoDJG1mqdrQyXte5m1M=
+		KT3YUIgYlUZg88RR9hweh+njiPc=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		3esTW1PnWENTVsQF10ba+79lkYM=
+		rTfwOQRxgP/1TucNF+em00rDwp8=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PXPmYVqvhoDJG1mqdrQyXte5m1M=
+		KT3YUIgYlUZg88RR9hweh+njiPc=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UmNwNkV/EExAIZP7dv2Lp3OJDp8=
+		SaF5vTuP09g1cu6priP/HVEwLfY=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HfP8iu3JM6dOiNZbZEjxrqyPDwI=
+		TXH24S7H2g0yypyDOtA8ROlR+y0=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Dd8naZ/ZnkAB7D34n25bNVyC808=
+		fCyYDFfvJRE+o3x9pQNzpNeM2jU=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		DxRZf1J++QbO3nz/Q2SXgJFydxU=
+		ljizp3Dn7DJKl0PwCNzB6T+11Ks=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Dd8naZ/ZnkAB7D34n25bNVyC808=
+		fCyYDFfvJRE+o3x9pQNzpNeM2jU=
 		</data>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		08y8UXkRepqkw7igpZ7N6/fKdl8=
+		T4oxyb23meiuYW0NIg0eHoGCsoc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,21 +70,17 @@
 		</data>
 		<key>TDY_BNK.json</key>
 		<data>
-		M7yN4QhFXKc/ulHzzRBM00zK9nA=
+		d2rwO4O0tHlgjwRvUuxyTJx438A=
 		</data>
 		<key>en.lproj/Localize.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Rxmhj2z92DjnjtANRbk5Vgm1KAY=
+			XRiE3GLdiRm0XGO+no4d0l1P/ys=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>registerCustomer.json</key>
-		<data>
-		d/4SsW/YAzVQgbKo89auGIewyfI=
-		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -99,95 +91,88 @@
 			6uOIebCnM1tbJRZKQvCHcGf9p+LANhSzslF8SL8DtZM=
 			</data>
 		</dict>
-		<key>.gitkeep</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
-			</data>
-		</dict>
 		<key>Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CwRH0/5JqOaP2WeVD67UqgaeDao5zLyZqgniM0FLBeI=
+			aiyDCnj95PARZyX+RpoqHhqq4m2QtLDkyKgpg5qR5rU=
 			</data>
 		</dict>
 		<key>Headers/PayUTridentityMFAKit-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EzAOXDIOyzDjQ+voAx5VPrG7Hlr3lh+MdoDVIQNI15Y=
+			jeR3aG0pavejFkYgfoXUtg3tb1nbrRtWpfBCLCDUf6Q=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			r06QaVs3rECFN6Ce341oZsFC6a52DammUvylLgppi5w=
+			35fJc5JE14/HZjQ7V1FZ2vFZhpT06ZqBeHo+y+pLsog=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t4M73qZI5vu03P4onYHPUrdiClUpkDgMwG7JgKisBuo=
+			2OkyJpYaTpGUSctaGlB4AivUl9qOPIrTc879D7c9QdA=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3MtYga3ZU/PhL66FKvrxv0SLtZ6Trp+iwO5Ydcu9Oyc=
+			8usDwvQ5z4Ju6gJ4cPJb6kXDRn1bxyXH7Z8euTW2td0=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t4M73qZI5vu03P4onYHPUrdiClUpkDgMwG7JgKisBuo=
+			2OkyJpYaTpGUSctaGlB4AivUl9qOPIrTc879D7c9QdA=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ECbMOqqFAYLFFs4JIQ9WytquVI1V5fduMHSedHkx+EU=
+			PWop55t41TP8vaY9YUmDr10NUuq9wtkQKZiajv1+JDQ=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dxnmiY7R2DXE/XMCs3YsN38J9q7wxSxQnq04qzrGiF4=
+			M8QHfxGa3WdPQHm9MjhfqnBhqHffvqQEv1EMqywdu78=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HRgNsuK9mqqsB7hIcHMw4Foz2SO2lDdOllElSZsnk+I=
+			jW1P2axgmJ7dfo9AkET8UBbBBGDZsls4g4Oerz+EvGw=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1S7d1CBYWCSrJZAHNVDSHujhFBey1zv7OFFKKQbJmXI=
+			xt7/NHupt3duztIneK0PQO+bMz+k4LVlh8Xj2J7GYn0=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HRgNsuK9mqqsB7hIcHMw4Foz2SO2lDdOllElSZsnk+I=
+			jW1P2axgmJ7dfo9AkET8UBbBBGDZsls4g4Oerz+EvGw=
 			</data>
 		</dict>
 		<key>Modules/PayUTridentityMFAKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rLvEX9HZ/5X3vyGgLARpAKPv6mXhCU0IxR2AeFyjVZg=
+			tMmlaaO1+NXqLXEiG7YXuN14FQle7Ec5fAzN43pnD3Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -208,24 +193,17 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yeRjT0JzEPx9ehsqXXdK3DtyRWv51E6nJj9W9eSeogs=
+			atzb38+lttwu833Ehc8PjSWsVoDqDm6XgpflRA7Np/M=
 			</data>
 		</dict>
 		<key>en.lproj/Localize.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UbadMhEcdNbPDUKggDp0eW6Ja1RZt1QMEBX1Kjziepk=
+			tO4lGMy/eX9WccUU0Ucl+/RufCqg5y3AHS5jj/xT5+w=
 			</data>
 			<key>optional</key>
 			<true/>
-		</dict>
-		<key>registerCustomer.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Wv4wWKxgajGzZ2XsYKba8bh3+k+ZYm4u3wNRWr7MRmk=
-			</data>
 		</dict>
 	</dict>
 	<key>rules</key>

@@ -14,6 +14,10 @@ let package = Package(
             name: "PayUIndia-3DS2-SDK",
             targets: ["PayUIndia-3DS2-SDKTarget"]
         ),
+        .library(
+            name: "PayUIndia-Flashpay-SDK",
+            targets: ["PayUIndia-Flashpay-SDKTarget"]
+        ),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -56,6 +60,27 @@ let package = Package(
             ],
             path: "PayUIndia-3DS2-SDKWrapper"
         ),
+        .target(
+            name: "PayUIndia-FlashPay-SDKTarget",
+            dependencies: [
+                "PayUTridentityMFAKit",
+                "PayUFlashPayKit",
+                "PayUliboqs",
+                .product(
+                    name: "PayUIndia-CrashReporter",
+                    package: "PayUIndia-CrashReporter"
+                ),
+                .product(
+                    name: "PayUIndia-NetworkReachability",
+                    package: "PayUIndia-NetworkReachability"
+                ),
+                .product(
+                    name: "PayUIndia-Analytics",
+                    package: "PayUIndia-Analytics"
+                )
+            ],
+            path: "PayUIndia-3DS2-SDKWrapper"
+        ),
         .binaryTarget(
             name: "PayUTridentityMFAKit",
             path: "./PayUTridentityMFAKit.xcframework"
@@ -67,6 +92,10 @@ let package = Package(
         .binaryTarget(
             name: "PayU3DS2Kit",
             path: "./PayU3DS2Kit.xcframework"
+        ),
+        .binaryTarget(
+            name: "PayUFlashPayKit",
+            path: "./PayUFlashPayKit.xcframework"
         ),
         .binaryTarget(
             name: "PayUliboqs",

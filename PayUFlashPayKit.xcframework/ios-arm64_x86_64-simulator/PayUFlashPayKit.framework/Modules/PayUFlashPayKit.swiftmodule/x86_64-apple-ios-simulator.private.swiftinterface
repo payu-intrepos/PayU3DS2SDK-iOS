@@ -1,0 +1,299 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -Osize -enable-upcoming-feature MemberImportVisibility -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUFlashPayKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+import CryptoKit
+import DeveloperToolsSupport
+import Foundation
+import LocalAuthentication
+import PayUAnalyticsKit
+import PayUCrashReporter
+@_exported import PayUFlashPayKit
+import PayUNetworkReachability
+import PayUTridentityMFAKit
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol PayUFPConfigSDKDelegate {
+  @objc func onConfigureResponse(code: Swift.Int, data: [Swift.String : Any])
+}
+@objc public protocol PayUFPStatusUpdateDelegate {
+  @objc func onStatusUpdate(data: [Swift.String : Any])
+}
+@objc public protocol PayUFPRegistrationStatusDelegate : PayUFlashPayKit.PayUFPStatusUpdateDelegate {
+  @objc func onRegistrationResponse(code: Swift.Int, data: [Swift.String : Any])
+}
+@objc public protocol PayUFPCheckIntactStatusDelegate {
+  @objc func onIntactResponse(code: Swift.Int, data: [Swift.String : Any])
+}
+@objc public protocol PayUFPProcessTxnDelegate : PayUFlashPayKit.PayUFPStatusUpdateDelegate {
+  @objc func onProcessTxnResponse(code: Swift.Int, data: [Swift.String : Any])
+}
+@objc public protocol PayUFPDeregisterDelegate {
+  @objc func onDeRegisterResponse(code: Swift.Int, data: [Swift.String : Any])
+}
+@objc public protocol PayUFPDelegate : PayUFlashPayKit.PayUFPCheckIntactStatusDelegate, PayUFlashPayKit.PayUFPConfigSDKDelegate, PayUFlashPayKit.PayUFPDeregisterDelegate, PayUFlashPayKit.PayUFPProcessTxnDelegate, PayUFlashPayKit.PayUFPRegistrationStatusDelegate {
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PayUFPCurrency : ObjectiveC.NSObject {
+  @objc public static let inr: Swift.Int
+  @objc public static func symbol(for currency: Swift.Int) -> Swift.String
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PayUFPConfig : ObjectiveC.NSObject {
+  @objc public var txnId: Swift.String
+  @objc public var amount: Swift.String
+  @objc public var merchantKey: Swift.String?
+  @available(*, deprecated, message: "MFA decryption uses an embedded SDK key; mfaParamEncKey is ignored.")
+  @objc public var mfaParamEncKey: Swift.String?
+  @objc public var merchantName: Swift.String
+  @objc public var acsTxnId: Swift.String
+  @objc public var currency: Swift.Int
+  @objc public var isProduction: Swift.Bool
+  @objc public var merchantAutoInvokeBiometricTime: Foundation.NSNumber?
+  @objc public var bgGradientColor: Swift.String?
+  @objc public init(txnId: Swift.String, amount: Swift.String, merchantKey: Swift.String?, merchantName: Swift.String, acsTxnId: Swift.String, currency: Swift.Int, isProduction: Swift.Bool)
+  @objc public init(txnId: Swift.String, amount: Swift.String, merchantKey: Swift.String?, merchantName: Swift.String?, currency: Swift.Int, isProduction: Swift.Bool)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PayUFlashPaySDK : ObjectiveC.NSObject {
+  @objc public class var shared: PayUFlashPayKit.PayUFlashPaySDK {
+    @objc get
+  }
+  public var transactionAuthUIPreparer: ((@escaping () -> Swift.Void) -> Swift.Void)? {
+    get
+    set
+  }
+  @objc public func initializeSDK()
+  @objc public func configureSDK(payUFPConfig: PayUFlashPayKit.PayUFPConfig, themeModel: PayUFlashPayKit.PayUFPThemeModel?, with mfaParams: [Swift.String : Any], payUFPConfigSDKDelegate: any PayUFlashPayKit.PayUFPConfigSDKDelegate)
+  @objc public func initiateRegistration(in viewController: UIKit.UIViewController, maskedMobileNumber: Swift.String?, payUFPRegistrationStatusDelegate: any PayUFlashPayKit.PayUFPRegistrationStatusDelegate)
+  @objc public func checkIntactStatus(tdyCardId: Swift.String?, bankId: Swift.String?, isLocalCheck: Swift.Bool, payUFPCheckIntactStatusDelegate: any PayUFlashPayKit.PayUFPCheckIntactStatusDelegate)
+  @objc public func processTransaction(in viewController: UIKit.UIViewController, payUFPTxnDelegate: any PayUFlashPayKit.PayUFPProcessTxnDelegate)
+  @objc public func deRegisterCard(payUFPDeregisterDelegate: any PayUFlashPayKit.PayUFPDeregisterDelegate)
+  @objc public func clearData()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PayUFPThemeButtonTextCase : ObjectiveC.NSObject {
+  @objc public static let normal: Swift.Int
+  @objc public static let lowercase: Swift.Int
+  @objc public static let uppercase: Swift.Int
+  @objc deinit
+}
+@objc public class PayUFPButtonStyleCustomization : ObjectiveC.NSObject {
+  @objc public var enabledBackgroundColor: Swift.String?
+  @objc public var enabledTextColor: Swift.String?
+  @objc public var disabledBackgroundColor: Swift.String?
+  @objc public var disabledTextColor: Swift.String?
+  @objc public init(enabledBackgroundColor: Swift.String? = nil, enabledTextColor: Swift.String? = nil, disabledBackgroundColor: Swift.String? = nil, disabledTextColor: Swift.String? = nil)
+  @objc deinit
+}
+@objc public class PayUFPButtonCustomization : ObjectiveC.NSObject {
+  @objc public var primaryButtonCustomization: PayUFlashPayKit.PayUFPButtonStyleCustomization?
+  @objc public var secondaryButtonCustomization: PayUFlashPayKit.PayUFPButtonStyleCustomization?
+  @objc public var fontName: Swift.String?
+  @objc public var fontSize: Swift.Int
+  @objc public var cornerRadius: Swift.Int
+  @objc public var buttonTextTransform: Foundation.NSNumber?
+  @objc public init(primaryButtonCustomization: PayUFlashPayKit.PayUFPButtonStyleCustomization? = nil, secondaryButtonCustomization: PayUFlashPayKit.PayUFPButtonStyleCustomization? = nil, fontName: Swift.String? = nil, fontSize: Foundation.NSNumber? = nil, cornerRadius: Foundation.NSNumber? = nil, buttonTextTransform: Foundation.NSNumber? = nil)
+  @objc deinit
+}
+@objc public class PayUFPTextStyleCustomization : ObjectiveC.NSObject {
+  @objc public var textColor: Swift.String?
+  @objc public var fontName: Swift.String?
+  @objc public var fontSize: Swift.Int
+  @objc public init(textColor: Swift.String? = nil, fontName: Swift.String? = nil, fontSize: Foundation.NSNumber? = nil)
+  @objc deinit
+}
+@objc public class PayUFPLabelCustomization : ObjectiveC.NSObject {
+  @objc public var headingCustomization: PayUFlashPayKit.PayUFPTextStyleCustomization?
+  @objc public var subHeadingCustomization: PayUFlashPayKit.PayUFPTextStyleCustomization?
+  @objc public init(headingCustomization: PayUFlashPayKit.PayUFPTextStyleCustomization? = nil, subHeadingCustomization: PayUFlashPayKit.PayUFPTextStyleCustomization? = nil)
+  @objc deinit
+}
+@objc public class PayUFPToolbarCustomization : ObjectiveC.NSObject {
+  @objc public var backgroundColor: Swift.String?
+  @objc public var textColor: Swift.String?
+  @objc public var fontName: Swift.String?
+  @objc public var fontSize: Swift.Int
+  @objc public init(backgroundColor: Swift.String? = nil, textColor: Swift.String? = nil, fontName: Swift.String? = nil, fontSize: Foundation.NSNumber? = nil)
+  @objc deinit
+}
+@objc public class PayUFPUICustomization : ObjectiveC.NSObject {
+  @objc public var processingCircleColor: Swift.String?
+  @objc public var buttonCustomization: PayUFlashPayKit.PayUFPButtonCustomization?
+  @objc public var toolbarCustomization: PayUFlashPayKit.PayUFPToolbarCustomization?
+  @objc public var labelCustomization: PayUFlashPayKit.PayUFPLabelCustomization?
+  @objc public var logoCustomisation: PayUFlashPayKit.PayUFPLogoCustomisation?
+  @objc public init(processingCircleColor: Swift.String? = nil, buttonCustomization: PayUFlashPayKit.PayUFPButtonCustomization? = nil, toolbarCustomization: PayUFlashPayKit.PayUFPToolbarCustomization? = nil, labelCustomization: PayUFlashPayKit.PayUFPLabelCustomization? = nil, logoCustomisation: PayUFlashPayKit.PayUFPLogoCustomisation? = nil)
+  @objc deinit
+}
+@objc public class PayUFPBottomSheetRegistrationSuccessfulPopupConfiguration : ObjectiveC.NSObject {
+  @objc public var headerTextForContents: Swift.String?
+  @objc public var subTextForContents: Swift.String?
+  @objc public var buttonText: Swift.String?
+  @objc public init(headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, buttonText: Swift.String? = nil)
+  @objc deinit
+}
+@objc public class PayUFPBottomSheetFailureScreenConfiguration : ObjectiveC.NSObject {
+  @objc public var headerTextForContents: Swift.String?
+  @objc public var subTextForContents: Swift.String?
+  @objc public var buttonText: Swift.String?
+  @objc public init(headerTextForContents: Swift.String? = nil, subTextForContents: Swift.String? = nil, buttonText: Swift.String? = nil)
+  @objc deinit
+}
+@objc public class PayUFPTextCustomization : ObjectiveC.NSObject {
+  @objc public var headerText: Swift.String?
+  @objc public var subHeaderText: Swift.String?
+  @objc public var numberVerificationProcessingText: Swift.String?
+  @objc public var numberVerifiedText: Swift.String?
+  @objc public var biometricSetupText: Swift.String?
+  @objc public var biometricVerifiedText: Swift.String?
+  @objc public var bottomSheetRegistrationSuccessfulPopupConfiguration: PayUFlashPayKit.PayUFPBottomSheetRegistrationSuccessfulPopupConfiguration?
+  @objc public var bottomSheetFailureScreenConfiguration: PayUFlashPayKit.PayUFPBottomSheetFailureScreenConfiguration?
+  @objc public init(headerText: Swift.String? = nil, subHeaderText: Swift.String? = nil, numberVerificationProcessingText: Swift.String? = nil, numberVerifiedText: Swift.String? = nil, biometricSetupText: Swift.String? = nil, biometricVerifiedText: Swift.String? = nil, bottomSheetRegistrationSuccessfulPopupConfiguration: PayUFlashPayKit.PayUFPBottomSheetRegistrationSuccessfulPopupConfiguration? = nil, bottomSheetFailureScreenConfiguration: PayUFlashPayKit.PayUFPBottomSheetFailureScreenConfiguration? = nil)
+  @objc deinit
+}
+@objc public class PayUFPLogoCustomisation : ObjectiveC.NSObject {
+  @objc public var merchant: Swift.String?
+  @objc public var mfaBiometric: Swift.String?
+  @objc public var mfaBiometricEnabled: Swift.String?
+  @objc public var mfaMessaging: Swift.String?
+  @objc public var mfaTick: Swift.String?
+  @objc public init(merchant: Swift.String? = nil, mfaBiometric: Swift.String? = nil, mfaBiometricEnabled: Swift.String? = nil, mfaMessaging: Swift.String? = nil, mfaTick: Swift.String? = nil)
+  @objc deinit
+}
+@objc public class PayUFPThemeModel : ObjectiveC.NSObject {
+  @objc public var uiCustomization: PayUFlashPayKit.PayUFPUICustomization?
+  @objc public var textCustomization: PayUFlashPayKit.PayUFPTextCustomization?
+  @objc public init(uiCustomization: PayUFlashPayKit.PayUFPUICustomization? = nil, textCustomization: PayUFlashPayKit.PayUFPTextCustomization? = nil)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class PayUFPConstants : ObjectiveC.NSObject {
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Environment : ObjectiveC.NSObject {
+    @objc public static let production: Swift.Int
+    @objc public static let uat: Swift.Int
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class EnvironmentValues : ObjectiveC.NSObject {
+    @objc public static let production: Swift.String
+    @objc public static let uat: Swift.String
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MessageType : ObjectiveC.NSObject {
+    @objc public static let registration: Swift.Int
+    @objc public static let transaction: Swift.Int
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MessageTypeValues : ObjectiveC.NSObject {
+    @objc public static let registration: Swift.String
+    @objc public static let transaction: Swift.String
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class StatusCode : ObjectiveC.NSObject {
+    @objc public static let success: Swift.Int
+    @objc public static let deviceDeregisteredBiometricChange: Swift.Int
+    @objc public static let otpFallbackOptedByUser: Swift.Int
+    @objc public static let deviceNotCompatible: Swift.Int
+    @objc public static let biometricDisabledOnDevice: Swift.Int
+    @objc public static let maxBiometricRetriesExceeded: Swift.Int
+    @objc public static let biometricDisabledAfterReinstall: Swift.Int
+    @objc public static let invalidInputParameters: Swift.Int
+    @objc public static let sdkNotConfigured: Swift.Int
+    @objc public static let invalidParametersProvided: Swift.Int
+    @objc public static let deviceDebuggingDetected: Swift.Int
+    @objc public static let deviceJailbroken: Swift.Int
+    @objc public static let screenRecordingObserved: Swift.Int
+    @objc public static let appTogglingObserved: Swift.Int
+    @objc public static let deviceReverseEngineered: Swift.Int
+    @objc public static let deviceReverseEngineeredRuntime: Swift.Int
+    @objc public static let customerNotRegistered: Swift.Int
+    @objc public static let networkUnavailable: Swift.Int
+    @objc public static let biometricChallengeTimedOut: Swift.Int
+    @objc public static let registrationBiometricTimedOut: Swift.Int
+    @objc public static let systemTimeoutOrSessionExpired: Swift.Int
+    @objc public static let unableToSendSMS: Swift.Int
+    @objc public static let airplaneModeEnabled: Swift.Int
+    @objc public static let smsSendingCancelled: Swift.Int
+    @objc public static let smsSendingFailed: Swift.Int
+    @objc public static let cannotPresentRegistrationScreen: Swift.Int
+    @objc public static let unableToProcessServerResponse: Swift.Int
+    @objc public static let registrationCancelledByUser: Swift.Int
+    @objc public static let oobAuthModeCancelledByUser: Swift.Int
+    @objc public static let simMovementDetected: Swift.Int
+    @objc public static let genericError: Swift.Int
+    @objc public static let unhandledError: Swift.Int
+    @objc public static let differentDeviceDeregistrationFailed: Swift.Int
+    @objc public static func isDifferentDeviceRegistrationOTP(code _: Swift.Int, isDifferentDevice: Swift.Bool) -> Swift.Bool
+    @objc public static func isOTPFallback(_ code: Swift.Int) -> Swift.Bool
+    @objc public static func isMerchantOTPFallback(code: Swift.Int, data: [Swift.String : Any]) -> Swift.Bool
+    @objc public static func fromRawValue(_ rawValue: Swift.Int) -> Swift.Int
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MerchantCode : ObjectiveC.NSObject {
+    @objc public static let success: Swift.Int
+    @objc public static let biometricFailedOrOtp: Swift.Int
+    @objc public static let sdkNotConfigured: Swift.Int
+    @objc public static let invalidParams: Swift.Int
+    @objc public static let customerNotRegistered: Swift.Int
+    @objc public static let txnBiometricTimeout: Swift.Int
+    @objc public static let txnCancelledByUser: Swift.Int
+    @objc public static let registrationCancelledByUser: Swift.Int
+    @objc public static let cannotPresentScreen: Swift.Int
+    @objc public static let sdkException: Swift.Int
+    @objc public static let unhandledError: Swift.Int
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class AppLevelCode : ObjectiveC.NSObject {
+    @objc public static let authenticationFailed: Swift.Int
+    @objc public static let mobileDataDisabled: Swift.Int
+    @objc public static let pushNotificationsDisabled: Swift.Int
+    @objc public static let deviceDeregisteredNoRecord: Swift.Int
+    @objc public static let featureNotAvailable: Swift.Int
+    @objc public static let sdkClosed: Swift.Int
+    @objc public static let autoDateTimeDisabled: Swift.Int
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RegistrationSubCode : ObjectiveC.NSObject {
+    @objc public static let registrationSuccessful: Swift.Int
+    @objc public static let simBindingInitiated: Swift.Int
+    @objc public static let simBindingTokenDelivered: Swift.Int
+    @objc public static let simBindingTokenDeliveryFailed: Swift.Int
+    @objc public static let simBindingSuccessful: Swift.Int
+    @objc public static let registrationEvaluationFailed: Swift.Int
+    @objc public static let registrationCommunicationL1Failed: Swift.Int
+    @objc public static let registrationCommunicationL2Failed: Swift.Int
+    @objc public static let pendingDeregistration: Swift.Int
+    @objc public static let invalidClientDetails: Swift.Int
+    @objc public static let invalidConsumerId: Swift.Int
+    @objc public static let consentRequired: Swift.Int
+    @objc public static let customerDeregistered: Swift.Int
+    @objc public static let tokenNotAllowed: Swift.Int
+    @objc public static let checksumMismatch: Swift.Int
+    @objc public static let transactionIdInvalidOrProcessed: Swift.Int
+    @objc public static let tempCardIdMissing: Swift.Int
+    @objc public static let binMissing: Swift.Int
+    @objc deinit
+  }
+  @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class ResponseKey : ObjectiveC.NSObject {
+    @objc public static let code: Swift.String
+    @objc public static let requestType: Swift.String
+    @objc public static let message: Swift.String
+    @objc public static let dataKey: Swift.String
+    @objc public static let paymentStatusData: Swift.String
+    @objc public static let proceedWithOTP: Swift.String
+    @objc public static let deregistrationData: Swift.String
+    @objc public static let oobContinue: Swift.String
+    @objc public static let subParam: Swift.String
+    @objc public static let customerStatus: Swift.String
+    @objc public static let status: Swift.String
+    @objc public static let intact: Swift.String
+    @objc public static let tdyCardId: Swift.String
+    @objc public static let bankId: Swift.String
+    @objc public static let showDeregisterConfirmation: Swift.String
+    @objc public static let isDifferentDevice: Swift.String
+    @objc deinit
+  }
+  @objc deinit
+}

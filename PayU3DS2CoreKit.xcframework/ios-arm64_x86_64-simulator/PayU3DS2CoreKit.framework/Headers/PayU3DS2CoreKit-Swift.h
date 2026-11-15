@@ -381,6 +381,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit24ChallengeInputParameters")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSNumber;
 /// The ChallengeParameters class shall hold the parameters that are required to conduct the challenge process.
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @interface ChallengeParameters : NSObject
@@ -394,6 +395,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @property (nonatomic, copy) NSString * _Nullable clientId;
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, strong) NSNumber * _Nullable oobContinue;
 /// Initializing ChallengeParameters with all the required parameters
 /// \param a3DSServerTransactionID Transaction identifier assigned by the 3DS Server to uniquely identify a single transaction
 ///
@@ -452,6 +454,23 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit16ConfigParameters")
 - (void)setSupportedUITypes:(NSArray<NSString *> * _Nonnull)supportedUITypes;
 @end
 
+@class LabelCustomization;
+@interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
+- (void)enableCustomizedOtpUIFlow:(BOOL)isCustomizedOtpFlow;
+- (void)setMerchantName:(NSString * _Nonnull)mechantName;
+- (void)setAmount:(NSString * _Nonnull)amount;
+- (void)setSdkVersion:(NSString * _Nonnull)sdkVersion;
+- (void)enableTxnTimeoutTimer:(BOOL)isEnabled;
+- (void)setSubmitButtonTitle:(NSString * _Nonnull)title;
+- (void)setResendButtonTitle:(NSString * _Nonnull)title;
+- (void)setOtpInfoString:(NSString * _Nonnull)infoString;
+- (void)setResendInfoString:(NSString * _Nonnull)infoString;
+- (void)setMaxResendInfoString:(NSString * _Nonnull)infoString;
+- (void)setMerchantCustomization:(LabelCustomization * _Nonnull)labelCustomization;
+- (void)setAmountCustomization:(Customization * _Nonnull)customization;
+- (void)setBiometricType:(enum BiometricType)biometricType;
+@end
+
 enum PayUCardType : NSInteger;
 enum PayULoaderPresentationStyle : NSInteger;
 @interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
@@ -469,25 +488,10 @@ enum PayULoaderPresentationStyle : NSInteger;
 - (void)setPreferredLoaderPresentationStyle:(enum PayULoaderPresentationStyle)style;
 /// Sets bottom-sheet loader height to match the next bottom sheet UI. Pass <code>0</code> for default (449).
 - (void)setPreferredBottomSheetLoaderHeight:(CGFloat)height;
+- (void)setBgGradientColor:(NSString * _Nonnull)hex;
+- (void)setMerchantLogoAssetName:(NSString * _Nonnull)name;
 /// ObjC / dynamic-friendly setter (<code>0</code> = fullScreen, <code>1</code> = bottomSheet).
 - (void)setPreferredLoaderPresentationStyleRawValue:(NSInteger)rawValue;
-@end
-
-@class LabelCustomization;
-@interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
-- (void)enableCustomizedOtpUIFlow:(BOOL)isCustomizedOtpFlow;
-- (void)setMerchantName:(NSString * _Nonnull)mechantName;
-- (void)setAmount:(NSString * _Nonnull)amount;
-- (void)setSdkVersion:(NSString * _Nonnull)sdkVersion;
-- (void)enableTxnTimeoutTimer:(BOOL)isEnabled;
-- (void)setSubmitButtonTitle:(NSString * _Nonnull)title;
-- (void)setResendButtonTitle:(NSString * _Nonnull)title;
-- (void)setOtpInfoString:(NSString * _Nonnull)infoString;
-- (void)setResendInfoString:(NSString * _Nonnull)infoString;
-- (void)setMaxResendInfoString:(NSString * _Nonnull)infoString;
-- (void)setMerchantCustomization:(LabelCustomization * _Nonnull)labelCustomization;
-- (void)setAmountCustomization:(Customization * _Nonnull)customization;
-- (void)setBiometricType:(enum BiometricType)biometricType;
 @end
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit12ErrorMessage")
@@ -1330,6 +1334,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit24ChallengeInputParameters")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSNumber;
 /// The ChallengeParameters class shall hold the parameters that are required to conduct the challenge process.
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @interface ChallengeParameters : NSObject
@@ -1343,6 +1348,7 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit19ChallengeParameters")
 @property (nonatomic, copy) NSString * _Nullable clientId;
 @property (nonatomic, copy) NSString * _Nullable name;
 @property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, strong) NSNumber * _Nullable oobContinue;
 /// Initializing ChallengeParameters with all the required parameters
 /// \param a3DSServerTransactionID Transaction identifier assigned by the 3DS Server to uniquely identify a single transaction
 ///
@@ -1401,6 +1407,23 @@ SWIFT_CLASS("_TtC15PayU3DS2CoreKit16ConfigParameters")
 - (void)setSupportedUITypes:(NSArray<NSString *> * _Nonnull)supportedUITypes;
 @end
 
+@class LabelCustomization;
+@interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
+- (void)enableCustomizedOtpUIFlow:(BOOL)isCustomizedOtpFlow;
+- (void)setMerchantName:(NSString * _Nonnull)mechantName;
+- (void)setAmount:(NSString * _Nonnull)amount;
+- (void)setSdkVersion:(NSString * _Nonnull)sdkVersion;
+- (void)enableTxnTimeoutTimer:(BOOL)isEnabled;
+- (void)setSubmitButtonTitle:(NSString * _Nonnull)title;
+- (void)setResendButtonTitle:(NSString * _Nonnull)title;
+- (void)setOtpInfoString:(NSString * _Nonnull)infoString;
+- (void)setResendInfoString:(NSString * _Nonnull)infoString;
+- (void)setMaxResendInfoString:(NSString * _Nonnull)infoString;
+- (void)setMerchantCustomization:(LabelCustomization * _Nonnull)labelCustomization;
+- (void)setAmountCustomization:(Customization * _Nonnull)customization;
+- (void)setBiometricType:(enum BiometricType)biometricType;
+@end
+
 enum PayUCardType : NSInteger;
 enum PayULoaderPresentationStyle : NSInteger;
 @interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
@@ -1418,25 +1441,10 @@ enum PayULoaderPresentationStyle : NSInteger;
 - (void)setPreferredLoaderPresentationStyle:(enum PayULoaderPresentationStyle)style;
 /// Sets bottom-sheet loader height to match the next bottom sheet UI. Pass <code>0</code> for default (449).
 - (void)setPreferredBottomSheetLoaderHeight:(CGFloat)height;
+- (void)setBgGradientColor:(NSString * _Nonnull)hex;
+- (void)setMerchantLogoAssetName:(NSString * _Nonnull)name;
 /// ObjC / dynamic-friendly setter (<code>0</code> = fullScreen, <code>1</code> = bottomSheet).
 - (void)setPreferredLoaderPresentationStyleRawValue:(NSInteger)rawValue;
-@end
-
-@class LabelCustomization;
-@interface ConfigParameters (SWIFT_EXTENSION(PayU3DS2CoreKit))
-- (void)enableCustomizedOtpUIFlow:(BOOL)isCustomizedOtpFlow;
-- (void)setMerchantName:(NSString * _Nonnull)mechantName;
-- (void)setAmount:(NSString * _Nonnull)amount;
-- (void)setSdkVersion:(NSString * _Nonnull)sdkVersion;
-- (void)enableTxnTimeoutTimer:(BOOL)isEnabled;
-- (void)setSubmitButtonTitle:(NSString * _Nonnull)title;
-- (void)setResendButtonTitle:(NSString * _Nonnull)title;
-- (void)setOtpInfoString:(NSString * _Nonnull)infoString;
-- (void)setResendInfoString:(NSString * _Nonnull)infoString;
-- (void)setMaxResendInfoString:(NSString * _Nonnull)infoString;
-- (void)setMerchantCustomization:(LabelCustomization * _Nonnull)labelCustomization;
-- (void)setAmountCustomization:(Customization * _Nonnull)customization;
-- (void)setBiometricType:(enum BiometricType)biometricType;
 @end
 
 SWIFT_CLASS("_TtC15PayU3DS2CoreKit12ErrorMessage")

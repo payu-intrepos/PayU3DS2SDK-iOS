@@ -1,10 +1,9 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUTridentityMFAKit
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Osize -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUTridentityMFAKit
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import Combine
 import CommonCrypto
-import CoreData
 import CoreLocation
 import CoreTelephony
 import CryptoKit
@@ -28,6 +27,12 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MFARegistrationFlowConfiguration : ObjectiveC.NSObject, Swift.Codable {
+  @objc override convenience dynamic public init()
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+}
 public protocol TransactionInfo {
   #if compiler(>=5.3) && $NonescapableTypes
   var amount: Swift.String? { get }
@@ -340,8 +345,13 @@ public struct LogoConfig : Swift.Codable {
   public var defaultLogo: Swift.String?
   public var roundedLogo: Swift.String?
   public var gifLogo: Swift.String?
+  public var merchantLogo: Swift.String?
+  public var mfaBiometricIcon: Swift.String?
+  public var mfaMessagingIcon: Swift.String?
+  public var mfaTickMarkIcon: Swift.String?
+  public var mfaBiometricEnabledIcon: Swift.String?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(defaultLogo: Swift.String? = nil, roundedLogo: Swift.String? = nil, gifLogo: Swift.String? = nil)
+  public init(defaultLogo: Swift.String? = nil, roundedLogo: Swift.String? = nil, gifLogo: Swift.String? = nil, merchantLogo: Swift.String? = nil, mfaBiometricIcon: Swift.String? = nil, mfaMessagingIcon: Swift.String? = nil, mfaTickMarkIcon: Swift.String? = nil, mfaBiometricEnabledIcon: Swift.String? = nil)
   #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -350,11 +360,6 @@ public struct LogoConfig : Swift.Codable {
 public let SDKReachabilityChangedNotification: Foundation.NSNotification.Name
 extension Foundation.NSNotification.Name {
   public static let reachabilityChanged: Foundation.Notification.Name
-}
-@_hasMissingDesignatedInitializers public class MockUtility {
-  public static var isMockEnabled: Swift.Bool
-  public static var jsonFileName: Swift.String
-  @objc deinit
 }
 public enum Status : Swift.String {
   case initiated
@@ -417,70 +422,6 @@ public enum EventSeverity : Swift.String {
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
-}
-public func base32Encode(_ data: Foundation.Data) -> Swift.String
-public func base32HexEncode(_ data: Foundation.Data) -> Swift.String
-#if compiler(>=5.3) && $NonescapableTypes
-public func base32DecodeToData(_ string: Swift.String) -> Foundation.Data?
-#endif
-#if compiler(>=5.3) && $NonescapableTypes
-public func base32HexDecodeToData(_ string: Swift.String) -> Foundation.Data?
-#endif
-public func base32Encode(_ array: [Swift.UInt8]) -> Swift.String
-public func base32HexEncode(_ array: [Swift.UInt8]) -> Swift.String
-#if compiler(>=5.3) && $NonescapableTypes
-public func base32Decode(_ string: Swift.String) -> [Swift.UInt8]?
-#endif
-#if compiler(>=5.3) && $NonescapableTypes
-public func base32HexDecode(_ string: Swift.String) -> [Swift.UInt8]?
-#endif
-extension Swift.String {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var base32DecodedData: Foundation.Data? {
-    get
-  }
-  #endif
-  public var base32EncodedString: Swift.String {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func base32DecodedString(_ encoding: Swift.String.Encoding = .utf8) -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var base32HexDecodedData: Foundation.Data? {
-    get
-  }
-  #endif
-  public var base32HexEncodedString: Swift.String {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func base32HexDecodedString(_ encoding: Swift.String.Encoding = .utf8) -> Swift.String?
-  #endif
-}
-extension Foundation.Data {
-  public var base32EncodedString: Swift.String {
-    get
-  }
-  public var base32EncodedData: Foundation.Data {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var base32DecodedData: Foundation.Data? {
-    get
-  }
-  #endif
-  public var base32HexEncodedString: Swift.String {
-    get
-  }
-  public var base32HexEncodedData: Foundation.Data {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var base32HexDecodedData: Foundation.Data? {
-    get
-  }
-  #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class TridentityMFASDKInterface : ObjectiveC.NSObject {
   @objc public static let shared: PayUTridentityMFAKit.TridentityMFASDKInterface
@@ -556,8 +497,9 @@ extension Foundation.Data {
   @objc public var uiMessageConfiguration: PayUTridentityMFAKit.UIMessageConfiguration? {
     get
   }
+  @objc public var mfaRegistrationFlowConfiguration: PayUTridentityMFAKit.MFARegistrationFlowConfiguration?
   #if compiler(>=5.3) && $NonescapableTypes
-  @objc public init(consentScreenConfiguration: PayUTridentityMFAKit.ConsentScreenConfiguration? = nil, tncScreenConfiguration: PayUTridentityMFAKit.TNCScreenConfiguration? = nil, bottomSheetPermissionPopupConfiguration: PayUTridentityMFAKit.BottomSheetPermissionPopupConfiguration? = nil, simBindingScreenConfiguration: PayUTridentityMFAKit.SimBindingScreenConfiguration? = nil, bottomSheetSimBindingProcessingPopupConfiguration: PayUTridentityMFAKit.BottomSheetSimBindingProcessingPopupConfiguration? = nil, bottomSheetRegistrationSuccessfulPopupConfiguration: PayUTridentityMFAKit.BottomSheetSuccessConfiguration? = nil, bottomSheetFailureScreenConfiguration: PayUTridentityMFAKit.BottomSheetFailureConfiguration? = nil, transactionHistoryScreenConfiguration: PayUTridentityMFAKit.TransactionHistoryScreenConfiguration? = nil, offlineOTPScreenConfiguration: PayUTridentityMFAKit.OfflineOTPScreenConfiguration? = nil, bottomSheetAuthenticationPopupConfiguration: PayUTridentityMFAKit.BottomSheetAuthenticationPopupConfiguration? = nil, deRegPopupConfiguration: PayUTridentityMFAKit.DeRegPopupConfiguration? = nil, biometricTextConfiguration: PayUTridentityMFAKit.BiometricTextConfiguration? = nil, uiMessageConfiguration: PayUTridentityMFAKit.UIMessageConfiguration? = nil)
+  @objc public init(consentScreenConfiguration: PayUTridentityMFAKit.ConsentScreenConfiguration? = nil, tncScreenConfiguration: PayUTridentityMFAKit.TNCScreenConfiguration? = nil, bottomSheetPermissionPopupConfiguration: PayUTridentityMFAKit.BottomSheetPermissionPopupConfiguration? = nil, simBindingScreenConfiguration: PayUTridentityMFAKit.SimBindingScreenConfiguration? = nil, bottomSheetSimBindingProcessingPopupConfiguration: PayUTridentityMFAKit.BottomSheetSimBindingProcessingPopupConfiguration? = nil, bottomSheetRegistrationSuccessfulPopupConfiguration: PayUTridentityMFAKit.BottomSheetSuccessConfiguration? = nil, bottomSheetFailureScreenConfiguration: PayUTridentityMFAKit.BottomSheetFailureConfiguration? = nil, transactionHistoryScreenConfiguration: PayUTridentityMFAKit.TransactionHistoryScreenConfiguration? = nil, offlineOTPScreenConfiguration: PayUTridentityMFAKit.OfflineOTPScreenConfiguration? = nil, bottomSheetAuthenticationPopupConfiguration: PayUTridentityMFAKit.BottomSheetAuthenticationPopupConfiguration? = nil, deRegPopupConfiguration: PayUTridentityMFAKit.DeRegPopupConfiguration? = nil, biometricTextConfiguration: PayUTridentityMFAKit.BiometricTextConfiguration? = nil, uiMessageConfiguration: PayUTridentityMFAKit.UIMessageConfiguration? = nil, mfaRegistrationFlowConfiguration: PayUTridentityMFAKit.MFARegistrationFlowConfiguration? = nil)
   #endif
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
@@ -730,19 +672,6 @@ extension PayUTridentityMFAKit.SmsSendFailureReason : Foundation.LocalizedError 
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public protocol NotificationState : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func doClearNotification(_ trnxID: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func recievedNotification(_ trnxID: Swift.String?)
-  #endif
-}
-public struct PushTransactionConvertor {
-  #if compiler(>=5.3) && $NonescapableTypes
-  public static func makeTransactionDetail(fromPushInfo userInfo: [Swift.AnyHashable : Any]) -> PayUTridentityMFAKit.TransactionDetail?
-  #endif
-}
 @objc public class SubHeadingThemeCustomization : ObjectiveC.NSObject, Swift.Codable {
   @objc public var textColor: Swift.String?, fontName: Swift.String?
   @objc public var fontSize: Swift.Int {
@@ -799,17 +728,6 @@ public enum TDYOTPAlgorithm {
   public var authenticationType: Swift.String
   public var expireTimer: Foundation.Timer?
   @objc deinit
-}
-public struct TDYHOTP {
-  public let secret: Foundation.Data
-  public let digits: Swift.Int
-  public let algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(secret: Foundation.Data, digits: Swift.Int = 6, algorithm: PayUTridentityMFAKit.TDYOTPAlgorithm = .sha1)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func generate(counter: Swift.UInt64) -> Swift.String?
-  #endif
 }
 @objc public class OfflineOTPScreenConfiguration : ObjectiveC.NSObject, Swift.Codable {
   @objc public var appBarText: Swift.String?, topHeaderText: Swift.String?, topSubHeaderText: Swift.String?, headerTextForContents: Swift.String?
@@ -900,19 +818,6 @@ public struct TDYTOTP {
   #if compiler(>=5.3) && $NonescapableTypes
   public func generate(secondsPast1970: Swift.Int) -> Swift.String?
   #endif
-}
-@objc public class TDYTokenValidateResponse : ObjectiveC.NSObject, Swift.Codable {
-  @objc final public let status: Swift.String?
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-public protocol AuthenticatorTheme {
-  var primaryColor: UIKit.UIColor { get }
-  var secondaryColor: UIKit.UIColor { get }
-  var backgroundColor: UIKit.UIColor { get }
-  var navigationBar: UIKit.UIColor { get }
-  var bottomBar: UIKit.UIColor { get }
 }
 extension PayUTridentityMFAKit.KeyChainKey : Swift.Equatable {}
 extension PayUTridentityMFAKit.KeyChainKey : Swift.Hashable {}

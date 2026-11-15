@@ -1,0 +1,10 @@
+framework module PayUFlashPayKit {
+  umbrella header "PayUFlashPayKit.h"
+  export *
+
+  module * { export * }
+}
+
+module PayUFlashPayKit.Swift {
+  header "PayUFlashPayKit-Swift.h"
+}
