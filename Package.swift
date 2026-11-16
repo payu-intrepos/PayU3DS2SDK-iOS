@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "PayUIndia-3DS2-SDK",
     platforms: [.iOS(
-        .v13
+        .v15
     )],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.

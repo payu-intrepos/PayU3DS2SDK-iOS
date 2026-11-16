@@ -12,8 +12,8 @@ Pod::Spec.new do |s|
                             :tag => "#{s.name}#{s.version}"
                           }
   s.documentation_url   = "https://devguide.payu.in/mobile-sdk-ios/introduction-to-payu-mobile-sdk/"
-  s.platform            = :ios , "13.0"
-  s.vendored_frameworks = 'PayU3DS2Kit.xcframework'
+  s.platform            = :ios , "15.0"
+  s.vendored_frameworks = 'PayUFlashPayKit.xcframework'
   s.dependency            'PayUIndia-TridentityMFA-SDK', '~> 3.0'
   s.dependency            'PayUIndia-NetworkReachability', '~> 2.1'
   s.dependency            'PayUIndia-CrashReporter', '~> 4.0'
