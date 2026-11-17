@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		aSeTEsGN/iUS0v8OJ6eD+7kgKAk=
+		xVg2yhHINrSDVGVAl1WNFzgoUJo=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,11 +66,11 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IDpd3WdJnj139fqi3UkRewnvkVQ=
+		Lt1G8LNEfM7tkVo0zqk7c2FeuI0=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		aSeTEsGN/iUS0v8OJ6eD+7kgKAk=
+		xVg2yhHINrSDVGVAl1WNFzgoUJo=
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/PayU3DS2Kit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		itaPAQgUqRcz82njfLjyeftGGXc=
+		/SGqvxTdoYa+HrBgXfGyPUJZgPE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HK+rv31fEn1oL+MKYp7t7/Os9dptrbW833vQQqoR1Qg=
+			F9TP9WI6Ggv+L3JAUW1t9IL8CPPxXqQzl4054vkUrpg=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -201,14 +201,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9kPNK0Hzl68EuM+ENEJHovTe7eGtEpx/tkVHq+d1yZI=
+			Uhi6FQ73DPKIqnymKB0UJELDmElvTBJmKdTnOavZAEY=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HK+rv31fEn1oL+MKYp7t7/Os9dptrbW833vQQqoR1Qg=
+			F9TP9WI6Ggv+L3JAUW1t9IL8CPPxXqQzl4054vkUrpg=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2Kit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -236,7 +236,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/9uPxUPHJGnQ3X5IRMcYwCITMJHUQQ3DT3Mxh0khQs0=
+			Node9Q02w5V6I2x0ZLevysYuheEul2oZmpBJSjaUwGY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
