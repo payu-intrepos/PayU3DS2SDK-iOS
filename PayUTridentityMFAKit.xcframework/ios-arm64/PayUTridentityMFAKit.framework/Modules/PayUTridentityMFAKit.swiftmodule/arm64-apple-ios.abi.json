@@ -145,6 +145,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUTridentityMFAKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -14029,23 +14039,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PayUTridentityMFAKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "PayUTridentityMFAKit"
       },
       {
         "kind": "Import",
@@ -32610,6 +32603,41 @@
       "value": "\"placeholder\""
     },
     {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Manager\/LocationServiceProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 741,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Manager\/LocationServiceProtocol.swift",
+      "kind": "StringLiteral",
+      "offset": 772,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Manager\/LocationServiceProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 816,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Manager\/LocationServiceProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 872,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Manager\/LocationServiceProtocol.swift",
+      "kind": "BooleanLiteral",
+      "offset": 927,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/Components\/MFARegistrationHeaderView.swift",
       "kind": "IntegerLiteral",
       "offset": 295,
@@ -33447,7 +33475,7 @@
       "kind": "IntegerLiteral",
       "offset": 999,
       "length": 2,
-      "value": "45"
+      "value": "44"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/Components\/MFARegistrationCancelBottomSheet.swift",
@@ -34780,6 +34808,20 @@
       "value": "0.6"
     },
     {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFATheme\/MFATheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 467,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFATheme\/MFATheme.swift",
+      "kind": "IntegerLiteral",
+      "offset": 503,
+      "length": 2,
+      "value": "22"
+    },
+    {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Theme\/Models\/MFARegistrationFlowConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 5104,
@@ -35225,7 +35267,7 @@
       "kind": "IntegerLiteral",
       "offset": 833,
       "length": 2,
-      "value": "45"
+      "value": "44"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFAUIComponents\/Components\/MFASMSInstructionContentView.swift",
@@ -35454,7 +35496,7 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Auth&Security\/BiometricAuthManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 15410,
+      "offset": 15440,
       "length": 5,
       "value": "false"
     },
@@ -37323,14 +37365,14 @@
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Manager\/ProcessTxn+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 41689,
+      "offset": 41805,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Manager\/ProcessTxn+MFA-Manager.swift",
       "kind": "BooleanLiteral",
-      "offset": 43559,
+      "offset": 43675,
       "length": 4,
       "value": "true"
     },
@@ -37367,19 +37409,26 @@
       "kind": "StringLiteral",
       "offset": 299,
       "length": 5,
-      "value": "\"C03\""
+      "value": "\"C02\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFATransactionFlowHelper.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 5,
+      "value": "\"C03\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFATransactionFlowHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 341,
+      "length": 5,
       "value": "\"C04\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/MFA\/MFATransactionFlowHelper.swift",
       "kind": "BooleanLiteral",
-      "offset": 2582,
+      "offset": 2603,
       "length": 5,
       "value": "false"
     },
@@ -39352,463 +39401,470 @@
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1614,
+      "length": 31,
+      "value": "\"transaction_cancelled_by_user\""
+    },
+    {
+      "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1591,
+      "offset": 1688,
       "length": 3,
       "value": "331"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1643,
+      "offset": 1740,
       "length": 27,
       "value": "\"device_debugging_detected\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1717,
+      "offset": 1814,
       "length": 3,
       "value": "333"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1762,
+      "offset": 1859,
       "length": 23,
       "value": "\"device_is_jail_broken\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1832,
+      "offset": 1929,
       "length": 3,
       "value": "334"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1884,
+      "offset": 1981,
       "length": 27,
       "value": "\"screen_recording_observed\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1958,
+      "offset": 2055,
       "length": 3,
       "value": "335"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2006,
+      "offset": 2103,
       "length": 23,
       "value": "\"app_toggling_observed\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2076,
+      "offset": 2173,
       "length": 3,
       "value": "336"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2128,
+      "offset": 2225,
       "length": 30,
       "value": "\"device_is_reverse_engineered\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2205,
+      "offset": 2302,
       "length": 3,
       "value": "337"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2257,
+      "offset": 2354,
       "length": 30,
       "value": "\"device_is_reverse_engineered\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2334,
+      "offset": 2431,
       "length": 3,
       "value": "338"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2384,
+      "offset": 2481,
       "length": 42,
       "value": "\"customer_not_registered_please_try_again\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2473,
+      "offset": 2570,
       "length": 3,
       "value": "361"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2520,
+      "offset": 2617,
       "length": 35,
       "value": "\"network_connection_is_unavailable\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2602,
+      "offset": 2699,
       "length": 3,
       "value": "362"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2672,
+      "offset": 2769,
       "length": 40,
       "value": "\"biometric_authentication_has_timed_out\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2759,
+      "offset": 2856,
       "length": 3,
       "value": "363"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2830,
+      "offset": 2927,
       "length": 53,
       "value": "\"biometric_authentication_timed_out_please_try_again\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2930,
+      "offset": 3027,
       "length": 3,
       "value": "364"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2972,
+      "offset": 3069,
       "length": 38,
       "value": "\"the_system_timed_out_session_expired\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3139,
+      "offset": 3236,
       "length": 3,
       "value": "368"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3192,
+      "offset": 3289,
       "length": 32,
       "value": "\"sdk_session_inactivity_timeout\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3354,
+      "offset": 3451,
       "length": 3,
       "value": "369"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3392,
+      "offset": 3489,
       "length": 20,
       "value": "\"sdk_session_logout\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3455,
+      "offset": 3552,
       "length": 3,
       "value": "365"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 3612,
       "length": 40,
       "value": "\"unable_to_send_sms_due_to_some_reasons\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3602,
+      "offset": 3699,
       "length": 3,
       "value": "367"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3653,
+      "offset": 3750,
       "length": 28,
       "value": "\"device_is_in_airplane_mode\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3728,
+      "offset": 3825,
       "length": 3,
       "value": "370"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3776,
+      "offset": 3873,
       "length": 23,
       "value": "\"sms_sending_cancelled\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3846,
+      "offset": 3943,
       "length": 3,
       "value": "371"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3890,
+      "offset": 3987,
       "length": 37,
       "value": "\"unable_to_send_sms_please_try_again\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3974,
+      "offset": 4071,
       "length": 3,
       "value": "372"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4034,
+      "offset": 4131,
       "length": 36,
       "value": "\"cannot_present_registration_screen\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4117,
+      "offset": 4214,
       "length": 3,
       "value": "373"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4175,
+      "offset": 4272,
       "length": 35,
       "value": "\"unable_to_process_server_response\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4257,
+      "offset": 4354,
       "length": 3,
       "value": "374"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4313,
+      "offset": 4410,
       "length": 32,
       "value": "\"registration_cancelled_by_user\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4392,
+      "offset": 4489,
       "length": 3,
       "value": "377"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4455,
+      "offset": 4552,
       "length": 40,
       "value": "\"registration_cancelled_by_user_welcome\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4542,
+      "offset": 4639,
       "length": 3,
       "value": "390"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4590,
+      "offset": 4687,
       "length": 23,
       "value": "\"sim_movement_detected\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4679,
+      "offset": 4776,
       "length": 23,
       "value": "\"enc_movement_detected\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4745,
+      "offset": 4842,
       "length": 3,
       "value": "392"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4801,
+      "offset": 4898,
       "length": 73,
       "value": "\"This device is being de-registered due to integrity violations detected\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4901,
+      "offset": 4998,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 4950,
+      "offset": 5047,
       "length": 25,
       "value": "\"we_encountered_an_error\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5022,
+      "offset": 5119,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5080,
+      "offset": 5177,
       "length": 35,
       "value": "\"we_encountered_an_unhandled_error\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5159,
+      "offset": 5256,
       "length": 4,
       "value": "4026"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5190,
+      "offset": 5287,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5242,
+      "offset": 5339,
       "length": 26,
       "value": "\"configuration_successful\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5333,
+      "offset": 5430,
       "length": 28,
       "value": "\"local_intact_check_success\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5609,
+      "offset": 5706,
       "length": 3,
       "value": "380"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5659,
+      "offset": 5756,
       "length": 25,
       "value": "\"biometric_not_available\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5883,
+      "offset": 5980,
       "length": 3,
       "value": "381"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 5937,
+      "offset": 6034,
       "length": 29,
       "value": "\"biometric_permission_denied\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 6164,
+      "offset": 6261,
       "length": 3,
       "value": "383"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6221,
+      "offset": 6318,
       "length": 33,
       "value": "\"biometric_max_attempts_exceeded\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6424,
+      "offset": 6521,
       "length": 10,
       "value": "\"code_383\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 6579,
+      "offset": 6676,
       "length": 3,
       "value": "384"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6624,
+      "offset": 6721,
       "length": 19,
       "value": "\"biometric_lockout\""
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 6818,
+      "offset": 6915,
       "length": 3,
       "value": "385"
     },
     {
       "filePath": "\/Users\/mukesh.balaji\/Documents\/Tridentity_develop\/tridentity-sdk-ios\/TridentitySDK\/Classes\/Constants\/CallBackConstants.swift",
       "kind": "StringLiteral",
-      "offset": 6873,
+      "offset": 6970,
       "length": 30,
       "value": "\"biometric_permission_skipped\""
     },

@@ -33913,3072 +33913,3072 @@
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
       "offset": 3826,
-      "length": 12,
-      "value": "\"tokenRefNo\""
+      "length": 16,
+      "value": "\"tokenRefNumber\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3874,
+      "offset": 3878,
       "length": 13,
       "value": "\"payUSdkName\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3926,
+      "offset": 3930,
       "length": 16,
       "value": "\"payUSdkVersion\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3969,
+      "offset": 3973,
       "length": 6,
       "value": "\"name\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4005,
+      "offset": 4009,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4048,
+      "offset": 4052,
       "length": 13,
       "value": "\"encryptData\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4101,
+      "offset": 4105,
       "length": 19,
       "value": "\"transactionStatus\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4154,
+      "offset": 4158,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4192,
+      "offset": 4196,
       "length": 3,
       "value": "301"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4226,
+      "offset": 4230,
       "length": 10,
       "value": "\"subParam\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4273,
+      "offset": 4277,
       "length": 16,
       "value": "\"customerStatus\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4328,
+      "offset": 4332,
       "length": 27,
       "value": "\"registration_comm_success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4384,
+      "offset": 4388,
       "length": 13,
       "value": "\"environment\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4431,
+      "offset": 4435,
       "length": 10,
       "value": "\"clientId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4475,
+      "offset": 4479,
       "length": 10,
       "value": "\"authType\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4524,
+      "offset": 4528,
       "length": 11,
       "value": "\"BIOMETRIC\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4571,
+      "offset": 4575,
       "length": 20,
       "value": "\"biomtricRetryCount\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4626,
+      "offset": 4630,
       "length": 14,
       "value": "\"registration\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4673,
+      "offset": 4677,
       "length": 12,
       "value": "\"processTxn\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4726,
+      "offset": 4730,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4764,
+      "offset": 4768,
       "length": 5,
       "value": "\"uat\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4807,
+      "offset": 4811,
       "length": 6,
       "value": "\"prod\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4844,
+      "offset": 4848,
       "length": 10,
       "value": "\"acsTxnId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4882,
+      "offset": 4886,
       "length": 7,
       "value": "\"txnId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4924,
+      "offset": 4928,
       "length": 14,
       "value": "\"merchantName\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4967,
+      "offset": 4971,
       "length": 5,
       "value": "\"uid\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5001,
+      "offset": 5005,
       "length": 5,
       "value": "\"bin\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5040,
+      "offset": 5044,
       "length": 13,
       "value": "\"bankLogoUrl\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5083,
+      "offset": 5087,
       "length": 9,
       "value": "\"psImage\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5130,
+      "offset": 5134,
       "length": 17,
       "value": "\"cardNetworkLogo\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5179,
+      "offset": 5183,
       "length": 11,
       "value": "\"txnAmount\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5224,
+      "offset": 5228,
       "length": 13,
       "value": "\"merchantKey\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5268,
+      "offset": 5272,
       "length": 10,
       "value": "\"flowType\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5371,
+      "offset": 5375,
       "length": 12,
       "value": "\"merchantId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5419,
+      "offset": 5423,
       "length": 15,
       "value": "\"merchantTxnId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5466,
+      "offset": 5470,
       "length": 11,
       "value": "\"tdyApiKey\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5511,
+      "offset": 5515,
       "length": 13,
       "value": "\"themeConfig\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5557,
+      "offset": 5561,
       "length": 12,
       "value": "\"logoConfig\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5605,
+      "offset": 5609,
       "length": 15,
       "value": "\"gradientColor\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5662,
+      "offset": 5666,
       "length": 21,
       "value": "\"registrationTimeout\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5724,
+      "offset": 5728,
       "length": 20,
       "value": "\"transactionTimeout\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5778,
+      "offset": 5782,
       "length": 13,
       "value": "\"bindingType\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5820,
+      "offset": 5824,
       "length": 8,
       "value": "\"bankId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5861,
+      "offset": 5865,
       "length": 12,
       "value": "\"customerId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5910,
+      "offset": 5914,
       "length": 16,
       "value": "\"mobileInfoText\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5958,
+      "offset": 5962,
       "length": 11,
       "value": "\"themeType\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5999,
+      "offset": 6003,
       "length": 9,
       "value": "\"hashKey\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6054,
+      "offset": 6058,
       "length": 9,
       "value": "\"EXPIRED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6111,
+      "offset": 6115,
       "length": 11,
       "value": "\"CANCELLED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6155,
+      "offset": 6159,
       "length": 12,
       "value": "\"reasonCode\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6213,
+      "offset": 6217,
       "length": 5,
       "value": "\"E01\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6264,
+      "offset": 6268,
       "length": 5,
       "value": "\"C01\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6315,
+      "offset": 6319,
       "length": 5,
       "value": "\"C04\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6371,
+      "offset": 6375,
       "length": 54,
       "value": "\"Biometric nudge timer expired - auto redirect to OTP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6477,
+      "offset": 6481,
       "length": 21,
       "value": "\"User tapped Use OTP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6549,
+      "offset": 6553,
       "length": 36,
       "value": "\"User tapped Back and chose Use OTP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6614,
+      "offset": 6618,
       "length": 8,
       "value": "\"tdyUrl\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6656,
+      "offset": 6660,
       "length": 13,
       "value": "\"tdyClientId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6701,
+      "offset": 6705,
       "length": 11,
       "value": "\"tdyCardId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6745,
+      "offset": 6749,
       "length": 12,
       "value": "\"tempCardId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6787,
+      "offset": 6791,
       "length": 9,
       "value": "\"cardBin\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6825,
+      "offset": 6829,
       "length": 8,
       "value": "\"cardId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6864,
+      "offset": 6868,
       "length": 10,
       "value": "\"cardType\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6908,
+      "offset": 6912,
       "length": 13,
       "value": "\"messageType\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6955,
+      "offset": 6959,
       "length": 13,
       "value": "\"issuerImage\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7017,
+      "offset": 7021,
       "length": 28,
       "value": "\"fallbackVisibilityDuration\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7091,
+      "offset": 7095,
       "length": 25,
       "value": "\"autoInvokeBiometricTime\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7159,
+      "offset": 7163,
       "length": 22,
       "value": "\"criticalityIndicator\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7336,
+      "offset": 7340,
       "length": 4,
       "value": "\"00\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7387,
+      "offset": 7391,
       "length": 4,
       "value": "\"02\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7425,
+      "offset": 7429,
       "length": 13,
       "value": "\"api_version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7463,
+      "offset": 7467,
       "length": 4,
       "value": "\"si\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7500,
+      "offset": 7504,
       "length": 12,
       "value": "\"si_details\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7549,
+      "offset": 7553,
       "length": 15,
       "value": "\"billingAmount\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7603,
+      "offset": 7607,
       "length": 17,
       "value": "\"billingCurrency\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7656,
+      "offset": 7660,
       "length": 14,
       "value": "\"billingCycle\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7709,
+      "offset": 7713,
       "length": 17,
       "value": "\"billingInterval\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7767,
+      "offset": 7771,
       "length": 18,
       "value": "\"paymentStartDate\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7824,
+      "offset": 7828,
       "length": 16,
       "value": "\"paymentEndDate\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7870,
+      "offset": 7874,
       "length": 9,
       "value": "\"remarks\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7912,
+      "offset": 7916,
       "length": 12,
       "value": "\"free_trial\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 7960,
+      "offset": 7964,
       "length": 14,
       "value": "\"billingLimit\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8009,
+      "offset": 8013,
       "length": 13,
       "value": "\"billingRule\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8091,
+      "offset": 8095,
       "length": 13,
       "value": "\"acsTemplate\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8152,
+      "offset": 8156,
       "length": 25,
       "value": "\"merchantResponseTimeout\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8242,
+      "offset": 8246,
       "length": 11,
       "value": "\"Enter OTP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8306,
+      "offset": 8310,
       "length": 7,
       "value": "\"LASER\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8344,
+      "offset": 8348,
       "length": 10,
       "value": "\"DISCOVER\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8381,
+      "offset": 8385,
       "length": 6,
       "value": "\"SMAE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8415,
+      "offset": 8419,
       "length": 7,
       "value": "\"RUPAY\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8449,
+      "offset": 8453,
       "length": 6,
       "value": "\"VISA\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8482,
+      "offset": 8486,
       "length": 6,
       "value": "\"MAST\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8515,
+      "offset": 8519,
       "length": 6,
       "value": "\"MAES\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8548,
+      "offset": 8552,
       "length": 6,
       "value": "\"DINR\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8581,
+      "offset": 8585,
       "length": 6,
       "value": "\"AMEX\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8613,
+      "offset": 8617,
       "length": 5,
       "value": "\"JCB\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 8669,
+      "offset": 8673,
       "length": 3,
       "value": "303"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8734,
+      "offset": 8738,
       "length": 15,
       "value": "\"instrument_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8786,
+      "offset": 8790,
       "length": 17,
       "value": "\"instrument_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8836,
+      "offset": 8840,
       "length": 13,
       "value": "\"device_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8879,
+      "offset": 8883,
       "length": 9,
       "value": "\"command\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8915,
+      "offset": 8919,
       "length": 6,
       "value": "\"var1\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8948,
+      "offset": 8952,
       "length": 6,
       "value": "\"var2\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 8981,
+      "offset": 8985,
       "length": 6,
       "value": "\"var5\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9014,
+      "offset": 9018,
       "length": 6,
       "value": "\"var7\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9054,
+      "offset": 9058,
       "length": 13,
       "value": "\"referenceId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9094,
+      "offset": 9098,
       "length": 6,
       "value": "\"Date\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9142,
+      "offset": 9146,
       "length": 21,
       "value": "\"authentication_info\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9198,
+      "offset": 9202,
       "length": 14,
       "value": "\"errorMessage\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9241,
+      "offset": 9245,
       "length": 8,
       "value": "\"result\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9275,
+      "offset": 9279,
       "length": 5,
       "value": "\"msg\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9304,
+      "offset": 9308,
       "length": 3,
       "value": "\"d\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9346,
+      "offset": 9350,
       "length": 24,
       "value": "\"X-CleverTap-Account-Id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9407,
+      "offset": 9411,
       "length": 22,
       "value": "\"X-CleverTap-Passcode\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9456,
+      "offset": 9460,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9492,
+      "offset": 9496,
       "length": 9,
       "value": "\"isSITxn\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9560,
+      "offset": 9564,
       "length": 11,
       "value": "\"event_key\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9604,
+      "offset": 9608,
       "length": 13,
       "value": "\"event_value\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9653,
+      "offset": 9657,
       "length": 16,
       "value": "\"event_severity\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9701,
+      "offset": 9705,
       "length": 12,
       "value": "\"event_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9740,
+      "offset": 9744,
       "length": 6,
       "value": "\"data\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9778,
+      "offset": 9782,
       "length": 4,
       "value": "\"ts\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9823,
+      "offset": 9827,
       "length": 21,
       "value": "\"application_package\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9885,
+      "offset": 9889,
       "length": 21,
       "value": "\"application_version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9935,
+      "offset": 9939,
       "length": 9,
       "value": "\"bank_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 9975,
+      "offset": 9979,
       "length": 11,
       "value": "\"client_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10022,
+      "offset": 10026,
       "length": 16,
       "value": "\"device_details\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10071,
+      "offset": 10075,
       "length": 13,
       "value": "\"logging_sdk\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10118,
+      "offset": 10122,
       "length": 14,
       "value": "\"merchant_key\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10163,
+      "offset": 10167,
       "length": 10,
       "value": "\"platform\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10203,
+      "offset": 10207,
       "length": 10,
       "value": "\"sdk_name\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10253,
+      "offset": 10257,
       "length": 21,
       "value": "\"logging_sdk_version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10308,
+      "offset": 10312,
       "length": 15,
       "value": "\"time_taken_ms\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10351,
+      "offset": 10355,
       "length": 8,
       "value": "\"txn_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10391,
+      "offset": 10395,
       "length": 13,
       "value": "\"tdy_card_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10433,
+      "offset": 10437,
       "length": 8,
       "value": "\"status\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10475,
+      "offset": 10479,
       "length": 14,
       "value": "\"binding_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10521,
+      "offset": 10525,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10564,
+      "offset": 10568,
       "length": 12,
       "value": "\"acs_txn_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10621,
+      "offset": 10625,
       "length": 26,
       "value": "\"is_recurring_transaction\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10680,
+      "offset": 10684,
       "length": 13,
       "value": "\"customer_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10728,
+      "offset": 10732,
       "length": 15,
       "value": "\"merchant_name\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10775,
+      "offset": 10779,
       "length": 12,
       "value": "\"txn_amount\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10819,
+      "offset": 10823,
       "length": 12,
       "value": "\"error_code\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10862,
+      "offset": 10866,
       "length": 11,
       "value": "\"http_code\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10906,
+      "offset": 10910,
       "length": 13,
       "value": "\"merchant_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10951,
+      "offset": 10955,
       "length": 12,
       "value": "\"request_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 10993,
+      "offset": 10997,
       "length": 10,
       "value": "\"api_path\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11036,
+      "offset": 11040,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11080,
+      "offset": 11084,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11125,
+      "offset": 11129,
       "length": 16,
       "value": "\"biometric_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11180,
+      "offset": 11184,
       "length": 20,
       "value": "\"merchant_mobile_no\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11234,
+      "offset": 11238,
       "length": 14,
       "value": "\"message_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11279,
+      "offset": 11283,
       "length": 11,
       "value": "\"flow_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11319,
+      "offset": 11323,
       "length": 8,
       "value": "\"viewed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11357,
+      "offset": 11361,
       "length": 9,
       "value": "\"outcome\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11397,
+      "offset": 11401,
       "length": 11,
       "value": "\"auth_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11444,
+      "offset": 11448,
       "length": 16,
       "value": "\"disable_reason\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11490,
+      "offset": 11494,
       "length": 9,
       "value": "\"trigger\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11535,
+      "offset": 11539,
       "length": 16,
       "value": "\"attempt_number\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11591,
+      "offset": 11595,
       "length": 21,
       "value": "\"intact_check_result\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11652,
+      "offset": 11656,
       "length": 21,
       "value": "\"timeout_threshold_s\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11706,
+      "offset": 11710,
       "length": 13,
       "value": "\"card_scheme\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11756,
+      "offset": 11760,
       "length": 18,
       "value": "\"three_ds_version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11805,
+      "offset": 11809,
       "length": 11,
       "value": "\"card_type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11842,
+      "offset": 11846,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11874,
+      "offset": 11878,
       "length": 6,
       "value": "\"html\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11911,
+      "offset": 11915,
       "length": 10,
       "value": "\"postData\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 11976,
+      "offset": 11980,
       "length": 5,
       "value": "\"iOS\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12016,
+      "offset": 12020,
       "length": 9,
       "value": "\"face_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12051,
+      "offset": 12055,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12080,
+      "offset": 12084,
       "length": 3,
       "value": "\"2\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12116,
+      "offset": 12120,
       "length": 6,
       "value": "\"true\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12157,
+      "offset": 12161,
       "length": 10,
       "value": "\"12345678\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12201,
+      "offset": 12205,
       "length": 33,
       "value": "\"application\/json; charset=utf-8\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12264,
+      "offset": 12268,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12305,
+      "offset": 12309,
       "length": 11,
       "value": "\"initiated\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12348,
+      "offset": 12352,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12385,
+      "offset": 12389,
       "length": 12,
       "value": "\"sim_change\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12443,
+      "offset": 12447,
       "length": 27,
       "value": "\"biometric_settings_change\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12500,
+      "offset": 12504,
       "length": 9,
       "value": "\"failure\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12561,
+      "offset": 12565,
       "length": 50,
       "value": "\"Are you sure you want to cancel the transaction?\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12671,
+      "offset": 12675,
       "length": 12,
       "value": "\"getBinInfo\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12713,
+      "offset": 12717,
       "length": 9,
       "value": "\"payment\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12759,
+      "offset": 12763,
       "length": 16,
       "value": "\"EventAnalytics\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12859,
+      "offset": 12863,
       "length": 23,
       "value": "\"https:\/\/info.payu.in\/\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 12933,
+      "offset": 12937,
       "length": 25,
       "value": "\"https:\/\/secure.payu.in\/\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13003,
+      "offset": 13007,
       "length": 23,
       "value": "\"https:\/\/test.payu.in\/\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13050,
+      "offset": 13054,
       "length": 10,
       "value": "\"_payment\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13094,
+      "offset": 13098,
       "length": 8,
       "value": "\"paytxn\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13129,
+      "offset": 13133,
       "length": 29,
       "value": "\"merchant\/postservice?form=2\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13184,
+      "offset": 13188,
       "length": 26,
       "value": "\"AuthorizeTransaction.php\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13241,
+      "offset": 13245,
       "length": 20,
       "value": "\"decoupled\/AuthData\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13287,
+      "offset": 13291,
       "length": 26,
       "value": "\"merchant\/MobileAnalytics\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 13348,
+      "offset": 13352,
       "length": 39,
       "value": "\"https:\/\/in.api.clevertap.com\/1\/upload\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14041,
+      "offset": 14045,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14073,
+      "offset": 14077,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14139,
+      "offset": 14143,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14201,
+      "offset": 14205,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14280,
+      "offset": 14284,
       "length": 50,
       "value": "\"application\/x-www-form-urlencoded; charset=utf-8\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14427,
+      "offset": 14431,
       "length": 188,
       "value": "\"^508[5-9][0-9][0-9]|60698[5-9]|60699[0-9]|607[0-8][0-9][0-9]|6079[0-7][0-9]|60798[0-4]|(?!608000)608[0-4][0-9][0-9]|608500|6521[5-9][0-9]|652[2-9][0-9][0-9]|6530[0-9][0-9]|6531[0-4][0-9]\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14649,
+      "offset": 14653,
       "length": 38,
       "value": "\"^((6304)|(6706)|(6771)|(6709))[\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14721,
+      "offset": 14725,
       "length": 35,
       "value": "\"6(?:011|5[0-9]{2})[0-9]{12}[\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14792,
+      "offset": 14796,
       "length": 40,
       "value": "\"(5[06-8]|6\\d)\\d{14}(\\d{2,3})?[\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14868,
+      "offset": 14872,
       "length": 22,
       "value": "\"(5[06-8]|6\\d)[\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 14926,
+      "offset": 14930,
       "length": 76,
       "value": "\"((504([435|645|774|775|809|993]))|(60([0206]|[3845]))|(622[018])\\d)[\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15093,
+      "offset": 15097,
       "length": 15,
       "value": "\"^5[1-5][\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15139,
+      "offset": 15143,
       "length": 14,
       "value": "\"^3[47][\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15186,
+      "offset": 15190,
       "length": 16,
       "value": "\"^30[0-5][\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15235,
+      "offset": 15239,
       "length": 18,
       "value": "\"2(014|149)[\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15286,
+      "offset": 15290,
       "length": 10,
       "value": "\"36[\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15326,
+      "offset": 15330,
       "length": 29,
       "value": "\"^35(2[89]|[3-8][0-9])[\\d]+\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15384,
+      "offset": 15388,
       "length": 21,
       "value": "\"(\\d*)(\\.)?(\\d*)?\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15433,
+      "offset": 15437,
       "length": 51,
       "value": "\"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15512,
+      "offset": 15516,
       "length": 17,
       "value": "\"^[5-9][0-9]{9}$\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15596,
+      "offset": 15600,
       "length": 47,
       "value": "\"The internet connection appears to be offline\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15684,
+      "offset": 15688,
       "length": 20,
       "value": "\"Transaction failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15749,
+      "offset": 15753,
       "length": 26,
       "value": "\"Card number is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15820,
+      "offset": 15824,
       "length": 37,
       "value": "\"Card number or CardBin is Invalid, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15906,
+      "offset": 15910,
       "length": 30,
       "value": "\"Card number is non-numeric, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 15977,
+      "offset": 15981,
       "length": 22,
       "value": "\"CVV is non-numeric, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16033,
+      "offset": 16037,
       "length": 18,
       "value": "\"CVV is invalid, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16097,
+      "offset": 16101,
       "length": 27,
       "value": "\"Expiry month is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16175,
+      "offset": 16179,
       "length": 36,
       "value": "\"Expiry month is not between 1-12, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16273,
+      "offset": 16277,
       "length": 43,
       "value": "\"Expiry month is less than current month, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16361,
+      "offset": 16365,
       "length": 26,
       "value": "\"Expiry year is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16446,
+      "offset": 16450,
       "length": 47,
       "value": "\"Expiry year can't be less than current year, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16550,
+      "offset": 16554,
       "length": 32,
       "value": "\" is less than minimum amount, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16625,
+      "offset": 16629,
       "length": 19,
       "value": "\" is non-numeric, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16689,
+      "offset": 16693,
       "length": 27,
       "value": "\"Product Info is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16767,
+      "offset": 16771,
       "length": 43,
       "value": "\"Product Info greater than 100 character, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16853,
+      "offset": 16857,
       "length": 25,
       "value": "\"First name is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 16926,
+      "offset": 16930,
       "length": 40,
       "value": "\"First name greater than 60 character, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17005,
+      "offset": 17009,
       "length": 23,
       "value": "\"email ID is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17064,
+      "offset": 17068,
       "length": 23,
       "value": "\"email ID is invalid, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17126,
+      "offset": 17130,
       "length": 27,
       "value": "\"phone number is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17189,
+      "offset": 17193,
       "length": 27,
       "value": "\"phone number is invalid, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17249,
+      "offset": 17253,
       "length": 14,
       "value": "\"is invalid, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17301,
+      "offset": 17305,
       "length": 19,
       "value": "\"hash is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17357,
+      "offset": 17361,
       "length": 18,
       "value": "\"Key is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17422,
+      "offset": 17426,
       "length": 29,
       "value": "\"Transaction ID is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17503,
+      "offset": 17507,
       "length": 44,
       "value": "\"Transaction ID greater than 25 character, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17596,
+      "offset": 17600,
       "length": 24,
       "value": "\"Bank code is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17677,
+      "offset": 17681,
       "length": 25,
       "value": "\"Card token is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17745,
+      "offset": 17749,
       "length": 25,
       "value": "\"SdkEncData is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17811,
+      "offset": 17815,
       "length": 23,
       "value": "\"SdkAppID is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17881,
+      "offset": 17885,
       "length": 33,
       "value": "\"SdkReferenceNumber is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 17957,
+      "offset": 17961,
       "length": 25,
       "value": "\"SdkTransID is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18028,
+      "offset": 18032,
       "length": 28,
       "value": "\"SdkMaxTimeout is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18100,
+      "offset": 18104,
       "length": 27,
       "value": "\"SdkInterface is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18169,
+      "offset": 18173,
       "length": 24,
       "value": "\"SdkUIType is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18227,
+      "offset": 18231,
       "length": 18,
       "value": "\"CRV is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18279,
+      "offset": 18283,
       "length": 18,
       "value": "\"KTY is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18329,
+      "offset": 18333,
       "length": 16,
       "value": "\"X is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18377,
+      "offset": 18381,
       "length": 16,
       "value": "\"Y is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18438,
+      "offset": 18442,
       "length": 28,
       "value": "\"DeviceChannel is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18513,
+      "offset": 18517,
       "length": 29,
       "value": "\"ThreeDSVersion is missing, \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18595,
+      "offset": 18599,
       "length": 6,
       "value": "\"Back\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18633,
+      "offset": 18637,
       "length": 21,
       "value": "\"Cancel Transaction?\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18680,
+      "offset": 18684,
       "length": 5,
       "value": "\"YES\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18710,
+      "offset": 18714,
       "length": 4,
       "value": "\"NO\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18743,
+      "offset": 18747,
       "length": 9,
       "value": "\"Get OTP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18814,
+      "offset": 18818,
       "length": 40,
       "value": "\"Do you want to cancel this transaction\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18887,
+      "offset": 18891,
       "length": 12,
       "value": "\"Processing\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 18956,
+      "offset": 18960,
       "length": 33,
       "value": "\"Redirecting you to OTP page in \""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19065,
+      "offset": 19069,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19126,
+      "offset": 19130,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19183,
+      "offset": 19187,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19249,
+      "offset": 19253,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19317,
+      "offset": 19321,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19368,
+      "offset": 19372,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19426,
+      "offset": 19430,
       "length": 2,
       "value": "28"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19491,
+      "offset": 19495,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19552,
+      "offset": 19556,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19614,
+      "offset": 19618,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19677,
+      "offset": 19681,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19744,
+      "offset": 19748,
       "length": 3,
       "value": "-10"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19809,
+      "offset": 19813,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 19873,
+      "offset": 19877,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 19908,
+      "offset": 19912,
       "length": 14,
       "value": "\"Tap to Pause\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 19979,
+      "offset": 19983,
       "length": 4,
       "value": "0.02"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 20038,
+      "offset": 20042,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 20096,
+      "offset": 20100,
       "length": 4,
       "value": "0.11"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 20152,
+      "offset": 20156,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 20217,
+      "offset": 20221,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20300,
+      "offset": 20304,
       "length": 18,
       "value": "\"Face ID disabled\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20357,
+      "offset": 20361,
       "length": 26,
       "value": "\"Redirecting to enter OTP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 20449,
+      "offset": 20453,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20515,
+      "offset": 20519,
       "length": 12,
       "value": "\"backButton\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20556,
+      "offset": 20560,
       "length": 8,
       "value": "\"faceId\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20607,
+      "offset": 20611,
       "length": 22,
       "value": "\"fkFaceIdDisabledIcon\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20663,
+      "offset": 20667,
       "length": 13,
       "value": "\"fingerprint\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20745,
+      "offset": 20749,
       "length": 14,
       "value": "\"payuResponse\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20798,
+      "offset": 20802,
       "length": 18,
       "value": "\"merchantResponse\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20846,
+      "offset": 20850,
       "length": 9,
       "value": "\"observe\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20887,
+      "offset": 20891,
       "length": 11,
       "value": "\"onSuccess\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20930,
+      "offset": 20934,
       "length": 11,
       "value": "\"onFailure\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 20977,
+      "offset": 20981,
       "length": 15,
       "value": "\"onPayuFailure\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21028,
+      "offset": 21032,
       "length": 15,
       "value": "\"onPayuSuccess\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21074,
+      "offset": 21078,
       "length": 10,
       "value": "\"response\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21114,
+      "offset": 21118,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21153,
+      "offset": 21157,
       "length": 9,
       "value": "\"failure\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21228,
+      "offset": 21232,
       "length": 6,
       "value": "\"MAST\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21255,
+      "offset": 21259,
       "length": 6,
       "value": "\"VISA\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 21361,
+      "offset": 21365,
       "length": 2164,
       "value": "\"eyJ4NWMiOlsiTUlJRGVqQ0NBbUtnQXdJQkFnSUVYUURURkRBTkJna3Foa2lHOXcwQkFRc0ZBREJcL01Rc3dDUVlEVlFRR0V3SkpUakVTTUJBR0ExVUVDQXdKUzJGeWJtRjBZV3RoTVJJd0VBWURWUVFIREFsQ1pXNW5ZV3gxY25VeERqQU1CZ05WQkFvTUJYZHBZbTF2TVJRd0VnWURWUVFMREF0RmJtZHBibVZsY21sdVp6RWlNQ0FHQTFVRUF3d1pkMmxpYlc4dGMzUmhaMmx1WnkxelpHc3RiR2xqWlc1elpUQWVGdzB4T1RBMk1USXhNREkxTWpSYUZ3MHlOREEyTVRJeE1ESTFNalJhTUg4eEN6QUpCZ05WQkFZVEFrbE9NUkl3RUFZRFZRUUlEQWxMWVhKdVlYUmhhMkV4RWpBUUJnTlZCQWNNQ1VKbGJtZGhiSFZ5ZFRFT01Bd0dBMVVFQ2d3RmQybGliVzh4RkRBU0JnTlZCQXNNQzBWdVoybHVaV1Z5YVc1bk1TSXdJQVlEVlFRRERCbDNhV0p0YnkxemRHRm5hVzVuTFhOa2F5MXNhV05sYm5ObE1JSUJJakFOQmdrcWhraUc5dzBCQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBMW9KTDcxWlVGbUxkaFwvcTNiZnpheXBVUGcxRlpQQ1NkSHZ2cGJJNXJcL2JZXC84UFo5WE9DN00xV2FhcWxxQXM2a2FiMjdpTFZvZXhHSkt5alhVNmNlWjZTbzlqWkhCb2xGenptK3FDRm11U0h4UEVLUERPXC9pcWQxNWVpdEswQ1wvUlFNWmJya1ZwdkpWSzhpM2hVY2YrYkljbFZTdmdVVVp4bkhKVUxsUDNPQitQS2lcL3ZuMWtIWXpPRjBDTFJTZmZtXC8yWFZRaWhvbDF1M2tRRzl4UkFVd3dvMzVWQUtOSnJQZmprMjdSVTVPSUxVQ1hPSTA5SlNWZkIxRWh2VUw1VTFFeHF1aFRhbm1ITEdkMG5cLzNyZ04rTGo1RFNtYUhpNHd3dFFBRnJEZlhMNFZRTG1SalV3a01KTGtDa2dqbWgrU2l6cDFIYUFEMDFjcXNkTzc5Wm5FcndJREFRQUJNQTBHQ1NxR1NJYjNEUUVCQ3dVQUE0SUJBUUFRN1pVTTY5aW82NUlrbTRmT0U0blVxYWJ6SWQ5WG1qY1NsWDdReFl4aFl6RkpkdFJ2NFN3RUo2Z3pvR3lkYTZcL1lsN0lmQXVsTUxadTU0d0dZWG5Sd0oxcGVpK2Q3VWdDM250b3RQMHZXV21hTHhpMzFUVzg4ZEhBWTNYeHB3MDRhVjA3YXYyc0laOFptZFBDMDhoKzBBbzI4WkxFeXZLZ2RnUFVCbHNoRms0TU13ZUJhTEtTNHBxSWppdnFJZldjVlI2UkV1dUpsY2QxM2w1SHRyWnlwXC9XUGM2Q2pXa1RGQjBja01jWVB6UUQzZ2ZubFlDSnVvcjVOWlpCMDV3d2hIampSK0U2RzZZUmJVSU1ZZFZoTWFZNkc2RzBlZ2tZR3lld1RmcVwvWjdnczg2QnZ4Qk1xdHB6Q0VjYXJZeTVVZGkwYU1uRjQrV3FVallkZFJxXC9VSHEiXSwiYWxnIjoiUFMyNTYifQ.eyJpc3N1ZXIiOiAid3d3LndpYm1vLmNvbSIsImlzc3VlZFRvIjogIlBheSBVIiwiZGF0ZU9mSXNzdWUiOiAiMjAxOS0wNy0wOVQxMDoyMjoyMCswMDowMCIsImV4cGlyeURhdGUiOiAiMjAyMS0wOS0wN1QwMDowMDowMCswMDowMCJ9.tl9_8gktZR1o4TPAIM5MKtMIr11wJneLHL19e2gaoZ409pVaW9K0GfAgW9NLRRmZcDq29tQ3ZgSG4s1qAOCIfWfOw5kqO9Co2YCOx5o3nfetgcpGuj7IqS7UpE9ivfroEoTvxIRCfzuwkuAjQssgy8DW7e9AcSxEIqHCZCrQbFYhme-DKvUfGMQxFTTkam3zoOWweOWvHWTSVbdykEhCV9Hp8YVWik7AHmstU3vT11dG7jy1WNJE-nNdJThwVk5P-QgfIZAiLPkEZh3BbCgJjEarcr_yHKA6exJ4zElfLbUSJEu1lY4iYsq27pi-bhnpmDVqQvDgccG-b_Xb-fIZ8A\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 23625,
+      "offset": 23629,
       "length": 398,
       "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzPHsyej\/O8HO7RglFq6PpFRq9WQ5uG8GcnPkdv0tiZRHE0NGBayj9T\/2nGn4gqb\/cmQ\/4qs\/6oT6drr7gfjh\/Pfjhow1GlMbbVW7GTbfZ42UuIWh7vyAG\/Ep7TC1Dd\/+dIwSqmK2kntoqUIbcSJoYw70kPrJ4I0JlE7DPcv3rXvKzDpXZ3fbBWONq6TxV4MvLhChIQRYXC\/gMXLVZ2sBIL\/rNc2oEfoHRotaEoQKDlBQ28FApxUtthHzMZI+Il1PhtSiMlEJwXA0pGp9GTiGKiGMEEDDFdFdOd\/zMmDUr7bo\/+yu\/CVpVsI0AIHeEyNuSt9L6Eszu2MzNOSuqdsg+wIDAQAB.RSA\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24102,
+      "offset": 24106,
       "length": 398,
       "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkgASyOWgJ3\/AsqZ\/7ChExPlN3t2K7mM1JKjaRDB9LDzKQgFtVd98YpJZuUdEt2RThM85Zi9trUco12gev1iVGuumo0c9g4mPPu8eQnDCTVZcKkujhk5Zr1xjsT1yFc+ocQrAG+5iku3J6RqZI1Q\/znuLvGZnlK3D1inXh\/nuQX3lqdiHpYfPaVOLaSfOD5T05S42d0y2tjrrRS7DARMXK+IqVpxHG6ZM7wDwUQAQVWW5FkwPYlTPb+TFyCRs1w7EFSRDoMZv5MkF3jtybTcrWDmkOrEIvs\/YBd9qZT94bK1ENoydxwp2Zjsqx5fLUFsYQCDGf1h6IKbxBrn4teHsgQIDAQAB.RSA\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24594,
+      "offset": 24598,
       "length": 7,
       "value": "\"m0001\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24645,
+      "offset": 24649,
       "length": 7,
       "value": "\"v0001\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 24755,
+      "offset": 24759,
       "length": 398,
       "value": "\"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjlxec8Mt5ksvkeewN2PYIB+g2MXMyRHJNj52J1A94XiSC6Vo4dzoTIQ0CQwua45VqkwwmazvzN9M\/BsOEuOXkD2BttBsFFlsWYlX27G4D2k8VjYkmwXP54bstg4SpF2P8Wf\/UxiXWHZ5bZlRllorvl86pcGAvADOauwDxfa+664RE8T8QSKgY+AibpiymNPuSnla\/Wa3WnzUpdRJA1dSS9A04w8kscTK3caRvfozKSRo3xZprOhiSDaQQpcKQPb0+6NgNnoSTVXW14KLtANTMFRCJeVstngxYuRju03MpxaIQ1Ux+4ewallVx4KKqNDOo5urO0QHPRIkO9GO+x5MoQIDAQAB.RSA\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25197,
+      "offset": 25201,
       "length": 7,
       "value": "\"34123\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25280,
+      "offset": 25284,
       "length": 4,
       "value": "\"03\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "Array",
-      "offset": 25316,
+      "offset": 25320,
       "length": 30,
       "value": "[\"05\", \"01\", \"02\", \"03\", \"04\"]"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25376,
+      "offset": 25380,
       "length": 56,
       "value": "\"https:\/\/acssimuat.payubiz.in\/termUrl\/DecoupledResponse\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25468,
+      "offset": 25472,
       "length": 5,
       "value": "\"APP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25509,
+      "offset": 25513,
       "length": 4,
       "value": "\"05\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25556,
+      "offset": 25560,
       "length": 7,
       "value": "\"2.2.0\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25607,
+      "offset": 25611,
       "length": 4,
       "value": "\"2.\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25655,
+      "offset": 25659,
       "length": 3,
       "value": "\"Y\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25694,
+      "offset": 25698,
       "length": 7,
       "value": "\"EX087\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25731,
+      "offset": 25735,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25799,
+      "offset": 25803,
       "length": 13,
       "value": "\"Use Face ID\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25846,
+      "offset": 25850,
       "length": 17,
       "value": "\"Use Fingerprint\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25896,
+      "offset": 25900,
       "length": 12,
       "value": "\"buttonText\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 25980,
+      "offset": 25984,
       "length": 21,
       "value": "\"Merchant Identifier\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26018,
+      "offset": 26022,
       "length": 6,
       "value": "\"Time\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26043,
+      "offset": 26047,
       "length": 8,
       "value": "\"Device\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26072,
+      "offset": 26076,
       "length": 11,
       "value": "\"Device id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26102,
+      "offset": 26106,
       "length": 8,
       "value": "\"Amount\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26144,
+      "offset": 26148,
       "length": 24,
       "value": "\"Transaction identifier\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26234,
+      "offset": 26238,
       "length": 9,
       "value": "\"evtName\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26265,
+      "offset": 26269,
       "length": 9,
       "value": "\"evtData\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26297,
+      "offset": 26301,
       "length": 13,
       "value": "\"Device name\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26336,
+      "offset": 26340,
       "length": 16,
       "value": "\"Device version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26375,
+      "offset": 26379,
       "length": 13,
       "value": "\"SDK version\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26481,
+      "offset": 26485,
       "length": 23,
       "value": "\"THREEDS_ACS_INITIATED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26540,
+      "offset": 26544,
       "length": 23,
       "value": "\"3DS_DEVICE_COLLECTION\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26592,
+      "offset": 26596,
       "length": 21,
       "value": "\"INVALID_ACS_UI_TYPE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26637,
+      "offset": 26641,
       "length": 14,
       "value": "\"OOB_CONTINUE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26679,
+      "offset": 26683,
       "length": 25,
       "value": "\"biometric_auth_selected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26726,
+      "offset": 26730,
       "length": 24,
       "value": "\"auth_type_otp_selected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26774,
+      "offset": 26778,
       "length": 14,
       "value": "\"OOB_ELIGIBLE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26911,
+      "offset": 26915,
       "length": 14,
       "value": "\"temp_card_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 26947,
+      "offset": 26951,
       "length": 13,
       "value": "\"tdy_card_id\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27018,
+      "offset": 27022,
       "length": 14,
       "value": "\"Bin Info API\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27058,
+      "offset": 27062,
       "length": 14,
       "value": "\"_Payment API\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27098,
+      "offset": 27102,
       "length": 12,
       "value": "\"Paytxn API\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27139,
+      "offset": 27143,
       "length": 23,
       "value": "\"Authorize Payment API\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27194,
+      "offset": 27198,
       "length": 26,
       "value": "\"Authenticate Payment API\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27243,
+      "offset": 27247,
       "length": 13,
       "value": "\"ThreeDS SDK\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27289,
+      "offset": 27293,
       "length": 16,
       "value": "\"Challenge Flow\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27344,
+      "offset": 27348,
       "length": 23,
       "value": "\"Challenge Action Flow\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27393,
+      "offset": 27397,
       "length": 16,
       "value": "\"Device Details\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27439,
+      "offset": 27443,
       "length": 20,
       "value": "\"SDK Initialisation\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27484,
+      "offset": 27488,
       "length": 15,
       "value": "\"Fallback Flow\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27523,
+      "offset": 27527,
       "length": 14,
       "value": "\"OOB_CONTINUE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27565,
+      "offset": 27569,
       "length": 25,
       "value": "\"biometric_auth_selected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27612,
+      "offset": 27616,
       "length": 24,
       "value": "\"auth_type_otp_selected\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27660,
+      "offset": 27664,
       "length": 14,
       "value": "\"OOB_ELIGIBLE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27723,
+      "offset": 27727,
       "length": 26,
       "value": "\"PayU_Cards_Configuration\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27772,
+      "offset": 27776,
       "length": 14,
       "value": "\"PayU_Unknown\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27819,
+      "offset": 27823,
       "length": 24,
       "value": "\"PayU_Cards_IntactCheck\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27871,
+      "offset": 27875,
       "length": 25,
       "value": "\"PayU_Cards_Registration\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27923,
+      "offset": 27927,
       "length": 24,
       "value": "\"PayU_Cards_Transaction\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 27981,
+      "offset": 27985,
       "length": 32,
       "value": "\"PayU_Cards_Process_Transaction\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28039,
+      "offset": 28043,
       "length": 23,
       "value": "\"PayU_Cards_Deregister\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28105,
+      "offset": 28109,
       "length": 29,
       "value": "\"deregisterBottomSheetOpened\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28170,
+      "offset": 28174,
       "length": 22,
       "value": "\"authTypeScreenOpened\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28223,
+      "offset": 28227,
       "length": 17,
       "value": "\"selectionScreen\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28331,
+      "offset": 28335,
       "length": 17,
       "value": "\"PayU_Cards_Init\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28379,
+      "offset": 28383,
       "length": 23,
       "value": "\"PayU_Cards_Wibmo_Init\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28437,
+      "offset": 28441,
       "length": 27,
       "value": "\"PayU_Cards_Device_Details\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28493,
+      "offset": 28497,
       "length": 21,
       "value": "\"PayU_Cards_Bin_Info\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28540,
+      "offset": 28544,
       "length": 17,
       "value": "\"PayU_Cards_AReq\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28598,
+      "offset": 28602,
       "length": 33,
       "value": "\"PayU_Cards_Authenticate_Payment\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28657,
+      "offset": 28661,
       "length": 17,
       "value": "\"PayU_Cards_CReq\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28712,
+      "offset": 28716,
       "length": 30,
       "value": "\"PayU_Cards_Authorize_Payment\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28772,
+      "offset": 28776,
       "length": 21,
       "value": "\"PayU_Cards_Callback\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28826,
+      "offset": 28830,
       "length": 25,
       "value": "\"PayU_Cards_Web_Fallback\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28883,
+      "offset": 28887,
       "length": 23,
       "value": "\"PayU_Card_Transaction\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 28987,
+      "offset": 28991,
       "length": 34,
       "value": "\"biometric_nudge_screen_initiated\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 29055,
+      "offset": 29059,
       "length": 32,
       "value": "\"biometric_nudge_screen_outcome\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 29133,
+      "offset": 29137,
       "length": 38,
       "value": "\"biometric_nudge_interception_outcome\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 29217,
+      "offset": 29221,
       "length": 39,
       "value": "\"biometric_auto_disabled_screen_viewed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 29305,
+      "offset": 29309,
       "length": 41,
       "value": "\"biometric_auto_deregistration_triggered\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 29391,
+      "offset": 29395,
       "length": 38,
       "value": "\"Auto_deregistration_ui_timer_expired\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 29475,
+      "offset": 29479,
       "length": 39,
       "value": "\"Auto_deregistration_ui_confirm_tapped\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 29934,
+      "offset": 29938,
       "length": 13,
       "value": "\"init_params\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 29977,
+      "offset": 29981,
       "length": 21,
       "value": "\"init_params_coupled\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30026,
+      "offset": 30030,
       "length": 19,
       "value": "\"do_challenge_init\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30065,
+      "offset": 30069,
       "length": 9,
       "value": "\"success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30093,
+      "offset": 30097,
       "length": 8,
       "value": "\"failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30119,
+      "offset": 30123,
       "length": 15,
       "value": "\"no_mfa_params\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30155,
+      "offset": 30159,
       "length": 10,
       "value": "\"fallback\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30199,
+      "offset": 30203,
       "length": 25,
       "value": "\"forwarded_to_tridentity\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30250,
+      "offset": 30254,
       "length": 17,
       "value": "\"api_init_params\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30290,
+      "offset": 30294,
       "length": 13,
       "value": "\"api_success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30325,
+      "offset": 30329,
       "length": 12,
       "value": "\"api_failed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30363,
+      "offset": 30367,
       "length": 16,
       "value": "\"hash_requested\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30447,
+      "offset": 30451,
       "length": 18,
       "value": "\"loader_completed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30488,
+      "offset": 30492,
       "length": 14,
       "value": "\"tap_to_pause\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30526,
+      "offset": 30530,
       "length": 14,
       "value": "\"back_pressed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30562,
+      "offset": 30566,
       "length": 12,
       "value": "\"pay_tapped\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30599,
+      "offset": 30603,
       "length": 16,
       "value": "\"get_otp_tapped\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30645,
+      "offset": 30649,
       "length": 20,
       "value": "\"inactivity_timeout\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30693,
+      "offset": 30697,
       "length": 18,
       "value": "\"network_fallback\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30738,
+      "offset": 30742,
       "length": 18,
       "value": "\"biometric_to_otp\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30772,
+      "offset": 30776,
       "length": 5,
       "value": "\"yes\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30792,
+      "offset": 30796,
       "length": 4,
       "value": "\"no\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 30812,
+      "offset": 30816,
       "length": 5,
       "value": "\"otp\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31172,
+      "offset": 31176,
       "length": 14,
       "value": "\"back_pressed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31211,
+      "offset": 31215,
       "length": 16,
       "value": "\"get_otp_tapped\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31257,
+      "offset": 31261,
       "length": 20,
       "value": "\"inactivity_timeout\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31304,
+      "offset": 31308,
       "length": 17,
       "value": "\"retry_exhausted\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31385,
+      "offset": 31389,
       "length": 18,
       "value": "\"disable_checkbox\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31425,
+      "offset": 31429,
       "length": 12,
       "value": "\"learn_more\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31503,
+      "offset": 31507,
       "length": 14,
       "value": "\"keep_enabled\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31546,
+      "offset": 31550,
       "length": 19,
       "value": "\"disable_confirmed\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31632,
+      "offset": 31636,
       "length": 15,
       "value": "\"AuthN_Success\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31672,
+      "offset": 31676,
       "length": 15,
       "value": "\"AuthN_Failure\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31731,
+      "offset": 31735,
       "length": 35,
       "value": "\"OOB_REGISTRATION_CHECKBOX_CHECKED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31811,
+      "offset": 31815,
       "length": 38,
       "value": "\"OOB_REGISTRATION_DIALOG_YES_REGISTER\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31891,
+      "offset": 31895,
       "length": 35,
       "value": "\"OOB_REGISTRATION_DIALOG_NO_THANKS\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 31971,
+      "offset": 31975,
       "length": 37,
       "value": "\"OOB_DEREGISTRATION_CHECKBOX_CHECKED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32050,
+      "offset": 32054,
       "length": 34,
       "value": "\"OOB_DEREGISTRATION_DIALOG_CANCEL\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32133,
+      "offset": 32137,
       "length": 42,
       "value": "\"OOB_DEREGISTRATION_DIALOG_YES_DEREGISTER\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32198,
+      "offset": 32202,
       "length": 12,
       "value": "\"SUBMIT_OTP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32232,
+      "offset": 32236,
       "length": 12,
       "value": "\"RESEND_OTP\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32268,
+      "offset": 32272,
       "length": 15,
       "value": "\"OTP_AUTO_READ\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32309,
+      "offset": 32313,
       "length": 17,
       "value": "\"OTP_AUTO_SUBMIT\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32350,
+      "offset": 32354,
       "length": 14,
       "value": "\"OOB_CONTINUE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32398,
+      "offset": 32402,
       "length": 25,
       "value": "\"DIRECT_OTP_MFA_ELIGIBLE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32458,
+      "offset": 32462,
       "length": 27,
       "value": "\"DIRECT_OTP_MFA_INELIGIBLE\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32510,
+      "offset": 32514,
       "length": 14,
       "value": "\"BACK_PRESSED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32543,
+      "offset": 32547,
       "length": 8,
       "value": "\"CLOSED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32578,
+      "offset": 32582,
       "length": 17,
       "value": "\"RE_REGISTRATION\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32624,
+      "offset": 32628,
       "length": 20,
       "value": "\"THREEDS_ACS_LOADED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32688,
+      "offset": 32692,
       "length": 36,
       "value": "\"OOB_REGISTRATION_LEARNMORE_CLICKED\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/payu-3ds2-sdk-ios\/PayU3DS2\/PayU3DS2\/Constants\/PayU3DS2Constants.swift",
       "kind": "StringLiteral",
-      "offset": 32770,
+      "offset": 32774,
       "length": 38,
       "value": "\"OOB_DEREGISTRATION_LEARNMORE_CLICKED\""
     },
