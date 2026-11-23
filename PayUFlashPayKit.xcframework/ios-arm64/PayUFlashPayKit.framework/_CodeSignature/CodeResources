@@ -8,51 +8,6 @@
 		<data>
 		JKvltrYBsKIX6qG2yJzRGe7CSlE=
 		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/Assets.car</key>
-		<data>
-		MhFGO95fdAnBC4aP9lRgyvwGMnQ=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/Info.plist</key>
-		<data>
-		3AUZR8GZMWVOlqh32/HCLg7LQZc=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/PayUTridentityMFAKit</key>
-		<data>
-		YgSvCea+sQ+HcKhgvEuoGNgXk+k=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		Jw+Bu9BV2EJs5U5zUaw5HxyNI/4=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/TDY_BNK.json</key>
-		<data>
-		d2rwO4O0tHlgjwRvUuxyTJx438A=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/_CodeSignature/CodeResources</key>
-		<data>
-		d6lBejCQaRVCffffejHK2XXMpYc=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/en.lproj/Localize.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cfjLGRQ/t5PeyCa85oMe3wVXGuc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
-		<data>
-		T4mSPoF8LFYmeCyIGNHZouopzF4=
-		</data>
-		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
-		<data>
-		+DSf+IDoSPfbkYHIbKsu058OfI0=
-		</data>
-		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
-		<data>
-		WUEO6Z+J2w3T7tEpG5fF6iAoqj8=
-		</data>
 		<key>Headers/PayUFlashPay.h</key>
 		<data>
 		8jJbRkQonBQDIrOlifhiZ3uCFSY=
@@ -83,7 +38,7 @@
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		ZhiAes5FJ3N2qXVqQezd40lrE9Y=
+		vq+BEcGmnWqHoWWsJ0M+CEr0gDc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,78 +68,6 @@
 			<key>hash2</key>
 			<data>
 			Yvb2UxhX1Sv7RZcq3C3DBRlHaLJcKQxCruwysdg9acU=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aiyDCnj95PARZyX+RpoqHhqq4m2QtLDkyKgpg5qR5rU=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZGVY4m/hwPYgzl1Lg80qkRAgDxpBifHHLuvyFqx1n6s=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/PayUTridentityMFAKit</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qmfX1zQ+YZlWm9x+1x2NeWcbynlRPlbnf5/eMzdm8Po=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FiNhnMG+ThNFwKTUxQN3KlScEqWIbZkFl2QOkrdIuTU=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/TDY_BNK.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			atzb38+lttwu833Ehc8PjSWsVoDqDm6XgpflRA7Np/M=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QvYiHJD6WsY8YyIlzOEvFl0NFhC9uP/+5RBw7whH+Ew=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/en.lproj/Localize.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Cc4TVRtjywyG4B+vRp3+mdcEv9kFW7r8jJaki6icHZs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			62Qb8Eo6pNFGaaZBrjpfJM08wF/Sp9fen/tH4uixPKQ=
-			</data>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			r9Bb1a38LieOPEwjdk2TF27WD6bsmtbZj8fg2sExvfI=
-			</data>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8E8FfrmacCuM9/2j4+qgzds68SduC+dLwPKDqPzJ3RE=
 			</data>
 		</dict>
 		<key>Headers/PayUFlashPay.h</key>
@@ -233,7 +116,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			myyi4QsOjMuvEpO/d4HluDTXfuT2VvQAUA04YalmWis=
+			DCAHQqgz/Ly29ebnADgEy779L7/3v0GdEdCdsk66m1c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

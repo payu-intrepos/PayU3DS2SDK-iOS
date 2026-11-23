@@ -8,51 +8,6 @@
 		<data>
 		JKvltrYBsKIX6qG2yJzRGe7CSlE=
 		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/Assets.car</key>
-		<data>
-		MhFGO95fdAnBC4aP9lRgyvwGMnQ=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/Info.plist</key>
-		<data>
-		D+ymrw/YhcZgf4+7VTyPCghx+l0=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/PayUTridentityMFAKit</key>
-		<data>
-		OCALqylvQj8kH7pwa6+Z/FeaaA8=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/PrivacyInfo.xcprivacy</key>
-		<data>
-		Jw+Bu9BV2EJs5U5zUaw5HxyNI/4=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/TDY_BNK.json</key>
-		<data>
-		d2rwO4O0tHlgjwRvUuxyTJx438A=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/_CodeSignature/CodeResources</key>
-		<data>
-		x/GWt1JRtw6/StAVmyHKXu0kpQU=
-		</data>
-		<key>Frameworks/PayUTridentityMFAKit.framework/en.lproj/Localize.strings</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			cfjLGRQ/t5PeyCa85oMe3wVXGuc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
-		<data>
-		T4mSPoF8LFYmeCyIGNHZouopzF4=
-		</data>
-		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
-		<data>
-		zviVpyfYNZAj8L5WxbVRGleYGh8=
-		</data>
-		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
-		<data>
-		WUEO6Z+J2w3T7tEpG5fF6iAoqj8=
-		</data>
 		<key>Headers/PayUFlashPay.h</key>
 		<data>
 		8jJbRkQonBQDIrOlifhiZ3uCFSY=
@@ -83,7 +38,7 @@
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Kh0VVN6mrFIlwvFhcowR0mbVnxI=
+		FeqXRtM6JlMJ9jK1Cz3SqiR1zdI=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -103,7 +58,7 @@
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qfIOCsGJdgI8QTXhM0wPfH/kOkM=
+		7zh1kOc99gfdQb1dKkzeQsnNv1w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -133,78 +88,6 @@
 			<key>hash2</key>
 			<data>
 			Yvb2UxhX1Sv7RZcq3C3DBRlHaLJcKQxCruwysdg9acU=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/Assets.car</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aiyDCnj95PARZyX+RpoqHhqq4m2QtLDkyKgpg5qR5rU=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ok5zG4WYJ8CTQVMHnyZXJqDojrUTSfebGoNJq1egglw=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/PayUTridentityMFAKit</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DC5Lz74OlVysBAN0E3Ok/hycpEBZDmQyBriC+gHrcxU=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FiNhnMG+ThNFwKTUxQN3KlScEqWIbZkFl2QOkrdIuTU=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/TDY_BNK.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			atzb38+lttwu833Ehc8PjSWsVoDqDm6XgpflRA7Np/M=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			w8B97/M0Buy7ucyxqYRq91d2kOF/cFwC21UG+wMeBaY=
-			</data>
-		</dict>
-		<key>Frameworks/PayUTridentityMFAKit.framework/en.lproj/Localize.strings</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Cc4TVRtjywyG4B+vRp3+mdcEv9kFW7r8jJaki6icHZs=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			62Qb8Eo6pNFGaaZBrjpfJM08wF/Sp9fen/tH4uixPKQ=
-			</data>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nAnN19H+elwt/BIJ1B97eAA+e2sZh2uU1Fhw2EkZG+Q=
-			</data>
-		</dict>
-		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8E8FfrmacCuM9/2j4+qgzds68SduC+dLwPKDqPzJ3RE=
 			</data>
 		</dict>
 		<key>Headers/PayUFlashPay.h</key>
@@ -253,7 +136,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FuKyNWLDqQ2DecgGlr7kf0yDl/huVC74MNXAuu9kHFY=
+			yDigtufZ9H3DpPycfAeZ9146sCjSOwxXl4v6bd8+P00=
 			</data>
 		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -288,7 +171,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R/dhUw6EyfpJcCQs8scSpSkyyOhXphEXkHertlFs+JM=
+			Z7lxNRLRuSbxTeRTiMl2307VM2S4AYX4SFTceyW0j8Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
