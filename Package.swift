@@ -100,7 +100,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "PayUFlashPayAnalytics",
-            path: "./analytics/PayUAnalyticsKitU.xcframework"
+            path: "./analytics/PayUAnalyticsKit.xcframework"
         )
     ]
 )
