@@ -50,7 +50,7 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-Flashpay-SDK"
-podVersion="1.0.1"
+podVersion="1.0.2"
 
 podSpec="${podName}.podspec"
 tag="${podName}${podVersion}"

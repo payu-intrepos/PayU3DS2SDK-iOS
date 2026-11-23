@@ -515,6 +515,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger sdkNotConf
 + (NSInteger)sdkNotConfigured SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger invalidParametersProvided;)
 + (NSInteger)invalidParametersProvided SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger userCancelledBiometric;)
++ (NSInteger)userCancelledBiometric SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger deviceDebuggingDetected;)
 + (NSInteger)deviceDebuggingDetected SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger deviceJailbroken;)
@@ -596,6 +598,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger sdkExcepti
 + (NSInteger)sdkException SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger unhandledError;)
 + (NSInteger)unhandledError SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger userCancelledBiometric;)
++ (NSInteger)userCancelledBiometric SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1368,6 +1372,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger sdkNotConf
 + (NSInteger)sdkNotConfigured SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger invalidParametersProvided;)
 + (NSInteger)invalidParametersProvided SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger userCancelledBiometric;)
++ (NSInteger)userCancelledBiometric SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger deviceDebuggingDetected;)
 + (NSInteger)deviceDebuggingDetected SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger deviceJailbroken;)
@@ -1449,6 +1455,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger sdkExcepti
 + (NSInteger)sdkException SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger unhandledError;)
 + (NSInteger)unhandledError SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSInteger userCancelledBiometric;)
++ (NSInteger)userCancelledBiometric SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

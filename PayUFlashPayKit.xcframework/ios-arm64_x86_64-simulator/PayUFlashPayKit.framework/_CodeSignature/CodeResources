@@ -8,25 +8,70 @@
 		<data>
 		JKvltrYBsKIX6qG2yJzRGe7CSlE=
 		</data>
-		<key>Headers/PayUFlashPayKit-Swift.h</key>
+		<key>Frameworks/PayUTridentityMFAKit.framework/Assets.car</key>
 		<data>
-		i0yuDqyw2BP5ewozdwgeRsBZkT4=
+		MhFGO95fdAnBC4aP9lRgyvwGMnQ=
 		</data>
-		<key>Headers/PayUFlashPayKit.h</key>
+		<key>Frameworks/PayUTridentityMFAKit.framework/Info.plist</key>
+		<data>
+		D+ymrw/YhcZgf4+7VTyPCghx+l0=
+		</data>
+		<key>Frameworks/PayUTridentityMFAKit.framework/PayUTridentityMFAKit</key>
+		<data>
+		OCALqylvQj8kH7pwa6+Z/FeaaA8=
+		</data>
+		<key>Frameworks/PayUTridentityMFAKit.framework/PrivacyInfo.xcprivacy</key>
+		<data>
+		Jw+Bu9BV2EJs5U5zUaw5HxyNI/4=
+		</data>
+		<key>Frameworks/PayUTridentityMFAKit.framework/TDY_BNK.json</key>
+		<data>
+		d2rwO4O0tHlgjwRvUuxyTJx438A=
+		</data>
+		<key>Frameworks/PayUTridentityMFAKit.framework/_CodeSignature/CodeResources</key>
+		<data>
+		x/GWt1JRtw6/StAVmyHKXu0kpQU=
+		</data>
+		<key>Frameworks/PayUTridentityMFAKit.framework/en.lproj/Localize.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			cfjLGRQ/t5PeyCa85oMe3wVXGuc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
+		<data>
+		T4mSPoF8LFYmeCyIGNHZouopzF4=
+		</data>
+		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
+		<data>
+		zviVpyfYNZAj8L5WxbVRGleYGh8=
+		</data>
+		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
+		<data>
+		WUEO6Z+J2w3T7tEpG5fF6iAoqj8=
+		</data>
+		<key>Headers/PayUFlashPay.h</key>
 		<data>
 		8jJbRkQonBQDIrOlifhiZ3uCFSY=
 		</data>
+		<key>Headers/PayUFlashPayKit-Swift.h</key>
+		<data>
+		eTE5BxKS4LggX5WB3McIt9lEB7g=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		51Mio0ptckF4mJxtzuUtkBtwvfw=
+		CxRSjKWs3MlEbzmbTkuc4su1r/w=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		h5fR71mmH+sw1X03IaGF1SCZuhM=
+		5iHKQkbv1nrDBqJZfsz88Ub7xpg=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		pjVWwVanEDdGfSrjf+U2OEaO0bc=
+		2XIxR1N1p4xE2N2njADr2WbE49U=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,19 +79,19 @@
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		pjVWwVanEDdGfSrjf+U2OEaO0bc=
+		2XIxR1N1p4xE2N2njADr2WbE49U=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		jyXuM0uQKnaWq9WnmHRlDykGg2M=
+		Kh0VVN6mrFIlwvFhcowR0mbVnxI=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		h5fR71mmH+sw1X03IaGF1SCZuhM=
+		5iHKQkbv1nrDBqJZfsz88Ub7xpg=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		zYYmcK5QPT060PRW7niWGFiWk6E=
+		xP6B4m+gPLeHEleCkTJWdKBbjXM=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -54,35 +99,31 @@
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zYYmcK5QPT060PRW7niWGFiWk6E=
+		xP6B4m+gPLeHEleCkTJWdKBbjXM=
 		</data>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		p8zysfYeGy0eNzhgDRXrUNYnCSw=
+		qfIOCsGJdgI8QTXhM0wPfH/kOkM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		z5vgZLJiIenTsD2x/HCbcGb7SYU=
+		CasWOOrcX315nI9TwSfq9s7cQBg=
 		</data>
 		<key>PayUFPOobMFA.storyboardc/Info.plist</key>
 		<data>
-		b0JBJKK3dpB9CVhGOYpPTU9gS6Q=
+		WppYwcfxElv69KOYVGK2KhURfgQ=
 		</data>
 		<key>PayUFPOobMFA.storyboardc/PayUFPAuthViewController.nib</key>
 		<data>
 		DOz12kmyLspQ1WxSHgvOH//45+g=
 		</data>
-		<key>PayUFPOobMFA.storyboardc/PayUFPDeregisterViewController.nib</key>
-		<data>
-		V59XYtdYhAnEqgXnQS73zm2h1BI=
-		</data>
-		<key>PayUFPOobMFA.storyboardc/a8W-oK-FlS-view-jeV-9c-BrH.nib</key>
-		<data>
-		tq92ELX/D61woOI1ftTA8nxbFss=
-		</data>
 		<key>PayUFPOobMFA.storyboardc/l4W-3c-Iex-view-fIa-bR-ctN.nib</key>
 		<data>
-		3wKwU8M2PKBgYlFYQIEV3RY/PsU=
+		JuOcUgFBTGeivP/fV9DA/8UpNA0=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		zPTdIr0a8ckzC/ihsnR51P6FiS4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -94,32 +135,104 @@
 			Yvb2UxhX1Sv7RZcq3C3DBRlHaLJcKQxCruwysdg9acU=
 			</data>
 		</dict>
-		<key>Headers/PayUFlashPayKit-Swift.h</key>
+		<key>Frameworks/PayUTridentityMFAKit.framework/Assets.car</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vQzza43dkPzsjTIP4H0RW7oSPKiRWHDWfBPEvgrsO8M=
+			aiyDCnj95PARZyX+RpoqHhqq4m2QtLDkyKgpg5qR5rU=
 			</data>
 		</dict>
-		<key>Headers/PayUFlashPayKit.h</key>
+		<key>Frameworks/PayUTridentityMFAKit.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ok5zG4WYJ8CTQVMHnyZXJqDojrUTSfebGoNJq1egglw=
+			</data>
+		</dict>
+		<key>Frameworks/PayUTridentityMFAKit.framework/PayUTridentityMFAKit</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DC5Lz74OlVysBAN0E3Ok/hycpEBZDmQyBriC+gHrcxU=
+			</data>
+		</dict>
+		<key>Frameworks/PayUTridentityMFAKit.framework/PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FiNhnMG+ThNFwKTUxQN3KlScEqWIbZkFl2QOkrdIuTU=
+			</data>
+		</dict>
+		<key>Frameworks/PayUTridentityMFAKit.framework/TDY_BNK.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			atzb38+lttwu833Ehc8PjSWsVoDqDm6XgpflRA7Np/M=
+			</data>
+		</dict>
+		<key>Frameworks/PayUTridentityMFAKit.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			w8B97/M0Buy7ucyxqYRq91d2kOF/cFwC21UG+wMeBaY=
+			</data>
+		</dict>
+		<key>Frameworks/PayUTridentityMFAKit.framework/en.lproj/Localize.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Cc4TVRtjywyG4B+vRp3+mdcEv9kFW7r8jJaki6icHZs=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/PayUliboqs.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			62Qb8Eo6pNFGaaZBrjpfJM08wF/Sp9fen/tH4uixPKQ=
+			</data>
+		</dict>
+		<key>Frameworks/PayUliboqs.framework/PayUliboqs</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nAnN19H+elwt/BIJ1B97eAA+e2sZh2uU1Fhw2EkZG+Q=
+			</data>
+		</dict>
+		<key>Frameworks/PayUliboqs.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8E8FfrmacCuM9/2j4+qgzds68SduC+dLwPKDqPzJ3RE=
+			</data>
+		</dict>
+		<key>Headers/PayUFlashPay.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			bJy1M56biylH6RpyvtLw8hEqCQ0j5+DVDXXi0OQO7OQ=
 			</data>
 		</dict>
+		<key>Headers/PayUFlashPayKit-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2Ab5pXNPNbo8U0r5NjtQylyWB76sh+ESIQdOHwN7XSM=
+			</data>
+		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y97aGx0ye9+ofQOv3d2suXlkoonj9fYT1yC9i9uBwNM=
+			gXJHFvzABfinhqxnt9NX2yFT/K8LcSiVSqeVgiGxNGQ=
 			</data>
 		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rT7sm6pVliiSpj75qZcJIj0VJTo6aRPEwyf2Akei/OY=
+			5Tnn/TkqxRc2Rd2Rs1PXnIjBtwaAnpG+tvsxL3YOBzs=
 			</data>
 		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -133,28 +246,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rT7sm6pVliiSpj75qZcJIj0VJTo6aRPEwyf2Akei/OY=
+			5Tnn/TkqxRc2Rd2Rs1PXnIjBtwaAnpG+tvsxL3YOBzs=
 			</data>
 		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V3yZSFLB+q+ZZOWwqWT8kcaAvz9E5Cwn+81FwToIg7E=
+			FuKyNWLDqQ2DecgGlr7kf0yDl/huVC74MNXAuu9kHFY=
 			</data>
 		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			y97aGx0ye9+ofQOv3d2suXlkoonj9fYT1yC9i9uBwNM=
+			gXJHFvzABfinhqxnt9NX2yFT/K8LcSiVSqeVgiGxNGQ=
 			</data>
 		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p8nHWct5+s24yiiGWSEVhWqyBRqYwt7y2teFVgmuq9s=
+			bPnD6u8TFOK53hiiBbO+sEJUjNDKbaomAxbRHY2Vku8=
 			</data>
 		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -168,28 +281,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			p8nHWct5+s24yiiGWSEVhWqyBRqYwt7y2teFVgmuq9s=
+			bPnD6u8TFOK53hiiBbO+sEJUjNDKbaomAxbRHY2Vku8=
 			</data>
 		</dict>
 		<key>Modules/PayUFlashPayKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8+2FC3knhcGK3Yxspza/MRNPdI7UDSn+lOFc7dMvo0M=
+			R/dhUw6EyfpJcCQs8scSpSkyyOhXphEXkHertlFs+JM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0ytHu+khsfQP1WvrPLZ3edzBnUDUXCoKB/7w8BYK+ho=
+			KvKnLxl0U9+swJkBGW15ss0nmxhLR08VWAsNRfmTOtY=
 			</data>
 		</dict>
 		<key>PayUFPOobMFA.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wPVJiX8OaTSJ+Y2zbdy/Llsg613o7ZB8tcnno5CtDlY=
+			+ZEwEE+5yKqc7OEhn7u/hcnnOCJDPqKGnYpFFRR5hnQ=
 			</data>
 		</dict>
 		<key>PayUFPOobMFA.storyboardc/PayUFPAuthViewController.nib</key>
@@ -199,25 +312,18 @@
 			LVm6LiKyCgk0EgEtgprqeY2GUy6Ot2uIIbiEBPkRjK0=
 			</data>
 		</dict>
-		<key>PayUFPOobMFA.storyboardc/PayUFPDeregisterViewController.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			l14Lw8D1S4cj6Z4jQimwUeztxm2+EE6LBXYQfeoFpH8=
-			</data>
-		</dict>
-		<key>PayUFPOobMFA.storyboardc/a8W-oK-FlS-view-jeV-9c-BrH.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			M+vDfAoXiVPWoTLjjqmeEhGuCr40ljiCSI6mCRxS7EM=
-			</data>
-		</dict>
 		<key>PayUFPOobMFA.storyboardc/l4W-3c-Iex-view-fIa-bR-ctN.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1A6RHwsFbf1glYTGR3DItRYKDoi4xcZANC+chvh0UJw=
+			ANfTUIqemXw4hKgaNKe6MUq6qzEhZmStSXAiHlyt6Eo=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XE//05LVPVp1RPQJV2n/SxyZxMc4bHzN9xxllrj7dh4=
 			</data>
 		</dict>
 	</dict>
