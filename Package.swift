@@ -66,7 +66,7 @@ let package = Package(
                 "PayUTridentityMFAKit",
                 "PayUFlashPayKit",
                 "PayUliboqs",
-                "PayUAnalytics",
+                "PayUFlashPayAnalytics",
                 .product(
                     name: "PayUIndia-CrashReporter",
                     package: "PayUIndia-CrashReporter"
@@ -99,8 +99,8 @@ let package = Package(
             path: "./PayUliboqs.xcframework"
         ),
         .binaryTarget(
-            name: "PayUAnalytics",
-            path: "./analytics/PayUAnalyticsKit.xcframework"
+            name: "PayUFlashPayAnalytics",
+            path: "./analytics/PayUAnalyticsKitU.xcframework"
         )
     ]
 )
