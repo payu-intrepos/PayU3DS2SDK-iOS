@@ -30,7 +30,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		24Dk7WIAu38acHMK0aCGKBAvt5g=
+		S1BgUid/qex3jQoD0BQM3UJleJg=
 		</data>
 		<key>LearnMoreViewController.nib</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		qj7XwBx+6r3t11D1T7FxvqsKn9Q=
+		fCJEFEWJ55zfixtLA3P3G/Wk0w0=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		qj7XwBx+6r3t11D1T7FxvqsKn9Q=
+		fCJEFEWJ55zfixtLA3P3G/Wk0w0=
 		</data>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -164,7 +164,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ljH+NweaYgkQZkgQVYHwyL+YmbQ7pis5ZZ6sDhCv6II=
+			jPrvtjvgN1zid8glZtei4RTD/b/gWWksa06Fx/dz4cM=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -199,7 +199,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ljH+NweaYgkQZkgQVYHwyL+YmbQ7pis5ZZ6sDhCv6II=
+			jPrvtjvgN1zid8glZtei4RTD/b/gWWksa06Fx/dz4cM=
 			</data>
 		</dict>
 		<key>Modules/PayU3DS2CoreKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
